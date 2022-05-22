@@ -1,0 +1,44 @@
+.body--dark {
+    .arrow-up-container {
+        background: $c-222222;
+    }
+
+    .arrow-up {
+        & svg {
+            & circle {
+                stroke: transparentize($c-fbfbfb, 0.5);
+            }
+
+            & path {
+                fill: transparentize($c-fbfbfb, 0.5);
+            }
+        }
+
+        &:hover {
+            & circle {
+                fill: $c-fbfbfb;
+                stroke: $c-222222;
+            }
+
+            & path {
+                fill: $c-222222;
+            }
+        }
+    }
+
+    .wrapper {
+        background: #222;
+    }
+}
+
+@media (min-width: 992px) {
+    .mb-lg-4r {
+        margin-bottom: 4rem !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .mb-xl-2r {
+        margin-bottom: 2rem !important;
+    }
+}

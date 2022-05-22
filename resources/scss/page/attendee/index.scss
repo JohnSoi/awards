@@ -1,0 +1,95 @@
+@import "./../../components/colors";
+@import "./../../components/fonts";
+@import "./../attendee/item";
+.wrapper {
+    background: $white;
+}
+
+.section-attendee {
+    padding-top: 55px;
+    padding-bottom: 90px;
+    background-color: $white;
+    @media (max-width: 991px) {
+        padding-top: 41px;
+    }
+    @media (max-width: 576px) {
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
+    & .mobile-section-title {
+        display: none;
+        @media (max-width: 576px) {
+            display: block;
+            margin-bottom: 48px;
+            font-family: Normalidad;
+            font-weight: 800;
+            font-size: 19px;
+            line-height: 136%;
+            text-align: center;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: $c-222222;
+            padding-bottom: 16px;
+            border-bottom: 1px solid transparentize($c-222222, 0.9);
+        }
+    }
+    & .section-title {
+        padding-top: 32px;
+        color: $c-222222;
+    }
+    &__content {
+        padding-top: 64px;
+        padding-bottom: 90px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 20px;
+        row-gap: 52px;
+        @media (max-width: 1300px) {
+            grid-template-columns: repeat(5, 1fr);
+        }
+        @media (max-width: 1199px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        @media (max-width: 991px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @media (max-width: 767px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: 576px) {
+            padding-top: 0;
+        }
+    }
+    &__filters {
+        display: grid;
+        grid-template-columns: 284px auto;
+        column-gap: 64px;
+        padding-bottom: 70px;
+        & > .filter {
+            min-width: 250px;
+            max-width: 350px;
+        }
+        @media (max-width: 767px) {
+            grid-template-columns: 1fr;
+            column-gap: 15px;
+            row-gap: 25px;
+        }
+        @media (max-width: 576px) {
+            grid-template-columns: 1fr;
+            padding-bottom: 48px;
+        }
+    }
+}
+
+.filter-checkbox {
+    display: flex;
+    @media (min-width: 768px) {
+        margin-top: 10px;
+    }
+    & > * {
+        margin-right: 32px;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}

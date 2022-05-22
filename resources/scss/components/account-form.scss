@@ -1,0 +1,53 @@
+/*TODO .contest-request-modal*/
+
+.contest-request-modal {
+    .modal-dialog {
+        @media (min-width: 1024px) {
+            max-width: 1080px;
+            margin-top: 90px;
+        }
+    }
+    .modal-content {
+        @media (min-width: 1024px) {
+            padding: 50px 110px;
+        }
+    }
+    .form__title {
+        margin-bottom: 73px;
+        @media (max-width: 424px) {
+            max-width: 290px;
+        }
+    }
+}
+
+.contest-request__form-grid {
+    display: grid;
+    grid-gap: 20px;
+    @media (min-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        grid-auto-flow: column;
+    }
+    .form-types {
+        margin-bottom: 36px;
+        grid-row-end: span 1;
+        //grid-row: 1 span / 1;
+        justify-content: flex-end;
+    }
+    .form-types input,
+    .form-types select,
+    .form-types textarea,
+    .form-types>* {
+        flex: 0 0 auto;
+    }
+    //
+    .span2 {
+        grid-row-end: span 2;
+    }
+    .span3 {
+        grid-row-end: span 3;
+    }
+    textarea {
+        min-height: 100%;
+    }
+}

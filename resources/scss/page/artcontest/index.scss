@@ -1,0 +1,43 @@
+@import "./../../components/colors";
+@import "./../../components/fonts";
+
+.wrapper {
+    background: $white;
+}
+
+.section-contest {
+    margin-top: 50px;
+    padding-top: 70px;
+    padding-bottom: 179px;
+    border-top: 1px solid transparentize($c-222222, 0.9);
+    & .contest-container {
+        max-width: 494px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.contest-form {
+    &__title {
+        margin-bottom: 60px;
+        & .h2 {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.contest-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 56px;
+}
+
+.license-block {
+    margin-top: 0;
+    justify-content: space-between;
+    & .text {
+        @media (min-width: 577px) and (max-width: 991px) {
+            margin-right: 26px;
+        }
+    }
+}

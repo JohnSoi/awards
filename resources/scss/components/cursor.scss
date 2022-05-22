@@ -1,0 +1,82 @@
+// .cursor-right.cursor-black {
+//     @media (min-width: 1200px) {
+//         cursor: url("data:image/svg+xml,%3Csvg width='50' height='50' style='display:flex;align-items:center;justify-content:center;' viewBox='0 0 52 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='24.5' stroke='%23222222'/%3E%3Cpath d='M40.5052 25.3536C40.7005 25.1583 40.7005 24.8417 40.5052 24.6464L37.3232 21.4645C37.128 21.2692 36.8114 21.2692 36.6161 21.4645C36.4209 21.6597 36.4209 21.9763 36.6161 22.1716L39.4446 25L36.6161 27.8284C36.4209 28.0237 36.4209 28.3403 36.6161 28.5355C36.8114 28.7308 37.128 28.7308 37.3232 28.5355L40.5052 25.3536ZM9.84863 25.5H40.1517V24.5H9.84863V25.5Z' fill='%23222222'/%3E%3C/svg%3E%0A"), auto;
+//     }
+// }
+// .cursor-left.cursor-black {
+//     @media (min-width: 1200px) {
+//         cursor: url("data:image/svg+xml,%3Csvg width='50' height='50' style='display:flex;align-items:center;justify-content:center;' viewBox='0 0 52 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='24.5' transform='rotate(-180 25 25)' stroke='%23222222'/%3E%3Cpath d='M9.49478 24.6464C9.29952 24.8417 9.29952 25.1583 9.49478 25.3536L12.6768 28.5355C12.872 28.7308 13.1886 28.7308 13.3839 28.5355C13.5791 28.3403 13.5791 28.0237 13.3839 27.8284L10.5554 25L13.3839 22.1716C13.5791 21.9763 13.5791 21.6597 13.3839 21.4645C13.1886 21.2692 12.872 21.2692 12.6768 21.4645L9.49478 24.6464ZM40.1514 24.5L9.84834 24.5L9.84834 25.5L40.1514 25.5L40.1514 24.5Z' fill='%23222222'/%3E%3C/svg%3E%0A"), auto;
+//     }
+// }
+// .cursor-left.cursor-white {
+//     @media (min-width: 1200px) {
+//         cursor: url("data:image/svg+xml,%3Csvg width='50' height='50' style='display:flex;align-items:center;justify-content:center;' viewBox='0 0 52 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='24.5' transform='rotate(-180 25 25)' stroke='%23FBFBFB'/%3E%3Cpath d='M9.49478 24.6464C9.29952 24.8417 9.29952 25.1583 9.49478 25.3536L12.6768 28.5355C12.872 28.7308 13.1886 28.7308 13.3839 28.5355C13.5791 28.3403 13.5791 28.0237 13.3839 27.8284L10.5554 25L13.3839 22.1716C13.5791 21.9763 13.5791 21.6597 13.3839 21.4645C13.1886 21.2692 12.872 21.2692 12.6768 21.4645L9.49478 24.6464ZM40.1514 24.5L9.84834 24.5L9.84834 25.5L40.1514 25.5L40.1514 24.5Z' fill='%23FBFBFB'/%3E%3C/svg%3E%0A"), auto;
+//     }
+// }
+// .cursor-right.cursor-white {
+//     @media (min-width: 1200px) {
+//         cursor: url("data:image/svg+xml,%3Csvg width='50' height='50' style='display:flex;align-items:center;justify-content:center;' viewBox='0 0 52 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='24.5' stroke='%23FBFBFB'/%3E%3Cpath d='M40.5052 25.3536C40.7005 25.1583 40.7005 24.8417 40.5052 24.6464L37.3232 21.4645C37.128 21.2692 36.8114 21.2692 36.6161 21.4645C36.4209 21.6597 36.4209 21.9763 36.6161 22.1716L39.4446 25L36.6161 27.8284C36.4209 28.0237 36.4209 28.3403 36.6161 28.5355C36.8114 28.7308 37.128 28.7308 37.3232 28.5355L40.5052 25.3536ZM9.84863 25.5H40.1517V24.5H9.84863V25.5Z' fill='%23FBFBFB'/%3E%3C/svg%3E%0A"), auto;
+//     }
+// }
+.cursor-right.cursor-black {
+    & .cursor {
+        transform: rotate(0deg);
+        & circle {
+            stroke: $c-222222;
+        }
+        & path {
+            fill: $c-222222;
+        }
+    }
+}
+
+.cursor-left.cursor-black {
+    & .cursor {
+        transform: rotate(-180deg);
+        & circle {
+            stroke: $c-222222;
+        }
+        & path {
+            fill: $c-222222;
+        }
+    }
+}
+
+.cursor-right.cursor-white {
+    & .cursor {
+        transform: rotate(0deg);
+        & circle {
+            stroke: $c-fbfbfb;
+        }
+        & path {
+            fill: $c-fbfbfb;
+        }
+    }
+}
+
+.cursor-left.cursor-white {
+    & .cursor {
+        transform: rotate(-180deg);
+        & circle {
+            stroke: $c-fbfbfb;
+        }
+        & path {
+            fill: $c-fbfbfb;
+        }
+    }
+}
+
+.cursor {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    z-index: 999;
+    cursor: none;
+}
+
+.cursor-off {
+    cursor: default;
+    & .cursor {
+        display: none;
+    }
+}

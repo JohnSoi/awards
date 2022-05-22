@@ -1,0 +1,104 @@
+[18-Aug-2021 12:28:34 Europe/Moscow] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[18-Aug-2021 12:28:34 Europe/Moscow] PHP Fatal error:  Unknown: Failed opening required '/home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php' (include_path='.:/usr/share/php') in Unknown on line 0
+[18-Aug-2021 12:29:01 Europe/Moscow] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[18-Aug-2021 12:29:01 Europe/Moscow] PHP Fatal error:  Unknown: Failed opening required '/home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php' (include_path='.:/usr/share/php') in Unknown on line 0
+[18-Aug-2021 12:29:26 Europe/Moscow] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[18-Aug-2021 12:29:26 Europe/Moscow] PHP Fatal error:  Unknown: Failed opening required '/home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php' (include_path='.:/usr/share/php') in Unknown on line 0
+[18-Aug-2021 12:29:48 Europe/Moscow] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[18-Aug-2021 12:29:48 Europe/Moscow] PHP Fatal error:  Unknown: Failed opening required '/home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php' (include_path='.:/usr/share/php') in Unknown on line 0
+[18-Aug-2021 12:29:49 Europe/Moscow] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[18-Aug-2021 12:29:49 Europe/Moscow] PHP Fatal error:  Unknown: Failed opening required '/home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php' (include_path='.:/usr/share/php') in Unknown on line 0
+[18-Aug-2021 12:29:49 Europe/Moscow] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[18-Aug-2021 12:29:49 Europe/Moscow] PHP Fatal error:  Unknown: Failed opening required '/home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php' (include_path='.:/usr/share/php') in Unknown on line 0
+[18-Aug-2021 12:57:04 Europe/Moscow] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[18-Aug-2021 12:57:04 Europe/Moscow] PHP Fatal error:  Unknown: Failed opening required '/home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php' (include_path='.:/usr/share/php') in Unknown on line 0
+[18-Aug-2021 14:12:34 Europe/Moscow] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[18-Aug-2021 14:12:34 Europe/Moscow] PHP Fatal error:  Unknown: Failed opening required '/home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php' (include_path='.:/usr/share/php') in Unknown on line 0
+[18-Aug-2021 14:29:33 Europe/Moscow] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[18-Aug-2021 14:29:33 Europe/Moscow] PHP Fatal error:  Unknown: Failed opening required '/home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php' (include_path='.:/usr/share/php') in Unknown on line 0
+[18-Aug-2021 14:30:01 Europe/Moscow] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[18-Aug-2021 14:30:01 Europe/Moscow] PHP Fatal error:  Unknown: Failed opening required '/home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php' (include_path='.:/usr/share/php') in Unknown on line 0
+[18-Aug-2021 14:30:05 Europe/Moscow] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[18-Aug-2021 14:30:05 Europe/Moscow] PHP Fatal error:  Unknown: Failed opening required '/home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php' (include_path='.:/usr/share/php') in Unknown on line 0
+[18-Aug-2021 14:30:06 Europe/Moscow] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[18-Aug-2021 14:30:06 Europe/Moscow] PHP Fatal error:  Unknown: Failed opening required '/home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php' (include_path='.:/usr/share/php') in Unknown on line 0
+[18-Aug-2021 14:30:45 Europe/Moscow] PHP Fatal error:  Uncaught Error: Object of class Illuminate\Foundation\Application could not be converted to string in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php on line 48
+[18-Aug-2021 14:31:48 Europe/Moscow] PHP Fatal error:  Uncaught Error: Object of class Illuminate\Foundation\Application could not be converted to string in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php on line 48
+[18-Aug-2021 14:32:40 Europe/Moscow] PHP Fatal error:  Uncaught Error: Object of class Illuminate\Foundation\Application could not be converted to string in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php on line 48
+[18-Aug-2021 14:33:48 Europe/Moscow] PHP Fatal error:  Uncaught Error: Object of class Illuminate\Foundation\Application could not be converted to string in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php on line 48
+[18-Aug-2021 14:36:02 Europe/Moscow] PHP Fatal error:  Uncaught Error: Object of class Illuminate\Foundation\Application could not be converted to string in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php on line 48
+[18-Aug-2021 14:36:21 Europe/Moscow] PHP Fatal error:  Uncaught Error: Object of class Illuminate\Foundation\Application could not be converted to string in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php on line 48
+[18-Aug-2021 14:36:22 Europe/Moscow] PHP Fatal error:  Uncaught Error: Object of class Illuminate\Foundation\Application could not be converted to string in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php on line 48
+[18-Aug-2021 14:36:27 Europe/Moscow] PHP Fatal error:  Uncaught Error: Object of class Illuminate\Foundation\Application could not be converted to string in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php on line 48
+[18-Aug-2021 14:37:22 Europe/Moscow] PHP Fatal error:  Uncaught Error: Object of class Illuminate\Foundation\Application could not be converted to string in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php on line 48
+[18-Aug-2021 14:38:15 Europe/Moscow] PHP Fatal error:  Uncaught Error: Object of class Illuminate\Foundation\Application could not be converted to string in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php on line 48
+[18-Aug-2021 14:38:25 Europe/Moscow] PHP Fatal error:  Uncaught Error: Object of class Illuminate\Foundation\Application could not be converted to string in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php on line 48
+[18-Aug-2021 14:43:43 Europe/Moscow] PHP Fatal error:  Uncaught Error: Object of class Illuminate\Foundation\Application could not be converted to string in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php on line 48
+[18-Aug-2021 14:44:47 Europe/Moscow] PHP Fatal error:  Uncaught Error: Object of class Illuminate\Foundation\Application could not be converted to string in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php on line 48
+[18-Aug-2021 14:45:34 Europe/Moscow] PHP Fatal error:  Uncaught Error: Object of class Illuminate\Foundation\Application could not be converted to string in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php on line 48
+[18-Aug-2021 14:46:33 Europe/Moscow] PHP Fatal error:  Uncaught Error: Object of class Illuminate\Foundation\Application could not be converted to string in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php on line 48
+[18-Aug-2021 14:49:58 Europe/Moscow] PHP Fatal error:  Uncaught Error: Object of class Illuminate\Foundation\Application could not be converted to string in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php on line 48
+[18-Aug-2021 14:52:34 Europe/Moscow] PHP Fatal error:  Uncaught Error: Object of class Illuminate\Foundation\Application could not be converted to string in /home/e/esmuriwn/esmuriwn.beget.tech/public/index.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/e/esmuriwn/esmuriwn.beget.tech/public/index.php on line 48
+[18-Aug-2021 14:52:35 Europe/Moscow] PHP Fatal error:  Uncaught Error: Object of class Illuminate\Foundation\Application could not be converted to string in /home/e/esmuriwn/esmuriwn.beget.tech/public/index.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/e/esmuriwn/esmuriwn.beget.tech/public/index.php on line 48
+[18-Aug-2021 14:54:09 Europe/Moscow] PHP Fatal error:  Uncaught Error: Object of class Illuminate\Foundation\Application could not be converted to string in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php on line 48
+[18-Aug-2021 15:00:40 Europe/Moscow] PHP Fatal error:  Uncaught Error: Object of class Illuminate\Foundation\Application could not be converted to string in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/e/esmuriwn/esmuriwn.beget.tech/public_html/index.php on line 48

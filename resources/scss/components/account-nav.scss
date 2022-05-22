@@ -1,0 +1,70 @@
+.account-nav {
+    padding-top: 16px;
+    justify-content: center;
+    border: none;
+    @media (min-width: 768px) {
+        padding-top: 6px;
+    }
+    @media (min-width: 1024px) {
+        padding-top: 8px;
+    }
+    @media (max-width: 1200px) {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    @media (max-width: 576px) {
+        justify-content: unset;
+    }
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    &::-webkit-scrollbar-track {
+        display: none;
+    }
+    &::-webkit-scrollbar-thumb {
+        display: none;
+    }
+}
+
+.account-nav__item {
+    position: relative;
+    margin-right: 25px;
+    &:last-of-type {
+        @media (max-width: 991px) {
+            margin-right: 0;
+        }
+    }
+    @media (min-width: 768px) {
+        margin: 0 30px;
+    }
+    @media (min-width: 1024px) {
+        margin: 0 68px;
+    }
+    @media (min-width: 1200px) {
+        margin: 0 54px;
+    }
+}
+
+.account-nav .nav-link {
+    border: none;
+    color: #222;
+    font-size: 11px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding-left: 0;
+    padding-right: 0;
+    white-space: nowrap;
+    &.active {
+        border-bottom: 2px solid #222;
+    }
+    @media (min-width: 768px) {
+        font-size: 14px;
+    }
+    &-notify {
+        position: absolute;
+        top: -5px;
+        right: -18px;
+        transform: translate(0, 0);
+    }
+}

@@ -1,0 +1,1 @@
+<div class="section-photos__item" items-html-photo></div>

@@ -1,0 +1,115 @@
+/*FLEX-TABLE*/
+.flex-table__body,
+.flex-table__header {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media (min-width: 1200px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.flex-table__header {
+    display: none;
+
+    @media (min-width: 1024px) {
+        display: block;
+    }
+}
+
+.flex-table__row {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    @media (max-width: 1023px) {
+        margin: 0 -30px;
+        padding-top: 28px;
+
+        &::after {
+            background-color: rgba(34, 34, 34, 0.1);
+            content: '';
+            display: block;
+            position: absolute;
+            left: -30px;
+            right: -30px;
+            top: 0;
+            height: 1px;
+        }
+    }
+}
+
+.flex-table__col-header {
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #868686;
+    padding: 20px 15px;
+}
+
+.flex-table__cell {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    color: #222222;
+    font-size: 14px;
+    line-height: 20px;
+    //font-size: 12px;
+    //line-height: 140%;
+    letter-spacing: -0.01em;
+    padding: 10px 15px;
+
+    @media (min-width: 1200px) {
+        font-size: 15px;
+        min-height: 80px;
+        padding: 18px 15px;
+        //padding-top: 40px;
+    }
+
+    @media (max-width: 1023px) {
+        &:first-of-type {
+            font-weight: 800;
+            letter-spacing: 0.02em;
+            line-height: 1.3;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .flex-table__row:not(:last-of-type) .flex-table__cell {
+        border-bottom: 1px solid rgba(34, 34, 34, 0.1);
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .flex-table__row {
+        padding-left: 40px;
+        padding-right: 41px;
+
+        .btn-times {
+            padding: 0;
+        }
+    }
+}
+
+.flex-table__col-header,
+.flex-table__cell {
+    &:last-of-type {
+        justify-content: flex-end;
+    }
+
+    @media (min-width: 1024px) {
+        &:first-of-type {
+            padding-left: 0;
+        }
+
+        &:last-of-type {
+            padding-right: 0;
+        }
+    }
+}

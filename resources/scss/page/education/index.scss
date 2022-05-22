@@ -1,0 +1,149 @@
+@import "../mass-media/grid";
+@import "../mass-media/index";
+@import "../account/schedule/schedule-filter";
+
+.education__main {
+    padding-top: 47px;
+
+    @media (min-width: 768px) {
+        padding-top: 30px;
+    }
+
+    @media (min-width: 1024px) {
+        padding-top: 38px;
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 47px;
+    }
+
+    //TODO
+    .mass-media__grid {
+        margin-top: 0;
+        margin-bottom: 120px;
+    }
+
+    @media (min-width: 1200px) {
+        .mass-media__grid {
+            margin-bottom: 95px;
+        }
+    }
+}
+
+.education__description {
+    font-size: 14px;
+    padding: 0 40px;
+    margin: 0 auto 48px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+        padding: 0 15px;
+        margin-bottom: 70px;
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 17px;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 0 110px;
+        margin-bottom: 85px;
+    }
+}
+
+.education-card__types {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: auto;
+    z-index: 1;
+}
+
+.education-card__industry {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+.education__filters {
+    margin-bottom: 25px;
+
+    .filter {
+        margin-bottom: 30px;
+    }
+
+    .filter-checkbox {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 767px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .custom-radio {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .custom-radio {
+        margin-right: 70px;
+    }
+
+    .fieldset--grid {
+        margin-bottom: 0;
+    }
+
+    .__select__title {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+        min-height: 50px;
+        font-size: 14px;
+        line-height: 24px;
+        padding: 12px 16px;
+        border: 1px solid #222222;
+        cursor: pointer;
+        transition: 0.5s;
+        text-overflow: ellipsis;
+        overflow-x: hidden;
+        overflow-y: auto;
+        white-space: nowrap;
+    }
+
+    @media (min-width: 768px) {
+        .filter-label {
+            margin-bottom: 26px;
+        }
+
+        .custom-radio {
+            margin-right: 25px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        margin-bottom: 75px;
+
+        .schedule-filter__fieldset .btn {
+            padding: 14px 20px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        margin-bottom: 15px;
+
+        .schedule-filter__fieldset .btn {
+            padding: 14px 30px;
+        }
+    }
+}
+
+//TODO
+.education-card:nth-of-type(10n + 1),
+.education-card:nth-of-type(10n + 8) {
+    --c-text: #fbfbfb;
+    background-color: rgba(0, 0, 0, 0.6);
+}

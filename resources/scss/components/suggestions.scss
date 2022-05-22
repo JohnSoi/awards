@@ -1,0 +1,86 @@
+.suggestions-wrapper {
+    position: relative;
+    z-index: 3;
+    & .suggestions-suggestions {
+        position: absolute;
+        top: -1px;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height: auto;
+        max-height: 310px;
+        overflow-y: auto;
+        background-color: $white;
+        border: 1px solid transparentize($c-222222, 0.5);
+        & .suggestions-value,
+        & .suggestions-hint {
+            width: 100%;
+            display: block;
+            font-family: Object Sans;
+            min-height: 50px;
+            font-size: 14px;
+            line-height: 21px;
+            border-radius: 0;
+            padding: 12px 20px;
+            color: $c-222222;
+            border-top: 0 !important;
+            background-color: $white;
+            cursor: pointer;
+            transition: 0.5s;
+            &:hover {
+                color: transparentize($c-222222, 0.5);
+                transition: 0.5s;
+            }
+        }
+        & .suggestions-subtext:not(.suggestions-subtext_inline) {
+            display: block;
+            font-size: 12px;
+            height: unset;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: -10px;
+            font-family: Object Sans;
+            line-height: 21px;
+            border-radius: 0;
+            color: $c-222222;
+            border-top: 0 !important;
+            background-color: $white;
+            cursor: pointer;
+            transition: 0.5s;
+            &:hover {
+                color: transparentize($c-222222, 0.5);
+                transition: 0.5s;
+            }
+            & .suggestions-subtext.suggestions-subtext_inline {
+                padding-right: 10px;
+            }
+        }
+    }
+    & .suggestions-promo {
+        display: none !important;
+    }
+}
+
+.suggestions-selected {
+    color: transparentize($c-222222, 0.5);
+    &:hover {
+        color: transparentize($c-222222, 0.5);
+    }
+}
+
+// .inn-suggestion {
+//     .suggestions-wrapper {
+//         & .suggestions-suggestions {
+//             & .suggestions-value,
+//             & .suggestions-hint {
+//                 display: block;
+//                 flex-direction: unset;
+//                 align-items: unset;
+//                 height: unset;
+//             }
+//             & .suggestions-subtext:not(.suggestions-subtext_inline) {
+//                 margin-top: unset;
+//             }
+//         }
+//     }
+// }

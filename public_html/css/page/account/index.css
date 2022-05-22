@@ -1,0 +1,258 @@
+.text-white {
+  color: #fbfbfb !important;
+}
+
+.text-green {
+  color: #289b65 !important;
+}
+
+.text-red {
+  color: #ef403b !important;
+}
+
+.text-blue {
+  color: #4165b0 !important;
+}
+
+.text-lightblue {
+  color: #44c5e1 !important;
+}
+
+.text-yellow {
+  color: #ffe600 !important;
+}
+
+.text-pink {
+  color: #f9c5d4 !important;
+}
+
+.text-semipink {
+  color: #c3a5f2 !important;
+}
+
+.border-green {
+  border-color: #289b65 !important;
+}
+
+.border-red {
+  border-color: #ef403b !important;
+}
+
+.border-blue {
+  border-color: #4165b0 !important;
+}
+
+.border-lightblue {
+  border-color: #44c5e1 !important;
+}
+
+.border-yellow {
+  border-color: #ffe600 !important;
+}
+
+.border-pink {
+  border-color: #f9c5d4 !important;
+}
+
+.bg-coral {
+  background-color: #f9c5d4;
+}
+
+.bg-green {
+  background-color: #299b64;
+}
+
+.bg-emerland {
+  background-color: #004542;
+}
+
+.bg-pink {
+  background-color: #c3a5f2;
+}
+
+.bg-semipink {
+  background-color: #f6c4df;
+}
+
+.bg-yellow {
+  background-color: #ffe600;
+}
+
+.bg-violet {
+  background-color: #3a0e7f;
+}
+
+.bg-lightblue {
+  background-color: #c3eaf4;
+}
+
+.bg-ultrablue {
+  background-color: #2967e2;
+}
+
+.bg-darkaqua {
+  background-color: #103a54;
+}
+
+.bg-semigreen {
+  background-color: #3aeda8;
+}
+
+.bg-aqua {
+  background-color: #1fcce8;
+}
+
+.bg-blood {
+  background-color: #600327;
+}
+
+.bg-ultrared {
+  background-color: #f93e3e;
+}
+
+.bg-semired {
+  background-color: #f94e4e;
+}
+
+.bg-darkness {
+  background-color: #232323;
+}
+
+.bg-black {
+  background-color: #222222;
+}
+
+.bg-2a2a2a {
+  background-color: #2a2a2a;
+}
+
+.bg-535353 {
+  background-color: #535353;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-border-gray {
+  background-color: transparent;
+  border: 1px solid #868686;
+}
+
+.industry-svg__fashion svg path {
+  fill: #1e1e1e;
+}
+.industry-svg__architech svg path {
+  fill: #c3eaf4;
+}
+.industry-svg__music svg path {
+  fill: #600327;
+}
+.industry-svg__tv svg path {
+  fill: #3a0e7f;
+}
+.industry-svg__it svg path {
+  fill: #103a54;
+}
+.industry-svg__marketing svg path {
+  fill: #004542;
+}
+.industry-svg__gamedev svg path {
+  fill: #f93e3e;
+}
+.industry-svg__art svg path {
+  fill: #c3a5f2;
+}
+.industry-svg__publish svg path {
+  fill: #299b64;
+}
+.industry-svg__film svg path {
+  fill: #3aeda8;
+}
+.industry-svg__design svg path {
+  fill: #f9c5d4;
+}
+.industry-svg__newmedia svg path {
+  fill: #1fcce8;
+}
+.industry-svg__compgraph svg path {
+  fill: #2967e2;
+}
+.industry-svg__education svg path {
+  fill: #ffe600;
+}
+
+.header,
+.footer {
+  display: none;
+}
+
+.section-account {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+@media (max-width: 767px) {
+  .section-account {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+.section-account__title {
+  font-family: "Normalidad";
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  word-spacing: 100vw;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .section-account__title {
+    font-size: 19px;
+    margin-bottom: 35px;
+  }
+}
+.section-account__title-small {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 152%;
+  letter-spacing: -0.01em;
+  color: #222222;
+  text-transform: unset;
+  margin-bottom: 29px;
+}
+@media (max-width: 767px) {
+  .section-account__title-small {
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    margin-bottom: 25px;
+  }
+}
+.section-account__uplink {
+  margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .section-account__uplink {
+    margin-bottom: 45px;
+  }
+}
+.section-account__description {
+  display: flex;
+  flex-direction: column;
+}
+.section-account__score {
+  display: flex;
+  flex-direction: column;
+}
+.section-account__nominations {
+  position: relative;
+}
+.section-account__nominations .swiper-container {
+  display: flex;
+  flex-direction: column;
+}
+.section-account__nominations .swiper-container .swiper-slide .mechanics-card {
+  margin-right: 0;
+}

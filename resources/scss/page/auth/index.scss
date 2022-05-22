@@ -1,0 +1,235 @@
+@import "./../../components/colors";
+
+body {
+    background-color: $c-222222;
+}
+
+.wrapper {
+    background: none;
+    background-color: $c-222222;
+    color: $c-fbfbfb;
+}
+
+.header__logo {
+    transition: 0.4s ease;
+
+    & svg {
+        transition: 0.4s ease;
+
+        & path {
+            fill: $c-fbfbfb;
+        }
+    }
+
+    &:hover {
+        transition: 0.4s ease;
+
+        & svg {
+            transition: 0.4s ease;
+
+            & path {
+                fill: transparentize($c-fbfbfb, 0.5);
+            }
+        }
+    }
+}
+
+.header-menu,
+.footer,
+.header__user,
+.menu-mob-toggle,
+.user-logged {
+    display: none !important;
+}
+
+.section-auth {
+    padding-top: 10px;
+    padding-bottom: 150px;
+
+    & .container {
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    & .form-group {
+        margin-bottom: 50px;
+    }
+
+    & .form-type-label {
+        color: $c-868686;
+
+        &.label-up {
+            color: $c-eeeeee;
+        }
+    }
+
+    & .form-type-text {
+        border-color: $c-868686;
+        color: $c-fbfbfb;
+    }
+
+    & .form-types .__select {
+        height: 50px;
+    }
+
+    & .form-types .__select__title {
+        height: 50px;
+        line-height: 48px;
+        border: 1px solid $c-868686;
+        color: $c-868686;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    & .select-control-inner .__select__title.choosen {
+        color: $c-fbfbfb;
+    }
+
+    & .select-control-inner .__select__title::after {
+        right: 16px;
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.40039 9.60156H17.6004L12.0004 16.8016L6.40039 9.60156Z' fill='%23EEEEEE'/%3E%3C/svg%3E%0A");
+    }
+
+    & .select-control-inner .__select__content {
+        background-color: $c-222222;
+        border-color: $c-868686;
+    }
+
+    & .select-control-inner .__select__label {
+        color: $c-868686;
+
+        &:hover {
+            color: $c-fbfbfb;
+        }
+    }
+}
+
+.title {
+    margin-bottom: 40px;
+}
+
+.description {
+    margin-bottom: 66px;
+
+    & p {
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 140%;
+        letter-spacing: -0.01em;
+        color: transparentize($c-fbfbfb, 0.3);
+    }
+}
+
+.login-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 52px;
+    margin-bottom: 20px;
+}
+
+.register-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 52px;
+    margin-bottom: 60px;
+}
+
+.forgot-area {
+    margin-bottom: 60px;
+}
+
+.forgot-link {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: transparentize($c-868686, 0.4);
+    text-decoration: none;
+    transition: 0.4s ease;
+
+    &:hover {
+        color: $c-fbfbfb;
+        text-decoration: none;
+        transition: 0.4s ease;
+    }
+}
+
+.btns-area {
+    margin-bottom: 32px;
+}
+
+.footer-area {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: transparentize($c-fbfbfb, 0.4);
+
+    & > a {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: transparentize($c-fbfbfb, 0.4);
+    }
+}
+
+.select-types {
+    margin-top: 15px;
+}
+
+.forgot-h1 {
+    @media (min-width: 992px) {
+        font-size: 35px;
+    }
+}
+
+.form-labels {
+    &__btns {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        row-gap: 10px;
+        column-gap: 10px;
+        & .label-white {
+            width: 100%;
+            max-width: 345px;
+            border: 1px solid $c-868686;
+            margin-bottom: 10px;
+            @media (min-width: 1024px) {
+                width: auto;
+            }
+        }
+    }
+    &__btn {
+        flex: 1 0 auto;
+    }
+}
+
+.custom-control-input:checked + label.btn-primary {
+    background-color: #222222;
+    color: #fbfbfb;
+
+    path {
+        fill: #fbfbfb; //todo
+    }
+}
+
+.schedule-filter {
+    .custom-radio {
+        padding-left: 40px;
+    }
+
+    .custom-control-label::before {
+        left: -40px;
+    }
+
+    .custom-control-label::after {
+        left: -34px;
+    }
+}
+
+@media (min-width: 768px) {
+    .fieldset-3 .form-group div:last-of-type {
+        order: -1;
+    }
+}

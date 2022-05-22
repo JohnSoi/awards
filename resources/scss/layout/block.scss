@@ -1,0 +1,118 @@
+// contact block
+.section-contacts {
+    background-color: $c-eeeeee;
+    padding-top: 48px;
+    padding-bottom: 120px;
+    @media (max-width: 991px) {
+        padding-bottom: 120px;
+    }
+    @media (max-width: 767px) {
+        padding-bottom: 103px;
+    }
+    &__inner {
+        padding-top: 32px;
+        & .section-title {
+            padding-bottom: 48px;
+        }
+    }
+}
+
+.contacts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 398px);
+    column-gap: 42px;
+    row-gap: 70px;
+    @media (max-width: 1430px) {
+        grid-template-columns: repeat(3, 342px);
+    }
+    @media (max-width: 1199px) {
+        grid-template-columns: repeat(3, 285px);
+    }
+    @media (max-width: 991px) {
+        grid-template-columns: repeat(2, 340px);
+    }
+    @media (max-width: 767px) {
+        grid-template-columns: repeat(1, 345px);
+    }
+    @media (max-width: 374px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        &-title {
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 110%;
+            color: $c-222222;
+            margin-bottom: 16px;
+        }
+        &-desc {
+            flex: 1;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 140%;
+            color: $c-868686;
+            padding-right: 88px;
+            margin-bottom: 16px;
+            @media (max-width: 1199px) {
+                padding-right: 70px;
+            }
+            @media (max-width: 991px) {
+                padding-right: 30px;
+            }
+            @media (max-width: 767px) {
+                padding-right: 35px;
+            }
+        }
+        &-link {
+            &>a {
+                font-weight: normal;
+                font-size: 17px;
+                line-height: 152%;
+                letter-spacing: -0.01em;
+                text-decoration: none;
+                color: $c-222222;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.section-faq {
+    background: $white;
+    padding-top: 48px;
+    padding-bottom: 120px;
+    @media (max-width: 991px) {
+        padding-bottom: 120px;
+    }
+    @media (max-width: 767px) {
+        padding-bottom: 103px;
+    }
+    &__inner {
+        padding-top: 32px;
+        & .section-title {
+            padding-bottom: 48px;
+        }
+    }
+    &__title {
+        font-family: Object Sans;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 110%;
+        letter-spacing: 0.03em;
+        color: $c-222222;
+        margin-bottom: 22px;
+    }
+    &__p {
+        margin: 0;
+        letter-spacing: -0.01em;
+        opacity: 0.5;
+    }
+    &__block {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+}

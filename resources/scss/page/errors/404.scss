@@ -1,0 +1,61 @@
+@import "./../../components/colors";
+@import "./../../components/fonts";
+body {
+    background-color: $white;
+}
+
+.wrapper {
+    background-color: $white;
+}
+
+.header,
+.footer {
+    display: none;
+}
+
+.container {
+    height: 100vh;
+}
+
+.wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 377px;
+    .title {
+        font-family: Normalidad;
+        font-weight: bold;
+        font-size: 150px;
+        line-height: 135%;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        @media (max-width: 576px) {
+            font-size: 100px;
+        }
+    }
+    .subtitle {
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: -0.01em;
+    }
+}
+
+.backlink {
+    color: $c-222222;
+    text-decoration: underline;
+    transition: 0.4s ease;
+    &:hover {
+        opacity: 0.5;
+        color: $c-222222;
+        text-decoration: none;
+        transition: 0.4s ease;
+    }
+}
+
+.arrow-up-container {
+    display: none;
+}

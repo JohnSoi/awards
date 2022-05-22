@@ -1,0 +1,110 @@
+@import "../../components/colors";
+@import "./item";
+
+.section-photos {
+    padding-top: 32px;
+    padding-bottom: 150px;
+    @media (max-width: 991px) {
+        padding-bottom: 120px;
+    }
+    @media (max-width: 767px) {
+        padding-bottom: 70px;
+    }
+    &__inner {
+        padding-bottom: 25px;
+        @media (max-width: 991px) {
+            padding-bottom: 17px;
+        }
+        @media (max-width: 767px) {
+            padding-bottom: 32px;
+        }
+    }
+    & .mobile-section-title {
+        display: none;
+        @media (max-width: 576px) {
+            display: block;
+            margin-bottom: 48px;
+            font-family: Normalidad;
+            font-weight: 800;
+            font-size: 19px;
+            line-height: 136%;
+            text-align: center;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: $c-222222;
+            padding-bottom: 16px;
+            border-bottom: 1px solid transparentize($c-222222, 0.9);
+        }
+    }
+    & .section-title {
+        padding-top: 32px;
+    }
+    &__filters {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        row-gap: 20px;
+        column-gap: 64px;
+        padding-bottom: 26px;
+        & > .filter {
+            min-width: 250px;
+            max-width: 350px;
+            @media (max-width: 767px) {
+                max-width: 100%;
+            }
+        }
+        @media (max-width: 1199px) {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 32px;
+        }
+        @media (max-width: 767px) {
+            grid-template-columns: repeat(1, 1fr);
+            padding-bottom: 48px;
+            column-gap: 32px;
+        }
+        @media (max-width: 576px) {
+            padding-bottom: 48px;
+            column-gap: 32px;
+        }
+    }
+    & .filter-industry {
+        @media (max-width: 767px) {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+    &__grid {
+        margin: auto;
+        column-count: 3;
+        column-gap: 20px;
+        column-fill: balance;
+        transition: 0.4s ease;
+        @media (max-width: 767px) {
+            column-count: 2;
+        }
+    }
+    &__item {
+        cursor: pointer;
+        max-width: 100%;
+        box-sizing: border-box;
+        width: 100%;
+        position: relative;
+        height: auto;
+        margin-bottom: 20px;
+        transition: 0.4s ease;
+        & img,
+        & canvas,
+        & iframe {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__btns {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}

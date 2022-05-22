@@ -1,0 +1,144 @@
+@import "../../../../node_modules/swiper/swiper-bundle.min.css";
+@import "./../../components/colors";
+body,
+.wrapper {
+    background: $c-fbfbfb;
+}
+
+.header,
+.footer {
+    display: none;
+}
+
+.swiper-step {
+    width: 100%;
+    cursor: none;
+    overflow: hidden;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    .swiper-slide {
+        width: auto !important;
+        height: unset !important;
+        @media (max-width: 576px) {
+            width: 100% !important;
+        }
+    }
+    & .swiper-wrapper {
+        cursor: none;
+    }
+}
+
+.slider-navigation {
+    display: flex;
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.color-card {
+    @media (min-width: 1200px) {
+        min-width: 310px;
+    }
+    @media (max-width: 576px) {
+        max-width: unset;
+        width: 100%;
+    }
+    @media (max-width: 374px) {
+        max-width: 280px;
+    }
+}
+
+.section-evaluation {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    @media (max-width: 767px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    &__title {
+        font-family: 'Normalidad';
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+        word-spacing: 100vw;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+        @media (max-width: 767px) {
+            font-size: 19px;
+            margin-bottom: 35px;
+        }
+        &-small {
+            font-weight: bold;
+            font-size: 17px;
+            line-height: 152%;
+            letter-spacing: -0.01em;
+            color: $c-222222;
+            text-transform: unset;
+            margin-bottom: 29px;
+            @media (max-width: 767px) {
+                font-size: 15px;
+                line-height: 140%;
+                letter-spacing: 0.04em;
+                margin-bottom: 25px;
+            }
+        }
+    }
+    &__uplink {
+        margin-bottom: 50px;
+        @media (max-width: 767px) {
+            margin-bottom: 45px;
+        }
+    }
+    &__description {
+        display: flex;
+        flex-direction: column;
+    }
+    &__score {
+        display: flex;
+        flex-direction: column;
+    }
+    &__nominations {
+        position: relative;
+        & .swiper-container {
+            display: flex;
+            flex-direction: column;
+            & .swiper-slide {
+                & .mechanics-card {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+.nominees-item {
+    &__number {
+        width: 100%;
+        max-width: 30px;
+    }
+    &__title {
+        width: 100%;
+        max-width: 220px;
+    }
+    &__nomination {
+        width: 100%;
+        max-width: 234px;
+    }
+    &__eval {
+        width: 100%;
+        max-width: 20px;
+    }
+    &__top {
+        margin-left: 20px;
+        margin-right: 20px;
+        @media (max-width: 767px) {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        &-icon {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}

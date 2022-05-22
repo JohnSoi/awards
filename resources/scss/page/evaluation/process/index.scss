@@ -1,0 +1,57 @@
+@import "./../../../components/colors";
+body,
+.wrapper {
+    background: $c-fbfbfb;
+}
+
+.header,
+.footer {
+    display: none;
+}
+
+.section-navigation {
+    padding-top: 70px;
+    padding-bottom: 60px;
+    @media (max-width: 767px) {
+        padding-top: 35px;
+        padding-bottom: 50px;
+    }
+}
+
+.section-process {
+    padding-bottom: 60px;
+    @media (max-width: 767px) {
+        padding-bottom: 40px;
+    }
+    &__title {
+        max-width: 530px;
+        font-family: Normalidad;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        margin-bottom: 70px;
+        @media (max-width: 767px) {
+            font-size: 19px;
+            margin-bottom: 45px;
+        }
+    }
+    &__nomination {
+        max-width: 530px;
+        margin-bottom: 70px;
+        @media (max-width: 767px) {
+            margin-bottom: 45px;
+        }
+    }
+    &__score {
+        max-width: 530px;
+    }
+    & .evaluation-textblock {
+        margin-bottom: 70px;
+        @media (max-width: 767px) {
+            margin-bottom: 45px;
+        }
+    }
+}

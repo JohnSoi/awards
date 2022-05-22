@@ -1,0 +1,19 @@
+.section-photos {
+    &__item {
+        cursor: pointer;
+        max-width: 100%;
+        box-sizing: border-box;
+        width: 100%;
+        position: relative;
+        height: auto;
+        padding-bottom: 20px;
+        transition: 0.4s ease;
+        & img,
+        & canvas,
+        & iframe {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

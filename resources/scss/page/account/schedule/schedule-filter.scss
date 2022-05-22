@@ -1,0 +1,163 @@
+.blank-content__schedule-filter {
+    background-color: #fff;
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+    visibility: hidden;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        max-height: unset;
+        margin-top: -205px;
+        margin-bottom: -165px;
+    }
+
+    &.active + div {
+        display: none;
+    }
+
+    @media (min-width: 1024px) {
+        &.active {
+            margin-top: -75px;
+        }
+    }
+}
+
+.schedule-filter__inner {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}
+
+.schedule-filter__title {
+    opacity: 0.5;
+    margin-top: 10px;
+    margin-bottom: 26px;
+
+    @media (min-width: 1024px) {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+}
+
+.schedule-filter__fieldset {
+    margin-bottom: 50px;
+
+    &:last-of-type {
+        margin-bottom: 60px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        //gap: 10px; //TODO SAFARI doesn't support gap property
+        margin-right: -10px;
+
+        & > div {
+            flex: 1 0 auto;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .btn {
+        width: 100%;
+        padding: 14px 10px;
+        white-space: nowrap;
+        margin: 0;
+        text-transform: none;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: unset;
+    }
+
+}
+
+//TODO
+.modal--search {
+    .search-form:hover .search-form__searchicon svg path {
+        fill: #868686;
+    }
+}
+
+.schedule-filter__fieldset-label {
+    font-size: 12px;
+    line-height: 130%;
+    margin-bottom: 23px;
+
+    @media (min-width: 1024px) {
+        margin-bottom: 20px;
+
+    }
+}
+
+/*TODO LABELS on mobile after uncheck*/
+.custom-control-input:checked + label.btn-primary {
+    background-color: #222222 ;
+    color: #fbfbfb;
+
+    path {
+        fill: #FBFBFB; //todo
+    }
+}
+
+.schedule-filter {
+    .custom-radio {
+        padding-left: 40px;
+    }
+
+    .custom-control-label::before {
+        left: -40px;
+    }
+
+    .custom-control-label::after {
+        left: -34px;
+    }
+}
+
+@media (min-width: 768px) {
+    .fieldset-3 .form-group div:last-of-type {
+        order: -1;
+    }
+}
+
+.schedule-filter__loader {
+    //position: absolute;
+    display: flex;
+    //top: 0;
+    //bottom: 0;
+    //left: 0;
+    //right: 0;
+    min-height: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    visibility: hidden;
+    z-index: -1;
+
+    * {
+        opacity: 0;
+        transition: opacity .4s ease-in-out;
+    }
+
+    &.active {
+        display: flex;
+        min-height: calc(100vh - 370px); //TODO - header height
+        visibility: visible;
+        z-index: 1;
+
+        * {
+            opacity: 1;
+        }
+    }
+
+    &.active + form {
+        display: none;
+    }
+}

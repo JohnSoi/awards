@@ -1,0 +1,403 @@
+.footer {
+    font-size: 14px;
+    line-height: 20px;
+    color: $c-868686;
+    background-color: $c-222222;
+    padding: 42px 0;
+    @media (max-width: 767px) {
+        padding: 15px 0 25px 0;
+    }
+    & .footer-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+        & .logotype-svg {
+            width: 107px;
+            height: 87px;
+            opacity: 0.6;
+            transition: 0.4s ease;
+            @media (max-width: 991px) {
+                width: 112px;
+                height: 84px;
+            }
+            &:hover {
+                opacity: 1;
+                transition: 0.4s ease;
+            }
+        }
+        &__logo {
+            display: none;
+            @media (max-width: 767px) {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+            & .footer--logo {
+                margin-bottom: 58px;
+            }
+        }
+        &__copyrite {
+            display: none;
+            @media (max-width: 767px) {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                padding-top: 18px;
+                border-top: 1px solid $c-868686;
+            }
+        }
+        &__left {
+            max-width: 32.33333%;
+            flex: 0 0 32.33333%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            @media (max-width: 991px) {
+                max-width: 45%;
+                flex: 0 0 45%;
+            }
+            @media (max-width: 767px) {
+                display: none;
+            }
+            &-logos {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+        &__center {
+            max-width: 32.33333%;
+            flex: 0 0 32.33333%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            @media (max-width: 991px) {
+                max-width: unset;
+                flex: unset;
+            }
+        }
+        &__right {
+            max-width: 32.33333%;
+            flex: 0 0 32.33333%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+            @media (max-width: 991px) {
+                max-width: 45%;
+                flex: 0 0 45%;
+            }
+            @media (max-width: 767px) {
+                align-items: center;
+                max-width: 100%;
+                flex: unset;
+                margin-bottom: 36px;
+            }
+        }
+    }
+    &--logo {
+        margin-bottom: 70px;
+        text-decoration: none;
+        &:not(.norect) {
+            & svg {
+                width: 107px;
+                height: 87px;
+                transition: 0.4s ease;
+                @media (max-width: 991px) {
+                    width: 132px;
+                    height: 84px;
+                }
+                & path {
+                    fill: $c-868686;
+                    transition: 0.4s ease;
+                }
+            }
+            &:hover {
+                text-decoration: none;
+                transition: 0.4s ease;
+                & svg {
+                    transition: 0.4s ease;
+                    & path {
+                        fill: $c-fbfbfb;
+                        transition: 0.4s ease;
+                    }
+                }
+            }
+        }
+        &.norect {
+            margin-left: 50px;
+            @media (max-width: 991px) {
+                margin-left: 32px;
+            }
+            @media (max-width: 767px) {
+                margin-left: 40px;
+            }
+            & svg {
+                & g {
+                    transition: 0.4s ease;
+                }
+            }
+            &:hover {
+                & svg {
+                    & g {
+                        opacity: 1;
+                        transition: 0.4s ease;
+                    }
+                }
+            }
+        }
+    }
+    & .arrow-up {
+        width: 71px;
+        height: 71px;
+        cursor: pointer;
+        transition: 0.1s ease;
+        @media (max-width: 1429px) {
+            width: 50px;
+            height: 50px;
+        }
+        @media (max-width: 576px) {
+            width: 48px;
+            height: 48px;
+        }
+        & svg {
+            width: 71px;
+            height: 71px;
+            fill: transparent;
+            transition: 0.1s ease;
+            @media (max-width: 1429px) {
+                width: 50px;
+                height: 50px;
+            }
+            @media (max-width: 576px) {
+                width: 48px;
+                height: 48px;
+            }
+            &>* {
+                transition: 0.1s ease;
+            }
+            & circle {
+                stroke: $c-fbfbfb !important;
+                transition: 0.1s ease;
+            }
+            & path {
+                fill: $c-fbfbfb !important;
+                stroke-width: 0;
+            }
+            & g {
+                opacity: 1;
+            }
+        }
+        &:hover {
+            transition: 0.1s ease;
+            & svg {
+                fill: $c-fbfbfb !important;
+                transition: 0.1s ease;
+                &>* {
+                    transition: 0.1s ease;
+                }
+                & circle {
+                    fill: $c-fbfbfb !important;
+                    transition: 0.1s ease;
+                }
+                & path {
+                    fill: $c-222222 !important;
+                }
+                & g {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.unesco {
+    @media (min-width: 992px) and (max-width: 1199px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    & svg {
+        transition: 0.4s ease;
+        & path {
+            fill: $c-868686 !important;
+            transition: 0.4s ease;
+        }
+    }
+    &:hover {
+        text-decoration: none;
+        transition: 0.4s ease;
+        & svg {
+            transition: 0.4s ease;
+            & path {
+                fill: $c-fbfbfb !important;
+                transition: 0.4s ease;
+            }
+        }
+    }
+}
+
+.footer-menu {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 60px;
+    row-gap: 81px;
+    @media (max-width: 1430px) {
+        column-gap: 40px;
+        row-gap: 61px;
+    }
+    @media (max-width: 1199px) {
+        grid-template-columns: repeat(1, max-content);
+        row-gap: 35px;
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+    }
+    &__link {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: transparentize($c-eeeeee, 0.5);
+        text-decoration: none;
+        margin-bottom: 8px;
+        transition: 0.3s ease;
+        &:hover {
+            color: $c-eeeeee;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.copyrite-text {
+    font-size: 14px;
+    line-height: 20px;
+    color: $c-868686;
+}
+
+.arrow-up-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $white;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.arrow-up {
+    width: 71px;
+    height: 71px;
+    cursor: pointer;
+    transition: 0.1s ease;
+    @media (max-width: 1429px) {
+        width: 50px;
+        height: 50px;
+    }
+    @media (max-width: 576px) {
+        width: 48px;
+        height: 48px;
+    }
+    & svg {
+        width: 71px;
+        height: 71px;
+        fill: transparent;
+        transition: 0.1s ease;
+        @media (max-width: 1429px) {
+            width: 50px;
+            height: 50px;
+        }
+        @media (max-width: 576px) {
+            width: 48px;
+            height: 48px;
+        }
+        &>* {
+            transition: 0.1s ease;
+        }
+        & circle {
+            stroke: $c-222222;
+            transition: 0.1s ease;
+        }
+        & path {
+            fill: $c-222222;
+            stroke-width: 0;
+        }
+        & g {
+            opacity: 1;
+        }
+    }
+    &:hover {
+        transition: 0.1s ease;
+        & svg {
+            fill: $c-fbfbfb;
+            transition: 0.1s ease;
+            &>* {
+                transition: 0.1s ease;
+            }
+            & circle {
+                fill: $c-222222;
+                transition: 0.1s ease;
+            }
+            & path {
+                fill: $c-fbfbfb;
+            }
+            & g {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.social-panel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 300px;
+    @media (max-width: 576px) {
+        max-width: 225px;
+    }
+    &__link {
+        width: 50px;
+        height: 50px;
+        transition: 0.4s ease;
+        @media (max-width: 576px) {
+            width: 36px;
+            height: 36px;
+        }
+        & svg {
+            width: 50px;
+            height: 50px;
+            transition: 0.4s ease;
+            @media (max-width: 576px) {
+                width: 36px;
+                height: 36px;
+            }
+            & path {
+                fill: $c-868686;
+                transition: 0.4s ease;
+            }
+        }
+        &:hover {
+            transition: 0.4s ease;
+            & svg {
+                transition: 0.4s ease;
+                & path {
+                    fill: $c-fbfbfb;
+                    transition: 0.4s ease;
+                }
+            }
+        }
+    }
+}

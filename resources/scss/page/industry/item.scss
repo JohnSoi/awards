@@ -1,0 +1,48 @@
+.industries-list__item {
+    @media (max-width: 576px) {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    &::after {
+        display: none;
+        @media (min-width: 1400px) {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 494px;
+            display: flex;
+            width: 91px;
+            height: 8px;
+            opacity: 0;
+            visibility: hidden;
+            background-image: url("data:image/svg+xml,%3Csvg width='91' height='8' viewBox='0 0 91 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M90.3536 4.35355C90.5488 4.15828 90.5488 3.8417 90.3536 3.64644L87.1716 0.464458C86.9763 0.269196 86.6597 0.269196 86.4645 0.464459C86.2692 0.659721 86.2692 0.976303 86.4645 1.17157L89.2929 3.99999L86.4645 6.82842C86.2692 7.02368 86.2692 7.34026 86.4645 7.53553C86.6597 7.73079 86.9763 7.73079 87.1716 7.53553L90.3536 4.35355ZM4.37114e-08 4.5L90 4.49999L90 3.49999L-4.37114e-08 3.5L4.37114e-08 4.5Z' fill='%23222222'/%3E%3C/svg%3E%0A");
+            background-size: 91px 8px;
+            background-position: center;
+            background-repeat: no-repeat;
+            transform: translate(0, -50%);
+            transition: 0.4s ease;
+        }
+    }
+    &:hover {
+        &::after {
+            display: none;
+            @media (min-width: 1400px) {
+                display: flex;
+                opacity: 1;
+                visibility: visible;
+                transition: 0.4s ease;
+            }
+        }
+    }
+    & .industry__illustrate {
+        @media (max-width: 767px) {
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: 195px;
+            margin-top: 12px;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

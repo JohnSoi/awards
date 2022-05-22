@@ -1,0 +1,153 @@
+// import object-sans
+@font-face {
+    font-family: "Object Sans Slanted";
+    src: url("/fonts/ObjectSans-Slanted.eot");
+    src: local("Object Sans Slanted"), local("ObjectSans-Slanted"), url("/fonts/ObjectSans-Slanted.eot?#iefix") format("embedded-opentype"), url("/fonts/ObjectSans-Slanted.woff2") format("woff2"), url("/fonts/ObjectSans-Slanted.woff") format("woff"), url("/fonts/ObjectSans-Slanted.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Object Sans";
+    src: url("/fonts/ObjectSans-Regular.eot");
+    src: local("Object Sans Regular"), local("ObjectSans-Regular"), url("/fonts/ObjectSans-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/ObjectSans-Regular.woff2") format("woff2"), url("/fonts/ObjectSans-Regular.woff") format("woff"), url("/fonts/ObjectSans-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Object Sans";
+    src: url("/fonts/ObjectSans-Bold.eot");
+    src: local("Object Sans Bold"), local("ObjectSans-Bold"), url("/fonts/ObjectSans-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/ObjectSans-Bold.woff2") format("woff2"), url("/fonts/ObjectSans-Bold.woff") format("woff"), url("/fonts/ObjectSans-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Object Sans";
+    src: url("/fonts/ObjectSans-Bold.eot");
+    src: local("Object Sans Bold"), local("ObjectSans-Bold"), url("/fonts/ObjectSans-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/ObjectSans-Bold.woff2") format("woff2"), url("/fonts/ObjectSans-Bold.woff") format("woff"), url("/fonts/ObjectSans-Bold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Object Sans";
+    src: url("/fonts/ObjectSans-Heavy.eot");
+    src: local("Object Sans Heavy"), local("ObjectSans-Heavy"), url("/fonts/ObjectSans-Heavy.eot?#iefix") format("embedded-opentype"), url("/fonts/ObjectSans-Heavy.woff2") format("woff2"), url("/fonts/ObjectSans-Heavy.woff") format("woff"), url("/fonts/ObjectSans-Heavy.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+// import normalidade
+@font-face {
+    font-family: "Normalidad";
+    src: url("/fonts/NormalidadWide-Light-Web.eot");
+    src: local("NormalidadWide-Light-Web"), local("NormalidadWide-Light-Web"), url("/fonts/NormalidadWide-Light-Web.eot?#iefix") format("embedded-opentype"), url("/fonts/NormalidadWide-Light-Web.woff2") format("woff2"), url("/fonts/NormalidadWide-Light-Web.woff") format("woff"), url("/fonts/NormalidadWide-Light-Web.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Normalidad";
+    src: url("/fonts/NormalidadWide-Bold-Web.eot");
+    src: local("NormalidadWide-Bold-Web"), local("NormalidadWide-Bold-Web"), url("/fonts/NormalidadWide-Bold-Web.eot?#iefix") format("embedded-opentype"), url("/fonts/NormalidadWide-Bold-Web.woff2") format("woff2"), url("/fonts/NormalidadWide-Bold-Web.woff") format("woff"), url("/fonts/NormalidadWide-Bold-Web.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+// import RCW2021
+@font-face {
+    font-family: "RCW2021";
+    src: url("/fonts/RCW2021.eot");
+    src: local("RCW2021"), local("RCW2021"), url("/fonts/RCW2021?#iefix") format("embedded-opentype"), url("/fonts/RCW2021.woff2") format("woff2"), url("/fonts/RCW2021.woff") format("woff"), url("/fonts/RCW2021.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+// helpers
+.font-weight-100 {
+    font-weight: 100 !important;
+}
+
+.font-weight-200 {
+    font-weight: 200 !important;
+}
+
+.font-weight-300 {
+    font-weight: 300 !important;
+}
+
+.font-weight-400 {
+    font-weight: 400 !important;
+}
+
+.font-weight-500 {
+    font-weight: 500 !important;
+}
+
+.font-weight-600 {
+    font-weight: 600 !important;
+}
+
+.font-weight-700 {
+    font-weight: 700 !important;
+}
+
+.font-weight-800 {
+    font-weight: 800 !important;
+}
+
+.font-weight-900 {
+    font-weight: 900 !important;
+}
+
+.section-center-title {
+    font-family: Normalidad;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 117%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $c-222222;
+    @media (max-width: 991px) {
+        font-size: 36px;
+        line-height: 117%;
+    }
+    @media (max-width: 767px) {
+        font-size: 22px;
+        line-height: 117%;
+    }
+}
+
+.section-center-text {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 152%;
+    letter-spacing: -0.01em;
+    color: transparentize($c-222222, 0.1);
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
+}
+
+.section-title {
+    max-width: 360px;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    @media (max-width: 991px) {
+        max-width: 100%;
+    }
+}

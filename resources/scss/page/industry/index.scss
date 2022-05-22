@@ -1,0 +1,22 @@
+@import "./../../components/colors";
+@import "./../../components/fonts";
+@import "./item";
+
+.wrapper {
+    background: $white;
+}
+
+.section-industries {
+    padding-top: 85px;
+    padding-bottom: 200px;
+    @media (max-width: 1199px) {
+        padding-top: 54px;
+        padding-bottom: 120px;
+    }
+    @media (max-width: 991px) {
+        padding-top: 133px;
+    }
+    @media (max-width: 767px) {
+        padding-top: 90px;
+    }
+}

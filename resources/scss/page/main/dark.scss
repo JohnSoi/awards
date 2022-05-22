@@ -1,0 +1,65 @@
+@import "./index";
+.post-mark {
+    &__green {
+        background-image: unset !important;
+    }
+    &__emerland {
+        background-image: unset !important;
+    }
+    &__violet {
+        background-image: unset !important;
+    }
+    &__pink {
+        background-image: unset !important;
+    }
+    &__darkred {
+        background-image: unset !important;
+    }
+}
+
+.slide-wrapper {
+    & .slide {
+        &.slide-dark {
+            background-image: url("data:image/svg+xml,%3Csvg width='523' height='707' viewBox='0 0 523 707' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.25' d='M434.044 453.116C380.121 546.514 311.961 619.846 245.397 662.925C178.782 706.036 114.04 718.695 66.7051 691.366C19.3702 664.037 -2.03813 601.639 1.98992 522.394C6.01492 443.208 35.4426 347.514 89.366 254.116C143.289 160.718 211.449 87.3856 278.013 44.3072C344.628 1.19608 409.37 -11.4628 456.705 15.866C504.04 43.1948 525.448 105.593 521.42 184.838C517.395 264.024 487.968 359.718 434.044 453.116Z' stroke='%23FBFBFB' stroke-width='2'/%3E%3C/svg%3E%0A");
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
+.section-main {
+    @media (max-width: 767px) {
+        margin-bottom: 74px;
+    }
+    @media (max-width: 576px) {
+        margin-bottom: 30px;
+    }
+}
+
+.section-cta {
+    & .section-center-title {
+        font-family: "RCW2021";
+        font-weight: normal;
+        font-size: 36px;
+        @media (max-width: 576px) {
+            font-size: 16px;
+        }
+    }
+}
+
+[mask="url(#__lottie_element_16)"] path,
+[mask="url(#__lottie_element_13)"] path,
+[mask="url(#__lottie_element_10)"] path,
+[mask="url(#__lottie_element_7)"] path,
+[mask="url(#__lottie_element_4)"] path {
+    fill: #222222 !important;
+}
+
+[mask="url(#__lottie_element_16)"] g:first-child path,
+[mask="url(#__lottie_element_13)"] g:first-child path,
+[mask="url(#__lottie_element_10)"] g:first-child path,
+[mask="url(#__lottie_element_7)"] g:first-child path,
+[mask="url(#__lottie_element_4)"] g:first-child path {
+    fill: url(#gradient) !important;
+}

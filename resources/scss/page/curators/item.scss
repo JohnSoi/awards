@@ -1,0 +1,57 @@
+.curator-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    cursor: pointer;
+    transform: translate(0, 0);
+    transition: 0.4s ease;
+    &:hover {
+        transform: translate(0, -10px);
+        transition: 0.4s ease;
+    }
+    @media (max-width: 1199px) {
+        padding: 16px;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+        width: 300px;
+    }
+    @media (max-width: 767px) {
+        padding: 20px;
+    }
+    & .card-company__preheader {
+        @media (max-width: 767px) {
+            height: auto;
+        }
+    }
+    & .card-company__industry-img {
+        width: 100%;
+        svg {
+            max-width: 100%;
+            height: 100px !important;
+        }
+    }
+    & .card-company__content {
+        & .card-company__name {
+            @media (max-width: 1199px) {
+                font-size: 26px;
+            }
+        }
+        & .card-company__position {
+            margin-bottom: 18px;
+            @media (max-width: 1199px) {
+                font-size: 13px;
+                line-height: 14px;
+            }
+        }
+    }
+    & a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        cursor: pointer;
+        text-decoration: none !important;
+    }
+}

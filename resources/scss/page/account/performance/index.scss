@@ -1,0 +1,92 @@
+@import "../account";
+@import "../blank-content";
+@import "../schedule/schedule-filter";
+
+.schedule-export-dropdown,
+.schedule-item-remove-dropdown {
+    .dropdown-menu {
+        .btn {
+            background-color: #222222 !important;
+            color: #fbfbfb !important;
+        }
+    }
+}
+
+.schedule-export-dropdown {
+    .dropdown-menu {
+        padding: 0;
+        border: 1px solid #222222 !important;
+        border-radius: 0 !important;
+        margin: -130px 0 0 70px;
+
+        @media (min-width: 768px) {
+            margin: -71px 0 0 3px;
+        }
+    }
+
+    .btn {
+        text-align: left;
+    }
+}
+
+.schedule-list .table__wrapper {
+    margin-bottom: 60px;
+    overflow-y: visible;
+}
+
+//Table
+@media (max-width: 1023px) {
+    .account-schedule__table .flex-table__cell:nth-of-type(2) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .account-schedule__table .flex-table__cell:last-of-type {
+        order: 2;
+    }
+
+    .account-schedule__table .flex-table__cell:nth-of-type(3),
+    .account-schedule__table .flex-table__cell:nth-of-type(4),
+    .account-schedule__table .flex-table__cell:nth-of-type(5) {
+        flex: 1 0 auto;
+        max-width: none;
+        width: auto;
+        font-size: 12px;
+        line-height: 140%;
+    }
+
+    .account-schedule__table .flex-table__cell:nth-of-type(3) {
+        justify-content: flex-end;
+        max-width: 40%;
+        order: 1;
+        white-space: nowrap;
+    }
+
+    .account-schedule__table .flex-table__cell:nth-of-type(4),
+    .account-schedule__table .flex-table__cell:nth-of-type(5) {
+        &:after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 1px;
+            height: 16px;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(34, 34, 34, 0.1);
+        }
+    }
+
+    .account-schedule__table .flex-table__cell:nth-of-type(5) {
+        justify-content: center;
+    }
+}
+
+.btn-primary--no-hover {
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: transparent !important;
+        color: #222 !important;
+    }
+}

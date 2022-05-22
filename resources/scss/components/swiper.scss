@@ -1,0 +1,69 @@
+.swiper-2,
+.swiper-3,
+.swiper-4,
+.swiper-partner,
+.swiper-org,
+.swiper-expert,
+.swiper-jury {
+    width: 100%;
+    cursor: none;
+    .swiper-slide {
+        width: auto !important;
+        height: unset !important;
+    }
+    & .swiper-wrapper {
+        cursor: none;
+    }
+}
+
+.swiper-1 {
+    width: 100%;
+    cursor: none;
+    .swiper-slide {
+        width: auto !important;
+        height: unset !important;
+    }
+    & .swiper-wrapper {
+        cursor: default;
+    }
+}
+
+.swiper-eco,
+.swiper-history,
+.swiper-step,
+.swiper-incards {
+    width: 100%;
+    cursor: none;
+    .swiper-slide {
+        width: auto !important;
+        height: unset !important;
+        @media (max-width: 576px) {
+            width: 100% !important;
+        }
+    }
+    & .swiper-wrapper {
+        cursor: none;
+    }
+}
+
+// Совет
+.direction-item {
+    max-width: 200px;
+    min-width: 200px;
+    width: 100%;
+    @media (max-width: 1199px) {
+        max-width: 220px;
+        min-width: 220px;
+        width: 100%;
+    }
+    @media (max-width: 767px) {
+        max-width: 165px;
+        min-width: unset;
+        width: 100%;
+    }
+    @media (max-width: 374px) {
+        max-width: 165px;
+        width: 100%;
+        zoom: 83%;
+    }
+}

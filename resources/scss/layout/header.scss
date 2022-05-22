@@ -1,0 +1,126 @@
+.header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    @media (min-width: 768px) {
+        padding-top: 30px;
+    }
+}
+
+.header-top__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-bottom {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.header__logo {
+    &:focus {
+        outline: none;
+    }
+    margin-right: auto;
+    @media (min-width: 768px) {
+        margin-right: 48px;
+    }
+    @media (min-width: 1024px) {
+        margin-right: 40px;
+    }
+    @media (min-width: 1430px) {
+        margin-right: 90px;
+    }
+    & img {
+        width: 158px;
+        height: 129px;
+        @media (max-width: 991px) {
+            width: 103px;
+            height: 84px;
+        }
+    }
+    svg {
+        width: 158px;
+        height: 129px;
+        @media (max-width: 991px) {
+            width: 103px;
+            height: 84px;
+        }
+    }
+}
+
+.header-menu {
+    display: none;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    flex: 1;
+    @media (min-width: 1200px) {
+        display: flex;
+        max-width: 900px;
+    }
+    &__link {
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: $c-222222;
+        text-decoration: none;
+        white-space: nowrap;
+        transition: color 0.2s ease;
+        @media (max-width: 991px) {
+            font-size: 11px;
+            line-height: 15px;
+        }
+        &:last-of-type {
+            margin-right: 0;
+        }
+        &:hover {
+            text-decoration: none;
+            color: transparentize($c-222222, 0.5);
+        }
+        &.active {
+            font-weight: bold;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.header__user {
+    display: none;
+    margin-left: 18px;
+    @media (min-width: 1200px) {
+        display: block;
+    }
+    @media (min-width: 1024px) {
+        margin-left: 38px;
+    }
+    @media (min-width: 1200px) {
+        margin-left: 68px;
+    }
+    .user-avatar {
+        opacity: 0;
+    }
+}
+
+.body--dark {
+    .header-menu__link {
+        color: #fbfbfb;
+        &:focus {
+            outline: none;
+        }
+    }
+    .header__logo path {
+        fill: #fbfbfb;
+    }
+    .header-menu__search {
+        & svg {
+            & path {
+                fill: $c-fbfbfb;
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.blank-content {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 190px;
+    padding-bottom: 240px;
+    position: relative;
+
+    @media (min-width: 1024px) {
+        padding-top: 135px;
+        padding-bottom: 280px;
+    }
+}
+
+.blank-content__desc {
+    margin-bottom: 27px;
+    opacity: .5;
+
+    @media (min-width: 1024px) {
+        margin-bottom: 48px;
+    }
+}
+
+.blank-content__inner {
+    max-width: 450px;
+    text-align: center;
+
+    /*TODO*/
+    .btn {
+        width: 100%;
+        max-width: 345px;
+
+        @media (min-width: 1024px) {
+            width: auto;
+        }
+    }
+}
+
+.blank-content__title {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 22px;
+}

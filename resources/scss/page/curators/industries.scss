@@ -1,0 +1,1497 @@
+// Индустрия новые медиа
+.industry--newmedia {
+    & .section-videos {
+        &__play {
+            & svg {
+                & path {
+                    fill: $c-1fcce8;
+                }
+            }
+        }
+    }
+    & .section-service {
+        background-color: $c-1fcce8;
+        color: $c-222222;
+        & .border-top-black,
+        & .border-top-white {
+            border-color: $c-222222;
+        }
+        & .service-card {
+            &__point {
+                background-color: $c-222222;
+            }
+            &__desc {
+                color: $c-222222;
+            }
+        }
+        & .slider-navigation {
+            & .arrows-nav__left,
+            & .arrows-nav__right {
+                & svg {
+                    & circle {
+                        stroke: $c-222222;
+                    }
+                    & path {
+                        fill: $c-222222;
+                    }
+                }
+            }
+            & .counter {
+                color: $c-222222;
+            }
+        }
+    }
+    & .section-numbers {
+        & .object-inner {
+            &:nth-child(3),
+            &:nth-child(4) {
+                & .object-item {
+                    background-color: $c-1fcce8;
+                    color: $c-222222;
+                }
+            }
+            &:nth-child(6),
+            &:nth-child(7) {
+                & .object-item {
+                    background-color: $c-293e82;
+                    color: $c-fefefe;
+                }
+            }
+        }
+    }
+    & .section-products {
+        & .product-card {
+            & .btn-arrow-blue {
+                & svg {
+                    & circle {
+                        stroke: $c-222222;
+                        transition: 0.4s ease;
+                    }
+                    & path {
+                        fill: $c-222222;
+                        transition: 0.4s ease;
+                    }
+                }
+                &:hover {
+                    & svg {
+                        & circle {
+                            stroke: $c-1fcce8;
+                            fill: $c-1fcce8;
+                            transition: 0.4s ease;
+                        }
+                        & path {
+                            fill: $c-fefefe;
+                            transition: 0.4s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .section-vacancy {
+        & .btn-arrow-big {
+            &:hover {
+                color: $c-293e82;
+                background-color: $c-1fcce8;
+                border: 1px solid $c-1fcce8;
+                transition: 0.4s ease;
+                & svg {
+                    & path {
+                        fill: $c-293e82;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Индустрия образования
+.industry--education {
+    & .section-videos {
+        &__play {
+            & svg {
+                & path {
+                    fill: $c-2967e2;
+                }
+            }
+        }
+    }
+    & .section-service {
+        background-color: $c-2967e2;
+        color: $c-fefefe;
+        & .border-top-black,
+        & .border-top-white {
+            border-color: $c-fefefe;
+        }
+        & .service-card {
+            &__point {
+                background-color: $c-fefefe;
+            }
+            &__desc {
+                color: $c-fefefe;
+            }
+        }
+        & .slider-navigation {
+            & .arrows-nav__left,
+            & .arrows-nav__right {
+                & svg {
+                    & circle {
+                        stroke: $c-fefefe;
+                    }
+                    & path {
+                        fill: $c-fefefe;
+                    }
+                }
+            }
+            & .counter {
+                color: $c-fefefe;
+            }
+        }
+    }
+    & .section-numbers {
+        & .object-inner {
+            &:nth-child(3),
+            &:nth-child(4) {
+                & .object-item {
+                    background-color: $c-2967e2;
+                    color: $c-fefefe;
+                }
+            }
+            &:nth-child(6),
+            &:nth-child(7) {
+                & .object-item {
+                    background-color: $c-ffe600;
+                    color: $c-222222;
+                }
+            }
+        }
+    }
+    & .section-products {
+        & .product-card {
+            & .btn-arrow-blue {
+                & svg {
+                    & circle {
+                        stroke: $c-2967e2;
+                        transition: 0.4s ease;
+                    }
+                    & path {
+                        fill: $c-2967e2;
+                        transition: 0.4s ease;
+                    }
+                }
+                &:hover {
+                    & svg {
+                        & circle {
+                            stroke: $c-2967e2;
+                            fill: $c-2967e2;
+                            transition: 0.4s ease;
+                        }
+                        & path {
+                            fill: $c-fefefe;
+                            transition: 0.4s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .section-vacancy {
+        & .btn-arrow-big {
+            &:hover {
+                color: $c-222222;
+                background-color: $c-ffe600;
+                border: 1px solid $c-ffe600;
+                transition: 0.4s ease;
+                & svg {
+                    & path {
+                        fill: $c-222222;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Индустрия разработки компьютерных игр
+.industry--gamedev {
+    & .section-videos {
+        &__play {
+            & svg {
+                & path {
+                    fill: $c-f93e3e;
+                }
+            }
+        }
+    }
+    & .section-service {
+        background-color: $c-f93e3e;
+        color: $c-fefefe;
+        & .border-top-black,
+        & .border-top-white {
+            border-color: $c-fefefe;
+        }
+        & .service-card {
+            &__point {
+                background-color: $c-fefefe;
+            }
+            &__desc {
+                color: $c-fefefe;
+            }
+        }
+        & .slider-navigation {
+            & .arrows-nav__left,
+            & .arrows-nav__right {
+                & svg {
+                    & circle {
+                        stroke: $c-fefefe;
+                    }
+                    & path {
+                        fill: $c-fefefe;
+                    }
+                }
+            }
+            & .counter {
+                color: $c-fefefe;
+            }
+        }
+    }
+    & .section-numbers {
+        & .object-inner {
+            &:nth-child(3),
+            &:nth-child(4) {
+                & .object-item {
+                    background-color: $c-f93e3e;
+                    color: $c-fefefe;
+                }
+            }
+            &:nth-child(6),
+            &:nth-child(7) {
+                & .object-item {
+                    background-color: $c-fcd6ee;
+                    color: $c-222222;
+                }
+            }
+        }
+    }
+    & .section-products {
+        & .product-card {
+            & .btn-arrow-blue {
+                & svg {
+                    & circle {
+                        stroke: $c-f93e3e;
+                        transition: 0.4s ease;
+                    }
+                    & path {
+                        fill: $c-f93e3e;
+                        transition: 0.4s ease;
+                    }
+                }
+                &:hover {
+                    & svg {
+                        & circle {
+                            stroke: $c-f93e3e;
+                            fill: $c-f93e3e;
+                            transition: 0.4s ease;
+                        }
+                        & path {
+                            fill: $c-fefefe;
+                            transition: 0.4s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .section-vacancy {
+        & .btn-arrow-big {
+            &:hover {
+                color: $c-fefefe;
+                background-color: $c-f93e3e;
+                border: 1px solid $c-f93e3e;
+                transition: 0.4s ease;
+                & svg {
+                    & path {
+                        fill: $c-fefefe;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Индустрия издательское дело
+.industry--publish {
+    & .section-videos {
+        &__play {
+            & svg {
+                & path {
+                    fill: $c-299b64;
+                }
+            }
+        }
+    }
+    & .section-service {
+        background-color: $c-299b64;
+        color: $c-fefefe;
+        & .border-top-black,
+        & .border-top-white {
+            border-color: $c-fefefe;
+        }
+        & .service-card {
+            &__point {
+                background-color: $c-fefefe;
+            }
+            &__desc {
+                color: $c-fefefe;
+            }
+        }
+        & .slider-navigation {
+            & .arrows-nav__left,
+            & .arrows-nav__right {
+                & svg {
+                    & circle {
+                        stroke: $c-fefefe;
+                    }
+                    & path {
+                        fill: $c-fefefe;
+                    }
+                }
+            }
+            & .counter {
+                color: $c-fefefe;
+            }
+        }
+    }
+    & .section-numbers {
+        & .object-inner {
+            &:nth-child(3),
+            &:nth-child(4) {
+                & .object-item {
+                    background-color: $c-299b64;
+                    color: $c-fefefe;
+                }
+            }
+            &:nth-child(6),
+            &:nth-child(7) {
+                & .object-item {
+                    background-color: $c-fcd6ee;
+                    color: $c-222222;
+                }
+            }
+        }
+    }
+    & .section-products {
+        & .product-card {
+            & .btn-arrow-blue {
+                & svg {
+                    & circle {
+                        stroke: $c-299b64;
+                        transition: 0.4s ease;
+                    }
+                    & path {
+                        fill: $c-299b64;
+                        transition: 0.4s ease;
+                    }
+                }
+                &:hover {
+                    & svg {
+                        & circle {
+                            stroke: $c-299b64;
+                            fill: $c-299b64;
+                            transition: 0.4s ease;
+                        }
+                        & path {
+                            fill: $c-fefefe;
+                            transition: 0.4s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .section-vacancy {
+        & .btn-arrow-big {
+            &:hover {
+                color: $c-fefefe;
+                background-color: $c-299b64;
+                border: 1px solid $c-299b64;
+                transition: 0.4s ease;
+                & svg {
+                    & path {
+                        fill: $c-fefefe;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Индустрия кино
+.industry--film {
+    & .section-videos {
+        &__play {
+            & svg {
+                & path {
+                    fill: $c-3aeda8;
+                }
+            }
+        }
+    }
+    & .section-service {
+        background-color: $c-3aeda8;
+        color: $c-222222;
+        & .border-top-black,
+        & .border-top-white {
+            border-color: $c-222222;
+        }
+        & .service-card {
+            &__point {
+                background-color: $c-222222;
+            }
+            &__desc {
+                color: $c-222222;
+            }
+        }
+        & .slider-navigation {
+            & .arrows-nav__left,
+            & .arrows-nav__right {
+                & svg {
+                    & circle {
+                        stroke: $c-222222;
+                    }
+                    & path {
+                        fill: $c-222222;
+                    }
+                }
+            }
+            & .counter {
+                color: $c-222222;
+            }
+        }
+    }
+    & .section-numbers {
+        & .object-inner {
+            &:nth-child(3),
+            &:nth-child(4) {
+                & .object-item {
+                    background-color: $c-025050;
+                    color: $c-fefefe;
+                }
+            }
+            &:nth-child(6),
+            &:nth-child(7) {
+                & .object-item {
+                    background-color: $c-3aeda8;
+                    color: $c-222222;
+                }
+            }
+        }
+    }
+    & .section-products {
+        & .product-card {
+            & .btn-arrow-blue {
+                & svg {
+                    & circle {
+                        stroke: $c-3aeda8;
+                        transition: 0.4s ease;
+                    }
+                    & path {
+                        fill: $c-3aeda8;
+                        transition: 0.4s ease;
+                    }
+                }
+                &:hover {
+                    & svg {
+                        & circle {
+                            stroke: $c-3aeda8;
+                            fill: $c-3aeda8;
+                            transition: 0.4s ease;
+                        }
+                        & path {
+                            fill: $c-025050;
+                            transition: 0.4s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .section-vacancy {
+        & .btn-arrow-big {
+            &:hover {
+                color: $c-025050;
+                background-color: $c-3aeda8;
+                border: 1px solid $c-3aeda8;
+                transition: 0.4s ease;
+                & svg {
+                    & path {
+                        fill: $c-025050;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Индустрия дизайна
+.industry--design {
+    & .section-videos {
+        &__play {
+            & svg {
+                & path {
+                    fill: $c-f9c5d4;
+                }
+            }
+        }
+    }
+    & .section-service {
+        background-color: $c-f9c5d4;
+        color: $c-222222;
+        & .border-top-black,
+        & .border-top-white {
+            border-color: $c-222222;
+        }
+        & .service-card {
+            &__point {
+                background-color: $c-222222;
+            }
+            &__desc {
+                color: $c-222222;
+            }
+        }
+        & .slider-navigation {
+            & .arrows-nav__left,
+            & .arrows-nav__right {
+                & svg {
+                    & circle {
+                        stroke: $c-222222;
+                    }
+                    & path {
+                        fill: $c-222222;
+                    }
+                }
+            }
+            & .counter {
+                color: $c-222222;
+            }
+        }
+    }
+    & .section-numbers {
+        & .object-inner {
+            &:nth-child(3),
+            &:nth-child(4) {
+                & .object-item {
+                    background-color: $c-f9c5d4;
+                    color: $c-222222;
+                }
+            }
+            &:nth-child(6),
+            &:nth-child(7) {
+                & .object-item {
+                    background-color: $c-233067;
+                    color: $c-fefefe;
+                }
+            }
+        }
+    }
+    & .section-products {
+        & .product-card {
+            & .btn-arrow-blue {
+                & svg {
+                    & circle {
+                        stroke: $c-233067;
+                        transition: 0.4s ease;
+                    }
+                    & path {
+                        fill: $c-233067;
+                        transition: 0.4s ease;
+                    }
+                }
+                &:hover {
+                    & svg {
+                        & circle {
+                            stroke: $c-f9c5d4;
+                            fill: $c-f9c5d4;
+                            transition: 0.4s ease;
+                        }
+                        & path {
+                            fill: $c-233067;
+                            transition: 0.4s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .section-vacancy {
+        & .btn-arrow-big {
+            &:hover {
+                color: $c-233067;
+                background-color: $c-f9c5d4;
+                border: 1px solid $c-f9c5d4;
+                transition: 0.4s ease;
+                & svg {
+                    & path {
+                        fill: $c-233067;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Индустрия искусство
+.industry--art {
+    & .section-videos {
+        &__play {
+            & svg {
+                & path {
+                    fill: $c-c3a5f2;
+                }
+            }
+        }
+    }
+    & .section-service {
+        background-color: $c-c3a5f2;
+        color: $c-222222;
+        & .border-top-black,
+        & .border-top-white {
+            border-color: $c-222222;
+        }
+        & .service-card {
+            &__point {
+                background-color: $c-222222;
+            }
+            &__desc {
+                color: $c-222222;
+            }
+        }
+        & .slider-navigation {
+            & .arrows-nav__left,
+            & .arrows-nav__right {
+                & svg {
+                    & circle {
+                        stroke: $c-222222;
+                    }
+                    & path {
+                        fill: $c-222222;
+                    }
+                }
+            }
+            & .counter {
+                color: $c-222222;
+            }
+        }
+    }
+    & .section-numbers {
+        & .object-inner {
+            &:nth-child(3),
+            &:nth-child(4) {
+                & .object-item {
+                    background-color: $c-c3a5f2;
+                    color: $c-222222;
+                }
+            }
+            &:nth-child(6),
+            &:nth-child(7) {
+                & .object-item {
+                    background-color: $c-3a0e7f;
+                    color: $c-fefefe;
+                }
+            }
+        }
+    }
+    & .section-products {
+        & .product-card {
+            & .btn-arrow-blue {
+                & svg {
+                    & circle {
+                        stroke: $c-3a0e7f;
+                        transition: 0.4s ease;
+                    }
+                    & path {
+                        fill: $c-3a0e7f;
+                        transition: 0.4s ease;
+                    }
+                }
+                &:hover {
+                    & svg {
+                        & circle {
+                            stroke: $c-c3a5f2;
+                            fill: $c-c3a5f2;
+                            transition: 0.4s ease;
+                        }
+                        & path {
+                            fill: $c-3a0e7f;
+                            transition: 0.4s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .section-vacancy {
+        & .btn-arrow-big {
+            &:hover {
+                color: $c-3a0e7f;
+                background-color: $c-c3a5f2;
+                border: 1px solid $c-c3a5f2;
+                transition: 0.4s ease;
+                & svg {
+                    & path {
+                        fill: $c-3a0e7f;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Индустрия комрьютерная графика
+.industry--compgraph {
+    & .section-videos {
+        &__play {
+            & svg {
+                & path {
+                    fill: $c-ffe600;
+                }
+            }
+        }
+    }
+    & .section-service {
+        background-color: $c-ffe600;
+        color: $c-222222;
+        & .border-top-black,
+        & .border-top-white {
+            border-color: $c-222222;
+        }
+        & .service-card {
+            &__point {
+                background-color: $c-222222;
+            }
+            &__desc {
+                color: $c-222222;
+            }
+        }
+        & .slider-navigation {
+            & .arrows-nav__left,
+            & .arrows-nav__right {
+                & svg {
+                    & circle {
+                        stroke: $c-222222;
+                    }
+                    & path {
+                        fill: $c-222222;
+                    }
+                }
+            }
+            & .counter {
+                color: $c-222222;
+            }
+        }
+    }
+    & .section-numbers {
+        & .object-inner {
+            &:nth-child(3),
+            &:nth-child(4) {
+                & .object-item {
+                    background-color: $c-ffe600;
+                    color: $c-222222;
+                }
+            }
+            &:nth-child(6),
+            &:nth-child(7) {
+                & .object-item {
+                    background-color: $c-2967e2;
+                    color: $c-fefefe;
+                }
+            }
+        }
+    }
+    & .section-products {
+        & .product-card {
+            & .btn-arrow-blue {
+                & svg {
+                    & circle {
+                        stroke: $c-2967e2;
+                        transition: 0.4s ease;
+                    }
+                    & path {
+                        fill: $c-2967e2;
+                        transition: 0.4s ease;
+                    }
+                }
+                &:hover {
+                    & svg {
+                        & circle {
+                            stroke: $c-ffe600;
+                            fill: $c-ffe600;
+                            transition: 0.4s ease;
+                        }
+                        & path {
+                            fill: $c-2967e2;
+                            transition: 0.4s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .section-vacancy {
+        & .btn-arrow-big {
+            &:hover {
+                color: $c-ffe600;
+                background-color: $c-2967e2;
+                border: 1px solid $c-2967e2;
+                transition: 0.4s ease;
+                & svg {
+                    & path {
+                        fill: $c-ffe600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Индустрия маркетинг
+.industry--marketing {
+    & .section-videos {
+        &__play {
+            & svg {
+                & path {
+                    fill: $c-004542;
+                }
+            }
+        }
+    }
+    & .section-service {
+        background-color: $c-004542;
+        color: $c-fefefe;
+        & .border-top-black,
+        & .border-top-white {
+            border-color: $c-fefefe;
+        }
+        & .service-card {
+            &__point {
+                background-color: $c-fefefe;
+            }
+            &__desc {
+                color: $c-fefefe;
+            }
+        }
+        & .slider-navigation {
+            & .arrows-nav__left,
+            & .arrows-nav__right {
+                & svg {
+                    & circle {
+                        stroke: $c-fefefe;
+                    }
+                    & path {
+                        fill: $c-fefefe;
+                    }
+                }
+            }
+            & .counter {
+                color: $c-fefefe;
+            }
+        }
+    }
+    & .section-numbers {
+        & .object-inner {
+            &:nth-child(3),
+            &:nth-child(4) {
+                & .object-item {
+                    background-color: $c-004542;
+                    color: $c-fefefe;
+                }
+            }
+            &:nth-child(6),
+            &:nth-child(7) {
+                & .object-item {
+                    background-color: $c-ffe600;
+                    color: $c-222222;
+                }
+            }
+        }
+    }
+    & .section-products {
+        & .product-card {
+            & .btn-arrow-blue {
+                & svg {
+                    & circle {
+                        stroke: $c-004542;
+                        transition: 0.4s ease;
+                    }
+                    & path {
+                        fill: $c-004542;
+                        transition: 0.4s ease;
+                    }
+                }
+                &:hover {
+                    & svg {
+                        & circle {
+                            stroke: $c-004542;
+                            fill: $c-004542;
+                            transition: 0.4s ease;
+                        }
+                        & path {
+                            fill: $c-ffe600;
+                            transition: 0.4s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .section-vacancy {
+        & .btn-arrow-big {
+            &:hover {
+                color: $c-ffe600;
+                background-color: $c-004542;
+                border: 1px solid $c-004542;
+                transition: 0.4s ease;
+                & svg {
+                    & path {
+                        fill: $c-ffe600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Индустрия IT
+.industry--it {
+    & .section-videos {
+        &__play {
+            & svg {
+                & path {
+                    fill: $c-103a54;
+                }
+            }
+        }
+    }
+    & .section-service {
+        background-color: $c-103a54;
+        color: $c-fefefe;
+        & .border-top-black,
+        & .border-top-white {
+            border-color: $c-fefefe;
+        }
+        & .service-card {
+            &__point {
+                background-color: $c-fefefe;
+            }
+            &__desc {
+                color: $c-fefefe;
+            }
+        }
+        & .slider-navigation {
+            & .arrows-nav__left,
+            & .arrows-nav__right {
+                & svg {
+                    & circle {
+                        stroke: $c-fefefe;
+                    }
+                    & path {
+                        fill: $c-fefefe;
+                    }
+                }
+            }
+            & .counter {
+                color: $c-fefefe;
+            }
+        }
+    }
+    & .section-numbers {
+        & .object-inner {
+            &:nth-child(3),
+            &:nth-child(4) {
+                & .object-item {
+                    background-color: $c-103a54;
+                    color: $c-fefefe;
+                }
+            }
+            &:nth-child(6),
+            &:nth-child(7) {
+                & .object-item {
+                    background-color: $c-c3eaf4;
+                    color: $c-222222;
+                }
+            }
+        }
+    }
+    & .section-products {
+        & .product-card {
+            & .btn-arrow-blue {
+                & svg {
+                    & circle {
+                        stroke: $c-103a54;
+                        transition: 0.4s ease;
+                    }
+                    & path {
+                        fill: $c-103a54;
+                        transition: 0.4s ease;
+                    }
+                }
+                &:hover {
+                    & svg {
+                        & circle {
+                            stroke: $c-103a54;
+                            fill: $c-103a54;
+                            transition: 0.4s ease;
+                        }
+                        & path {
+                            fill: $c-c3eaf4;
+                            transition: 0.4s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .section-vacancy {
+        & .btn-arrow-big {
+            &:hover {
+                color: $c-c3eaf4;
+                background-color: $c-103a54;
+                border: 1px solid $c-103a54;
+                transition: 0.4s ease;
+                & svg {
+                    & path {
+                        fill: $c-c3eaf4;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Индустрия Телевидение
+.industry--tv {
+    & .section-videos {
+        &__play {
+            & svg {
+                & path {
+                    fill: $c-3a0e7f;
+                }
+            }
+        }
+    }
+    & .section-service {
+        background-color: $c-3a0e7f;
+        color: $c-fefefe;
+        & .border-top-black,
+        & .border-top-white {
+            border-color: $c-fefefe;
+        }
+        & .service-card {
+            &__point {
+                background-color: $c-fefefe;
+            }
+            &__desc {
+                color: $c-fefefe;
+            }
+        }
+        & .slider-navigation {
+            & .arrows-nav__left,
+            & .arrows-nav__right {
+                & svg {
+                    & circle {
+                        stroke: $c-fefefe;
+                    }
+                    & path {
+                        fill: $c-fefefe;
+                    }
+                }
+            }
+            & .counter {
+                color: $c-fefefe;
+            }
+        }
+    }
+    & .section-numbers {
+        & .object-inner {
+            &:nth-child(3),
+            &:nth-child(4) {
+                & .object-item {
+                    background-color: $c-3a0e7f;
+                    color: $c-fefefe;
+                }
+            }
+            &:nth-child(6),
+            &:nth-child(7) {
+                & .object-item {
+                    background-color: $c-f6c4df;
+                    color: $c-222222;
+                }
+            }
+        }
+    }
+    & .section-products {
+        & .product-card {
+            & .btn-arrow-blue {
+                & svg {
+                    & circle {
+                        stroke: $c-3a0e7f;
+                        transition: 0.4s ease;
+                    }
+                    & path {
+                        fill: $c-3a0e7f;
+                        transition: 0.4s ease;
+                    }
+                }
+                &:hover {
+                    & svg {
+                        & circle {
+                            stroke: $c-3a0e7f;
+                            fill: $c-3a0e7f;
+                            transition: 0.4s ease;
+                        }
+                        & path {
+                            fill: $c-f6c4df;
+                            transition: 0.4s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .section-vacancy {
+        & .btn-arrow-big {
+            &:hover {
+                color: $c-f6c4df;
+                background-color: $c-3a0e7f;
+                border: 1px solid $c-3a0e7f;
+                transition: 0.4s ease;
+                & svg {
+                    & path {
+                        fill: $c-f6c4df;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Индустрия Музыка и саунд-дизайн
+.industry--music {
+    & .section-videos {
+        &__play {
+            & svg {
+                & path {
+                    fill: $c-600327;
+                }
+            }
+        }
+    }
+    & .section-service {
+        background-color: $c-600327;
+        color: $c-fefefe;
+        & .border-top-black,
+        & .border-top-white {
+            border-color: $c-fefefe;
+        }
+        & .service-card {
+            &__point {
+                background-color: $c-fefefe;
+            }
+            &__desc {
+                color: $c-fefefe;
+            }
+        }
+        & .slider-navigation {
+            & .arrows-nav__left,
+            & .arrows-nav__right {
+                & svg {
+                    & circle {
+                        stroke: $c-fefefe;
+                    }
+                    & path {
+                        fill: $c-fefefe;
+                    }
+                }
+            }
+            & .counter {
+                color: $c-fefefe;
+            }
+        }
+    }
+    & .section-numbers {
+        & .object-inner {
+            &:nth-child(3),
+            &:nth-child(4) {
+                & .object-item {
+                    background-color: $c-600327;
+                    color: $c-fefefe;
+                }
+            }
+            &:nth-child(6),
+            &:nth-child(7) {
+                & .object-item {
+                    background-color: $c-c3eaf4;
+                    color: $c-222222;
+                }
+            }
+        }
+    }
+    & .section-products {
+        & .product-card {
+            & .btn-arrow-blue {
+                & svg {
+                    & circle {
+                        stroke: $c-600327;
+                        transition: 0.4s ease;
+                    }
+                    & path {
+                        fill: $c-600327;
+                        transition: 0.4s ease;
+                    }
+                }
+                &:hover {
+                    & svg {
+                        & circle {
+                            stroke: $c-600327;
+                            fill: $c-600327;
+                            transition: 0.4s ease;
+                        }
+                        & path {
+                            fill: $c-c3eaf4;
+                            transition: 0.4s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .section-vacancy {
+        & .btn-arrow-big {
+            &:hover {
+                color: $c-c3eaf4;
+                background-color: $c-600327;
+                border: 1px solid $c-600327;
+                transition: 0.4s ease;
+                & svg {
+                    & path {
+                        fill: $c-c3eaf4;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Индустрия Архитектура и урбанистика
+.industry--architech {
+    & .section-videos {
+        &__play {
+            & svg {
+                & path {
+                    fill: $c-c3eaf4;
+                }
+            }
+        }
+    }
+    & .section-service {
+        background-color: $c-c3eaf4;
+        color: $c-222222;
+        & .border-top-black,
+        & .border-top-white {
+            border-color: $c-222222;
+        }
+        & .service-card {
+            &__point {
+                background-color: $c-222222;
+            }
+            &__desc {
+                color: $c-222222;
+            }
+        }
+        & .slider-navigation {
+            & .arrows-nav__left,
+            & .arrows-nav__right {
+                & svg {
+                    & circle {
+                        stroke: $c-222222;
+                    }
+                    & path {
+                        fill: $c-222222;
+                    }
+                }
+            }
+            & .counter {
+                color: $c-222222;
+            }
+        }
+    }
+    & .section-numbers {
+        & .object-inner {
+            &:nth-child(3),
+            &:nth-child(4) {
+                & .object-item {
+                    background-color: $c-c3eaf4;
+                    color: $c-222222;
+                }
+            }
+            &:nth-child(6),
+            &:nth-child(7) {
+                & .object-item {
+                    background-color: $c-f94e4e;
+                    color: $c-fefefe;
+                }
+            }
+        }
+    }
+    & .section-products {
+        & .product-card {
+            & .btn-arrow-blue {
+                & svg {
+                    & circle {
+                        stroke: $c-c3eaf4;
+                        transition: 0.4s ease;
+                    }
+                    & path {
+                        fill: $c-c3eaf4;
+                        transition: 0.4s ease;
+                    }
+                }
+                &:hover {
+                    & svg {
+                        & circle {
+                            stroke: $c-c3eaf4;
+                            fill: $c-c3eaf4;
+                            transition: 0.4s ease;
+                        }
+                        & path {
+                            fill: $c-f94e4e;
+                            transition: 0.4s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .section-vacancy {
+        & .btn-arrow-big {
+            &:hover {
+                color: $c-f94e4e;
+                background-color: $c-c3eaf4;
+                border: 1px solid $c-c3eaf4;
+                transition: 0.4s ease;
+                & svg {
+                    & path {
+                        fill: $c-f94e4e;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Индустрия Мода
+.industry--fashion {
+    & .section-videos {
+        &__play {
+            & svg {
+                & path {
+                    fill: $c-1e1e1e;
+                }
+            }
+        }
+    }
+    & .section-service {
+        background-color: $c-1e1e1e;
+        color: $c-fefefe;
+        & .border-top-black,
+        & .border-top-white {
+            border-color: $c-fefefe;
+        }
+        & .service-card {
+            &__point {
+                background-color: $c-fefefe;
+            }
+            &__desc {
+                color: $c-fefefe;
+            }
+        }
+        & .slider-navigation {
+            & .arrows-nav__left,
+            & .arrows-nav__right {
+                & svg {
+                    & circle {
+                        stroke: $c-fefefe;
+                    }
+                    & path {
+                        fill: $c-fefefe;
+                    }
+                }
+            }
+            & .counter {
+                color: $c-fefefe;
+            }
+        }
+    }
+    & .section-numbers {
+        & .object-inner {
+            &:nth-child(3),
+            &:nth-child(4) {
+                & .object-item {
+                    background-color: $c-1e1e1e;
+                    color: $c-fefefe;
+                }
+            }
+            &:nth-child(6),
+            &:nth-child(7) {
+                & .object-item {
+                    background-color: $c-efb6b6;
+                    color: $c-222222;
+                }
+            }
+        }
+    }
+    & .section-products {
+        & .product-card {
+            & .btn-arrow-blue {
+                & svg {
+                    & circle {
+                        stroke: $c-1e1e1e;
+                        transition: 0.4s ease;
+                    }
+                    & path {
+                        fill: $c-1e1e1e;
+                        transition: 0.4s ease;
+                    }
+                }
+                &:hover {
+                    & svg {
+                        & circle {
+                            stroke: $c-1e1e1e;
+                            fill: $c-1e1e1e;
+                            transition: 0.4s ease;
+                        }
+                        & path {
+                            fill: $c-efb6b6;
+                            transition: 0.4s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    & .section-vacancy {
+        & .btn-arrow-big {
+            &:hover {
+                color: $c-efb6b6;
+                background-color: $c-1e1e1e;
+                border: 1px solid $c-1e1e1e;
+                transition: 0.4s ease;
+                & svg {
+                    & path {
+                        fill: $c-efb6b6;
+                    }
+                }
+            }
+        }
+    }
+}

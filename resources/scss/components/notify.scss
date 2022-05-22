@@ -1,0 +1,23 @@
+.notify {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    &__title {
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 155%;
+        color: $c-222222;
+        text-transform: uppercase;
+    }
+    &__description {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: transparentize($c-222222, 0.2);
+        margin-top: 16px;
+    }
+    &--secondary {
+        background-color: $c-f6f6f6;
+    }
+}

@@ -1,0 +1,74 @@
+.isSafari {
+    // chat
+    & .message {
+        &__time {
+            @media (max-width: 767px) {
+                bottom: 18px !important;
+            }
+        }
+    }
+    // forms
+    & .select {
+        &.multiple {
+            .tag {
+                &.remover {
+                    @media (min-width: 1200px) {
+                        margin-top: 0;
+                    }
+                }
+                &:last-of-type {
+                    @media (min-width: 992px) {
+                        margin-right: 0;
+                        margin-bottom: unset;
+                    }
+                }
+            }
+        }
+    }
+    & .filter-control {
+        &__title {
+            @media (min-width: 1200px) {
+                padding: 13px 16px 10px;
+            }
+        }
+    }
+    & .custom-control-label {
+        padding-top: 2px;
+    }
+    & .form-labels {
+        &__btns {
+            row-gap: unset !important;
+            column-gap: unset !important;
+            margin-right: -10px;
+            margin-bottom: -10px !important;
+            @media (min-width: 768px) {
+                margin-right: -5px;
+                margin-bottom: -5px !important;
+            }
+        }
+        &__btn {
+            margin: 0 10px 10px 0;
+        }
+    }
+    // badges
+    & .industry-item {
+        padding: 8px 15px 4px;
+    }
+    & .project-info__tags {
+        & .tag {
+            padding-top: 2px;
+        }
+    }
+    // modals
+    &.modal-open {
+        padding-right: 0 !important;
+    }
+    // buttons
+    & .btn-arrow-big {
+        & svg {
+            @media (min-width: 1200px) {
+                margin-top: -5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,320 @@
+// colors
+$light-violet-gradient: linear-gradient(269.91deg, #C3A5F2 12.69%, #FFFFFF 99.92%);
+$dark-violet-gradient: linear-gradient(94.05deg, #1E1E1E -13.27%, #C3A5F2 133.53%);
+$c-000000: #000000;
+$c-111111: #111111;
+$c-1e1e1e: #1e1e1e;
+$c-222222: #222222;
+$c-2a2a2a: #2a2a2a;
+$c-2b2b2b: #2b2b2b;
+$c-fefefe: #fefefe;
+$c-fbfbfb: #fbfbfb;
+$c-f4f4f4: #f4f4f4;
+$c-f6f6f6: #f6f6f6;
+$c-eeeeee: #eeeeee;
+$c-c1c1c1: #c1c1c1;
+$c-cccccc: #cccccc;
+$c-dddddd: #dddddd;
+$c-868686: #868686;
+$c-f7f7f7: #f7f7f7;
+$c-f9c5d4: #f9c5d4;
+$c-efb6b6: #efb6b6;
+$c-233067: #233067;
+$c-c3a5f2: #c3a5f2;
+$c-535353: #535353;
+$c-c3eaf4: #c3eaf4;
+$c-f94e4e: #f94e4e;
+$c-3aeda8: #3aeda8;
+$c-025050: #025050;
+$c-ffe600: #ffe600;
+$c-3a0e7f: #3a0e7f;
+$c-f6c4df: #f6c4df;
+$c-004542: #004542;
+$c-299b64: #299b64;
+$c-289b65: #289b65;
+$c-d44545: #d44545;
+$c-ff6060: #ff6060;
+$c-2967e2: #2967e2;
+$c-103a54: #103a54;
+$c-1fcce8: #1fcce8;
+$c-293e82: #293e82;
+$c-600327: #600327;
+$c-f93e3e: #f93e3e;
+$c-ef403b: #ef403b;
+$c-4165b0: #4165b0;
+$c-44c5e1: #44c5e1;
+$c-fcd6ee: #fcd6ee;
+$c-ff7c7c: #ff7c7c;
+$c-232323: #232323;
+$c-aad6e1: #aad6e1;
+$white: #ffffff;
+// gradients
+.bg-light-gradient {
+    background: $light-violet-gradient !important;
+}
+
+.bg-dark-gradient {
+    background: $dark-violet-gradient !important;
+}
+
+// text color
+.text-white {
+    color: $c-fbfbfb !important;
+}
+
+.text-green {
+    color: $c-289b65 !important;
+}
+
+.text-red {
+    color: $c-ef403b !important;
+}
+
+.text-blue {
+    color: $c-4165b0 !important;
+}
+
+.text-lightblue {
+    color: $c-44c5e1 !important;
+}
+
+.text-yellow {
+    color: $c-ffe600 !important;
+}
+
+.text-pink {
+    color: $c-f9c5d4 !important;
+}
+
+.text-semipink {
+    color: $c-c3a5f2 !important;
+}
+
+.text-dark-gradient {
+    background: $dark-violet-gradient !important;
+    background-clip: text !important;
+    text-fill-color: transparent !important;
+    color: transparent;
+}
+
+.text-light-gradient {
+    background: $light-violet-gradient !important;
+    background-clip: text !important;
+    text-fill-color: transparent !important;
+    color: transparent;
+}
+
+// border color
+.border-green {
+    border-color: $c-289b65 !important;
+}
+
+.border-red {
+    border-color: $c-ef403b !important;
+}
+
+.border-blue {
+    border-color: $c-4165b0 !important;
+}
+
+.border-lightblue {
+    border-color: $c-44c5e1 !important;
+}
+
+.border-yellow {
+    border-color: $c-ffe600 !important;
+}
+
+.border-pink {
+    border-color: $c-f9c5d4 !important;
+}
+
+// backgrounds
+.bg-coral {
+    background-color: $c-f9c5d4;
+}
+
+.bg-green {
+    background-color: $c-299b64;
+}
+
+.bg-emerland {
+    background-color: $c-004542;
+}
+
+.bg-pink {
+    background-color: $c-c3a5f2;
+}
+
+.bg-semipink {
+    background-color: $c-f6c4df;
+}
+
+.bg-yellow {
+    background-color: $c-ffe600;
+}
+
+.bg-violet {
+    background-color: $c-3a0e7f;
+}
+
+.bg-lightblue {
+    background-color: $c-c3eaf4;
+}
+
+.bg-ultrablue {
+    background-color: $c-2967e2;
+}
+
+.bg-darkaqua {
+    background-color: $c-103a54;
+}
+
+.bg-semigreen {
+    background-color: $c-3aeda8;
+}
+
+.bg-aqua {
+    background-color: $c-1fcce8;
+}
+
+.bg-blood {
+    background-color: $c-600327;
+}
+
+.bg-ultrared {
+    background-color: $c-f93e3e;
+}
+
+.bg-semired {
+    background-color: $c-f94e4e;
+}
+
+.bg-darkness {
+    background-color: $c-232323;
+}
+
+.bg-black {
+    background-color: $c-222222;
+}
+
+.bg-2a2a2a {
+    background-color: $c-2a2a2a;
+}
+
+.bg-535353 {
+    background-color: $c-535353;
+}
+
+.bg-white {
+    background-color: $white;
+}
+
+.bg-border-gray {
+    background-color: transparent;
+    border: 1px solid $c-868686;
+}
+
+// gradients
+$silver-gradient: linear-gradient(270deg, #e5e5e5 13.52%, #f7f7f7 43.22%, #cccccc 90%);
+// industries
+.industry-svg {
+    &__fashion {
+        & svg {
+            & path {
+                fill: $c-1e1e1e;
+            }
+        }
+    }
+    &__architech {
+        & svg {
+            & path {
+                fill: $c-c3eaf4;
+            }
+        }
+    }
+    &__music {
+        & svg {
+            & path {
+                fill: $c-600327;
+            }
+        }
+    }
+    &__tv {
+        & svg {
+            & path {
+                fill: $c-3a0e7f;
+            }
+        }
+    }
+    &__it {
+        & svg {
+            & path {
+                fill: $c-103a54;
+            }
+        }
+    }
+    &__marketing {
+        & svg {
+            & path {
+                fill: $c-004542;
+            }
+        }
+    }
+    &__gamedev {
+        & svg {
+            & path {
+                fill: $c-f93e3e;
+            }
+        }
+    }
+    &__art {
+        & svg {
+            & path {
+                fill: $c-c3a5f2;
+            }
+        }
+    }
+    &__publish {
+        & svg {
+            & path {
+                fill: $c-299b64;
+            }
+        }
+    }
+    &__film {
+        & svg {
+            & path {
+                fill: $c-3aeda8;
+            }
+        }
+    }
+    &__design {
+        & svg {
+            & path {
+                fill: $c-f9c5d4;
+            }
+        }
+    }
+    &__newmedia {
+        & svg {
+            & path {
+                fill: $c-1fcce8;
+            }
+        }
+    }
+    &__compgraph {
+        & svg {
+            & path {
+                fill: $c-2967e2;
+            }
+        }
+    }
+    &__education {
+        & svg {
+            & path {
+                fill: $c-ffe600;
+            }
+        }
+    }
+}
