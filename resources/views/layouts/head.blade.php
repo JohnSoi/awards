@@ -28,7 +28,7 @@
 @hasSection('description')
 <meta name="description" content="@yield('description')" />
 @else
-<meta name="description" content="Russian Creative Awards 2021 - Премия призвана выявить наиболее успешные практики, разработанные в креативном секторе нашей страны, обеспечить им поддержку и национальное признание" />
+<meta name="description" content="Russian Creative Awards 2022 - Премия призвана выявить наиболее успешные практики, разработанные в креативном секторе нашей страны, обеспечить им поддержку и национальное признание" />
 @endif
 
 @hasSection('image')

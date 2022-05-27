@@ -47,7 +47,7 @@
                         <h1 class="slide__title">
                             <span class="font-weight-300 text-white">Russian</span><br>
                             <span class="font-weight-700 text-semipink">Creative<br>Awards</span><br>
-                            <span class="font-weight-700 text-semipink">2021</span>
+                            <span class="font-weight-700 text-semipink">2022</span>
                         </h1>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
 <section class="section section-content section-themes black-block new-main">
     <div class="container section-themes__new wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0" id="award">
         <div class="border-top-white"></div>
-        <h2 class="section-title mb-0 wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">R.C.AWARDS 2021</h2>
+        <h2 class="section-title mb-0 wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">R.C.AWARDS 2022</h2>
         <div class="section-themes__content">
             <div class="objects-wrapper">
                 <div class="object-inner wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.4s">
@@ -126,6 +126,10 @@
 @include('block.jury')
 
 @include('block.expert')
+
+
+
+
 
 <!-- section themes black-block -->
 

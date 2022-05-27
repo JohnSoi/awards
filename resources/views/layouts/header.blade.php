@@ -10,6 +10,8 @@
             </a>
             <nav class="header-menu">
                 <a href="{{ Route('index') }}#about-award" class="header-menu__link">О премии</a>
+
+
                 <a href="{{ Route('index') }}#nomination" class="header-menu__link">Номинации</a>
                 <a href="{{ Route('post.index') }}" class="header-menu__link">Новости</a>
                 <a href="/files/Polozhenie_RCA.pdf" target="_blank" class="header-menu__link" style="display: none !important;" elem-hide>Положение</a>
@@ -17,6 +19,8 @@
                 <a href="{{ Route('competition') }}" class="header-menu__link">Конкурс</a>
                 <a href="{{ Route('index') }}#ceremony" class="header-menu__link" style="display: none !important;" elem-hide>Церемония</a>
                 <a href="{{ Route('index') }}#contacts" class="header-menu__link">Контакты</a>
+                <a href="{{ Route('Awards2021') }}" class="header-menu__link">Awards2021</a>
+
             </nav>
             <div class="header__user d-none">
                 <a class="btn btn-primary btn-login font-weight-100" href="#submit">Подать заявку</a>
