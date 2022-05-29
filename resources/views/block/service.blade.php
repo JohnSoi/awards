@@ -2,7 +2,12 @@
     <div class="container">
         <div class="section-service__inner">
             <div class="border-top-white"></div>
-            <h2 class="section-title mb-0 wow fadeInUp mw-100" data-wow-duration="0.8s" data-wow-delay="0.2s">Лауреаты Russian Creative Awards 2021 получат:
+            <h2 class="section-title mb-0 wow fadeInUp mw-100" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                @if(Request::url() === Route('index'))
+                    Лауреаты Russian Creative Awards 2022 получат:
+                @else
+                    Лауреаты Russian Creative Awards 2021 получат:
+                @endif
             </h2>
         </div>
         <div class="section-service__content">
@@ -19,7 +24,11 @@
                 <div class="service-card__item wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
                     <div class="service-card__point"></div>
                     <div class="service-card__desc">Возможность представить свои
-                        <br>проекты в рамках Экспо2021 в Дубае
+                        @if(Request::url() === Route('index'))
+                            <br>проекты в рамках Экспо2022 в Дубае
+                        @else
+                            <br>проекты в рамках Экспо2021 в Дубае
+                        @endif
                     </div>
                 </div>
                 <!-- card -->
@@ -73,8 +82,15 @@
                         <div class="swiper-slide">
                             <div class="service-card__item">
                                 <div class="service-card__point"></div>
-                                <div class="service-card__desc">Возможность представить свои
-                                    проекты в рамках Экспо2021 в Дубае
+                                <div class="service-card__desc">
+                                    @if(Request::url() === Route('index'))
+                                        Возможность представить свои
+                                        проекты в рамках Экспо2022 в Дубае
+                                    @else
+                                        Возможность представить свои
+                                        проекты в рамках Экспо2021 в Дубае
+                                    @endif
+
                                 </div>
                             </div>
                         </div>

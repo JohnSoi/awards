@@ -15,12 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'IndexController@index')->name('index');
-
 Route::get('/awards2021', 'Awards2021Controller@index')->name('Awards2021');
-
-
 Route::get('/competition', 'CompetitionController@competition')->name('competition');
-
 // Route::get('/form', 'FormPageController@index')->name('form');
 // Route::get('/form2', 'FormTwoPageController@index')->name('form2');
 Route::get('post', 'PostController@index')->name('post.index');

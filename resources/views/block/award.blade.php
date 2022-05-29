@@ -3,7 +3,11 @@
         <div class="border-top-white"></div>
         <div class="section-award__title">
             <h2 class="section-title text-white mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="30">
-                R.C.AWARDS 2022
+                @if(Request::url() === Route('index'))
+                    R.C.AWARDS  2022
+                @else
+                    R.C.AWARDS 2021
+                @endif
             </h2>
         </div>
         <div class="section-award__inner">
