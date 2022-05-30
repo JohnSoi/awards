@@ -20,6 +20,23 @@
                 <a href="{{ Route('index') }}#ceremony" class="header-menu__link" style="display: none !important;" elem-hide>Церемония</a>
                 <a href="{{ Route('index') }}#contacts" class="header-menu__link">Контакты</a>
                 <a href="{{ Route('Awards2021') }}" class="header-menu__link">Awards2021</a>
+                <div class="dropdown">
+                    <a href="#" class="header-menu__link dropdown__acc">Участник</a>
+                    <div class="dropdown-content">
+                        @if (Auth::check() === false)
+                            <a href="#" class="dropdown-content-name">Иванов Иван Иванович</a>
+                            <a href="#" class="dropdown-content-createRequest">Создать заявку</a>
+                            <a href="#" class="dropdown-content-request">Заявки</a>
+                            <a href="#" class="dropdown-content-logout">Выход</a>
+                        @else
+                        <a href="#" class="dropdown-content-login">Вход</a>
+                        <a href="#" class="dropdown-content-reg">Регистрация</a>
+                        @endif
+
+                    </div>
+
+
+                </div>
 
             </nav>
             <div class="header__user d-none">

@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
     @include('block.photos')
     @include('block.jury')
     @include('block.expert')

@@ -4,6 +4,7 @@
 <title>@yield('title')</title>
 
 <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+<link rel="stylesheet" href="{{ asset('css/page/dropMenu/index.css') }}">
 
 <!-- favicon -->
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
