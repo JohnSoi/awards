@@ -23,7 +23,7 @@
                 <div class="dropdown">
                     <a href="#" class="header-menu__link dropdown__acc">Участник</a>
                     <div class="dropdown-content">
-                        @if (Auth::check() === false)
+                        @if (Auth::check() === true)
                             <a href="#" class="dropdown-content-name">Иванов Иван Иванович</a>
                             <a href="#" class="dropdown-content-createRequest">Создать заявку</a>
                             <a href="#" class="dropdown-content-request">Заявки</a>
