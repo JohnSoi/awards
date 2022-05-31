@@ -4,7 +4,7 @@
 <title>@yield('title')</title>
 
 <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-<link rel="stylesheet" href="{{ asset('css/page/dropMenu/index.css') }}">
+<link rel="stylesheet" href="{{ mix('css/page/dropMenu/index.css') }}">
 
 <!-- favicon -->
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
@@ -28,7 +28,7 @@
 @hasSection('description')
     <meta name="description" content="@yield('description')" />
 @else
-    <meta name="description" content="Russian Creative Awards {{Request::url() === Route('index') ? '2022' : '2021'}} - Премия призвана выявить наиболее успешные практики, разработанные в креативном секторе нашей страны, обеспечить им поддержку и национальное признание" />
+    <meta name="description" content="Russian Creative Awards {{ Request::url() === Route('index') ? '2022' : '2021'}} - Премия призвана выявить наиболее успешные практики, разработанные в креативном секторе нашей страны, обеспечить им поддержку и национальное признание" />
 @endif
 
 @hasSection('image')
