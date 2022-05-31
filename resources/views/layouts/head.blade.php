@@ -25,27 +25,16 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
-
-@if(Request::url() === Route('index'))
-    @php
-        $descYear = 2022;
-    @endphp
-@else
-    @php
-        $descYear = 2021;
-    @endphp
-@endif
-
 @hasSection('description')
-<meta name="description" content="@yield('description')" />
+    <meta name="description" content="@yield('description')" />
 @else
-<meta name="description" content="Russian Creative Awards {{$descYear}} - Премия призвана выявить наиболее успешные практики, разработанные в креативном секторе нашей страны, обеспечить им поддержку и национальное признание" />
+    <meta name="description" content="Russian Creative Awards {{Request::url() === Route('index') ? '2022' : '2021'}} - Премия призвана выявить наиболее успешные практики, разработанные в креативном секторе нашей страны, обеспечить им поддержку и национальное признание" />
 @endif
 
 @hasSection('image')
-<meta property="og:image" content="{{ config('app.url') }}@yield('image')">
+    <meta property="og:image" content="{{ config('app.url') }}@yield('image')">
 @else
-<meta property="og:image" content="{{ config('app.url') }}/img/preview.jpg">
+    <meta property="og:image" content="{{ config('app.url') }}/img/preview.jpg">
 @endif
 
 <script>

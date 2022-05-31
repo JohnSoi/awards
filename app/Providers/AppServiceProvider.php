@@ -5,6 +5,7 @@ namespace App\Providers;
 use App\Models\BlockUser;
 use App\Models\Nomination;
 use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
@@ -79,5 +80,7 @@ class AppServiceProvider extends ServiceProvider
 
             $view->with('nominations', $nominations);
         });
+
+        Schema::defaultStringLength(191);
     }
 }

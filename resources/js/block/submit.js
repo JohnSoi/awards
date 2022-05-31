@@ -1,4 +1,4 @@
-import Suggestions from '../../../../js-modules/Suggestions';
+import Suggestions from '../js-modules/Suggestions';
 
 class SubmitBlock {
 

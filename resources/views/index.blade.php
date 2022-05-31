@@ -48,11 +48,7 @@
                             <span class="font-weight-300 text-white">Russian</span><br>
                             <span class="font-weight-700 text-semipink">Creative<br>Awards</span><br>
                             <span class="font-weight-700 text-semipink">
-                                @if(Request::url() === Route('index'))
-                                    2022
-                                @else
-                                    2021
-                                @endif
+                                {{(Request::url() === Route('index')) ? '2022' : '2021' }}
                             </span>
                         </h1>
                     </div>

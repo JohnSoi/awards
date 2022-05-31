@@ -1,4 +1,4 @@
-import Cursor from '../../../../js-modules/Cursor';
+import Cursor from '../js-modules/Cursor';
 
 $(() => {
     var minWidth = location.href.indexOf('partner') > -1 || location.href.indexOf('industry') > -1 || location.href.indexOf('arhive') > -1 || location.href.indexOf('contest') > -1 || location.href.indexOf('curators') > -1 ? 1200 : 992,

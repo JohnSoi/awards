@@ -9,7 +9,6 @@ class UserData extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('photo')->nullable();
             $table->text('position')->nullable();
             $table->string('phone')->nullable();
             $table->string('contacts')->nullable();
