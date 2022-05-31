@@ -19,6 +19,7 @@
         "sass-loader": "^12.1.0"
     },
     "dependencies": {
+        "admined": "^1.0.88",
         "animate.css": "^4.1.1",
         "bootstrap": "^4.6.0",
         "jquery": "^3.6.0",

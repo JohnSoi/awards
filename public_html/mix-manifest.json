@@ -1,11 +1,14 @@
 {
-    "/js/app.js": "/js/app.js?id=ffcd3d54fef45eab24e3",
-    "/js/page/index.js": "/js/page/index.js?id=6691591f980b7eaffcf8",
-    "/js/page/dark.js": "/js/page/dark.js?id=4e05a47e6c0d48f5be5c",
-    "/js/page/errors.js": "/js/page/errors.js?id=a256ab1aa532c4cb926d",
-    "/css/page/index.css": "/css/page/index.css?id=1863047244f6353302d4",
-    "/css/page/errors/500.css": "/css/page/errors/500.css?id=ac628153b52ac4555f3f",
-    "/css/page/errors/404.css": "/css/page/errors/404.css?id=3bc50b7ea5ef841d682a",
-    "/css/page/dark.css": "/css/page/dark.css?id=ceb9a53c6328ed4296a1",
-    "/css/app.css": "/css/app.css?id=bbb1f132db935e6346a5"
+    "/js/app.js": "/js/app.js",
+    "/js/admin.js": "/js/admin.js",
+    "/js/page/index.js": "/js/page/index.js",
+    "/js/page/dark.js": "/js/page/dark.js",
+    "/js/page/errors.js": "/js/page/errors.js",
+    "/js/page/auth/login.js": "/js/page/auth/login.js",
+    "/css/page/index.css": "/css/page/index.css",
+    "/css/page/errors/404.css": "/css/page/errors/404.css",
+    "/css/page/auth/index.css": "/css/page/auth/index.css",
+    "/css/page/dark.css": "/css/page/dark.css",
+    "/css/app.css": "/css/app.css",
+    "/css/page/errors/500.css": "/css/page/errors/500.css"
 }
