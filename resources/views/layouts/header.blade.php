@@ -29,10 +29,10 @@
                                 <a href="{{$user->group_id= 4 or 2? '/admin' : '#'}}" class="dropdown-content-createRequest">Управление</a>
                                 <a href="#" class="dropdown-content-logout">Выход</a>
                             @else
-                                <a href="#" class="header-menu__link dropdown__acc">Войтиы</a>
+                                <a href="#" class="header-menu__link dropdown__acc">Войти</a>
                                 <div class="dropdown-content">
-                                    <a href="#" class="dropdown-content-login">Вход</a>
-                                    <a href="#" class="dropdown-content-reg">Регистрация</a>
+                                    <a href="{{Route('login')}}" class="dropdown-content-login">Вход</a>
+                                    <a href="{{Route('register')}}" class="dropdown-content-reg">Регистрация</a>
                                     @endif
                                 </div>
                         </div>
