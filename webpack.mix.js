@@ -23,6 +23,7 @@ mix.options({
 mix.setPublicPath('./public_html/');
 
 mix
+    .js('resources/js/reg.js', 'js')
     .js('resources/js/app.js', 'js')
     .js('resources/js/admin.js', 'js')
     .js('resources/js/page/index.js', 'js/page')

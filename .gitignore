@@ -4,3 +4,4 @@ package-lock.*
 composer.lock
 vendor/
 public_html/
+.env
