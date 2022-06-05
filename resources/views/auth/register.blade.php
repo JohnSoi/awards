@@ -8,14 +8,13 @@
 
 @section('body-class', 'body--dark')
 @section('isDark', true)
-
 @section('content')
     <div class="reg-block" id="reg-block">
         <section class="section section-content section-auth">
-            <form id="registerForm" action="{{ Route('register') }}" class="form form--dark container">
+            <form id="registerForm" action="{{ Route('register_process') }}" class="form form--dark container">
                 @csrf
                 <h1 class="form__title">Регистрация</h1>
-                <p class="form__description">Для участия в мероприятиях Российской креативной неделe, пожалуйста,
+                <p class="form__description">Для участия в мероприятиях Российской креативной недели, пожалуйста,
                     заполните
                     данные в форме ниже.</p>
                 <div class="auth-form register-grid">
@@ -43,7 +42,7 @@
                     </div>
                 </div>
                 <div class="btns-area">
-                    <button class="btn btn-white-primary w-100 opacity-50" id="regis-mane-id">Зарегистрируйтесь</button>
+                    <button class="btn btn-white-primary w-100 opacity-50" >Зарегистрируйтесь</button>
                 </div>
                 <div class="footer-area text-center mb-4">
                     <a href="{{ Route('agreement.index') }}" class="forgot-link" target="_blank">Нажимая на кнопку, вы
@@ -59,7 +58,7 @@
     <div class="login-block" id="login-block" style="display: none">
         <section class="section section-content section-auth">
             <div class="form--dark container">
-                <form id="loginForm" action="{{ Route('register') }}" class="form">
+                <form id="loginForm" action="" class="form">
                     @csrf
                     <input type="hidden" name="remember" value="1">
                     <h1 class="form__title">Вход</h1>
@@ -93,5 +92,5 @@
 
 @section('scripts')
     <script src="{{asset('js/reg.js')}}"></script>
-    {{--<script src="{{ mix('js/page/auth/register.js') }}"></script>--}}
+{{--    <script src="{{ mix('js/page/auth/register.js') }}"></script>--}}
 @endsection
