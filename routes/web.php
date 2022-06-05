@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'IndexController@index')->name('index');
+Route::get('/lk', 'UserAreaController@index')->name('lk');
 Route::post('/individual', 'IndividualController@index')->name('individual');
 Route::post('/entity', 'EntityController@index')->name('entity');
 Route::get('/awards2021', 'Awards2021Controller@index')->name('Awards2021');

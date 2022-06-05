@@ -23,16 +23,10 @@
                 <a href="{{ Route('Awards2021') }}" class="header-menu__link">Awards2021</a>
                 <div class="dropdown">
                     @if (Auth::check() == true)
-                        <a href="#" class="header-menu__link dropdown__acc">Иванов И. И.</a>
-                        <div class="dropdown-content">
-                            @php $user = auth(); @endphp
-                                <a href="{{$user->group_id= 4 or 2? '/admin' : '#'}}" class="dropdown-content-createRequest">Управление</a>
-                                <a href="#" class="dropdown-content-logout">Выход</a>
+                        @php $user = Auth::user(); @endphp
+                        <a href="{{$user->group_id == 4 or 2 ? "Route('/admin')" : "Route('/lk')"}}" class="header-menu__link dropdown__acc">Личный кабинет</a>
                             @else
-                                <a href="#" class="header-menu__link dropdown__acc">Войти</a>
-                                <div class="dropdown-content">
-                                    <a href="{{Route('login')}}" class="dropdown-content-login">Вход</a>
-                                    <a href="{{Route('register')}}" class="dropdown-content-reg">Регистрация</a>
+                                <a href="{{Route('register')}}" class="header-menu__link dropdown__acc">Войти</a>
                                     @endif
                                 </div>
                         </div>

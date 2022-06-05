@@ -51,7 +51,7 @@
                 </div>
                 <div class="footer-area text-center">
                     <span class="font-weight-300">Есть аккаунт?</span>
-                    <a href="{{ Route('login') }}" class="font-weight-700 text-decoration-none">Войти</span></a>
+                    <a href="#" class="font-weight-700 text-decoration-none" id="regis-mane-id">Войти</span></a>
                 </div>
             </form>
         </section>
@@ -59,7 +59,7 @@
     <div class="login-block" id="login-block" style="display: none">
         <section class="section section-content section-auth">
             <div class="form--dark container">
-                <form id="loginForm" action="{{ Route('login') }}" class="form">
+                <form id="loginForm" action="{{ Route('register') }}" class="form">
                     @csrf
                     <input type="hidden" name="remember" value="1">
                     <h1 class="form__title">Вход</h1>
