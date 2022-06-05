@@ -1,9 +1,9 @@
 import Swiper from 'swiper/bundle';
 import '../../block/animation';
 import '../../block/sliderCursor';
-import '../../../../../js-modules/cursorStatus';
+import '../../js-modules/cursorStatus';
 import options from '../../block/optionsSwiper';
-require('../../../../../js-modules/jquery.countdown');
+require('../../js-modules/jquery.countdown');
 
 class Evaluation {
     constructor() {

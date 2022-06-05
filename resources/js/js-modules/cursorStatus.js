@@ -1,46 +1,172 @@
+// cursorStatus.create(elem)
+
 window.cursorStatus = {
-    timer: !1, isLeftHalf_old: !1, hoverElem: !1, mousemoveHref: function (e, t) {
-        $(t.cursor).hide(), "A" != $(document.elementFromPoint(e.clientX, e.clientY))[0].tagName && $(t.cursor).show()
-    }, create: function (e, t) {
-        var i = t.cursor ? $(t.cursor).height() / 2 : 0, r = t.cursor ? $(t.cursor).width() / 2 : 0,
-            a = function (e) {
-                e.on("mousemove", (function () {
-                    $(this).off("mousemove"), setTimeout((function () {
-                        s(e)
-                    }), 0)
-                }))
-            }, s = function (e) {
-                $("body").on("mousemove", (function (s) {
-                    t.cursor && ($(t.cursor).css({
-                        top: s.clientY - i,
-                        left: s.clientX - r
-                    }), cursorStatus.mousemoveHref(s, t)), cursorStatus.timer || (cursorStatus.timer = setTimeout((function () {
-                        cursorStatus.changeClass(e, s), cursorStatus.elemHover(t, s), e.isMouseOver(s.pageY) ? $("body").removeClass("cursor-off") : ($("body").addClass("cursor-off").off("mousemove"), setTimeout((function () {
-                            a(e)
-                        }), 0)), cursorStatus.timer = !1
-                    }), 100))
-                }))
-            };
-        a(e), cursorStatus.elemClick(e, t)
-    }, bodyTriggerMousemoveTimer: !1, bodyTriggerMousemove: function (e) {
-        cursorStatus.bodyTriggerMousemoveTimer && clearTimeout(cursorStatus.bodyTriggerMousemoveTimer), cursorStatus.bodyTriggerMousemoveTimer = setTimeout((function () {
-            var t = $.Event("mousemove");
-            t.pageX = e.pageX, t.pageY = e.pageY, $("body").trigger(t)
-        }), 500)
-    }, elemClickTimer: !1, elemClick: function (t, i) {
-        "object" === e(i.on) && null != i.on && i.on.click && (i.cursor ? $(i.cursor).on("click", (function (e) {
-            $(this).hide(), cursorStatus.hoverElem = document.elementFromPoint(e.clientX, e.clientY), $(this).show(), t.isMouseOver(e.pageY) && (i.on.click(t.eq(isMouseOverI)), cursorStatus.bodyTriggerMousemove(e))
-        })) : t.on("click", (function () {
-            i.on.click(t), cursorStatus.bodyTriggerMousemove(event)
-        })))
-    }, elemHoverIndex: 0, elemHover: function (e, t) {
-        e.hover && ($(e.hover).isMouseOver(t.pageY, t.pageX) ? $(e.hover).eq(isMouseOverI).hasClass("hover") || (cursorStatus.elemHoverIndex++, $(e.hover).eq(isMouseOverI).addClass("hover").attr("data-cursor-index", cursorStatus.elemHoverIndex), $('[data-cursor-index!="' + cursorStatus.elemHoverIndex + '"]').removeClass("hover")) : $("[data-cursor-index]").removeClass("hover"))
-    }, changeClass: function (e, t) {
-        cursorStatus.isLeftHalf(e, t) ? ($("body").addClass("cursor-left"), $("body").removeClass("cursor-right")) : ($("body").removeClass("cursor-left"), $("body").addClass("cursor-right"));
-        var i = "black";
-        $(".black-block").isMouseOver(t.pageY, t.pageX) && (i = "white"), $(".white").isMouseOver(t.pageY, t.pageX) && (i = "black"), $(".black").isMouseOver(t.pageY, t.pageX) && (i = "white"), "black" == i ? ($("body").addClass("cursor-black"), $("body").removeClass("cursor-white")) : ($("body").addClass("cursor-white"), $("body").removeClass("cursor-black"))
-    }, isLeftHalf: function (e, t) {
-        var i = $(e).width() / 2;
-        return cursorStatus.isLeftHalf_old = t.pageX < i
+
+    timer: false,
+
+    isLeftHalf_old: false,
+    hoverElem: false,
+
+    mousemoveHref: function (event, options) {
+        $(options.cursor).hide();
+
+        var elem = $(document.elementFromPoint(event.clientX, event.clientY));
+
+        if (elem[0].tagName != 'A') {
+            $(options.cursor).show();
+        }
+    },
+
+    create: function (elem, options) {
+        var cursor = {
+            height: options.cursor ? $(options.cursor).height() / 2 : 0,
+            width: options.cursor ? $(options.cursor).width() / 2 : 0
+        }
+
+        var elemMouseMove = function (this_elem) {
+            this_elem.on('mousemove', function () {
+                $(this).off('mousemove');
+                setTimeout(function () {
+                    bodyMouseMove(this_elem);
+                }, 0);
+            });
+        }
+
+        var bodyMouseMove = function (this_elem) {
+            $('body').on('mousemove', function (event) {
+                if (options.cursor) {
+                    $(options.cursor).css({
+                        top: event.clientY - cursor.height,
+                        left: event.clientX - cursor.width
+                    });
+
+                    cursorStatus.mousemoveHref(event, options);
+                }
+
+                if (!cursorStatus.timer) {
+                    cursorStatus.timer = setTimeout(function () {
+                        cursorStatus.changeClass(this_elem, event);
+                        cursorStatus.elemHover(options, event);
+
+                        if (this_elem.isMouseOver(event.pageY)) {
+                            $('body').removeClass('cursor-off');
+                        } else {
+                            $('body').addClass('cursor-off').off('mousemove');
+                            setTimeout(function () {
+                                elemMouseMove(this_elem);
+                            }, 0);
+                        }
+
+                        cursorStatus.timer = false;
+                    }, 100);
+                }
+            });
+        }
+
+        elemMouseMove(elem);
+
+        cursorStatus.elemClick(elem, options);
+    },
+
+    bodyTriggerMousemoveTimer: false,
+    bodyTriggerMousemove: function (eventClick) {
+        if (cursorStatus.bodyTriggerMousemoveTimer) {
+            clearTimeout(cursorStatus.bodyTriggerMousemoveTimer);
+        }
+
+        cursorStatus.bodyTriggerMousemoveTimer = setTimeout(function () {
+            var event = $.Event('mousemove');
+            event.pageX = eventClick.pageX;
+            event.pageY = eventClick.pageY;
+            $('body').trigger(event);
+        }, 500);
+    },
+
+    elemClickTimer: false,
+    elemClick: function (elem, options) {
+        if (typeof options.on === 'object' && options.on != null) {
+            if (options.on.click) {
+                if (options.cursor) {
+                    $(options.cursor).on('click', function (event) {
+                        $(this).hide();
+                        cursorStatus.hoverElem = document.elementFromPoint(event.clientX, event.clientY);
+                        $(this).show();
+
+                        if (elem.isMouseOver(event.pageY)) {
+                            options.on.click(elem.eq(isMouseOverI));
+                            cursorStatus.bodyTriggerMousemove(event);
+                        }
+                    });
+                } else {
+                    elem.on('click', function () {
+                        options.on.click(elem);
+                        cursorStatus.bodyTriggerMousemove(event);
+                    });
+                }
+            }
+        }
+    },
+
+    elemHoverIndex: 0,
+    elemHover: function (options, event) {
+        if (options.hover) {
+            if ($(options.hover).isMouseOver(event.pageY, event.pageX)) {
+                var elem = $(options.hover).eq(isMouseOverI);
+
+                if (!elem.hasClass('hover')) {
+                    cursorStatus.elemHoverIndex++;
+
+                    $(options.hover).eq(isMouseOverI)
+                        .addClass('hover')
+                        .attr('data-cursor-index', cursorStatus.elemHoverIndex);
+
+                    $('[data-cursor-index!="' + cursorStatus.elemHoverIndex + '"]').removeClass('hover');
+                }
+            } else {
+                $('[data-cursor-index]').removeClass('hover');
+            }
+        }
+    },
+
+    changeClass: function (elem, event) {
+        var left = cursorStatus.isLeftHalf(elem, event);
+
+        if (left) {
+            $('body').addClass('cursor-left');
+            $('body').removeClass('cursor-right');
+        } else {
+            $('body').removeClass('cursor-left');
+            $('body').addClass('cursor-right');
+        }
+
+        var cursor_color = 'black';
+
+        if ($('.black-block').isMouseOver(event.pageY, event.pageX)) {
+            cursor_color = 'white';
+        }
+
+        if ($('.white').isMouseOver(event.pageY, event.pageX)) {
+            cursor_color = 'black';
+        }
+
+        if ($('.black').isMouseOver(event.pageY, event.pageX)) {
+            cursor_color = 'white';
+        }
+
+        if (cursor_color == 'black') {
+            $('body').addClass('cursor-black');
+            $('body').removeClass('cursor-white');
+        } else {
+            $('body').addClass('cursor-white');
+            $('body').removeClass('cursor-black');
+        }
+    },
+
+    isLeftHalf: function (elem, event) {
+        var document_width = $(elem).width(),
+            document_half = document_width / 2;
+
+        return cursorStatus.isLeftHalf_old = event.pageX < document_half;
     }
+
 }

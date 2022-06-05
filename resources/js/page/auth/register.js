@@ -1,5 +1,5 @@
 import Submit from '../../class/Auth/Register/Submit';
-import Suggestions from '../../../../../js-modules/Suggestions';
+import Suggestions from '../../js-modules/Suggestions';
 
 new Submit({
     form: '#registerForm',

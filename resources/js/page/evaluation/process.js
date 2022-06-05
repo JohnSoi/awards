@@ -1,4 +1,4 @@
-import '../../../../../js-modules/textarea_autosize';
+import '../../js-modules/textarea_autosize';
 import anchorme from '../../module/anchorme';
 
 class EvaluationProcess {

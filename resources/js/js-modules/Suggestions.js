@@ -1,14 +1,18 @@
+require('./jquery.suggestions');
+
 export default class Suggestions {
+
     constructor(obj) {
         this.token = obj.token;
     }
-
 
     organization(elem, options) {
         if (elem.length) {
             elem.suggestions({
                 token: this.token,
-                type: "PARTY", hint: false, onSelect: (json) => {
+                type: "PARTY",
+                hint: false,
+                onSelect: (json) => {
                     if (options.onSelect) {
                         options.onSelect(json);
                     }
@@ -18,19 +22,26 @@ export default class Suggestions {
     }
 
     uniqValues(json, field) {
-        var values = [], result = [];
+        var values = [],
+            result = [];
+
         $.each(json, function (i, item) {
             if (item.data[field] && values.indexOf(item.data[field]) == -1) {
                 values.push(item.data[field]);
                 result.push(item);
             }
         });
+
         return result;
     }
 
     country(elem) {
         if (elem.length) {
-            elem.suggestions({token: this.token, type: "country", hint: false,});
+            elem.suggestions({
+                token: this.token,
+                type: "country",
+                hint: false,
+            });
         }
     }
 
@@ -63,16 +74,22 @@ export default class Suggestions {
                 type: "address",
                 hint: false,
                 bounds: "city",
-                constraints: {locations: {city_type_full: "город"}}, formatSelected: function (suggestion) {
+                constraints: {
+                    locations: { city_type_full: "город" }
+                },
+                formatSelected: function (suggestion) {
                     return suggestion.data.city;
-                }, formatResult: function (value, currentValue, suggestion, options) {
+                },
+                formatResult: function (value, currentValue, suggestion, options) {
                     var newValue = suggestion.data.city;
                     suggestion.value = newValue;
                     return $.Suggestions.prototype.formatResult.call(this, newValue, currentValue, suggestion, options);
-                }, onSuggestionsFetch: (json) => {
+                },
+                onSuggestionsFetch: (json) => {
                     return this.uniqValues(json, 'city');
                 }
             });
         }
     }
+
 }
