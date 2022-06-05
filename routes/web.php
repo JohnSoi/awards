@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'IndexController@index')->name('index');
+Route::post('/register', 'RegisterController@register')->name('register');
 Route::get('/lk', 'UserAreaController@index')->name('lk');
 Route::post('/individual', 'IndividualController@index')->name('individual');
 Route::post('/entity', 'EntityController@index')->name('entity');
@@ -26,6 +27,8 @@ Route::get('post', 'PostController@index')->name('post.index');
 Route::get('post/{id}', 'PostController@show')->name('post.show');
 Route::post('debug', 'DebugController@telegram')->middleware('throttle:60,1');
 Route::post('notify', 'NotifyController@telegram')->middleware('throttle:60,1');
+
+Route::post('/register_process', 'AuthController@register_process')->name('register_process');
 
 Route::group([
     'prefix' => 'evaluation',
