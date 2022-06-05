@@ -58,8 +58,6 @@
                                                     class="ua-mane-request-item-span">Доктор наук</span></p>
                                         <p class="ua-request-item-num-smt">E-mail: <span
                                                     class="ua-mane-request-item-span">name@name.ru</span></p>
-                                        <p class="ua-request-item-num-smt">Соцести: <span
-                                                    class="ua-mane-request-item-span">vk/krutoiEblan2008</span></p>
                                         <p class="ua-request-item-num-smt">Ссылки на контент о номинанте: <span class="ua-mane-request-item-span">/asfa/asdg/dsagsd/</span></p>
                                     </div>
                                 </div>
@@ -97,8 +95,6 @@
                                                     class="ua-mane-request-item-span">Доктор наук</span></p>
                                         <p class="ua-request-item-num-smt">E-mail: <span
                                                     class="ua-mane-request-item-span">name@name.ru</span></p>
-                                        <p class="ua-request-item-num-smt">Соцести: <span
-                                                    class="ua-mane-request-item-span">vk/krutoiEblan2008</span></p>
                                         <p class="ua-request-item-num-smt">Ссылки на контент о номинанте: <span class="ua-mane-request-item-span">/asfa/asdg/dsagsd/</span></p>
                                     </div>
                                 </div>

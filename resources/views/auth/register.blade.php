@@ -92,5 +92,4 @@
 
 @section('scripts')
     <script src="{{asset('js/reg.js')}}"></script>
-{{--    <script src="{{ mix('js/page/auth/register.js') }}"></script>--}}
 @endsection

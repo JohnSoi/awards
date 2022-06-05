@@ -21,15 +21,12 @@
                    elem-hide>Церемония</a>
                 <a href="{{ Route('index') }}#contacts" class="header-menu__link">Контакты</a>
                 <a href="{{ Route('Awards2021') }}" class="header-menu__link">Awards2021</a>
-                <div class="dropdown">
-                    @if (Auth::check() == true)
-                        @php $user = Auth::user(); @endphp
-                        <a href="{{$user->group_id == 4 or 2 ? "Route('/admin')" : "Route('/lk')"}}" class="header-menu__link dropdown__acc">Личный кабинет</a>
-                            @else
-                                <a href="{{Route('register')}}" class="header-menu__link dropdown__acc">Войти</a>
-                                    @endif
-                                </div>
-                        </div>
+                @if (Auth::check())
+                    <a href="{{ in_array(Auth::user()->group_id, [4, 2], true) ? Route('admin') : Route('lk') }}"
+                       class="header-menu__link dropdown__acc">Личный кабинет</a>
+                @else
+                    <a href="{{Route('register')}}" class="header-menu__link dropdown__acc">Войти</a>
+                @endif
             </nav>
             <div class="header__user d-none">
                 <a class="btn btn-primary btn-login font-weight-100" href="#submit">Подать заявку</a>
@@ -44,7 +41,7 @@
                 </div>
             </div>
         </div>
-
+    </div>
 </header>
 
 <div class="mobile-menu">

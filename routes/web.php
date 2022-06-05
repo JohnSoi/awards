@@ -22,8 +22,6 @@ Route::post('/individual', 'IndividualController@index')->name('individual');
 Route::post('/entity', 'EntityController@index')->name('entity');
 Route::get('/awards2021', 'Awards2021Controller@index')->name('Awards2021');
 Route::get('/competition', 'CompetitionController@competition')->name('competition');
-// Route::get('/form', 'FormPageController@index')->name('form');
-// Route::get('/form2', 'FormTwoPageController@index')->name('form2');
 Route::get('post', 'PostController@index')->name('post.index');
 Route::get('post/{id}', 'PostController@show')->name('post.show');
 Route::post('debug', 'DebugController@telegram')->middleware('throttle:60,1');

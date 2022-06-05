@@ -19,8 +19,6 @@ class RegisterController extends Controller
 
     protected $redirectTo = RouteServiceProvider::HOME;
 
-
-
     public function __construct()
     {
         $this->middleware('guest');
@@ -55,19 +53,6 @@ class RegisterController extends Controller
         }
         return redirect(route("index"));
     }
-
-//    public function register(Request $request)
-//    {
-//        $this->validator($request->all())->validate();
-//
-//        event(new Registered($user = $this->create($request->all())));
-//
-//        $this->guard()->login($user);
-//
-//        return $request->ajax()
-//            ? ['success' => true]
-//            : redirect($this->redirectPath());
-//    }
 
     protected function create(array $data)
     {
