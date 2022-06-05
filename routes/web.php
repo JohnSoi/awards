@@ -29,7 +29,11 @@ Route::get('post/{id}', 'PostController@show')->name('post.show');
 Route::post('debug', 'DebugController@telegram')->middleware('throttle:60,1');
 Route::post('notify', 'NotifyController@telegram')->middleware('throttle:60,1');
 
-Route::post('/register_process', 'AuthController@register_process')->name('register_process');
+Route::group([
+    'namespace' => '\App\Http\Controllers\Auth'], function () {
+    Route::post('/register_process', 'RegisterController@register')->name('register_process');
+});
+
 
 Route::group([
     'prefix' => 'evaluation',

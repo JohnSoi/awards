@@ -11,7 +11,7 @@
 @section('content')
     <div class="reg-block" id="reg-block">
         <section class="section section-content section-auth">
-            <form id="registerForm" action="{{ Route('register_process') }}" class="form form--dark container">
+            <form id="registerForm" action="{{ Route('register_process') }}" method="post" class="form form--dark container">
                 @csrf
                 <h1 class="form__title">Регистрация</h1>
                 <p class="form__description">Для участия в мероприятиях Российской креативной недели, пожалуйста,
