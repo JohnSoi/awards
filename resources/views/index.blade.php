@@ -65,7 +65,6 @@
         </defs>
     </svg>
 </section>
-
 <section class="section section-content section-cta new-main">
     <div class="container">
         <div class="section-cta__inner">
@@ -76,10 +75,9 @@
     </div>
 </section>
 
+
 @include('block.award')
-
 @include('block.for')
-
 @include('block.photos')
 
 <!-- section fewspeakers -->
@@ -151,12 +149,15 @@
 
 @include('block.partners')
 
+@include('individual')
+@include('entity')
 @include('block.contacts')
 
 @endsection
 
 @section('modals')
-<!-- модалка видоса -->
+
+    <!-- модалка видоса -->
 <div class="modal video-modal fade" id="getVideo" tabindex="-1" aria-labelledby="getVideoLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content">
@@ -175,6 +176,7 @@
         </div>
     </div>
 </div>
+
 
 @include('photos.modal')
 @endsection

@@ -1,3 +1,10 @@
+{{--@php--}}
+{{--    $user = Auth::user();--}}
+{{--    if ($user->group_id == 1){--}}
+{{--@endphp--}}
+{{--@php--}}
+{{--    }--}}
+{{--@endphp--}}
 <section class="section section-content section-submit">
     <div class="container" id="submit">
         <div class="border-top-black"></div>

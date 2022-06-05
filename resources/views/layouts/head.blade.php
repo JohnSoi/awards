@@ -5,6 +5,7 @@
 
 <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 <link rel="stylesheet" href="{{ asset('css/page/dropMenu/index.css') }}">
+<link rel="stylesheet" href="{{ asset('css/page/UserArea/index.css') }}">
 
 <!-- favicon -->
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">

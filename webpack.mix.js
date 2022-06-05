@@ -24,15 +24,18 @@ mix.setPublicPath('./public_html/');
 
 mix
     .js('resources/js/reg.js', 'js')
+    .js('resources/js/form-change.js', 'js')
     .js('resources/js/app.js', 'js')
     .js('resources/js/admin.js', 'js')
     .js('resources/js/page/index.js', 'js/page')
     .js('resources/js/page/dark.js', 'js/page')
     .js('resources/js/page/errors.js', 'js/page')
     .js('resources/js/page/auth/login.js', 'js/page/auth')
+    .js('resources/js/page/auth/register.js', 'js/page/auth')
     .sass('resources/scss/app.scss', 'css')
     .sass('resources/scss/page/main/index.scss', 'css/page')
     .css('resources/css/page/dark.css', 'css/page')
+    .css('resources/css/page/UserArea', 'css/page')
     .css('resources/css/page/auth/index.css', 'css/page/auth')
     .css('resources//css/page/errors/404.css', 'css/page/errors')
     .css('resources//css/page/errors/500.css', 'css/page/errors')

@@ -1,3 +1,10 @@
+{{--@php--}}
+{{--    $user = Auth::user();--}}
+{{--    if ($user->group_id == 1){--}}
+{{--@endphp--}}
+{{--@php--}}
+{{--    }--}}
+{{--@endphp--}}
 <section class="section section-content section-submit" >
     <div class="container" id="submit">
         <div class="border-top-black"></div>
@@ -5,11 +12,11 @@
             <h4 class="heading wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">Подача
                 заявки</h4>
         </div>
-        <div class="section-submit__content">
+        <div class="section-submit__content form-change-bloc1">
             <form id="member_of_gildia" class="add-form" action="">
                 <input type="hidden" name="is_form2" value="1">
                 <h4 class="heading heading-mini heading-grid-100">Форма заявки на Национальную премию в сфере креативных
-                    индустрий для физических лиц</h4>
+                    индустрий для физических лиц </h4>
                 <div class="add-form__left">
                     <div class="form-types" data-valid-group>
                         <div class="select-control-inner" data-valid-input="nomination_id">
@@ -45,7 +52,6 @@
                         <label class="form-type-label">Место работы номинуемого*</label>
                         <input name="name_nominate" type="text" class="form-type-text" required>
                     </div>
-
                     <div class="form-types">
                         <label class="form-type-label">Должность номинуемого*</label>
                         <input name="name_nominate" type="text" class="form-type-text" required>
@@ -93,13 +99,13 @@
                     </div>
                 </div>
                 <div class="add-form__right">
+
                     <div class="form-types mt-md-auto">
                         <label class="form-type-label">Имеющиеся награды, степени и т.п. <span
                                     data-output-count="unique"></span>*</label>
                         <textarea name="unique" type="text" class="form-type-text" rows="1"
                                   data-input-count="unique"></textarea>
                     </div>
-
                     <div class="add-form__double">
                         <div class="form-types">
                             <label class="form-type-label">Email для связи с номинантом*</label>
