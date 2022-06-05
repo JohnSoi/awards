@@ -19,6 +19,8 @@ class RegisterController extends Controller
 
     protected $redirectTo = RouteServiceProvider::HOME;
 
+
+
     public function __construct()
     {
         $this->middleware('guest');
@@ -34,18 +36,38 @@ class RegisterController extends Controller
         ]);
     }
 
-    public function register(Request $request)
-    {
-        $this->validator($request->all())->validate();
+    public function register(Request $request){
+        $data = $request->validate([
+            'name' => ["required", "string"],
+            'city' => ["required", "string"],
+            'email' => ["required","email","unique:users,email"],
+            'password' => ["required"," min:8" , "confirmed"],
+        ]);
 
-        event(new Registered($user = $this->create($request->all())));
-
-        $this->guard()->login($user);
-
-        return $request->ajax()
-            ? ['success' => true]
-            : redirect($this->redirectPath());
+        $user = User::create([
+           "name" => $data["name"],
+           "city" => $data["city"],
+           "email" => $data["email"],
+           "password" => bcrypt($data["password"]),
+        ]);
+        if ($user){
+            auth("web")->login($user);
+        }
+        return redirect(route("index"));
     }
+
+//    public function register(Request $request)
+//    {
+//        $this->validator($request->all())->validate();
+//
+//        event(new Registered($user = $this->create($request->all())));
+//
+//        $this->guard()->login($user);
+//
+//        return $request->ajax()
+//            ? ['success' => true]
+//            : redirect($this->redirectPath());
+//    }
 
     protected function create(array $data)
     {

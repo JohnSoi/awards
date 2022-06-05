@@ -15,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'IndexController@index')->name('index');
-Route::post('/register', 'RegisterController@register')->name('register');
+Route::post('/register', 'RegisterController@showRegistrationForm')->name('register');
+Route::post('/register_process', 'RegisterController@register')->name('register_process');
 Route::get('/lk', 'UserAreaController@index')->name('lk');
 Route::post('/individual', 'IndividualController@index')->name('individual');
 Route::post('/entity', 'EntityController@index')->name('entity');
@@ -61,7 +62,7 @@ Route::group([
 
 Auth::routes();
 
-Route::get('logout', 'Auth\LogoutController@logout')->name('user_logout');
+Route::post('logout', 'Auth\LogoutController@logout')->name('user_logout');
 
 Route::get('photos', 'PhotoController@index')->name('photos.index');
 
