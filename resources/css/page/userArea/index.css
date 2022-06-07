@@ -23,6 +23,12 @@
 .ua-mane-request{
     margin-left: 10%;
 }
+.ua-mane-info-block-logout{
+    color: darkslateblue;
+    text-decoration: revert;
+    text-align: center;
+    display: block;
+}
 .ua-mane-request-item-p{
  font-size: 13px;
     color: whitesmoke;
@@ -30,7 +36,22 @@
 }
 .ua-mane-request-item{
     margin-bottom: 50px;
+    min-width: 150%;
 }
+
+@media screen and (max-width: 1000px){
+    .ua-mane-request-item-num-mane{
+        flex-direction: column;
+    }
+    .ua-mane{
+        flex-direction: column;
+
+    }
+}
+.ua-mane-request-item-link{
+    color: blueviolet;
+}
+
 .ua-mane-request-item-span{
     margin-left: 3px;
     color: whitesmoke;
@@ -48,10 +69,18 @@
 .ua-request-item-num-smt{
     font-size: 14px;
 }
+.ua-mane-info-block-name{
+    font-size: 15px;
+    text-align: center;
+}
+.ua-mane-info-block-email{
+    font-size: 15px;
+    text-align: center;
+}
 .ua-mane-info-block{
     box-shadow: 12px 29px 81px 0 rgba(0,0,0,0.5);
     padding: 40px;
-    min-width: 200px;
+    min-width: 250px;
     height: 200px;
 }
 
