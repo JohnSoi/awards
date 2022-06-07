@@ -16,6 +16,8 @@ class CreateEvaluationPeriodsTable extends Migration
         Schema::create('evaluation_periods', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->timestamp('evaluation_stop_at');
+            $table->timestamp('evaluation_jury_stop_at');
             $table->timestamps();
         });
     }

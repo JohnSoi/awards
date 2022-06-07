@@ -16,6 +16,7 @@ class CreateEvaluationsTable extends Migration
         Schema::create('evaluations', function (Blueprint $table) {
             $table->id();
             $table->integer('is_expert')->nullable();
+            $table->integer('ignore')->nullable();
             $table->foreignId('user_id');
             $table->foreignId('project_id');
             $table->foreignId('period_id');

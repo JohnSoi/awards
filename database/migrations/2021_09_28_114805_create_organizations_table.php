@@ -31,7 +31,6 @@ class CreateOrganizationsTable extends Migration
             $table->foreignId('industry_id')->nullable();
             $table->foreignId('nomination_id')->nullable();
             $table->string('presentation')->nullable();
-            $table->integer('status')->default(0);
             $table->timestamps();
         });
     }

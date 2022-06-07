@@ -56,3 +56,31 @@
         }
     }
 }
+
+.form-wrapper__ {
+    &hidden {
+        display: none;
+    }
+
+    &active {
+        background-color: #222222;
+        color: #fbfbfb;
+        border: 1px solid #222222;
+        box-shadow: unset;
+    }
+
+    &type-selector {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 12.5%;
+
+        &-border {
+            border-right: 1px solid white;
+        }
+    }
+
+    &wrap {
+        transition: 0.3s;
+    }
+}

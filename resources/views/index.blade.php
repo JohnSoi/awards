@@ -4,6 +4,7 @@
 
 @section('head')
 <link rel="stylesheet" href="{{ mix('css/page/dark.css') }}">
+<link rel="stylesheet" href="{{ mix('css/page/form/index.css') }}">
 
 <!-- disabled phone numbers -->
 <meta name="format-detection" content="telephone=no">
@@ -149,8 +150,7 @@
 
 @include('block.partners')
 
-@include('individual')
-@include('entity')
+@include('forms.form_wrapper')
 @include('block.contacts')
 
 @endsection
@@ -183,4 +183,5 @@
 
 @section('scripts')
 <script src="{{ mix('js/page/dark.js') }}"></script>
+<script src="{{ mix('js/page/form/index.js') }}"></script>
 @endsection

@@ -5,13 +5,15 @@
     "/js/page/index.js": "/js/page/index.js",
     "/js/page/dark.js": "/js/page/dark.js",
     "/js/page/errors.js": "/js/page/errors.js",
+    "/js/page/form/index.js": "/js/page/form/index.js",
     "/js/page/auth/login.js": "/js/page/auth/login.js",
     "/js/page/auth/register.js": "/js/page/auth/register.js",
-    "/css/page/index.css": "/css/page/index.css",
-    "/css/page/auth/index.css": "/css/page/auth/index.css",
+    "/css/page/main/index.css": "/css/page/main/index.css",
     "/css/page/userArea/index.css": "/css/page/userArea/index.css",
     "/css/page/dark.css": "/css/page/dark.css",
+    "/css/page/form/index.css": "/css/page/form/index.css",
     "/css/app.css": "/css/app.css",
     "/css/page/errors/500.css": "/css/page/errors/500.css",
-    "/css/page/errors/404.css": "/css/page/errors/404.css"
+    "/css/page/errors/404.css": "/css/page/errors/404.css",
+    "/css/page/auth/index.css": "/css/page/auth/index.css"
 }

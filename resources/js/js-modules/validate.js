@@ -328,10 +328,6 @@ window.validate = {
             }
         });
 
-        if (errors.length) {
-            alert(errors.join(', '));
-        }
-
         if (typeof scroller !== 'undefined') {
             if (form.find('.is-invalid').length) {
                 if (validate.notSeen(form.find('.is-invalid:eq(0)')).length) {

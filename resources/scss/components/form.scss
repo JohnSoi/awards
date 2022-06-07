@@ -621,6 +621,7 @@
     transform: translate(0, 0);
     transition: 0.4s ease;
     color: $c-868686;
+    max-width: 90%;
     @media (max-width: 991px) {
         left: 0;
     }
@@ -635,6 +636,10 @@
         font-size: 12px;
         line-height: 130%;
         color: $c-222222;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 100%;
         @media (min-width: 1200px) and (max-width: 1430px) {
             font-size: 10px;
         }
