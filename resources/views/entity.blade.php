@@ -153,6 +153,10 @@
                     <div class="w-100 mt-auto">
                         <button class="btn btn-primary w-100">Подать заявку</button>
                     </div>
+
+                </div>
+                <div class="w-100 mt-auto">
+                    <a href="{{Route('index')}}" class="btn btn-primary w-100">На главную</a>
                 </div>
             </form>
         </div>

@@ -9,7 +9,7 @@
 @section('body-class', 'body--dark')
 @section('isDark', true)
 @section('content')
-    <div class="reg-block" id="reg-block">
+    <div class="reg-block" id="reg-block" style="display: none">
         <section class="section section-content section-auth">
             <form id="registerForm" action="{{ Route('register_process') }}" method="post" class="form form--dark container">
                 @csrf
@@ -55,7 +55,7 @@
             </form>
         </section>
     </div>
-    <div class="login-block" id="login-block" style="display: none">
+    <div class="login-block" id="login-block" style="display: block">
         <section class="section section-content section-auth">
             <div class="form--dark container">
                 <form id="loginForm" action="" class="form">
@@ -82,7 +82,7 @@
                     </div>
                     <div class="btns-area">
                         <button class="btn btn-white-primary w-100 opacity-50">Войти</button>
-                        <div class="btn btn-white-primary w-100 opacity-50" id="login-block-back" style="margin-top: 10px;">Назад</div>
+                        <div class="btn btn-white-primary w-100 opacity-50" id="login-block-back" style="margin-top: 10px;">Еще нет аккаунта?</div>
                     </div>
                 </form>
             </div>
