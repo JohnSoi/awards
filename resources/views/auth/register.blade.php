@@ -63,7 +63,7 @@
                     <input type="hidden" name="remember" value="1">
                     <h1 class="form__title">Вход</h1>
                     <p class="form__description">
-                        В личном кабинете вы&nbsp;можете&nbsp;оценивать
+                        В личном кабинете вы&nbsp;можете&nbsp;создавать и редактировать
                         заявки Russian&nbsp;Creative&nbsp;Awards
                     </p>
                     <div class="auth-form login-grid">

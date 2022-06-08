@@ -1,4 +1,18 @@
 <section class="section section-content section-submit">
+    @if(!Auth::check())
+        <div class="section-submit__blur">
+            <div class="section-submit__blur-title">
+                Для подачи заявки <br> необходимо авторизоваться.
+            </div>
+            <div class="section-submit__blur-text">
+                <div class="w-100 mt-auto">
+                    <a href="/register">
+                        <button class="btn btn-primary w-100">Войти</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    @endif
     <div class="container" id="submit">
         <div class="border-top-black"></div>
         <div class="section-submit__preheader">

@@ -15,54 +15,42 @@
             </div>
         </div>
         <div class="add-form__center">
-            <div class="form-types" data-valid-group>
-                <div class="select-control-inner" data-valid-input="nomination_id">
-                    <div class="__select" data-select>
-                        <div class="__select__title" data-select-title>Регион (место нахождения)*</div>
-                        <div class="__select__content" data-select-options>
-                            <label class="__select__label">
-                                <input required name="nomination_id" class="__select__input" type="radio"
-                                       value=""/>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @include('forms.regions')
             <div class="form-types mt-md-auto">
-                <label class="form-type-label">Биография (<span data-output-count="unique"
+                <label class="form-type-label">Биография (<span data-output-count="biography"
                                                                 data-max-count="2500">0</span>/2500)</label>
-                <textarea required name="unique" type="text" class="form-type-text" rows="1"
-                          data-input-count="unique"></textarea>
+                <textarea required name="biography" type="text" class="form-type-text" rows="1"
+                          data-input-count="biography"></textarea>
             </div>
 
             <div class="form-types mt-md-auto">
-                <label class="form-type-label">Достижения в 2021-2022 году* <span data-output-count="unique"
+                <label class="form-type-label">Достижения в 2021-2022 году* <span data-output-count="progress"
                                                                                   data-min-count="500"></span>(от
                     500)</label>
-                <textarea required name="unique" type="text" class="form-type-text" rows="1"
-                          data-input-count="unique"></textarea>
+                <textarea required name="progress" type="text" class="form-type-text" rows="1"
+                          data-input-count="progress"></textarea>
             </div>
 
             <div class="form-types mt-md-auto">
                 <label class="form-type-label">Показатели медиа охвата номинанта <span
-                            data-output-count="unique">(количество публикаций в СМИ, число подписчиков в социальных сетях)</span>*</label>
-                <textarea required name="unique" type="text" class="form-type-text" rows="1"
-                          data-input-count="unique"></textarea>
+                            data-output-count="media">(количество публикаций в СМИ, число подписчиков в социальных сетях)</span>*</label>
+                <textarea required name="media" type="text" class="form-type-text" rows="1"
+                          data-input-count="media"></textarea>
             </div>
             <div class="form-types mt-md-auto">
                 <label class="form-type-label">Почему достоин награды <span
-                            data-output-count="unique">(вклад в развитие КИ)</span>*</label>
-                <textarea required name="unique" type="text" class="form-type-text" rows="1"
-                          data-input-count="unique"></textarea>
+                            data-output-count="why_worthy">(вклад в развитие КИ)</span>*</label>
+                <textarea required name="why_worthy" type="text" class="form-type-text" rows="1"
+                          data-input-count="why_worthy"></textarea>
             </div>
         </div>
         <div class="add-form__right">
             <div class="add-form__double">
                 <div class="form-types mt-md-auto">
                     <label class="form-type-label">Имеющиеся награды, степени и т.п. <span
-                                data-output-count="unique"></span>*</label>
-                    <textarea name="unique" type="text" class="form-type-text" rows="1"
-                              data-input-count="unique"></textarea>
+                                data-output-count="award"></span>*</label>
+                    <textarea name="award" type="text" class="form-type-text" rows="1"
+                              data-input-count="award"></textarea>
                 </div>
                 <div class="form-types mt-md-auto">
                     <label class="form-type-label">Email для связи с номинантом*</label>
@@ -76,14 +64,14 @@
             <div class="form-types" file-group>
                 <label class="form-type-label" for="file-upload">Фото номинанта (600x600 пикселей, jpg,
                     jpeg, png)</label>
-                <input name="presentation" id="file-upload" type="file">
-                <div class="form-type-text form-type-file" file-change-name="presentation"></div>
+                <input name="photo" id="file-upload" type="file">
+                <div class="form-type-text form-type-file" file-change-name="photo"></div>
             </div>
             <div class="form-types mt-md-auto">
                 <label class="form-type-label"> Презентация или видеоролик о номинанте (ссылка)<span
-                            data-output-count="unique">0</span>*</label>
-                <textarea name="unique" type="text" required class="form-type-text" rows="1"
-                          data-input-count="unique"></textarea>
+                            data-output-count="presentation">0</span>*</label>
+                <textarea name="presentation" type="text" required class="form-type-text" rows="1"
+                          data-input-count="presentation"></textarea>
             </div>
             <div class="w-100 mt-auto">
                 <button class="btn btn-primary w-100">Подать заявку</button>

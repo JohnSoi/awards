@@ -13,18 +13,7 @@
                 <label class="form-type-label">Наименование организании*</label>
                 <input name="name_nominate" type="text" class="form-type-text" required>
             </div>
-            <div class="form-types" data-valid-group>
-                <div class="select-control-inner" data-valid-input="nomination_id">
-                    <div class="__select" data-select>
-                        <div class="__select__title" data-select-title>Регион (место нахождения)*</div>
-                        <div class="__select__content" data-select-options>
-                            <label class="__select__label">
-                                <input required name="nomination_id" class="__select__input" type="radio" value=""/>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @include('forms.regions')
             <div class="form-types">
                 <label class="form-type-label">Название проекта*</label>
                 <input name="name_nominate" type="text" class="form-type-text" required>
@@ -32,24 +21,24 @@
         </div>
         <div class="add-form__center">
             <div class="form-types mt-md-auto">
-                <label class="form-type-label">Описание проекта<span data-output-count="unique"
+                <label class="form-type-label">Описание проекта<span data-output-count="description"
                                                                      data-max-count="500"></span>(от 500
                     символов)</label>
-                <textarea required name="unique" type="text" class="form-type-text" rows="1"
-                          data-input-count="unique"></textarea>
+                <textarea required name="description" type="text" class="form-type-text" rows="1"
+                          data-input-count="description"></textarea>
             </div>
             <div class="form-types mt-md-auto">
-                <label class="form-type-label">Достижения в 2021-2022 году* <span data-output-count="unique"
+                <label class="form-type-label">Достижения в 2021-2022 году* <span data-output-count="progress"
                                                                                   data-min-count="500"></span>(от
                     500)</label>
-                <textarea required name="unique" type="text" class="form-type-text" rows="1"
-                          data-input-count="unique"></textarea>
+                <textarea required name="progress" type="text" class="form-type-text" rows="1"
+                          data-input-count="progress"></textarea>
             </div>
             <div class="form-types mt-md-auto">
                 <label class="form-type-label">Показатели медиа охвата номинанта <span
-                            data-output-count="unique">(количество публикаций в СМИ, число подписчиков в социальных сетях)</span>*</label>
-                <textarea required name="unique" type="text" class="form-type-text" rows="1"
-                          data-input-count="unique"></textarea>
+                            data-output-count="media">(количество публикаций в СМИ, число подписчиков в социальных сетях)</span>*</label>
+                <textarea required name="media" type="text" class="form-type-text" rows="1"
+                          data-input-count="media"></textarea>
             </div>
             <div class="form-types" file-group>
                 <label class="form-type-label" for="file-upload">Информация о медиаохвате номинанта (30мб, pdf,
@@ -59,15 +48,15 @@
             </div>
             <div class="form-types mt-md-auto">
                 <label class="form-type-label">Почему достоин награды, вклад в развитие КИ, где реализован <span
-                            data-output-count="unique">(от 500 симоволов)</span>*</label>
-                <textarea required name="unique" type="text" class="form-type-text" rows="1"
-                          data-input-count="unique"></textarea>
+                            data-output-count="why_worthy">(от 500 симоволов)</span>*</label>
+                <textarea required name="why_worthy" type="text" class="form-type-text" rows="1"
+                          data-input-count="why_worthy"></textarea>
             </div>
             <div class="form-types mt-md-auto">
                 <label class="form-type-label">Имеющиеся награды, степени и т.п. <span
-                            data-output-count="unique"></span>*</label>
-                <textarea name="unique" type="text" class="form-type-text" rows="1"
-                          data-input-count="unique"></textarea>
+                            data-output-count="award"></span>*</label>
+                <textarea name="award" type="text" class="form-type-text" rows="1"
+                          data-input-count="award"></textarea>
             </div>
             <div class="form-types">
                 <label class="form-type-label">Номинант (организатор проекта)</label>
@@ -90,9 +79,9 @@
                 </div>
                 <div class="form-types mt-md-auto">
                     <label class="form-type-label"> E-mail для связи с номинантом<span
-                                data-output-count="unique">(ссылка)</span>*</label>
-                    <textarea name="unique" type="text" required class="form-type-text" rows="1"
-                              data-input-count="unique"></textarea>
+                                data-output-count="email">(ссылка)</span>*</label>
+                    <textarea name="email" type="text" required class="form-type-text" rows="1"
+                              data-input-count="email"></textarea>
                 </div>
             </div>
             <div class="form-types" file-group>
