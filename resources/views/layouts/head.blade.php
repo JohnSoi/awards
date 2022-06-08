@@ -42,4 +42,6 @@
     isDark = "@yield('isDark')";
 </script>
 
+<link rel="stylesheet" href="{{ mix('css/app_old.css') }}">
+
 @yield('head')

@@ -40,4 +40,5 @@ mix
     .css('resources/css/page/auth/index.css', 'css/page/auth')
     .css('resources/css/page/errors/404.css', 'css/page/errors')
     .css('resources/css/page/errors/500.css', 'css/page/errors')
+    .css('resources/css/app_old.css', 'css')
 ;
