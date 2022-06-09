@@ -27,9 +27,9 @@ class CreateProjectTable extends Migration
             $table->string('kpp')->nullable()->default(null);
             $table->string('director')->nullable()->default(null);
             $table->string('name_nominate')->nullable()->default(null);
-            $table->text('deposit');
-            $table->text('unique');
-            $table->text('why_worthy');
+            $table->text('deposit')->nullable()->default(null);
+            $table->text('unique')->nullable()->default(null);
+            $table->text('why_worthy')->nullable()->default(null);
             $table->string('geography')->nullable()->default(null);
             $table->string('phone_nominee')->nullable()->default(null);
             $table->string('email_nominee')->nullable()->default(null);

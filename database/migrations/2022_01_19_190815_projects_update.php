@@ -12,6 +12,14 @@ class ProjectsUpdate extends Migration
             $table->json('shortlist_texts')->nullable();
             $table->string('shortlist_image')->nullable();
             $table->text('shortlist_video')->nullable();
+            $table->text('bio')->nullable();
+            $table->string('job_title')->nullable();
+            $table->string('job')->nullable();
+            $table->text('achievements')->nullable();
+            $table->text('media')->nullable();
+            $table->text('awards')->nullable();
+            $table->integer('status')->default(0);
+            $table->integer('user_id');
         });
     }
 

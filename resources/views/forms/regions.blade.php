@@ -7,7 +7,7 @@
                 @foreach($regions as $region)
                     <label class="__select__label">
                         {{ $region->name }}
-                        <input name="industry_id" class="__select__input" type="radio" value="{{ $region->id }}" />
+                        <input name="region_id" class="__select__input" type="radio" value="{{ $region->id }}" />
                     </label>
                 @endforeach
             </div>

@@ -19,10 +19,10 @@ Route::post('/register', 'RegisterController@showRegistrationForm')->name('regis
 Route::post('/register_process', 'RegisterController@register')->name('register_process');
 //Route::get('/lk', 'UserAreaController@showRequests')->name('showRequests');
 Route::get('/lk', 'UserAreaController@index')->name('lk');
-Route::get('/lk/edit_individual/{id}', 'UserAreaController@edit')->name('edit_ind');
-Route::get('/lk/update_ind/{id}', 'UserAreaController@update')->name('update_ind');
+Route::post('/lk/edit_individual/{id}', 'UserAreaController@edit')->name('edit_ind');
+Route::post('/lk/update_ind/{id}', 'UserAreaController@update')->name('update_ind');
 Route::get('/individual', 'IndividualController@index')->name('individual');
-Route::get('/individual', 'IndividualController@create')->name('individual_create');
+Route::post('/individual', 'IndividualController@create')->name('individual_create');
 Route::post('/entity', 'EntityController@index')->name('entity');
 Route::get('/awards2021', 'Awards2021Controller@index')->name('Awards2021');
 Route::get('/competition', 'CompetitionController@competition')->name('competition');
