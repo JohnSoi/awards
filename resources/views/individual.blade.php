@@ -1,5 +1,5 @@
 <div class="section-submit__content form-change-bloc1">
-    <form id="member_of_gildia" class="add-form" action="">
+    <form id="member_of_gildia" class="add-form" action="{{route('individual_create')}}">
         <input type="hidden" name="is_form2" value="1">
         <h4 class="heading heading-mini heading-grid-100">Форма заявки на Национальную премию в сфере креативных
             индустрий для физических лиц </h4>
@@ -7,11 +7,11 @@
             @include('forms.first_block')
             <div class="form-types">
                 <label class="form-type-label">Место работы номинуемого*</label>
-                <input name="name_nominate" type="text" class="form-type-text" required>
+                <input name="job" type="text" class="form-type-text" required>
             </div>
             <div class="form-types">
                 <label class="form-type-label">Должность номинуемого*</label>
-                <input name="name_nominate" type="text" class="form-type-text" required>
+                <input name="job_title" type="text" class="form-type-text" required>
             </div>
         </div>
         <div class="add-form__center">
@@ -57,9 +57,15 @@
                     <input name="email_nominee" required type="email" class="form-type-text">
                 </div>
             </div>
+            <div class="add-form__double">
             <div class="form-types mt-md-auto">
-                <label class="form-type-label">Ссылка на соцсеть</label>
-                <input name="social_url" required type="text" class="form-type-text" required>
+                    <label class="form-type-label">Ссылка на соцсеть</label>
+                    <input name="social_url" required type="text" class="form-type-text" required>
+                </div>
+                <div class="form-types">
+                    <label class="form-type-label">Телефон для связи с номинантом</label>
+                    <input data-mask-phone="" type="text" class="form-type-text" name="phone_nominee">
+                </div>
             </div>
             <div class="form-types" file-group>
                 <label class="form-type-label" for="file-upload">Фото номинанта (600x600 пикселей, jpg,

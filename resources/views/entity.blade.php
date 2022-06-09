@@ -7,16 +7,16 @@
             @include('forms.first_block')
             <div class="form-types">
                 <label class="form-type-label">Должность номинуемого*</label>
-                <input name="name_nominate" type="text" class="form-type-text" required>
+                <input name="job" type="text" class="form-type-text" required>
             </div>
             <div class="form-types">
                 <label class="form-type-label">Наименование организании*</label>
-                <input name="name_nominate" type="text" class="form-type-text" required>
+                <input name="organization_name" type="text" class="form-type-text" required>
             </div>
             @include('forms.regions')
             <div class="form-types">
                 <label class="form-type-label">Название проекта*</label>
-                <input name="name_nominate" type="text" class="form-type-text" required>
+                <input name="project_name" type="text" class="form-type-text" required>
             </div>
         </div>
         <div class="add-form__center">
@@ -31,7 +31,7 @@
                 <label class="form-type-label">Достижения в 2021-2022 году* <span data-output-count="progress"
                                                                                   data-min-count="500"></span>(от
                     500)</label>
-                <textarea required name="progress" type="text" class="form-type-text" rows="1"
+                <textarea required name="award" type="text" class="form-type-text" rows="1"
                           data-input-count="progress"></textarea>
             </div>
             <div class="form-types mt-md-auto">
@@ -43,7 +43,7 @@
             <div class="form-types" file-group>
                 <label class="form-type-label" for="file-upload">Информация о медиаохвате номинанта (30мб, pdf,
                     mp4, doc, docx)</label>
-                <input name="presentation" id="file-upload" type="file">
+                <input name="media_doc" id="file-upload" type="file">
                 <div class="form-type-text form-type-file" file-change-name="presentation"></div>
             </div>
             <div class="form-types mt-md-auto">
@@ -52,37 +52,30 @@
                 <textarea required name="why_worthy" type="text" class="form-type-text" rows="1"
                           data-input-count="why_worthy"></textarea>
             </div>
-            <div class="form-types mt-md-auto">
-                <label class="form-type-label">Имеющиеся награды, степени и т.п. <span
-                            data-output-count="award"></span>*</label>
-                <textarea name="award" type="text" class="form-type-text" rows="1"
-                          data-input-count="award"></textarea>
-            </div>
+
             <div class="form-types">
                 <label class="form-type-label">Номинант (организатор проекта)</label>
-                <input name="social_url" required type="text" class="form-type-text" required>
+                <input name="organizer_nom" required type="text" class="form-type-text" required>
+            </div>
+            <div class="form-types">
+                <label class="form-type-label">Ссылки на социальные сети*</label>
+                <input name="social_url" type="text" class="form-type-text" required>
             </div>
         </div>
         <div class="add-form__right">
             <div class="form-types">
                 <label class="form-type-label">Сайт организации</label>
-                <input name="social_url" required type="text" class="form-type-text" required>
+                <input name="site_url" required type="text" class="form-type-text" required>
             </div>
             <div class="form-types">
-                <label class="form-type-label">Название проекта*</label>
-                <input name="name_nominate" type="text" class="form-type-text" required>
+                <label class="form-type-label">Телефон для связи с номинантом</label>
+                <input data-mask-phone="" type="text" class="form-type-text" name="phone_nominee">
             </div>
-            <div class="add-form__double last-double">
-                <div class="form-types">
-                    <label class="form-type-label">Телефон для связи с номинантом</label>
-                    <input data-mask-phone="" type="text" class="form-type-text" name="phone_nominee">
-                </div>
-                <div class="form-types mt-md-auto">
-                    <label class="form-type-label"> E-mail для связи с номинантом<span
-                                data-output-count="email">(ссылка)</span>*</label>
-                    <textarea name="email" type="text" required class="form-type-text" rows="1"
-                              data-input-count="email"></textarea>
-                </div>
+            <div class="form-types mt-md-auto">
+                <label class="form-type-label"> E-mail для связи с номинантом<span
+                            data-output-count="email">(ссылка)</span>*</label>
+                <textarea name="email" type="text" required class="form-type-text" rows="1"
+                          data-input-count="email"></textarea>
             </div>
             <div class="form-types" file-group>
                 <label class="form-type-label" for="file-upload">Презентация <br>(30мб, pdf, mp4, doc, docx)</label>
@@ -91,12 +84,12 @@
             </div>
             <div class="form-types">
                 <label class="form-type-label">Видеоролик (ссылка)*</label>
-                <input name="name_nominate" type="text" class="form-type-text" required>
+                <input name="video" type="text" class="form-type-text" required>
             </div>
             <div class="form-types" file-group>
                 <label class="form-type-label" for="file-upload">Фото руковожителя организации (300кб, 600x600
                     пикселей, jpg, jpeg, png)</label>
-                <input name="presentation" id="file-upload" type="file">
+                <input name="photo_director" id="file-upload" type="file">
                 <div class="form-type-text form-type-file" file-change-name="presentation"></div>
             </div>
             <div class="w-100 mt-auto">
