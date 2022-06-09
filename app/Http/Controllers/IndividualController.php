@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\gildia;
+use App\Models\Project;
 use Illuminate\Http\Request;
 use phpDocumentor\Reflection\Location;
 
@@ -13,6 +13,9 @@ class IndividualController extends Controller
     }
 
     public function create(){
+        echo "<pre>";
+        dump($_GET);
+        echo "</pre>";
         $user_id = auth()->user()->id;
         $name_nom = $_GET['name_nominate'];
         $job_nom = $_GET['job_nominate'];
@@ -26,7 +29,7 @@ class IndividualController extends Controller
         $social_url = $_GET['social_url'];
         $photo_nom = $_GET['photo_nom'];
         $presentation = $_GET['presentation'];
-        gildia::create(
+        Project::create(
            [
                'name' =>"$name_nom",
                'nomination_id' =>'1',
@@ -46,6 +49,6 @@ class IndividualController extends Controller
                'user_id' =>"$user_id",
            ]
         );
-        return view('index');
+//        return view('index');
     }
 }
