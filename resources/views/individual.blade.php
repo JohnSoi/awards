@@ -1,25 +1,32 @@
 <div class="section-submit__content form-change-bloc1">
-    <form id="member_of_gildia" class="add-form" action="">
+    <form id="member_of_gildia" class="add-form" action="{{Route('form.gildia.store')}}">
+        @csrf
         <input type="hidden" name="is_form2" value="1">
+        @php
+        $user = auth()->user();
+        $user_id = $user->id;
+        @endphp
+        <input type="hidden" name="user_id" value="{{$user_id}}">
+
         <h4 class="heading heading-mini heading-grid-100">Форма заявки на Национальную премию в сфере креативных
             индустрий для физических лиц </h4>
         <div class="add-form__left">
             @include('forms.first_block')
             <div class="form-types">
                 <label class="form-type-label">Место работы номинуемого*</label>
-                <input name="name_nominate" type="text" class="form-type-text" required>
+                <input name="job" type="text" class="form-type-text" required>
             </div>
             <div class="form-types">
                 <label class="form-type-label">Должность номинуемого*</label>
-                <input name="name_nominate" type="text" class="form-type-text" required>
+                <input name="job_title" type="text" class="form-type-text" required>
             </div>
         </div>
         <div class="add-form__center">
             @include('forms.regions')
             <div class="form-types mt-md-auto">
-                <label class="form-type-label">Биография (<span data-output-count="biography"
+                <label class="form-type-label">Биография (<span data-output-count="bio"
                                                                 data-max-count="2500">0</span>/2500)</label>
-                <textarea required name="biography" type="text" class="form-type-text" rows="1"
+                <textarea required name="bio" type="text" class="form-type-text" rows="1"
                           data-input-count="biography"></textarea>
             </div>
 
@@ -27,8 +34,8 @@
                 <label class="form-type-label">Достижения в 2021-2022 году* <span data-output-count="progress"
                                                                                   data-min-count="500"></span>(от
                     500)</label>
-                <textarea required name="progress" type="text" class="form-type-text" rows="1"
-                          data-input-count="progress"></textarea>
+                <textarea required name="achievements" type="text" class="form-type-text" rows="1"
+                          data-input-count="achievements"></textarea>
             </div>
 
             <div class="form-types mt-md-auto">
@@ -49,7 +56,7 @@
                 <div class="form-types mt-md-auto">
                     <label class="form-type-label">Имеющиеся награды, степени и т.п. <span
                                 data-output-count="award"></span>*</label>
-                    <textarea name="award" type="text" class="form-type-text" rows="1"
+                    <textarea name="awards" type="text" class="form-type-text" rows="1"
                               data-input-count="award"></textarea>
                 </div>
                 <div class="form-types mt-md-auto">

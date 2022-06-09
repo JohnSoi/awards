@@ -14,7 +14,7 @@ class IndividualController extends Controller
 
     public function create(){
         echo "<pre>";
-        dump($_GET);
+        dump($_POST);
         echo "</pre>";
         $user_id = auth()->user()->id;
         $name_nom = $_GET['name_nominate'];

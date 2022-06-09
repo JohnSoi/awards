@@ -30,6 +30,16 @@ class Project extends Model
         'industry_id',
         'nomination_id',
 
+        'job',
+        'job_title',
+        'bio',
+        'achievements',
+        'media',
+        'awards',
+        'user_id',
+
+
+
         'social_url',
         'is_form2',
         'is_top',
