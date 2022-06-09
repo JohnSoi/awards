@@ -16,7 +16,6 @@ class Project extends Model
         'inn',
         'kpp',
         'director',
-
         'name',
         'deposit',
         'geography',
@@ -29,7 +28,6 @@ class Project extends Model
         'why_worthy',
         'industry_id',
         'nomination_id',
-
         'job',
         'job_title',
         'bio',
@@ -37,13 +35,9 @@ class Project extends Model
         'media',
         'awards',
         'user_id',
-
-
-
         'social_url',
         'is_form2',
         'is_top',
-
         'shortlist_texts',
         'shortlist_video'
     ];

@@ -15,7 +15,6 @@ class ProjectController extends Controller
 {
     public function store($request)
     {
-//        return ['error' => 'Прием заявок закрыт'];
         $validator_arr = [
             'nomination_id' => 'required',
             'industry_id' => 'required',
@@ -67,7 +66,6 @@ class ProjectController extends Controller
         }
 
         try {
-            // Mail::to('kindstrannik@yandex.ru')->send(new ProjectMail($request));
             Mail::to('award@creativityweek.ru')->send(new ProjectMail($request));
         } catch (Exception $e) {
         }
