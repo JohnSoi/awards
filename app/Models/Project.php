@@ -16,11 +16,9 @@ class Project extends Model
         'inn',
         'kpp',
         'director',
-
         'name',
         'deposit',
         'geography',
-        'phone_nominee',
         'email_nominee',
         'unique',
         'phone_nominate',
@@ -29,7 +27,6 @@ class Project extends Model
         'why_worthy',
         'industry_id',
         'nomination_id',
-
         'job',
         'job_title',
         'bio',
@@ -37,15 +34,21 @@ class Project extends Model
         'media',
         'awards',
         'user_id',
-
-
-
         'social_url',
         'is_form2',
         'is_top',
-
         'shortlist_texts',
-        'shortlist_video'
+        'shortlist_video',
+        'phone_nominee',
+        'organization_name',
+        'project_name',
+        'project_description',
+        'media_doc',
+        'name_organizer',
+        'organization_site',
+        'presentation',
+        'video_nominate',
+        'photo_director',
     ];
 
     protected $casts = [

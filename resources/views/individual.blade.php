@@ -1,13 +1,14 @@
 <div class="section-submit__content form-change-bloc1">
-    <form id="member_of_gildia" class="add-form" action="{{Route('form.gildia.store')}}">
+    <form id="member_of_gildia" class="add-form" action="{{Route('form.gildia.store')}}" enctype="multipart/form-data">
         @csrf
         <input type="hidden" name="is_form2" value="1">
         @php
-        $user = auth()->user();
-        $user_id = $user->id;
+        $user_id = null;
+        if ($user = auth()->user()){
+            $user_id = $user->id;
+        }
         @endphp
-        <input type="hidden" name="user_id" value="{{$user_id}}">
-
+        <input type='hidden' name='user_id' value='{{$user_id}}'>
         <h4 class="heading heading-mini heading-grid-100">Форма заявки на Национальную премию в сфере креативных
             индустрий для физических лиц </h4>
         <div class="add-form__left">
@@ -71,7 +72,7 @@
             <div class="form-types" file-group>
                 <label class="form-type-label" for="file-upload">Фото номинанта (600x600 пикселей, jpg,
                     jpeg, png)</label>
-                <input name="photo" id="file-upload" type="file">
+                <input name="image" id="file-upload" type="file">
                 <div class="form-type-text form-type-file" file-change-name="photo"></div>
             </div>
             <div class="form-types mt-md-auto">

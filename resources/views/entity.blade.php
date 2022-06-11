@@ -1,14 +1,21 @@
 <div class="section-submit__content">
-    <form id="member_of_gildia" class="add-form" action="">
+    <form id="member_of_gildia" class="add-form" action="{{Route('form.organization.store')}}" enctype="multipart/form-data" >
+        @csrf
         <input type="hidden" name="is_form2" value="1">
-        <input type="hidden" name="is_organization" value="1">
-        <h4 class="heading heading-mini heading-grid-100">Форма заявки на Национальную премию в сфере креативных
+        @php
+            $user_id = null;
+                if ($user = auth()->user()){
+                    $user_id = $user->id;
+                }
+        @endphp
+        <input type='hidden' name='user_id' value='{{$user_id}}'>
+        <h4 class="heading heading-miQ  1`ni heading-grid-100">Форма заявки на Национальную премию в сфере креативных
             индустрий для юридических лиц</h4>
         <div class="add-form__left">
             @include('forms.first_block')
             <div class="form-types">
                 <label class="form-type-label">Должность номинуемого*</label>
-                <input name="job_title" type="text" class="form-type-text" required>
+                <input name="job_title" type="text" class="form-type-text" required >
             </div>
             <div class="form-types">
                 <label class="form-type-label">Наименование организании*</label>
@@ -32,7 +39,7 @@
                 <label class="form-type-label">Достижения в 2021-2022 году* <span data-output-count="progress"
                                                                                   data-min-count="500"></span>(от
                     500)</label>
-                <textarea required name="achievements" type="text" class="form-type-text" rows="1"
+                <textarea name="achievements"  type="text" class="form-type-text" rows="1"
                           data-input-count="progress"></textarea>
             </div>
             <div class="form-types mt-md-auto">
@@ -68,19 +75,19 @@
                 <input name="organization_site" required type="text" class="form-type-text" required>
             </div>
 
-                <div class="form-types">
-                    <label class="form-type-label">Телефон для связи с номинантом</label>
-                    <input data-mask-phone="" type="text" class="form-type-text" name="phone_nominee">
-                </div>
-                <div class="form-types mt-md-auto">
-                    <label class="form-type-label"> E-mail для связи с номинантом<span
-                                data-output-count="email">(ссылка)</span>*</label>
-                    <textarea name="email_nominee" type="text" required class="form-type-text" rows="1"
-                              data-input-count="email"></textarea>
-                </div>
+            <div class="form-types">
+                <label class="form-type-label">Телефон для связи с номинантом</label>
+                <input data-mask-phone="" type="text" class="form-type-text" name="phone_nominee">
+            </div>
+            <div class="form-types mt-md-auto">
+                <label class="form-type-label"> E-mail для связи с номинантом<span
+                            data-output-count="email">(ссылка)</span>*</label>
+                <textarea name="email_nominee" type="text" required class="form-type-text" rows="1"
+                          data-input-count="email"></textarea>
+            </div>
             <div class="form-types" file-group>
                 <label class="form-type-label" for="file-upload">Презентация <br>(30мб, pdf, mp4, doc, docx)</label>
-                <input name="presentation" id="file-upload" type="file">
+                <input name="presentation_file" id="file-upload" type="file">
                 <div class="form-type-text form-type-file" file-change-name="presentation"></div>
             </div>
             <div class="form-types">

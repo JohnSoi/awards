@@ -17,7 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'IndexController@index')->name('index');
 Route::post('/register', 'RegisterController@showRegistrationForm')->name('register');
 Route::post('/register_process', 'RegisterController@register')->name('register_process');
-//Route::get('/lk', 'UserAreaController@showRequests')->name('showRequests');
 Route::get('/lk', 'UserAreaController@index')->name('lk');
 Route::post('/lk/edit_individual/{id}', 'UserAreaController@edit')->name('edit_ind');
 Route::post('/lk/update_ind/{id}', 'UserAreaController@update')->name('update_ind');
@@ -35,8 +34,6 @@ Route::group([
     'namespace' => '\App\Http\Controllers\Auth'], function () {
     Route::post('/register_process', 'RegisterController@register')->name('register_process');
 });
-
-
 Route::group([
     'prefix' => 'evaluation',
     'as' => 'evaluation.',
@@ -87,8 +84,6 @@ Route::get('mailing/welcome', function () {
 Route::get('mailing/thanks', function () {
     return view('/mailing/thanks');
 })->name('mailing.thanks');
-
-// test
 
 Route::get('faq', function () {
     return view('/faq/index');
