@@ -58,7 +58,7 @@
     <div class="login-block" id="login-block" style="display: block">
         <section class="section section-content section-auth">
             <div class="form--dark container">
-                <form id="loginForm" action="" class="form">
+                <form id="loginForm" action="{{ Route('login') }}" class="form">
                     @csrf
                     <input type="hidden" name="remember" value="1">
                     <h1 class="form__title">Вход</h1>
@@ -92,4 +92,6 @@
 
 @section('scripts')
     <script src="{{asset('js/reg.js')}}"></script>
+    <script src="{{ asset('js/page/auth/register.js') }}"></script>
+    <script src="{{ asset('js/page/auth/login.js') }}"></script>
 @endsection

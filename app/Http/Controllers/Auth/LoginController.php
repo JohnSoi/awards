@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 
 class LoginController extends Controller
@@ -42,7 +43,7 @@ class LoginController extends Controller
 
     protected function showLoginForm()
     {
-        return view('auth.login');
+        return view('auth.register');
     }
 
     protected function validateLogin(Request $request)
@@ -66,6 +67,8 @@ class LoginController extends Controller
         $request->session()->regenerate();
 
         $this->clearLoginAttempts($request);
+
+        if(Auth::attempt())
 
         if (in_array($request->user()->group_id, [3, 4])) {
             return $request->ajax() ? [
