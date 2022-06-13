@@ -37,51 +37,56 @@ class ProjectController extends Controller
             $validator_arr['why_worthy'] = 'required|min:500';
             $validator_arr['email_nominee'] = 'required|email|max:191';
             $validator_arr['presentation_file'] = 'required|mimes: pdf,mp4,doc,docx| max:30720';
-        }else{
-        $validator_arr = [
-            'nomination_id' => 'required',
-            'industry_id' => 'required',
-            'region_id' => 'required',
-            'user_id' => 'required',
-            'name_nominate' => 'required|max:255',
-            'job' => 'required|max:255',
-            'job_title' => 'required|max:255',
-            'bio' => 'required|max:2500',
-            'achievements' => 'required|min:500',
-            'media' => 'required|max:5000',
-            'why_worthy' => 'required|max:5000',
-            'awards' => 'max:5000',
-            'email_nominee' => 'required|email|max:191',
-            'social_url' => 'required|max:5000',
-            'image' => 'image:jpg,jpeg,png |min_height:600| min_width:600',
-            'presentation' => 'max:5000',
-        ];}
+        } else {
+            $validator_arr = [
+                'nomination_id' => 'required',
+                'industry_id' => 'required',
+                'region_id' => 'required',
+                'user_id' => 'required',
+                'name_nominate' => 'required|max:255',
+                'job' => 'required|max:255',
+                'job_title' => 'required|max:255',
+                'bio' => 'required|max:2500',
+                'achievements' => 'required|min:500',
+                'media' => 'required|max:5000',
+                'why_worthy' => 'required|max:5000',
+                'awards' => 'max:5000',
+                'email_nominee' => 'required|email|max:191',
+                'social_url' => 'required|max:5000',
+                'image' => 'image:jpg,jpeg,png |min_height:600| min_width:600',
+                'presentation' => 'max:5000',
+            ];
+        }
 
         $validator = Validator::make($request->all(), $validator_arr);
         if ($validator->fails()) {
             return ['errors' => $validator->errors()];
         }
+
         $Project = Project::create($request->all());
+
         $presentation = Files::upload($request, 'presentation_file', 'presentation');
         if ($presentation) {
             $Project->presentation_file = $presentation;
-            $Project->save();
         }
+
         $image = Files::upload($request, 'image', 'image');
         if ($image) {
             $Project->image = $image;
-            $Project->save();
         }
+
         $photo_director = Files::upload($request, 'photo_director', 'image');
         if ($photo_director) {
             $Project->photo_director = $photo_director;
-            $Project->save();
         }
+
         $media_doc = Files::upload($request, 'media_doc', 'media');
         if ($media_doc) {
             $Project->media_doc = $media_doc;
-            $Project->save();
         }
+
+        $Project->save();
+
         try {
             Mail::to('award@creativityweek.ru')->send(new ProjectMail($request));
         } catch (Exception $e) {
@@ -89,6 +94,7 @@ class ProjectController extends Controller
 
         return ['success' => true];
     }
+
     public function gildia(Request $request)
     {
         return $this->store($request);

@@ -3,12 +3,12 @@
         @csrf
         <input type="hidden" name="is_form2" value="1">
         @php
-        $user_id = null;
-        if ($user = auth()->user()){
-            $user_id = $user->id;
-        }
+            $user_id = null;
+            if ($user = auth()->user()){
+                $user_id = $user->id;
+            }
         @endphp
-        <input type='hidden' name='user_id' value='{{$user_id}}'>
+        <input type='hidden' name='user_id' value='{{ $user_id }}'>
         <h4 class="heading heading-mini heading-grid-100">Форма заявки на Национальную премию в сфере креативных
             индустрий для физических лиц </h4>
         <div class="add-form__left">
