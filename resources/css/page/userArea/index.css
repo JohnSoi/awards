@@ -36,7 +36,7 @@
 }
 .ua-mane-request-item{
     margin-bottom: 50px;
-    min-width: 150%;
+    max-width: 90%;
 }
 
 @media screen and (max-width: 1000px){

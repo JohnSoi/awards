@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 
-use App\Models\gildia;
+use App\Models\Project;
 use http\Env\Request;
 
 class UserAreaController extends Controller
@@ -11,20 +11,25 @@ class UserAreaController extends Controller
     public function index()
     {
         $user = auth()->user();
-        $request = gildia::where("user_id", $user->id)->get();
+        $request = Project::where("user_id", $user->id)->get();
         return view('lk', ['request' => $request]);
+    }
+
+    public function logout(){
+        Auth::logout();
+        redirect(Route('index'));
     }
 
     public function edit($id)
     {
-        $individual = gildia::find($id);
+        $individual = Project::find($id);
         return view('edit_individual', compact('individual'));
     }
 
 
     public function update($id)
     {
-        $individual = gildia::find($id);
+        $individual = Project::find($id);
         $individual -> name = $_GET['name_nominate'];
         $individual -> nomination_id = '1';
         $individual -> industry_id = '1';

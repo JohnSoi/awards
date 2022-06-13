@@ -1,8 +1,7 @@
 @extends('layouts.app')
 @section('title', 'Личный кабинет')
 @section('head')
-    <link rel="stylesheet" href="{{ mix('css/page/dark.css') }}">
-    <!-- disabled phone numbers -->
+    <link rel="stylesheet" href="{{ asset('css/page/dark.css') }}">
     <meta name="format-detection" content="telephone=no">
 @endsection
 @section('body-class', 'body--dark')
@@ -23,7 +22,7 @@
                             <div class="ua-mane-info-block">
                                 <h4 class="ua-mane-info-block-name">{{$user->name}}</h4>
                                 <h5 class="ua-mane-info-block-email">{{$user->email}}</h5>
-                                <a href="#" class="ua-mane-info-block-logout">ВЫЙТИ</a>
+                                <a href="{{Route('logout')}}" class="ua-mane-info-block-logout">ВЫЙТИ</a>
                             </div>
                         </div>
                         <div class="ua-mane-request">
@@ -62,7 +61,7 @@
                                                     class="ua-mane-request-item-span">{{$req->job_title}}</span></p>
                                         <p class="ua-request-item-num-smt">Регион номинуемого: <span
                                                     class="ua-mane-request-item-span">{{$req->location}}</span></p>
-                                        <p class="ua-request-item-num-smt">Достижения в 2021-2022: <span
+                                        <p  class="ua-request-item-num-smt">Достижения в 2021-2022: <span
                                                     class="ua-mane-request-item-span">{{$req->achievements}}</span></p>
                                         <p class="ua-request-item-num-smt">Показатели медиа охвата: <span
                                                     class="ua-mane-request-item-span">{{$req->media}}</span></p>
@@ -88,5 +87,4 @@
         </div>
         </div>
     </section>
-    {{--    <hr style="padding: 0; margin: 0 auto;">--}}
 @endsection

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Form;
 use App\Classes\Files;
 use App\Http\Controllers\Controller;
 use App\Mail\ProjectMail;
+use App\Models\Organizations;
 use App\Models\Project;
 use Exception;
 use Illuminate\Http\Request;
@@ -16,7 +17,7 @@ class ProjectController extends Controller
     {
         if ($request->has('is_organization') && $request['is_organization']) {
             $validator_arr['organization_name'] = 'required|max:255';
-            $validator_arr['name_nominate'] = 'required|max:255';
+            $validator_arr['name'] = 'required|max:255';
             $validator_arr['phone_nominee'] = 'required|max:20';
             $validator_arr['project_name'] = 'required|max:255';
             $validator_arr['project_description'] = 'required|min:500';
@@ -36,13 +37,14 @@ class ProjectController extends Controller
             $validator_arr['why_worthy'] = 'required|min:500';
             $validator_arr['email_nominee'] = 'required|email|max:191';
             $validator_arr['presentation_file'] = 'required|mimes: pdf,mp4,doc,docx| max:30720';
+
         } else {
             $validator_arr = [
                 'nomination_id' => 'required',
                 'industry_id' => 'required',
                 'region_id' => 'required',
                 'user_id' => 'required',
-                'name_nominate' => 'required|max:255',
+                'name' => 'required|max:255',
                 'job' => 'required|max:255',
                 'job_title' => 'required|max:255',
                 'bio' => 'required|max:2500',
@@ -81,13 +83,29 @@ class ProjectController extends Controller
         if ($image) {
             $Project->image = $image;
         }
-
         $Project->save();
-
         try {
             Mail::to('award@creativityweek.ru')->send(new ProjectMail($request));
         } catch (Exception $e) {
         }
+
+        if ($request->has('is_organization') && $request['is_organization']) {
+            $organization_name = $request->organization_name;
+            $why_worthy = $request->why_worthy;
+            $region_id = $request->region_id;
+            $phone_nominee = $request->phone_nominee;
+            $email_nominee = $request->email_nominee;
+            $industry_id = $request->industry_id;
+            $nomination_id = $request->nomination_id;
+        $Project_org = Organizations::create([
+            'organization' => "$organization_name",
+            'why_worthy' => "$why_worthy",
+            'geography' => "$region_id",
+            'phone_nominee' => "$phone_nominee",
+            'email_nominee' => "$email_nominee",
+            'industry_id' => "$industry_id",
+            'nomination_id' => "$nomination_id",
+        ]);}
 
         return ['success' => true];
     }
