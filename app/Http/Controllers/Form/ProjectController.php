@@ -10,7 +10,6 @@ use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
-
 class ProjectController extends Controller
 {
     public function store($request)
@@ -26,7 +25,7 @@ class ProjectController extends Controller
             $validator_arr['organization_site'] = 'max:2000';
             $validator_arr['region_id'] = 'required';
             $validator_arr['video_nominate'] = 'required|max:5000';
-            $validator_arr['photo_director'] = 'image:jpg,jpeg,png';
+            $validator_arr['photo_director'] = 'image:jpg,jpeg,png|min:300|dimensions:min_width=600,min_height=600';
             $validator_arr['industry_id'] = 'required';
             $validator_arr['nomination_id'] = 'required';
             $validator_arr['user_id'] = 'required';
@@ -53,7 +52,7 @@ class ProjectController extends Controller
                 'awards' => 'max:5000',
                 'email_nominee' => 'required|email|max:191',
                 'social_url' => 'required|max:5000',
-                'image' => 'image:jpg,jpeg,png |min_height:600| min_width:600',
+                'image' => 'image:jpg,jpeg,png|min:300|dimensions:min_width=600,min_height=600',
                 'presentation' => 'max:5000',
             ];
         }
@@ -70,19 +69,17 @@ class ProjectController extends Controller
             $Project->presentation_file = $presentation;
         }
 
-        $image = Files::upload($request, 'image', 'image');
-        if ($image) {
-            $Project->image = $image;
-        }
-
         $photo_director = Files::upload($request, 'photo_director', 'image');
         if ($photo_director) {
             $Project->photo_director = $photo_director;
         }
-
         $media_doc = Files::upload($request, 'media_doc', 'media');
         if ($media_doc) {
             $Project->media_doc = $media_doc;
+        }
+        $image = Files::upload($request, 'image', 'image');
+        if ($image) {
+            $Project->image = $image;
         }
 
         $Project->save();
