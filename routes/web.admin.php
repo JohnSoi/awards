@@ -10,7 +10,7 @@ Route::group([
 ], function () {
     Route::get('/', function () {
         return view('admin');
-    });
+    })->name('main');
     Route::post('delete', 'DeleteController@delete');
     Route::resource('project', 'ProjectController');
     Route::resource('form2', 'Form2Controller');

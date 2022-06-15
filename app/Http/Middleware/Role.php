@@ -17,14 +17,12 @@ class Role
      */
     public function handle($request, Closure $next, ...$roles)
     {
-        if (Auth::check()) {
-            if (Auth::user()->group_id) {
-                $group = UserGroup::find(Auth::user()->group_id);
-                if ($group) {
-                    foreach ($roles as $role) {
-                        if ($group->slug == $role) {
-                            return $next($request);
-                        }
+        if (Auth::check() && Auth::user()->group_id) {
+            $group = UserGroup::find(Auth::user()->group_id);
+            if ($group) {
+                foreach ($roles as $role) {
+                    if ($group->slug == $role) {
+                        return $next($request);
                     }
                 }
             }

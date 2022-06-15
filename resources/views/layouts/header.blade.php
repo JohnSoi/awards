@@ -22,7 +22,7 @@
                 <a href="{{ Route('index') }}#contacts" class="header-menu__link">Контакты</a>
                 <a href="{{ Route('Awards2021') }}" class="header-menu__link">Awards2021</a>
                 @if (Auth::check())
-                    <a href="{{ in_array(Auth::user()->group_id, [4, 2], true) ? Route('admin') : Route('lk') }}"
+                    <a href="{{ in_array(Auth::user()->group_id, [4, 2], true) ? Route('admin.main') : Route('lk') }}"
                        class="header-menu__link dropdown__acc">Личный кабинет</a>
                 @else
                     <a href="{{Route('register')}}" class="header-menu__link dropdown__acc">Войти</a>
