@@ -20,5 +20,6 @@
     "/css/app_old.css": "/css/app_old.css",
     "/css/page/errors/500.css": "/css/page/errors/500.css",
     "/css/page/errors/404.css": "/css/page/errors/404.css",
-    "/css/page/auth/index.css": "/css/page/auth/index.css"
+    "/css/page/auth/index.css": "/css/page/auth/index.css",
+    "/css/page/agreement/index.css": "/css/page/agreement/index.css"
 }

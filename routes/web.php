@@ -1,6 +1,8 @@
 <?php
 
+use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'IndexController@index')->name('index');
 Route::post('/register', 'RegisterController@showRegistrationForm')->name('register');
 Route::post('/register_process', 'RegisterController@register')->name('register_process');
-Route::get('/lk', 'UserAreaController@index')->name('lk');
+Route::get('/lk', 'UserAreaController@index')->name('lk')->middleware('verified');
 Route::get('/lk/edit_request/{id}', 'form\ProjectController@edit')->name('edit_ind');
 Route::get('/lk/edit_request/{id}', 'form\ProjectController@update')->name('update_ind');
 Route::get('/individual', 'IndividualController@index')->name('individual');
@@ -105,3 +107,19 @@ Route::get('nomination/{id}', 'NominationController@show')->name('nomination.sho
 
 Route::get('expert', 'ExpertController@index')->name('expert.index');
 Route::get('expert/{id}', 'ExpertController@show')->name('expert.show');
+
+Route::get('/email/verify', function () {
+    return view('auth.verify-email');
+})->middleware('auth')->name('verification.notice');
+
+Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
+    $request->fulfill();
+
+    return redirect('/');
+})->middleware(['auth', 'signed'])->name('verification.verify');
+
+Route::get('/email/verification-notification', function (Request $request) {
+    $request->user()->sendEmailVerificationNotification();
+
+    return back()->with('message', 'Письмо с подтверждением отправлено!');
+})->middleware(['auth', 'throttle:6,1'])->name('verification.send');

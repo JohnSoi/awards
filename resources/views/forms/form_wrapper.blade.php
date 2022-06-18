@@ -22,6 +22,13 @@
         <div class="section-submit__blur">
             <div class="section-submit__blur-title">
                 Для подачи заявки необходимо <br> подтвердить свою почту.
+                <div class="section-submit__blur-text">
+                    <div class="w-100 mt-auto">
+                        <a href="{{ Route('verification.send') }}">
+                            <button class="btn btn-primary w-100">Отправить писмьмо повторно</button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     @endif

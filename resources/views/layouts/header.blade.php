@@ -24,6 +24,9 @@
                 @if (Auth::check())
                     <a href="{{ in_array(Auth::user()->group_id, [4, 2], true) ? Route('admin.main') : Route('lk') }}"
                        class="header-menu__link dropdown__acc">Личный кабинет</a>
+                    <a href="{{ Route('logout') }}" title="Выйти" class="header-menu__link">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    </a>
                 @else
                     <a href="{{Route('register')}}" class="header-menu__link dropdown__acc">Войти</a>
                 @endif
