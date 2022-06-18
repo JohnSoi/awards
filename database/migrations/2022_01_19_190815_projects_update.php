@@ -20,6 +20,7 @@ class ProjectsUpdate extends Migration
             $table->text('awards')->nullable();
             $table->integer('status')->default(0);
             $table->integer('user_id');
+            $table->integer('region_id')->nullable();
             $table->string('organization_name')->nullable();
             $table->string('project_name')->nullable();
             $table->text('project_description')->nullable();

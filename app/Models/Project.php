@@ -47,6 +47,7 @@ class Project extends Model
         'name_organizer',
         'organization_site',
         'presentation',
+        'region_id',
         'video_nominate',
         'photo_director',
     ];
@@ -66,6 +67,11 @@ class Project extends Model
     public function industry()
     {
         return $this->belongsTo(Industry::class);
+    }
+
+    public function region()
+    {
+        return $this->belongsTo(Region::class);
     }
 
     public function nomination()

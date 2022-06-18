@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 
-use App\Models\Project;
+use App\Models\project;
 use http\Env\Request;
 
 class UserAreaController extends Controller
@@ -11,25 +11,21 @@ class UserAreaController extends Controller
     public function index()
     {
         $user = auth()->user();
-        $request = Project::where("user_id", $user->id)->get();
+        $industry = project::find(1)->industry;
+        $request = project::where("user_id", $user->id)->get();
         return view('lk', ['request' => $request]);
-    }
-
-    public function logout(){
-        Auth::logout();
-        redirect(Route('index'));
     }
 
     public function edit($id)
     {
-        $individual = Project::find($id);
+        $individual = project::find($id);
         return view('edit_individual', compact('individual'));
     }
 
 
     public function update($id)
     {
-        $individual = Project::find($id);
+        $individual = project::find($id);
         $individual -> name = $_GET['name_nominate'];
         $individual -> nomination_id = '1';
         $individual -> industry_id = '1';

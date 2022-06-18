@@ -74,16 +74,17 @@
                 <label class="form-type-label">Сайт организации</label>
                 <input name="organization_site" required type="text" class="form-type-text" required>
             </div>
-
-            <div class="form-types">
-                <label class="form-type-label">Телефон для связи с номинантом</label>
-                <input data-mask-phone="" type="text" class="form-type-text" name="phone_nominee">
-            </div>
-            <div class="form-types mt-md-auto">
-                <label class="form-type-label"> E-mail для связи с номинантом<span
-                            data-output-count="email">(ссылка)</span>*</label>
-                <textarea name="email_nominee" type="text" required class="form-type-text" rows="1"
-                          data-input-count="email"></textarea>
+            <div class="add-form__double">
+                <div class="form-types">
+                    <label class="form-type-label">Телефон для связи с номинантом</label>
+                    <input data-mask-phone="" type="text" class="form-type-text" name="phone_nominee">
+                </div>
+                <div class="form-types mt-md-auto">
+                    <label class="form-type-label"> E-mail для связи с номинантом<span
+                                data-output-count="email">(ссылка)</span>*</label>
+                    <textarea name="email_nominee" type="text" required class="form-type-text" rows="1"
+                              data-input-count="email"></textarea>
+                </div>
             </div>
             <div class="form-types" file-group>
                 <label class="form-type-label" for="file-upload">Презентация <br>(30мб, pdf, mp4, doc, docx)</label>
@@ -100,10 +101,16 @@
                 <input name="photo_director" id="file-upload" type="file">
                 <div class="form-type-text form-type-file" file-change-name="presentation"></div>
             </div>
-
+            <div>
+                <div class=" mt-md-auto">
+                    <input  required type="checkbox" id="check"><span class="span-text-form"><a class="span-text-form-a"
+                                                                                                                    href="{{ Route('agreement.index') }}">Cогласен на обработку персональных данных</a></span>
+                </div>
+            </div>
             <div class="w-100 mt-auto">
                 <button class="btn btn-primary w-100">Подать заявку</button>
             </div>
+
         </div>
     </form>
 </div>

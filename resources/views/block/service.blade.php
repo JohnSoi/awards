@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="{{ mix('css/page/dark.css') }}">
+<link rel="stylesheet" href="{{ mix('css/page/form/index.css') }}">
 <section class="section section-content section-service">
     <div class="container">
         <div class="section-service__inner">

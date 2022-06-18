@@ -39,6 +39,7 @@ mix
     .sass('resources/scss/page/form/index.scss', 'css/page/form')
     .css('resources/css/page/dark.css', 'css/page')
     .css('resources/css/page/userArea/index.css', 'css/page/userArea')
+    .css('resources/css/page/agreement/index.css', 'css/page/agreement')
     .css('resources/css/page/auth/index.css', 'css/page/auth')
     .css('resources/css/page/errors/404.css', 'css/page/errors')
     .css('resources/css/page/errors/500.css', 'css/page/errors')

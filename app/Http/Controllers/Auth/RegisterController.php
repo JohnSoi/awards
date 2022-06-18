@@ -51,7 +51,9 @@ class RegisterController extends Controller
         if ($user){
             auth("web")->login($user);
         }
-        return redirect(route("index"));
+        return $request->ajax()
+            ? ['success' => true]
+            : redirect()->intended($this->redirectPath());
     }
 
     protected function create(array $data)

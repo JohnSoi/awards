@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+    <div style="margin-top: 50px;"></div>
     @include('block.photos')
     @include('block.jury')
     @include('block.expert')
