@@ -11,7 +11,6 @@ class UserAreaController extends Controller
     public function index()
     {
         $user = auth()->user();
-        $industry = project::find(1)->industry;
         $request = project::where("user_id", $user->id)->get();
         return view('lk', ['request' => $request]);
     }
