@@ -21,6 +21,7 @@ class ProjectUpdate extends Migration
             $table->text('media')->nullable();
             $table->text('awards')->nullable();
             $table->integer('status')->default(0);
+            $table->integer('user_id');
         });
     }
 

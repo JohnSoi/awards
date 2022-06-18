@@ -109,7 +109,7 @@ Route::get('expert', 'ExpertController@index')->name('expert.index');
 Route::get('expert/{id}', 'ExpertController@show')->name('expert.show');
 
 Route::get('/email/verify', function () {
-    return view('auth.verify-email');
+    return view('auth.verify');
 })->middleware('auth')->name('verification.notice');
 
 Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
@@ -120,6 +120,8 @@ Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $requ
 
 Route::get('/email/verification-notification', function (Request $request) {
     $request->user()->sendEmailVerificationNotification();
+
+    session()->put('resent', true);
 
     return back()->with('message', 'Письмо с подтверждением отправлено!');
 })->middleware(['auth', 'throttle:6,1'])->name('verification.send');

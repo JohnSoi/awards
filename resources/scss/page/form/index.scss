@@ -84,3 +84,18 @@
         transition: 0.3s;
     }
 }
+
+.pd-accept__ {
+    &wrapper {
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 140%;
+        letter-spacing: -0.01em;
+        color: #222222;
+    }
+
+    &link {
+        color: #222222;
+        text-decoration: underline;
+    }
+}

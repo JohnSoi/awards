@@ -34,5 +34,5 @@
 @endif
 <div class="form-types">
     <label class="form-type-label">Кого номинируете? (ФИО)*</label>
-    <input name="name" type="text" class="form-type-text" required>
+    <input name="name_nominate" type="text" class="form-type-text" required>
 </div>

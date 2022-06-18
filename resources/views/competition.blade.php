@@ -19,11 +19,6 @@
                             <span class="font-weight-700">Проекты принимаются
                                 по&nbsp;направлениям</span>
                         </h4>
-                        <a href="javascript://" class="btn btn-red-primary opacity-100 disabled mt-5">
-                            прием заявок<br>
-                            R.C.Awards 2021<br>
-                            завершен
-                        </a>
                     </div>
                 </div>
             </div>
@@ -246,7 +241,7 @@
 
 @include('block.faq')
 
-@include('block.form')
+@include('forms.form_wrapper')
 
 @include('block.partners')
 

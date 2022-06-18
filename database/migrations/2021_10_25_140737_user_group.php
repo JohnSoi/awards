@@ -16,7 +16,7 @@ class UserGroup extends Migration
 
     public function down()
     {
-        Schema::table('events', function (Blueprint $table) {
+        Schema::table('users', function (Blueprint $table) {
             $table->dropColumn(['group_id', 'photo']);
         });
     }

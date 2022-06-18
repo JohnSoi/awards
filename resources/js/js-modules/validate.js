@@ -250,6 +250,7 @@ window.validate = {
             ? form.find('[name="' + key + '"]:eq(0)')
             : form.find('[name^="' + key + '["]:eq(0)');
         console.log(error_elem, key);
+        console.log(error_elem, key);
         if (!error_elem.length && key.indexOf('.') > -1) {
             let strArr = key.split('.'),
                 selector = strArr.map((str, index) => {
@@ -337,10 +338,6 @@ window.validate = {
                 errors.push(val);
             }
         });
-
-        if (errors.length) {
-            alert(errors.join(', '));
-        }
 
         this.scrollToError(form);
     },

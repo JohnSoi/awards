@@ -1,7 +1,9 @@
 <div class="section-submit__content">
-    <form id="member_of_gildia" class="add-form" action="{{Route('form.organization.store')}}" enctype="multipart/form-data" >
+    <form id="member_of_gildia" class="add-form" action="{{ Route('form.organization.store') }}"
+          enctype="multipart/form-data">
         @csrf
         <input type="hidden" name="is_form2" value="1">
+        <input type="hidden" name="is_organization" value="1">
         @php
             $user_id = null;
             if ($user = auth()->user()){
@@ -15,7 +17,7 @@
             @include('forms.first_block')
             <div class="form-types">
                 <label class="form-type-label">Должность номинуемого*</label>
-                <input name="job_title" type="text" class="form-type-text" required >
+                <input name="job_title" type="text" class="form-type-text" required>
             </div>
             <div class="form-types">
                 <label class="form-type-label">Наименование организании*</label>
@@ -39,7 +41,7 @@
                 <label class="form-type-label">Достижения в 2021-2022 году* <span data-output-count="progress"
                                                                                   data-min-count="500"></span>(от
                     500)</label>
-                <textarea name="achievements"  type="text" class="form-type-text" rows="1"
+                <textarea name="achievements" type="text" class="form-type-text" rows="1"
                           data-input-count="progress"></textarea>
             </div>
             <div class="form-types mt-md-auto">
@@ -101,12 +103,7 @@
                 <input name="photo_director" id="file-upload" type="file">
                 <div class="form-type-text form-type-file" file-change-name="presentation"></div>
             </div>
-            <div>
-                <div class=" mt-md-auto">
-                    <input  required type="checkbox" id="check"><span class="span-text-form"><a class="span-text-form-a"
-                                                                                                                    href="{{ Route('agreement.index') }}">Cогласен на обработку персональных данных</a></span>
-                </div>
-            </div>
+            @include('forms.pd_accept')
             <div class="w-100 mt-auto">
                 <button class="btn btn-primary w-100">Подать заявку</button>
             </div>

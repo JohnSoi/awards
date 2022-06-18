@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Constants\Status;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -63,6 +64,16 @@ class Project extends Model
     public static $shortlist_image_thumbs = [
         [800]
     ];
+
+    public $appends = ['status_text', 'status_class'];
+
+    public function getStatusTextAttribute() {
+        return Status::getStatusText($this->status);
+    }
+
+    public function getStatusClassAttribute() {
+        return Status::getStatusClass($this->status);
+    }
 
     public function industry()
     {

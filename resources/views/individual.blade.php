@@ -83,12 +83,7 @@
                 <textarea name="presentation" type="text" required class="form-type-text" rows="1"
                           data-input-count="presentation"></textarea>
             </div>
-            <div>
-                <div class=" mt-md-auto">
-                    <input  required type="checkbox" id="check"><span class="span-text-form"><a class="span-text-form-a"
-                                                                                                href="{{ Route('agreement.index') }}">Cогласен на обработку персональных данных</a></span>
-                </div>
-            </div>
+            @include('forms.pd_accept')
             <div class="w-100 mt-auto">
                 <button class="btn btn-primary w-100">Подать заявку</button>
             </div>
