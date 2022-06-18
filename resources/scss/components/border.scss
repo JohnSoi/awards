@@ -1,0 +1,11 @@
+@import './colors';
+.devider {
+    border-top: 0.8px solid;
+    border-color: transparent;
+    &-black {
+        border-color: transparentize($c-222222, 0.88);
+    }
+    &-white {
+        border-color: transparentize($white, 0.88);
+    }
+}

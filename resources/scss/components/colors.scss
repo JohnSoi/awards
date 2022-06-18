@@ -1,6 +1,9 @@
 // colors
-$light-violet-gradient: linear-gradient(269.91deg, #C3A5F2 12.69%, #FFFFFF 99.92%);
-$dark-violet-gradient: linear-gradient(94.05deg, #1E1E1E -13.27%, #C3A5F2 133.53%);
+$light-violet-gradient: linear-gradient( 269.91deg, rgb(195, 165, 242) 12.69%, rgb(255, 255, 255) 99.92%);
+$dark-violet-gradient: linear-gradient( 94.05deg, rgb(30, 30, 30) -13.27%, rgb(195, 165, 242) 133.53%);
+// $conic-gradient: conic-gradient( from 172.09deg at 54.03% 52.13%, #1e1e1e -181.38deg, #c3a5f2 1.32deg, #1e1e1e 178.62deg, #c3a5f2 361.32deg);
+$conic-gradient: conic-gradient(from 172.09deg at 54.03% 52.13%, rgb(30, 30, 30) -181.38deg, rgb(195, 165, 242) 1.32deg, rgb(30, 30, 30) 178.62deg, rgb(195, 165, 242) 361.32deg);
+$black-gradient: linear-gradient( 180deg, rgba(34, 34, 34, 0) 1.6%, rgb(34, 34, 34) 90.96%);
 $c-000000: #000000;
 $c-111111: #111111;
 $c-1e1e1e: #1e1e1e;
@@ -216,7 +219,7 @@ $white: #ffffff;
 }
 
 // gradients
-$silver-gradient: linear-gradient(270deg, #e5e5e5 13.52%, #f7f7f7 43.22%, #cccccc 90%);
+$silver-gradient: linear-gradient( 270deg, #e5e5e5 13.52%, #f7f7f7 43.22%, #cccccc 90%);
 // industries
 .industry-svg {
     &__fashion {

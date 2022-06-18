@@ -1,4 +1,7 @@
 @import "./index";
+@import "./../photos/item";
+@import "./../../section/section-contacts";
+@import "./../../section/section-indamini";
 .post-mark {
     &__green {
         background-image: unset !important;
@@ -37,14 +40,129 @@
     }
 }
 
+.section-step {
+    padding-top: 120px;
+    @media (max-width: 1199px) {
+        padding-top: 80px;
+    }
+}
+
+.section-industries {
+    padding-top: 80px;
+    padding-bottom: 90px;
+    @media (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    @media (max-width: 767px) {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    &__content {
+        margin-top: 0;
+    }
+    &__btn {
+        display: none;
+        @media (max-width: 1199px) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+    }
+}
+
 .section-cta {
     & .section-center-title {
         font-family: "RCW2021";
         font-weight: normal;
         font-size: 36px;
+        transition: 0.4s ease;
+        @media (max-width: 1199px) {
+            font-size: 34px;
+        }
+        @media (max-width: 991px) {
+            font-size: 30px;
+        }
+        @media (max-width: 767px) {
+            font-size: 20px;
+        }
         @media (max-width: 576px) {
             font-size: 16px;
         }
+    }
+}
+
+.section-expert {
+    padding-bottom: 120px;
+}
+
+.section-partners {
+    padding-top: 120px;
+    @media (max-width: 1199px) {
+        padding-top: 80px;
+    }
+    @media (max-width: 767px) {
+        padding-top: 40px;
+    }
+}
+
+.section-photos {
+    padding-top: 120px;
+    padding-bottom: 0px;
+    @media (max-width: 991px) {
+        padding-bottom: 120px;
+    }
+    @media (max-width: 767px) {
+        padding-bottom: 70px;
+    }
+    &__inner {
+        padding-bottom: 25px;
+        @media (max-width: 991px) {
+            padding-bottom: 17px;
+        }
+        @media (max-width: 767px) {
+            padding-bottom: 32px;
+        }
+    }
+    & .mobile-section-title {
+        display: none;
+        @media (max-width: 576px) {
+            display: block;
+            margin-bottom: 48px;
+            font-family: Normalidad;
+            font-weight: 800;
+            font-size: 19px;
+            line-height: 136%;
+            text-align: center;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: $c-222222;
+            padding-bottom: 16px;
+            border-bottom: 1px solid transparentize($c-222222, 0.9);
+        }
+    }
+    & .section-title {
+        padding-top: 32px;
+    }
+    &__grid {
+        margin: auto;
+        column-count: 3;
+        column-gap: 20px;
+        column-fill: balance;
+        transition: 0.4s ease;
+        @media (max-width: 767px) {
+            column-count: 2;
+        }
+    }
+    &__btns {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -52,7 +170,17 @@
 [mask="url(#__lottie_element_13)"] path,
 [mask="url(#__lottie_element_10)"] path,
 [mask="url(#__lottie_element_7)"] path,
-[mask="url(#__lottie_element_4)"] path {
+[mask="url(#__lottie_element_4)"] path,
+[mask="url(#__lottie_element_41)"] path,
+[mask="url(#__lottie_element_38)"] path,
+[mask="url(#__lottie_element_35)"] path,
+[mask="url(#__lottie_element_32)"] path,
+[mask="url(#__lottie_element_29)"] path,
+[mask="url(#__lottie_element_21)"] path,
+[mask="url(#__lottie_element_18)"] path,
+[mask="url(#__lottie_element_15)"] path,
+[mask="url(#__lottie_element_12)"] path,
+[mask="url(#__lottie_element_9)"] path {
     fill: #222222 !important;
 }
 
@@ -60,6 +188,16 @@
 [mask="url(#__lottie_element_13)"] g:first-child path,
 [mask="url(#__lottie_element_10)"] g:first-child path,
 [mask="url(#__lottie_element_7)"] g:first-child path,
-[mask="url(#__lottie_element_4)"] g:first-child path {
-    fill: url(#gradient) !important;
+[mask="url(#__lottie_element_4)"] g:first-child path,
+[mask="url(#__lottie_element_41)"] g:first-child path,
+[mask="url(#__lottie_element_38)"] g:first-child path,
+[mask="url(#__lottie_element_35)"] g:first-child path,
+[mask="url(#__lottie_element_32)"] g:first-child path,
+[mask="url(#__lottie_element_29)"] g:first-child path,
+[mask="url(#__lottie_element_21)"] g:first-child path,
+[mask="url(#__lottie_element_18)"] g:first-child path,
+[mask="url(#__lottie_element_15)"] g:first-child path,
+[mask="url(#__lottie_element_12)"] g:first-child path,
+[mask="url(#__lottie_element_9)"] g:first-child path {
+    fill: url(#gray-gradient) !important;
 }

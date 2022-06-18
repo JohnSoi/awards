@@ -162,7 +162,7 @@
             font-size: inherit !important;
         }
         & p {
-            margin-bottom: 32px;
+            margin-bottom: 0;
             white-space: pre-wrap;
             @media (max-width: 767px) {
                 margin-bottom: 26px;

@@ -1,4 +1,16 @@
 .isSafari {
+    // gradient
+    // .conic-gradient {
+    //     &::before {
+    //         @media (max-width: 576px) {
+    //             background-image: $dark-violet-gradient;
+    //             background-size: cover;
+    //             background-repeat: repeat-y;
+    //             background-position: center;
+    //             background-color: $c-222222;
+    //         }
+    //     }
+    // }
     // chat
     & .message {
         &__time {

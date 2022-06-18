@@ -1,61 +1,24 @@
-import { Metro, Select } from 'metro4';
 import Swiper from 'swiper/bundle';
 
 import '../block/animation';
 import '../block/sliderCursor';
 import '../js-modules/cursorStatus';
 import options from '../block/swiperOptions';
-
-import '../block/news';
-import '../block/submit';
+import '../block/award';
+require('../js-modules/modalVideoStop');
+import './index/photos';
 
 window.index = {
     init: function() {
         index.swipers();
         index.parallax();
+        index.projectContainer();
+        $(window).on('resize', () => {
+            index.projectContainer();
+        });
     },
 
     swipers: function() {
-        ZoneObject.create('.section-themes', {
-            run: () => {
-                // Темы
-                new Swiper('.swiper-1', $.extend(options, {
-                    slidesPerView: 'auto',
-                    spaceBetween: 0,
-                    centerInsufficientSlides: true,
-                    breakpoints: {
-                        1200: {
-                            enabled: false,
-                            noSwiping: false,
-                            spaceBetween: 20
-                        },
-                        768: {
-                            slidesPerView: 'auto',
-                            spaceBetween: 20
-                        },
-                        320: {
-                            spaceBetween: 20
-                        }
-                    }
-                }));
-            }
-        });
-
-        ZoneObject.create('.section-direction', {
-            run: () => {
-                // Жюри
-                new Swiper('.swiper-3', $.extend(options, {
-                    slidesPerView: 'auto',
-                    spaceBetween: 16,
-                    breakpoints: {
-                        768: {
-                            slidesPerView: 'auto',
-                            spaceBetween: 20
-                        }
-                    }
-                }));
-            }
-        });
 
         ZoneObject.create('.section-jury', {
             run: () => {
@@ -105,6 +68,31 @@ window.index = {
             }
         });
 
+        ZoneObject.create('.section-industries', {
+            run: () => {
+                // Карточки по направлениям
+                new Swiper('.swiper-project', $.extend(options, {
+                    slidesPerView: 'auto',
+                    spaceBetween: 20,
+                    breakpoints: {
+                        1200: {
+                            enabled: false,
+                            noSwiping: false,
+                            slidesPerView: 'auto',
+                            spaceBetween: 20
+                        },
+                        768: {
+                            slidesPerView: 'auto',
+                            spaceBetween: 20
+                        },
+                        0: {
+                            init: false,
+                        },
+                    }
+                }));
+            }
+        });
+
         ZoneObject.create('.section-step', {
             run: () => {
                 // Карточки по направлениям
@@ -128,29 +116,6 @@ window.index = {
                     slidesPerView: 'auto',
                     spaceBetween: 0,
                     breakpoints: {
-                        768: {
-                            slidesPerView: 'auto',
-                            spaceBetween: 20
-                        },
-                        320: {
-                            spaceBetween: 20
-                        }
-                    }
-                }));
-            }
-        });
-
-        ZoneObject.create('.section-history', {
-            run: () => {
-                // История компании
-                new Swiper('.swiper-history', $.extend(options, {
-                    slidesPerView: 'auto',
-                    spaceBetween: 0,
-                    breakpoints: {
-                        1024: {
-                            slidesPerView: 'auto',
-                            spaceBetween: 155
-                        },
                         768: {
                             slidesPerView: 'auto',
                             spaceBetween: 20
@@ -199,6 +164,14 @@ window.index = {
                     }, 250, "swing");
                 }
             });
+        }
+    },
+
+    projectContainer: function() {
+        if ($(window).width() > 1200) {
+            $('.industry__illustrate').css('right', $('.container').offset().left + 15);
+        } else {
+            $('.industry__illustrate').css('right', 0);
         }
     }
 }

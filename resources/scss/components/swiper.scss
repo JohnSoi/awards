@@ -16,6 +16,18 @@
     }
 }
 
+.swiper-project {
+    width: 100%;
+    cursor: initial;
+    .swiper-slide {
+        width: auto !important;
+        height: unset !important;
+    }
+    & .swiper-wrapper {
+        cursor: initial;
+    }
+}
+
 .swiper-1 {
     width: 100%;
     cursor: none;

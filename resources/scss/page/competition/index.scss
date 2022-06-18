@@ -1,0 +1,30 @@
+@import "./../main/index";
+.section-newyear {
+    padding-top: 70px;
+    padding-bottom: 110px;
+    @media (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 90px;
+    }
+    @media (max-width: 767px) {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+}
+
+.slide-wrapper {
+    & .slide {
+        &.slide-new-year {
+            &::before {
+                top: auto !important;
+                bottom: 5%;
+                @media (max-width: 991px) {
+                    bottom: 20%;
+                }
+                @media (max-width: 767px) {
+                    bottom: 5%;
+                }
+            }
+        }
+    }
+}

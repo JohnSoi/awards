@@ -48,7 +48,115 @@ Admined.page('post', 'Новости', {
     ]
 });
 
+Admined.page('project', 'Проекты', {
+    form: [
+        {
+            name: 'id',
+            placeholder: 'ID',
+            center: true,
+            readonly: true
+        },
+        {
+            name: 'image',
+            placeholder: 'Картинка',
+            thumb: 266,
+            type: 'file'
+        },
+        {
+            name: 'is_winner',
+            placeholder: 'Победитель',
+            type: 'switch'
+        },
+        {
+            name: 'is_top',
+            placeholder: 'Топ',
+            type: 'switch'
+        },
+        {
+            name: 'name_nominate',
+            placeholder: 'ФИО/Название проекта',
+        },
+        {
+            name: 'deposit',
+            placeholder: 'Вклад',
+            type: 'texteditor'
+        },
+        {
+            name: 'geography',
+            placeholder: 'География'
+        },
+        {
+            name: 'nomination_id',
+            placeholder: 'Номинация',
+            type: 'select'
+        },
+        {
+            name: 'presentation',
+            placeholder: 'Презентация',
+            type: 'file'
+        },
+        {
+            name: 'phone_nominee',
+            placeholder: 'Телефон номинируемого'
+        },
+        {
+            name: 'email_nominee',
+            placeholder: 'Email номинируемого'
+        },
+        {
+            name: 'unique',
+            placeholder: 'Уникальность',
+            type: 'text'
+        },
+        {
+            name: 'social_url',
+            placeholder: 'Соц. сеть',
+        },
+        {
+            name: 'why_worthy',
+            placeholder: 'Почему достоин',
+            type: 'text'
+        },
+        {
+            name: 'created_at',
+            placeholder: 'Дата',
+            type: 'datetime',
+            readonly: true
+        },
+        {
+            name: 'shortlist_texts',
+            placeholder: 'Контент для шорт-лист',
+            type: 'array',
+            fields: [
+                {
+                    name: 'shortlist_texts[title][]',
+                    placeholder: 'Заголовок'
+                },
+                {
+                    name: 'shortlist_texts[text][]',
+                    placeholder: 'Текст',
+                    type: 'text'
+                }
+            ]
+        },
+        {
+            name: 'shortlist_image',
+            placeholder: 'Фотография',
+            type: 'file',
+            thumb: 800,
+            filter: false,
+        },
+        {
+            name: 'shortlist_video',
+            placeholder: 'Код видео',
+            type: 'text',
+            filter: false,
+        }
+    ]
+});
+
 Admined.page('form2', 'Форма 2', {
+    parent: 'project',
     form: [
         {
             name: 'id',
@@ -111,6 +219,7 @@ Admined.page('form2', 'Форма 2', {
 });
 
 Admined.page('gildia', 'Член гильдии', {
+    parent: 'project',
     form: [
         {
             name: 'id',
@@ -186,6 +295,7 @@ Admined.page('gildia', 'Член гильдии', {
 });
 
 Admined.page('organization', 'Организации', {
+    parent: 'project',
     form: [
         {
             name: 'id',
@@ -375,7 +485,7 @@ Admined.page('user', 'Пользователи', {
     ]
 });
 
-Admined.page('block_user', 'Эксперты и жюри', {
+Admined.page('block_user', 'Блок экспертов', {
     form: [
         {
             name: 'id',
@@ -404,4 +514,134 @@ Admined.page('block_user', 'Эксперты и жюри', {
             readonly: true
         },
     ]
+});
+
+Admined.page('evaluation', 'Оценки', {
+    form: [
+        {
+            name: 'user_name',
+            placeholder: 'ФИО',
+            with: 'user',
+            text_key: 'name',
+            readonly: true
+        },
+        {
+            name: 'project_name_nominate',
+            placeholder: 'Проект',
+            with: 'project',
+            text_key: 'name_nominate',
+            readonly: true
+        },
+        {
+            name: 'comment',
+            placeholder: 'Комментарий',
+            type: 'text',
+            readonly: true
+        },
+        {
+            name: 'total',
+            placeholder: 'Оценка',
+            readonly: true
+        },
+        {
+            name: 'updated_at',
+            placeholder: 'Дата',
+            type: 'datetime',
+            readonly: true,
+        }
+    ],
+    editAction: false,
+    addAction: false,
+    deleteAction: false,
+});
+
+Admined.page('expert', 'Эксперты', {
+    form: [
+        {
+            name: 'name',
+            placeholder: 'ФИО',
+            with: 'user',
+            text_key: 'name',
+            readonly: true
+        },
+        {
+            name: 'email',
+            placeholder: 'Email',
+            with: 'user',
+            text_key: 'email',
+            readonly: true
+        },
+        {
+            name: 'last_online_at',
+            placeholder: 'Последнее посещение',
+            with: 'user',
+            text_key: 'last_online_at',
+            type: 'datetime',
+            readonly: true
+        },
+        {
+            name: 'stat',
+            placeholder: 'Оценено',
+            filter: 'readonly',
+            readonly: true,
+            href: '/admin?url=evaluation&user_name={user.name}',
+            target: '_blank'
+        }
+    ],
+    parent: 'evaluation',
+    editAction: false,
+    addAction: false,
+    deleteAction: false,
+});
+
+Admined.page('photo', 'Фотографии', {
+    form: [
+        {
+            name: 'file',
+            placeholder: 'Фотография',
+            type: 'file',
+            thumb: 422,
+            multiple: true,
+            upload_queue: true
+        },
+        {
+            name: 'is_home',
+            placeholder: 'На главной',
+            type: 'switch'
+        },
+        {
+            name: 'sort',
+            placeholder: 'Сортировка',
+            value: 500,
+        },
+        {
+            name: 'date',
+            placeholder: 'Дата фотографии',
+        }
+    ]
+});
+
+Admined.page('nomination', 'Номинации', {
+    form: [
+        {
+            name: 'name',
+            placeholder: 'Название'
+        },
+        {
+            name: 'description',
+            placeholder: 'Описание',
+            type: 'text'
+        },
+        {
+            name: 'title',
+            placeholder: 'Заголовок'
+        },
+        {
+            name: 'about',
+            placeholder: 'О номинации',
+            type: 'text'
+        }
+    ],
+    deleteAction: false,
+    addAction: false
 });

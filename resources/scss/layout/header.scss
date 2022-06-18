@@ -1,4 +1,6 @@
 .header {
+    position: relative;
+    z-index: 1;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -30,7 +32,8 @@
         margin-right: 40px;
     }
     @media (min-width: 1430px) {
-        margin-right: 90px;
+        // margin-right: 90px;
+        margin-right: 116px;
     }
     & img {
         width: 158px;
@@ -58,7 +61,8 @@
     flex: 1;
     @media (min-width: 1200px) {
         display: flex;
-        max-width: 900px;
+        // max-width: 900px;
+        max-width: 100%;
     }
     &__link {
         font-size: 13px;
@@ -106,7 +110,25 @@
     }
 }
 
+.body--white {
+    .header {
+        background-color: $white;
+    }
+}
+
 .body--dark {
+    .header {
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 301px;
+            background: linear-gradient( 180deg, #bf96f7 -81.91%, rgba(191, 150, 247, 0) 81.91%);
+        }
+    }
     .header-menu__link {
         color: #fbfbfb;
         &:focus {

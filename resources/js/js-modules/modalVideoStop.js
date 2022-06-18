@@ -1,9 +1,16 @@
-$(document).on('hidden.bs.modal', '.modal', function () {
-    $(this).find('iframe').each(function () {
-        $(this).after($(this).clone()).remove();
-    });
+const videoReplace = (video) => {
+    let clone = video.clone();
 
-    $(this).find('video').each(function () {
-        $(this).after($(this).clone()).remove();
+    if (clone.hasClass('lazyloaded')) {
+        clone.removeClass('lazyloaded');
+        clone.attr('src', clone.attr('data-src'));
+    }
+
+    video.after(clone).remove();
+}
+
+$(document).on('hidden.bs.modal', '.modal', function () {
+    $(this).find('iframe, video').each(function () {
+        videoReplace($(this));
     });
 });

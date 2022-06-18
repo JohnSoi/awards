@@ -51,6 +51,48 @@
     }
 }
 
+.btn-black-primary {
+    font-family: Object Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $c-222222;
+    color: $white;
+    padding: 17px 20px 15px;
+    border: 1px solid $c-222222;
+    transition: 0.4s ease;
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $white;
+        color: $c-222222;
+        border: 1px solid $white;
+        box-shadow: unset;
+        transition: 0.4s ease;
+    }
+    &:not(:disabled):not(.disabled).active,
+    &:not(:disabled):not(.disabled):active {
+        color: $c-fbfbfb;
+        background-color: $c-535353;
+        border-color: $c-535353;
+    }
+    &:not(:disabled):not(.disabled).active:focus,
+    &:not(:disabled):not(.disabled):active:focus {
+        box-shadow: unset;
+    }
+    &.disabled,
+    &:disabled {
+        background-color: $c-222222;
+        color: $white;
+        border: 1px solid $c-222222;
+        opacity: 0.5;
+    }
+}
+
 .btn-white-primary {
     font-family: Object Sans;
     font-style: normal;

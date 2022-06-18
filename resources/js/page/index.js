@@ -1,6 +1,7 @@
 import { Metro, Select } from 'metro4';
 import Swiper from 'swiper/bundle';
 
+import './index/photos';
 import '../block/animation';
 import '../block/sliderCursor';
 import '../js-modules/cursorStatus';
@@ -10,12 +11,12 @@ import '../block/news';
 import '../block/submit';
 
 window.index = {
-    init: function() {
+    init: function () {
         index.swipers();
         index.parallax();
     },
 
-    swipers: function() {
+    swipers: function () {
         ZoneObject.create('.section-themes', {
             run: () => {
                 // Темы
@@ -116,13 +117,13 @@ window.index = {
         });
     },
 
-    parallax: function() {
+    parallax: function () {
         if ($(window).width() >= 1200) {
             var timer = false;
 
-            $('.header, .section-main').on('mousemove', function(e) {
+            $('.header, .section-main').on('mousemove', function (e) {
                 if (!timer) {
-                    timer = setTimeout(function() {
+                    timer = setTimeout(function () {
                         var x = e.clientX / window.innerWidth,
                             y = e.clientY / window.innerHeight;
 
@@ -139,7 +140,7 @@ window.index = {
 
             var top_old = 0;
 
-            $(window).on('scroll', function() {
+            $(window).on('scroll', function () {
                 var top_new = $(window).scrollTop() > 200 ? 65 : 0;
 
                 if (top_new != top_old) {

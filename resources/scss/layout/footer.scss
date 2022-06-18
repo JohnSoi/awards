@@ -4,6 +4,7 @@
     color: $c-868686;
     background-color: $c-222222;
     padding: 42px 0;
+    margin-top: auto;
     @media (max-width: 767px) {
         padding: 15px 0 25px 0;
     }
@@ -98,6 +99,14 @@
                 max-width: 100%;
                 flex: unset;
                 margin-bottom: 36px;
+            }
+        }
+        & .other-svg-logo {
+            opacity: 0.6;
+            transition: 0.4s ease;
+            &:hover {
+                opacity: 1;
+                transition: 0.4s ease;
             }
         }
     }

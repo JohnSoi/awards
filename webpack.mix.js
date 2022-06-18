@@ -29,7 +29,9 @@ mix
     .js('resources/js/page/index.js', 'js/page')
     .js('resources/js/page/dark.js', 'js/page')
     .js('resources/js/page/errors.js', 'js/page')
+    .js('resources/js/page/competition.js', 'js/page')
     .js('resources/js/page/form/index.js', 'js/page/form')
+    .js('resources/js/page/news/index.js', 'js/page/news')
     .js('resources/js/page/auth/login.js', 'js/page/auth')
     .js('resources/js/page/auth/register.js', 'js/page/auth')
     .sass('resources/scss/app.scss', 'css')
@@ -41,4 +43,6 @@ mix
     .css('resources/css/page/errors/404.css', 'css/page/errors')
     .css('resources/css/page/errors/500.css', 'css/page/errors')
     .css('resources/css/app_old.css', 'css')
+    .css('resources/css/page/news/index.css', 'css/page/news')
+    .css('resources/css/page/competition/index.css', 'css/page/competition')
 ;

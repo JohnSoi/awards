@@ -12,6 +12,18 @@
                 </div>
             </div>
         </div>
+    @elseif (Auth::user()->group_id !== 1)
+        <div class="section-submit__blur">
+            <div class="section-submit__blur-title">
+                Заявку может подавать только участник.
+            </div>
+        </div>
+    @elseif (!Auth::user()->email_verified_at)
+        <div class="section-submit__blur">
+            <div class="section-submit__blur-title">
+                Для подачи заявки необходимо <br> подтвердить свою почту.
+            </div>
+        </div>
     @endif
     <div class="container" id="submit">
         <div class="border-top-black"></div>

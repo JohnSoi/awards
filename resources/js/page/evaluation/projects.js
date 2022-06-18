@@ -128,6 +128,10 @@ class EvaluationProjects {
         this.sort_key = elem.attr('data-sort');
         this.sort_val = this.sort_val == 'desc' ? 'asc' : 'desc';
 
+        if (this.sort_key == 'id') {
+            items.model[this.items_name].loop_iteration_reverse = this.sort_val == 'asc' ? false : true;
+        }
+
         items.update(this.items_name);
     }
 
