@@ -26,7 +26,7 @@ class ProjectController extends Controller
             $validator_arr['organization_site'] = 'max:2000';
             $validator_arr['region_id'] = 'required';
             $validator_arr['video_nominate'] = 'required|max:5000';
-            $validator_arr['photo_director'] = 'image:jpg,jpeg,png';
+            $validator_arr['photo_director'] = 'mimes:jpg,jpeg,png|min:100 |dimensions:min_width=600,min_height=600';
             $validator_arr['industry_id'] = 'required';
             $validator_arr['nomination_id'] = 'required';
             $validator_arr['user_id'] = 'required';
@@ -38,7 +38,7 @@ class ProjectController extends Controller
             $validator_arr['email_nominee'] = 'required|email|max:191';
             $validator_arr['presentation_file'] = 'required|mimes: pdf,mp4,doc,docx| max:30720';
         } else {
-            $validator_arr = [
+                $validator_arr = [
                 'nomination_id' => 'required',
                 'industry_id' => 'required',
                 'region_id' => 'required',
@@ -53,7 +53,7 @@ class ProjectController extends Controller
                 'awards' => 'max:5000',
                 'email_nominee' => 'required|email|max:191',
                 'social_url' => 'required|max:5000',
-                'image' => 'image:jpg,jpeg,png |min_height:600| min_width:600',
+                'image' => 'mimes:jpg,jpeg,png|min:100 |dimensions:min_width=600,min_height=600',
                 'presentation' => 'max:5000',
             ];
         }
@@ -94,6 +94,36 @@ class ProjectController extends Controller
 
         return ['success' => true];
     }
+    public function edit($id)
+    {
+        $individual = project::find($id);
+        return view('edit_individual', compact('individual'));
+    }
+
+
+    public function update($id)
+    {
+        $individual = project::find($id);
+        $individual -> name = $_GET['name_nominate'];
+        $individual -> nomination_id = '1';
+        $individual -> industry_id = '1';
+        $individual -> job = $_GET['job_nominate'];
+        $individual -> job_title = $_GET['job_title_nominate'];
+        $individual -> location = '1';
+        $individual -> bio = $_GET['bio'];
+        $individual -> achievements = $_GET['achievements'];
+        $individual -> media = $_GET['media_nom'];
+        $individual -> why_worthy = $_GET['why_worthy'];
+        $individual -> presentation = $_GET['presentation'];
+        $individual -> awards = $_GET['awards_nom'];
+        $individual -> email = $_GET['email_nominee'];
+        $individual -> photo = $_GET['photo_nom'];
+        $individual -> social_network = $_GET['social_url'];
+        $individual -> update();
+        return redirect('lk');
+    }
+
+
 
     public function gildia(Request $request)
     {

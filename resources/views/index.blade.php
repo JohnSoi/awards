@@ -134,19 +134,7 @@
 
 @include('block.expert')
 
-<!-- section themes black-block -->
-
-<!-- section mechanics -->
-
 @include('block.service')
-
-<!-- section history -->
-
-<!-- section-faq -->
-
-<!-- section-form -->
-
-<!-- section newsblock -->
 
 @include('block.partners')
 

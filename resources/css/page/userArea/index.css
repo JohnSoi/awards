@@ -1,5 +1,56 @@
-.ua-mane{
+.user-kab{
+    width: 100%;
+}
+.user-kab-registry-item{
+
+}
+.user-kab-registry{
+    padding: 30px;
+    border-radius: 2px;
+    box-shadow: 12px 29px 81px 0 rgba(0,0,0,0.5);
+    overflow: scroll;
+    width: 100%;
+}
+
+.user-kab-registry-item-info-link{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+
+}
+.user-kab-registry-title{
+    text-align: center;
+    font-size: 30px !important;
+}
+.user-kab-registry{
+
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+.user-kab-registry-item-info div{
+    padding: 10px;
+
+}
+.user-kab-registry-item-info{
+    white-space: nowrap;
     display: flex;
+    /*background-color: #5C4D71;*/
+}
+.user-kab-registry-item{
+
+}
+
+
+
+
+.ua-mane{
+    max-width: 100%;
+}
+.ua-mane-content{
+    display: flex;
+}
+.ua-mane*{
+    margin: 0 auto;
 }
 .section-lk{
     background-color: #9681BA !important;
@@ -9,7 +60,13 @@
 }
 .section-lk h3{
     color: white !important;
-
+    font-size: 20px;
+}
+.span-text-form a{
+    color: gray;
+    font-size: 13px;
+    margin-left: 10px;
+    text-decoration: none;
 }
 .section-lk h4{
     color: white !important;
@@ -18,10 +75,10 @@
     color: white !important;
 }
 .ua-mane-request-item-num-mane{
-    display: flex;
 }
 .ua-mane-request{
-    margin-left: 10%;
+    /*margin-left: 10%;*/
+    width: 100%;
 }
 .ua-mane-info-block-logout{
     color: darkslateblue;
@@ -29,29 +86,42 @@
     text-align: center;
     display: block;
 }
-.ua-mane-request-item-p{
- font-size: 13px;
+.ua-mane-request-item-str p{
+    font-size: 10px;
+    padding: 10px;
     color: whitesmoke;
+}
 
+.ua-mane-request-item-str-wares{
+ display: flex;
 }
 .ua-mane-request-item{
-    margin-bottom: 50px;
-    min-width: 150%;
+    width: 100%;
+    overflow: scroll;
+    height: 400px;
+    margin-top:50px;
 }
 
+.ua-mane-request-item-str{
+}
+
+.ua-mane-request-item-str span{
+    display: block;
+    margin-left: 10px;
+    font-size: 15px;
+    white-space: nowrap;
+}
 @media screen and (max-width: 1000px){
     .ua-mane-request-item-num-mane{
         flex-direction: column;
     }
     .ua-mane{
         flex-direction: column;
-
     }
 }
 .ua-mane-request-item-link{
     color: blueviolet;
 }
-
 .ua-mane-request-item-span{
     margin-left: 3px;
     color: whitesmoke;
@@ -64,7 +134,7 @@
     font-style: italic;
 }
 .ua-mane-request-item-second-block{
-    margin-left: 10%;
+    /*margin-left: 10%;*/
 }
 .ua-request-item-num-smt{
     font-size: 14px;
@@ -80,14 +150,13 @@
 .ua-mane-info-block{
     box-shadow: 12px 29px 81px 0 rgba(0,0,0,0.5);
     padding: 40px;
-    min-width: 250px;
+    /*min-width: 250px;*/
     height: 200px;
 }
-
 .form-change-block2{
 }
 .ua-mane-request-item-first-block{
-    max-width: 30%;
+    /*max-width: 30%;*/
 }
 .ua-mane-request-item{
     padding: 30px;

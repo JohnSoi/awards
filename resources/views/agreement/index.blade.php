@@ -45,5 +45,4 @@
 @endsection
 
 @section('scripts')
-<script src="{{ mix('js/page/form2.js') }}"></script>
 @endsection

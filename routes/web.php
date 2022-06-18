@@ -18,8 +18,8 @@ Route::get('/', 'IndexController@index')->name('index');
 Route::post('/register', 'RegisterController@showRegistrationForm')->name('register');
 Route::post('/register_process', 'RegisterController@register')->name('register_process');
 Route::get('/lk', 'UserAreaController@index')->name('lk');
-Route::post('/lk/edit_individual/{id}', 'UserAreaController@edit')->name('edit_ind');
-Route::post('/lk/update_ind/{id}', 'UserAreaController@update')->name('update_ind');
+Route::get('/lk/edit_request/{id}', 'form\ProjectController@edit')->name('edit_ind');
+Route::get('/lk/edit_request/{id}', 'form\ProjectController@update')->name('update_ind');
 Route::get('/individual', 'IndividualController@index')->name('individual');
 Route::post('/individual', 'IndividualController@create')->name('individual_create');
 Route::post('/entity', 'EntityController@index')->name('entity');
@@ -65,7 +65,7 @@ Route::group([
 
 Auth::routes();
 
-Route::post('logout', 'Auth\LogoutController@logout')->name('user_logout');
+Route::get('logout', 'Auth\LogoutController@logout')->name('user_logout');
 
 Route::get('photos', 'PhotoController@index')->name('photos.index');
 

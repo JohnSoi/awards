@@ -65,21 +65,29 @@
                     <input name="email_nominee" required type="email" class="form-type-text">
                 </div>
             </div>
-            <div class="form-types mt-md-auto">
-                <label class="form-type-label">Ссылка на соцсеть</label>
-                <input name="social_url" required type="text" class="form-type-text" required>
-            </div>
-            <div class="form-types" file-group>
-                <label class="form-type-label" for="file-upload">Фото номинанта (600x600 пикселей, jpg,
-                    jpeg, png)</label>
-                <input name="image" id="file-upload" type="file">
-                <div class="form-type-text form-type-file" file-change-name="photo"></div>
+            <div class="add-form__double">
+                <div class="form-types mt-md-auto">
+                    <label class="form-type-label">Ссылка на соцсеть</label>
+                    <input name="social_url" required type="text" class="form-type-text" required>
+                </div>
+                <div class="form-types" file-group>
+                    <label class="form-type-label" for="file-upload">Фото номинанта (600x600 пикселей, jpg,
+                        jpeg, png)</label>
+                    <input name="image" id="file-upload" type="file">
+                    <div class="form-type-text form-type-file" file-change-name="photo"></div>
+                </div>
             </div>
             <div class="form-types mt-md-auto">
                 <label class="form-type-label"> Презентация или видеоролик о номинанте (ссылка)<span
                             data-output-count="presentation">0</span>*</label>
                 <textarea name="presentation" type="text" required class="form-type-text" rows="1"
                           data-input-count="presentation"></textarea>
+            </div>
+            <div>
+                <div class=" mt-md-auto">
+                    <input  required type="checkbox" id="check"><span class="span-text-form"><a class="span-text-form-a"
+                                                                                                href="{{ Route('agreement.index') }}">Cогласен на обработку персональных данных</a></span>
+                </div>
             </div>
             <div class="w-100 mt-auto">
                 <button class="btn btn-primary w-100">Подать заявку</button>
