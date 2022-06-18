@@ -68,8 +68,6 @@ class LoginController extends Controller
 
         $this->clearLoginAttempts($request);
 
-        if(Auth::attempt())
-
         if (in_array($request->user()->group_id, [3, 4])) {
             return $request->ajax() ? [
                 'redirect' => route('evaluation.index')

@@ -65,7 +65,7 @@ Route::group([
 
 Auth::routes();
 
-Route::post('logout', 'Auth\LogoutController@logout')->name('user_logout');
+Route::get('logout', 'Auth\LogoutController@logout')->name('user_logout');
 
 Route::get('photos', 'PhotoController@index')->name('photos.index');
 
