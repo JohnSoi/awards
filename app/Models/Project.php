@@ -67,6 +67,7 @@ class Project extends Model
 
     public $appends = ['status_text', 'status_class'];
 
+
     public function getStatusTextAttribute() {
         return Status::getStatusText($this->status);
     }

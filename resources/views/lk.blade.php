@@ -13,7 +13,7 @@
         <div class="lk-menu">
             Подать заявку как:
             <div class="w-100 mt-auto">
-                <a href="/form-new?organization=0">
+                <a href="{{route('form.show')}}?organization=0">
                     <button class="btn lk-menu-btn btn-white-primary w-100">
                         Физическое лицо
                     </button>
@@ -73,11 +73,11 @@
                         @if( $item->status === \App\Constants\Status::$IN_WORK)
                             <div class="lk-registry__item-actions">
                                 <a class="lk-registry__item-actions__edit"
-                                   href="/edit-form/{{ $item->id }}?organization={{ $item->is_organization ?? 0 }}"
+                                       href="{{route('form.project.edit', $item->id)}}?organization={{$item->is_organization ?? 0}}"
                                    title="Редактировать"><i
                                             class="fa fa-pencil" aria-hidden="true"></i></a>
                                 <a class="lk-registry__item-actions__delete"
-                                   href="/delete-project/{{ $item->id }}" title="Удалить"><i
+                                   href="{{Route('form.project.delete', $item->id)}}" title="Удалить"><i
                                             class="fa fa-trash" aria-hidden="true"></i></a>
                             </div>
                         @endif

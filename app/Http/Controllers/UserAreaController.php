@@ -1,17 +1,32 @@
 <?php
 
 namespace App\Http\Controllers;
-
-
+use Illuminate\Support\Facades\DB;
 use App\Models\project;
 use http\Env\Request;
 
 class UserAreaController extends Controller
 {
+
     public function index()
     {
         $user = auth()->user();
         $request = project::where("user_id", $user->id)->get();
+        if ((!empty( $_GET['column'])) and !empty( ($_GET['direction']))){
+            if ($_GET['column'] == 'date' and $_GET['direction'] == 'down'){
+                $request = project::where("user_id", $user->id)->orderBy('created_at'  , 'DESC')->get();
+            }
+            if ($_GET['column'] == 'date' and $_GET['direction'] == 'up'){
+                $request = project::where("user_id", $user->id)->orderBy('created_at')->get();
+            }
+            if ($_GET['column'] == 'status' and $_GET['direction'] == 'up'){
+                $request = project::where("user_id", $user->id)->orderBy('status')->get();
+            }
+            if ($_GET['column'] == 'status' and $_GET['direction'] == 'down'){
+                $request = project::where("user_id", $user->id)->orderBy('status', 'DESC')->get();
+            }
+
+        }
         return view('lk', ['request' => $request]);
     }
 
@@ -43,5 +58,7 @@ class UserAreaController extends Controller
         $individual -> update();
         return redirect('lk');
     }
+
+
 
 }

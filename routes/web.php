@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,17 +21,17 @@ Route::get('/', 'IndexController@index')->name('index');
 Route::post('/register', 'RegisterController@showRegistrationForm')->name('register');
 Route::post('/register_process', 'RegisterController@register')->name('register_process');
 Route::get('/lk', 'UserAreaController@index')->name('lk')->middleware('verified');
-Route::get('/lk/edit_request/{id}', 'form\ProjectController@edit')->name('edit_ind');
-Route::get('/lk/edit_request/{id}', 'form\ProjectController@update')->name('update_ind');
-Route::get('/individual', 'IndividualController@index')->name('individual');
-Route::post('/individual', 'IndividualController@create')->name('individual_create');
-Route::post('/entity', 'EntityController@index')->name('entity');
+Route::get('/form-new', 'FormPageController@show')->name('form.show');
+//Route::post('/individual', 'IndividualController@create')->name('individual_create');
+//Route::post('/entity', 'EntityController@index')->name('entity');
 Route::get('/awards2021', 'Awards2021Controller@index')->name('Awards2021');
 Route::get('/competition', 'CompetitionController@competition')->name('competition');
 Route::get('post', 'PostController@index')->name('post.index');
 Route::get('post/{id}', 'PostController@show')->name('post.show');
 Route::post('debug', 'DebugController@telegram')->middleware('throttle:60,1');
 Route::post('notify', 'NotifyController@telegram')->middleware('throttle:60,1');
+
+Route::resource('Project', 'Form\ProjectController');
 
 Route::group([
     'namespace' => '\App\Http\Controllers\Auth'], function () {
@@ -63,6 +64,10 @@ Route::group([
     Route::post('subscribe', 'Form\SubscribeController@store')->name('subscribe.store');
     Route::post('gildia', 'Form\ProjectController@gildia')->name('gildia.store');
     Route::post('organization', 'Form\ProjectController@organization')->name('organization.store');
+    Route::get('project_delete/{id}', 'Form\ProjectController@destroy')->name('project.delete');
+    Route::get('project_edit/{id}', 'Form\ProjectController@edit')->name('project.edit');
+    Route::post('update/{id}', 'Form\ProjectController@update')->name('project.update');
+
 });
 
 Auth::routes();

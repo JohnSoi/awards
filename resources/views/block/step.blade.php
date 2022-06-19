@@ -4,7 +4,7 @@
             <div class="border-top-black"></div>
             <h2 class="section-title mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="30">
                 Номинации Russian<br>
-                @if(Request::url() === Route('index'))
+                @if(Request::url() === Route('index') or ('competition'))
                     Creative Awards 2022
                 @else
                     Creative Awards 2021
