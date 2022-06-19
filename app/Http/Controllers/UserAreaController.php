@@ -11,23 +11,17 @@ class UserAreaController extends Controller
     public function index()
     {
         $user = auth()->user();
-        $request = project::where("user_id", $user->id)->get();
-        if ((!empty( $_GET['column'])) and !empty( ($_GET['direction']))){
-            if ($_GET['column'] == 'date' and $_GET['direction'] == 'down'){
-                $request = project::where("user_id", $user->id)->orderBy('created_at'  , 'DESC')->get();
-            }
-            if ($_GET['column'] == 'date' and $_GET['direction'] == 'up'){
-                $request = project::where("user_id", $user->id)->orderBy('created_at')->get();
-            }
-            if ($_GET['column'] == 'status' and $_GET['direction'] == 'up'){
-                $request = project::where("user_id", $user->id)->orderBy('status')->get();
-            }
-            if ($_GET['column'] == 'status' and $_GET['direction'] == 'down'){
-                $request = project::where("user_id", $user->id)->orderBy('status', 'DESC')->get();
+        $request = project::where("user_id", $user->id);
+        if ((!empty($_GET['column'])) && !empty(($_GET['direction']))){
+            $columnSort = $_GET['column'] === 'date' ? 'created_at' : 'status';
+            $direction = $_GET['direction'] === 'up' ? 'ASC' : 'DESC';
+            if ($columnSort && $direction) {
+                $request->orderBy($columnSort , $direction);
             }
 
         }
-        return view('lk', ['request' => $request]);
+
+        return view('lk', ['request' => $request->get()]);
     }
 
     public function edit($id)

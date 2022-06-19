@@ -1,4 +1,4 @@
-import Admined from 'admined';
+require('admined');
 
 function getDatetime() {
     var date = new Date();

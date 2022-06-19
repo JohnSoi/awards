@@ -14,7 +14,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 
-
 class ProjectController extends Controller
 {
     public function store($request)
@@ -111,6 +110,7 @@ class ProjectController extends Controller
 
     public function update(Request $request, $id){
         $new = Project::find($id);
+
         if ($request->has('is_organization') && $request['is_organization']) {
             $validator_arr['organization_name'] = 'required|max:255';
             $validator_arr['name_nominate'] = 'required|max:255';
@@ -169,8 +169,8 @@ class ProjectController extends Controller
         $request['is_organization'] = 1;
         return $this->store($request);
     }
-    public function destroy($id)
 
+    public function destroy($id)
     {
         $project = Project::find($id);
         $project->delete();
