@@ -75,6 +75,15 @@
                     <a href="{{ Route('index') }}#ceremony" class="menu-navigation__link"
                        style="display: none !important;" elem-hide burger-close>Церемония</a>
                     <a href="{{ Route('index') }}#contacts" class="menu-navigation__link" burger-close>Контакты</a>
+                    <a href="{{ Route('Awards2021') }}" class="menu-navigation__link">Awards2021</a>
+                    @if (Auth::check())
+                        <a href="{{ in_array(Auth::user()->group_id, [4, 2], true) ? Route('admin.main') : Route('lk') }}"
+                           class="menu-navigation__link dropdown__acc">Личный кабинет</a>
+                        <a href="{{ Route('logout') }}"
+                           class="menu-navigation__link dropdown__acc">Выйти</a>
+                    @else
+                        <a href="{{Route('register')}}" class="menu-navigation__link dropdown__acc">Войти</a>
+                    @endif
                 </nav>
             </div>
             <div class="footer">

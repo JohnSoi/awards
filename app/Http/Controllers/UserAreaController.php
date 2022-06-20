@@ -1,9 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\DB;
-use App\Models\project;
-use http\Env\Request;
+use App\Models\Project;
 
 class UserAreaController extends Controller
 {
@@ -11,7 +9,7 @@ class UserAreaController extends Controller
     public function index()
     {
         $user = auth()->user();
-        $request = project::where("user_id", $user->id);
+        $request = Project::where("user_id", $user->id);
         if ((!empty($_GET['column'])) && !empty(($_GET['direction']))){
             $columnSort = $_GET['column'] === 'date' ? 'created_at' : 'status';
             $direction = $_GET['direction'] === 'up' ? 'ASC' : 'DESC';
