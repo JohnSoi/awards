@@ -7,3 +7,5 @@ public_html/
 .env
 storage/debugbar/
 storage/framework/cache
+/nodejs/
+/nodejs/node_modules/npm/docs/
