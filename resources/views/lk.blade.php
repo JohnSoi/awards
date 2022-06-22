@@ -65,19 +65,20 @@
                             <span title="Индустрия: {{ $item->industry->name }}">{{ $item->industry->name }}</span>
                         </div>
                         <div class="lk-registry__item-date">
-                            {{ \Illuminate\Support\Carbon::parse($item->created_at)->toDayDateTimeString() }}
+                            {{ \Illuminate\Support\Carbon::parse($item->created_at)->format('d.m.Y H:i') }}
                         </div>
                         <div class="lk-registry__item-status">
-                            <span class="lk-registry__item-status__{{ $item->status_class }}">{{ $item->status_text }}</span>
+                            <span class="lk-registry__item-status-text lk-registry__item-status__{{ $item->status_class }}">{{ $item->status_text }}</span>
+                            <span class="lk-registry__item-status-icon lk-registry__item-status__{{ $item->status_class }}"><i class="fa fa-circle" aria-hidden="true"></i></span>
                         </div>
                         @if( $item->status === \App\Constants\Status::$IN_WORK)
                             <div class="lk-registry__item-actions">
                                 <a class="lk-registry__item-actions__edit"
-                                       href="{{route('form.project.edit', $item->id)}}?organization={{$item->is_organization ?? 0}}"
+                                       href="{{ route('form.project.edit', $item->id) }}?organization={{ $item->is_organization ?? 0 }}"
                                    title="Редактировать"><i
                                             class="fa fa-pencil" aria-hidden="true"></i></a>
                                 <a class="lk-registry__item-actions__delete"
-                                   href="{{Route('form.project.delete', $item->id)}}" title="Удалить"><i
+                                   href="{{ Route('form.project.delete', $item->id) }}" title="Удалить"><i
                                             class="fa fa-trash" aria-hidden="true"></i></a>
                             </div>
                         @endif
@@ -86,4 +87,8 @@
             @endif
         </div>
     </div>
+@endsection
+
+@section('scripts')
+    <script src="{{ mix('js/page/form/index.js') }}"></script>
 @endsection

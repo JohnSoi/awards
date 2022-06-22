@@ -1,7 +1,8 @@
 <div class="section-submit__content form-change-bloc1">
     <form id="member_of_gildia" class="add-form" action="{{Route('form.gildia.store')}}" enctype="multipart/form-data">
         @csrf
-        <input type="hidden" name="is_form2" value="1">
+        <input type="hidden" name="is_form2" value="{{ (int) (Request::url() === Route('competition')) }}">
+        <input type="hidden" name="is_lk" value="{{ (int) (Request::url() === Route('lk')) }}">
         @php
             $user_id = null;
             if ($user = auth()->user()){

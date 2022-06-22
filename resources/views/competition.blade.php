@@ -249,4 +249,5 @@
 
 @section('scripts')
 <script src="{{ mix('js/page/competition.js') }}"></script>
+<script src="{{ mix('js/page/form/index.js') }}"></script>
 @endsection

@@ -68,6 +68,7 @@
   padding: 10px;
   transition: 0.3s;
   cursor: default;
+  overflow: hidden;
 
   &:hover {
     background: rgba(244, 180, 250, 0.62);
@@ -77,6 +78,7 @@
     position: absolute;
     width: 100%;
     height: auto;
+    max-height: 55%;
 
     &__wrapper {
       position: relative;
@@ -107,6 +109,7 @@
 
   &-status {
     width: 100%;
+
     &__neutral {
       color: grey !important;
     }
@@ -118,9 +121,17 @@
     &__positive {
       color: #188018 !important;
     }
+
+    &-icon {
+      display: none;
+    }
   }
 
   &-actions {
+    display: flex;
+    align-items: center;
+    height: 70%;
+
     a {
       margin-left: 8px;
     }
@@ -131,6 +142,101 @@
 
     &__delete {
       color: #802a29 !important;
+    }
+  }
+}
+
+@media (max-width: 1360px) {
+  .lk-menu {
+    display: none;
+  }
+  .lk-registry {
+    left: 0 !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .lk-registry__ {
+    &grid {
+      grid-template-columns: 25% 25% 21% 21% 8%;
+    }
+
+    &item-img__wrapper {
+      display: none;
+    }
+
+    &header-date {
+      grid-column-start: 3;
+    }
+  }
+}
+
+@media (max-width: 870px) {
+  .lk-registry__ {
+    &grid {
+      grid-template-columns: 30% 30% 26% 6% 8%;
+    }
+
+    &header-status {
+      display: none;
+    }
+
+    &item- {
+      &info {
+        white-space: nowrap;
+        width: 80%;
+
+        span {
+          margin-bottom: 4px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+      }
+      &status {
+        margin-left: 0;
+
+        &-text {
+          display: none;
+        }
+
+        &-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 77%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .lk-registry__ {
+    &item-info {
+      display: none;
+    }
+
+    &grid {
+      grid-template-columns: 50% 30% 10% 10%;
+    }
+
+    .&header-date {
+      grid-column-start: 2;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .lk-registry__ {
+    &item-date, &header-date {
+      display: none;
+    }
+
+    &grid {
+      grid-template-columns: 75% 10% 15%;
+
     }
   }
 }
