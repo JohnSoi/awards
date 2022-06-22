@@ -1,0 +1,22 @@
+.header-top {
+  .header__logo {
+    img {
+      width: 130px;
+      height: auto;
+    }
+  }
+
+  .header-menu {
+    &__link {
+      transition: 0.3s;
+
+      &:hover {
+        color: #c2acb7;
+      }
+    }
+  }
+}
+
+.body--dark .header::before {
+  background: linear-gradient(180deg, #bf96f74d -81.91%, rgba(191, 150, 247, 0) 81.91%);
+}

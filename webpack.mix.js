@@ -35,6 +35,7 @@ mix
     .js('resources/js/page/auth/login.js', 'js/page/auth')
     .js('resources/js/page/auth/register.js', 'js/page/auth')
     .sass('resources/scss/app.scss', 'css')
+    .sass('resources/scss/new-design.scss', 'css')
     .sass('resources/scss/page/main/index.scss', 'css/page/main')
     .sass('resources/scss/page/form/index.scss', 'css/page/form')
     .sass('resources/scss/page/lk/index.scss', 'css/page/lk')

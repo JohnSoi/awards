@@ -4,6 +4,7 @@
 <title>@yield('title')</title>
 
 <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+<link rel="stylesheet" href="{{ mix('css/new-design.css') }}">
 <link rel="stylesheet" href="{{ mix('css/page/userArea/index.css') }}">
 
 <!-- favicon -->
