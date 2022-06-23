@@ -54,10 +54,9 @@
                 </div>
             </div>
         </div>
-        <div class="section-for__columns">
-            <div class="section-for__animated">
-                <div class="section-for__animated-figure">
-                    <div id="television"></div>
+        <div class="section-new">
+            <div class="">
+                <div class="">
                     <svg xmlns="http://www.w3.org/2000/svg" style="opacity: 0; visibility: hidden; position:absolute; bottom: 0; left: 0; z-index: -1;">
                         <defs>
                             <linearGradient id="violet_gradient" x1="0%" y1="0%" x2="0%" y2="100%" gradientUnits="userSpaceOnUse">
@@ -67,13 +66,8 @@
                         </defs>
                     </svg>
                 </div>
-                <div class="section-for__animated-pic">
-                    <picture>
-                        <img data-src="/img/V2/page/main/card/gradient/ellipse.svg" class="lazyload">
-                    </picture>
-                </div>
             </div>
-            <div class="section-for__author">
+            <div class="section-for__quote-new">
                 <div class="section-for__avatar wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="30">
                     <picture>
                         <source srcset="/img/V2/page/main/card/gradient/avatar.png" media="(min-width: 768px)">

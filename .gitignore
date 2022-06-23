@@ -3,9 +3,7 @@ node_modules/
 package-lock.*
 composer.lock
 vendor/
-public_html/
+public_html/storage
 .env
 storage/debugbar/
 storage/framework/cache
-/nodejs/
-/nodejs/node_modules/npm/docs/
