@@ -10,9 +10,9 @@
     "/js/page/news/index.js": "/js/page/news/index.js",
     "/js/page/auth/login.js": "/js/page/auth/login.js",
     "/js/page/auth/register.js": "/js/page/auth/register.js",
+    "/js/page/photos/index.js": "/js/page/photos/index.js",
     "/css/app.css": "/css/app.css",
-    "/css/page/dark.css": "/css/page/dark.css",
-    "/css/page/lk/index.css": "/css/page/lk/index.css",
+    "/css/page/photos/index.css": "/css/page/photos/index.css",
     "/css/page/form/index.css": "/css/page/form/index.css",
     "/css/page/main/index.css": "/css/page/main/index.css",
     "/css/page/competition/index.css": "/css/page/competition/index.css",
@@ -21,5 +21,7 @@
     "/css/page/errors/404.css": "/css/page/errors/404.css",
     "/css/page/auth/index.css": "/css/page/auth/index.css",
     "/css/page/agreement/index.css": "/css/page/agreement/index.css",
-    "/css/page/userArea/index.css": "/css/page/userArea/index.css"
+    "/css/page/userArea/index.css": "/css/page/userArea/index.css",
+    "/css/page/dark.css": "/css/page/dark.css",
+    "/css/page/lk/index.css": "/css/page/lk/index.css"
 }

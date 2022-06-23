@@ -1,4 +1,4 @@
-<section class="section section-content section-photos bg-white" items-isset-photo style="display:none">
+<section class="section section-content section-photos bg-white" items-isset-photo>
     <div class="container wow fadeIn" data-wow-duration="1.2s" data-wow-delay="0.4s" data-wow-offset="0">
         <div class="border-top-black"></div>
         <div class="section-photos__inner">

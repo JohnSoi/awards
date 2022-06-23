@@ -77,7 +77,6 @@
 </section>
 
 
-@include('block.award')
 @include('block.for')
 @include('block.photos')
 
