@@ -1,0 +1,44 @@
+.header-top .header__logo img {
+  width: 130px;
+  height: auto;
+}
+.header-top .header-menu__link {
+  transition: 0.3s;
+}
+.header-top .header-menu__link:hover {
+  color: #c2acb7;
+}
+
+.body--dark .header::before {
+  background: linear-gradient(180deg, #bf96f74d -81.91%, rgba(191, 150, 247, 0) 81.91%);
+}
+
+.section-new {
+  position: relative;
+  height: 350px;
+}
+
+.section-for__avatar {
+  width: 300px;
+  height: 350px;
+}
+
+.section-for__quote {
+  max-width: 750px;
+  flex: 0 0 750px;
+  margin-top: 0;
+}
+
+.section-for__quote-new {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.section-for__quote-devider {
+  width: 191px;
+}
+
+.section-award {
+  background: #222;
+}
