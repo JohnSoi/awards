@@ -10,147 +10,185 @@
     <div cursor-status class="swiper-container swiper-incards wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="30">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <div class="color-card color-card__dark color-card__rcw bg-light-gradient" data-white>
-                    <div class="color-card__title text-dark-gradient">
+                <div class="color-circle color-card__dark color-card__rcw bg-light-gradient" data-white>
+                <div class="object-inner wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.4s">
+                    <div class="color-circle__title text-dark-gradient">
                         Музыка <br>и саунд-дизайн
+                        <div class="figure__music">
+                            <object align="middle" height="auto" width="75%" vspace="20px" type="image/svg+xml" data="../../../img/V2/page/main/card/music.svg"></object>
+                        </div>
                     </div>
-                    <div class="color-card__figure">
+                    </div>
+                    <!-- <div class="color-card__figure">
                         <div class="figure__music">
                             <object type="image/svg+xml" data="../../../img/V2/page/main/card/music.svg"></object>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="color-card color-card__dark color-card__rcw bg-dark-gradient">
-                    <div class="color-card__title text-light-gradient">
+                <div class="color-circle color-card__dark color-card__rcw bg-dark-gradient">
+                    <div class="color-circle__title text-light-gradient">
                         Компьютерная <br>графика
-                    </div>
-                    <div class="color-card__figure">
                         <div class="figure__compgraph">
-                            <object type="image/svg+xml" data="../../../img/V2/page/main/card/compgraph.svg"></object>
+                            <object align="middle" height="auto" width="80%" vspace="20px" type="image/svg+xml" data="../../../img/V2/page/main/card/compgraph.svg"></object>
                         </div>
                     </div>
+                    <!-- <div class="color-card__figure">
+                        <div class="figure__compgraph">
+                            <object align="middle" type="image/svg+xml" data="../../../img/V2/page/main/card/compgraph.svg"></object>
+                        </div>
+                    </div> -->
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="color-card color-card__light color-card__rcw bg-light-gradient" data-white>
-                    <div class="color-card__title text-dark-gradient">
+                <div class="color-circle color-card__light color-card__rcw bg-light-gradient" data-white>
+                    <div class="color-circle__title text-dark-gradient">
                         Кино
-                    </div>
-                    <div class="color-card__figure">
                         <div class="figure__film">
-                            <object type="image/svg+xml" data="../../../img/V2/page/main/card/kino.svg"></object>
+                            <object align="middle" height="auto" width="75%" vspace="20px" type="image/svg+xml" data="../../../img/V2/page/main/card/kino.svg"></object>
                         </div>
                     </div>
+                    <!-- <div class="color-card__figure">
+                        <div class="figure__film">
+                            <object align="middle" type="image/svg+xml" data="../../../img/V2/page/main/card/kino.svg"></object>
+                        </div>
+                    </div> -->
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="color-card color-card__dark color-card__rcw bg-dark-gradient">
-                    <div class="color-card__title text-light-gradient">
+                <div class="color-circle color-card__dark color-card__rcw bg-dark-gradient">
+                    <div class="color-circle__title text-light-gradient">
                         Издательское дело<br>и журналистика
-                    </div>
-                    <div class="color-card__figure">
                         <div class="figure__publish">
-                            <object type="image/svg+xml" data="../../../img/V2/page/main/card/publish.svg"></object>
+                            <object align="middle" height="auto" width="100%" vspace="20px" type="image/svg+xml" data="../../../img/V2/page/main/card/publish.svg"></object>
                         </div>
                     </div>
+                    <!-- <div class="color-card__figure">
+                        <div class="figure__publish">
+                            <object align="middle" type="image/svg+xml" data="../../../img/V2/page/main/card/publish.svg"></object>
+                        </div>
+                    </div> -->
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="color-card color-card__light color-card__rcw bg-light-gradient" data-white>
-                    <div class="color-card__title text-dark-gradient">
+                <div class="color-circle color-card__light color-card__rcw bg-light-gradient" data-white>
+                    <div class="color-circle__title text-dark-gradient">
                         Архитектура <br>и урбанистика
-                    </div>
-                    <div class="color-card__figure">
                         <div class="figure__architech">
-                            <object type="image/svg+xml" data="../../../img/V2/page/main/card/architech.svg"></object>
+                            <object align="middle" height="auto" width="80%" vspace="20px" type="image/svg+xml" data="../../../img/V2/page/main/card/architech.svg"></object>
                         </div>
                     </div>
+                    <!-- <div class="color-card__figure">
+                        <div class="figure__architech">
+                            <object align="middle" type="image/svg+xml" data="../../../img/V2/page/main/card/architech.svg"></object>
+                        </div>
+                    </div> -->
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="color-card color-card__light color-card__rcw bg-dark-gradient">
-                    <div class="color-card__title text-light-gradient">
+                <div class="color-circle color-card__light color-card__rcw bg-dark-gradient">
+                    <div class="color-circle__title text-light-gradient">
                         Дизайн
-                    </div>
-                    <div class="color-card__figure">
                         <div class="figure__design">
-                            <object type="image/svg+xml" data="../../../img/V2/page/main/card/design.svg"></object>
+                            <object align="middle" height="auto" width="80%" vspace="20px" type="image/svg+xml" data="../../../img/V2/page/main/card/design.svg"></object>
                         </div>
                     </div>
+                    <!-- <div class="color-card__figure">
+                        <div class="figure__design">
+                            <object align="middle" type="image/svg+xml" data="../../../img/V2/page/main/card/design.svg"></object>
+                        </div>
+                    </div> -->
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="color-card color-card__dark color-card__rcw bg-light-gradient" data-white>
-                    <div class="color-card__title text-dark-gradient">
+                <div class="color-circle color-card__dark color-card__rcw bg-light-gradient" data-white>
+                    <div class="color-circle__title text-dark-gradient">
                         Телевидение
-                    </div>
-                    <div class="color-card__figure">
                         <div class="figure__tv">
-                            <object type="image/svg+xml" data="../../../img/V2/page/main/card/tv.svg"></object>
+                            <object align="middle" height="auto" width="80%" vspace="20px" type="image/svg+xml" data="../../../img/V2/page/main/card/tv.svg"></object>
                         </div>
                     </div>
+                    <!-- <div class="color-card__figure">
+                        <div class="figure__tv">
+                            <object align="middle" type="image/svg+xml" data="../../../img/V2/page/main/card/tv.svg"></object>
+                        </div>
+                    </div> -->
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="color-card color-card__dark color-card__rcw bg-dark-gradient">
-                    <div class="color-card__title color-card__it text-light-gradient">
+                <div class="color-circle color-card__dark color-card__rcw bg-dark-gradient">
+                    <div class="color-circle__title color-card__it text-light-gradient">
                         IT
-                    </div>
-                    <div class="color-card__figure">
                         <div class="figure__it">
-                            <object type="image/svg+xml" data="../../../img/V2/page/main/card/it.svg"></object>
+                            <object align="middle" height="auto" width="80%" vspace="20px" type="image/svg+xml" data="../../../img/V2/page/main/card/it.svg"></object>
                         </div>
                     </div>
+                    <!-- <div class="color-card__figure">
+                        <div class="figure__it">
+                            <object align="middle" type="image/svg+xml" data="../../../img/V2/page/main/card/it.svg"></object>
+                        </div>
+                    </div> -->
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="color-card color-card__dark color-card__rcw bg-light-gradient" data-white>
-                    <div class="color-card__title text-dark-gradient">
+                <div class="color-circle color-card__dark color-card__rcw bg-light-gradient" data-white>
+                    <div class="color-circle__title text-dark-gradient">
                         Разработка игр
-                    </div>
-                    <div class="color-card__figure">
                         <div class="figure__gamedev">
-                            <object type="image/svg+xml" data="../../../img/V2/page/main/card/gamedev.svg"></object>
+                            <object align="middle" height="auto" width="80%" vspace="20px" type="image/svg+xml" data="../../../img/V2/page/main/card/gamedev.svg"></object>
                         </div>
                     </div>
+                    <!-- <div class="color-card__figure">
+                        <div class="figure__gamedev">
+                            <object align="middle" type="image/svg+xml" data="../../../img/V2/page/main/card/gamedev.svg"></object>
+                        </div>
+                    </div> -->
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="color-card color-card__dark color-card__rcw bg-dark-gradient">
-                    <div class="color-card__title text-light-gradient">
+                <div class="color-circle color-card__dark color-card__rcw bg-dark-gradient">
+                    <div class="color-circle__title text-light-gradient">
                         Мода
-                    </div>
-                    <div class="color-card__figure">
                         <div class="figure__fashion">
-                            <object type="image/svg+xml" data="../../../img/V2/page/main/card/fashion.svg"></object>
+                            <object align="middle" height="auto" width="80%" vspace="20px" type="image/svg+xml" data="../../../img/V2/page/main/card/fashion.svg"></object>
                         </div>
                     </div>
+                    <!-- <div class="color-card__figure">
+                        <div class="figure__fashion">
+                            <object align="middle" type="image/svg+xml" data="../../../img/V2/page/main/card/fashion.svg"></object>
+                        </div>
+                    </div> -->
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="color-card color-card__light color-card__rcw bg-light-gradient" data-white>
-                    <div class="color-card__title text-dark-gradient">
+                <div class="color-circle color-card__light color-card__rcw bg-light-gradient" data-white>
+                    <div class="color-circle__title text-dark-gradient">
                         Искусство
-                    </div>
-                    <div class="color-card__figure">
                         <div class="figure__art">
-                            <object type="image/svg+xml" data="../../../img/V2/page/main/card/art.svg"></object>
+                            <object align="middle" height="auto" width="75%" vspace="20px" type="image/svg+xml" data="../../../img/V2/page/main/card/art.svg"></object>
                         </div>
                     </div>
+                    <!-- <div class="color-card__figure">
+                        <div class="figure__art">
+                            <object align="middle" type="image/svg+xml" data="../../../img/V2/page/main/card/art.svg"></object>
+                        </div>
+                    </div> -->
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="color-card color-card__light color-card__rcw bg-dark-gradient">
-                    <div class="color-card__title text-light-gradient">
+                <div class="color-circle color-card__light color-card__rcw bg-dark-gradient">
+                    <div class="color-circle__title text-light-gradient">
                         Новые медиа
-                    </div>
-                    <div class="color-card__figure">
                         <div class="figure__newmedia">
-                            <object type="image/svg+xml" data="../../../img/V2/page/main/card/newmedia.svg"></object>
+                            <object align="middle" height="auto" width="80%" vspace="20px" type="image/svg+xml" data="../../../img/V2/page/main/card/newmedia.svg"></object>
                         </div>
                     </div>
+                    <!-- <div class="color-card__figure">
+                        <div class="figure__newmedia">
+                            <object align="middle" type="image/svg+xml" data="../../../img/V2/page/main/card/newmedia.svg"></object>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </div>

@@ -19586,6 +19586,7 @@ a.text-dark:focus, a.text-dark:hover {
   }
 }
 
+
 .object-inner {
   position: relative;
   height: 0;
@@ -21281,6 +21282,13 @@ a.text-dark:focus, a.text-dark:hover {
   min-width: 300px;
   min-height: 300px;
 }
+
+.color-circle {
+    border-radius: 100%;
+    transition: 0.2s ease;
+}
+
+
 @media (max-width: 576px) {
   .color-card {
     min-width: unset;
@@ -21343,6 +21351,20 @@ a.text-dark:focus, a.text-dark:hover {
   text-transform: uppercase;
   margin-bottom: 16px;
 }
+
+.color-circle__title {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 155%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.figure__music {
+}
+
 .color-card__it {
   font-family: Object Sans !important;
   font-weight: 500 !important;

@@ -9,6 +9,77 @@
   color: #c2acb7;
 }
 
+.color-circle__title {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 155%;
+  text-align: center;
+  padding-top: 45%;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.color-circle {
+  border-radius: 100%;
+  transition: 0.2s ease;
+}
+
+.color-circle:hover {
+  box-shadow: 0;
+  border-radius: 0;
+  border: 1px;
+  transition-delay: 0.3ms;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  cursor: pointer;
+}
+.color-circle:hover .color-circle__title {
+  padding-top: 0%;
+}
+.color-circle:hover .figure__music {
+  transition-delay: 0.3ms;
+  opacity: 1;
+  transition: 0.3ms;
+}
+.color-circle:hover .figure__compgraph {
+  opacity: 1;
+}
+.color-circle:hover .figure__film {
+  opacity: 1;
+}
+.color-circle:hover .figure__publish {
+  opacity: 1;
+}
+.color-circle:hover .figure__architech {
+  opacity: 1;
+}
+.color-circle:hover .figure__design {
+  opacity: 1;
+}
+.color-circle:hover .figure__film {
+  opacity: 1;
+}
+.color-circle:hover .figure__tv {
+  opacity: 1;
+}
+.color-circle:hover .figure__it {
+  opacity: 1;
+}
+.color-circle:hover .figure__gamedev {
+  opacity: 1;
+}
+.color-circle:hover .figure__fashion {
+  opacity: 1;
+}
+.color-circle:hover .figure__art {
+  opacity: 1;
+}
+.color-circle:hover .figure__newmedia {
+  opacity: 1;
+}
+
 .body--dark .header::before {
   background: linear-gradient(180deg, #bf96f74d -81.91%, rgba(191, 150, 247, 0) 81.91%);
 }
@@ -57,4 +128,56 @@
 
 .section-award {
   background: #222;
+}
+
+.figure__music {
+  opacity: 0;
+}
+
+.figure__compgraph {
+  opacity: 0;
+}
+
+.figure__film {
+  opacity: 0;
+}
+
+.figure__publish {
+  opacity: 0;
+}
+
+.figure__architech {
+  opacity: 0;
+}
+
+.figure__design {
+  opacity: 0;
+}
+
+.figure__film {
+  opacity: 0;
+}
+
+.figure__it {
+  opacity: 0;
+}
+
+.figure__tv {
+  opacity: 0;
+}
+
+.figure__gamedev {
+  opacity: 0;
+}
+
+.figure__fashion {
+  opacity: 0;
+}
+
+.figure__art {
+  opacity: 0;
+}
+
+.figure__newmedia {
+  opacity: 0;
 }
