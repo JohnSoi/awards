@@ -43,10 +43,16 @@
     width: 6px;
     height: 5px;
     border-radius: 0;
+    transition: 0.3s;
+
+    &:hover {
+        width: 10px;
+        height: 10px;
+    }
 }
 
 ::-webkit-scrollbar-track {
-    background-color: transparent;
+    background-color: aliceblue;
     border-radius: 0;
 }
 

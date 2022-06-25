@@ -5593,8 +5593,6 @@ pre code {
 .row {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -19588,7 +19586,6 @@ a.text-dark:focus, a.text-dark:hover {
   }
 }
 
-
 .object-inner {
   position: relative;
   height: 0;
@@ -21284,13 +21281,6 @@ a.text-dark:focus, a.text-dark:hover {
   min-width: 300px;
   min-height: 300px;
 }
-
-.color-circle {
-    border-radius: 100%;
-    transition: 0.2s ease;
-}
-
-
 @media (max-width: 576px) {
   .color-card {
     min-width: unset;
@@ -21353,20 +21343,6 @@ a.text-dark:focus, a.text-dark:hover {
   text-transform: uppercase;
   margin-bottom: 16px;
 }
-
-.color-circle__title {
-  font-family: inherit;
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 155%;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-.figure__music {
-}
-
 .color-card__it {
   font-family: Object Sans !important;
   font-weight: 500 !important;
@@ -22524,14 +22500,8 @@ section {
   line-height: 140%;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  text-align: center;
 }
 @media (max-width: 991px) {
-  .section-title {
-    max-width: 100%;
-  }
-}
-@media (min-width: 991px) {
   .section-title {
     max-width: 100%;
   }
@@ -26986,12 +26956,10 @@ img {
 .partners-stripe {
   align-items: center;
   padding-bottom: 32px;
-  padding-top: 32px;
 }
 @media (max-width: 767px) {
   .partners-stripe {
     padding-bottom: 30px;
-    padding-top: 30px;
   }
 }
 
@@ -27028,12 +26996,10 @@ img {
 }
 .section-partners__content {
   border-bottom: 1px solid rgba(34, 34, 34, 0.05);
-  align-content: center;
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .section-partners__content {
     margin-top: 28px;
-    align-content: center;
   }
 }
 @media (max-width: 991px) {
@@ -29260,7 +29226,6 @@ img {
   justify-content: space-between;
   width: 100%;
   max-width: 300px;
-  padding-bottom: 79px;
 }
 @media (max-width: 576px) {
   .social-panel {
@@ -29308,10 +29273,16 @@ img {
   width: 6px;
   height: 5px;
   border-radius: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+::-webkit-scrollbar:hover {
+  width: 10px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: transparent;
+  background-color: aliceblue;
   border-radius: 0;
 }
 
