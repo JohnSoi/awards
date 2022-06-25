@@ -16,11 +16,11 @@
     <div cursor-status class="swiper-container swiper-step wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="30">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <div class="color-card add-hover-parents color-card__light bg-pink" data-white>
-                    <div class="color-card__title">
+                <div class="color-card_nom color-card__light bg-pink" >
+                    <div class="color-card__title_nom">
                         Продюсер года в сфере <br>креативных индустрий
                     </div>
-                    <div class="color-card__desc">
+                    <div class="color-card__desc_nom">
                         Предприимчивый лидер, <br>
                         добившийся за год лучших <br>
                         результатов в инициации, <br>
@@ -33,11 +33,11 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="color-card color-card__dark bg-black ">
-                    <div class="color-card__title">
+                <div class="color-card_nom color-card__dark bg-purpule">
+                    <div class="color-card__title_nom">
                         Управленец года в сфере <br>креативных индустрий
                     </div>
-                    <div class="color-card__desc">
+                    <div class="color-card__desc_nom">
                         Менеджер, показавший<br>
                         наиболее впечатляющие<br>
                         результаты в управлении <br>
@@ -50,11 +50,11 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="color-card color-card__light bg-pink" data-white>
-                    <div class="color-card__title">
+                <div class="color-card_nom color-card__dark bg-black" >
+                    <div class="color-card__title_nom">
                         Меценат <br>года
                     </div>
-                    <div class="color-card__desc">
+                    <div class="color-card__desc_nom">
                         Человек или организация, <br>
                         внесшая наиболее весомый <br>
                         вклад в развитие креативных <br>
@@ -66,12 +66,12 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="color-card color-card__dark bg-black ">
-                    <div class="color-card__title">
+                <div class="color-card_nom color-card__light bg-pink ">
+                    <div class="color-card__title_nom">
                         Стартап года<br>
                         / Прорыв года
                     </div>
-                    <div class="color-card__desc">
+                    <div class="color-card__desc_nom">
                         Наиболее заметный креативный бизнес-проект, находящийся в&nbsp;начале пути. Номинация является одной из наиболее значимых, в&nbsp;силу ориентира на&nbsp;выявление молодых перспективных творческих предпринимателей
                     </div>
                     <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
@@ -80,11 +80,11 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="color-card color-card__light bg-pink" data-white>
-                    <div class="color-card__title">
+                <div class="color-card_nom color-card__dark bg-purpule" >
+                    <div class="color-card__title_nom">
                         Образовательный <br>проект в сфере КИ
                     </div>
-                    <div class="color-card__desc">
+                    <div class="color-card__desc_nom">
                         Эффективная и яркая образовательная программа, направленная на максимальную реализацию молодых людей, обладающих творческим потенциалом
                     </div>
                     <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
@@ -93,11 +93,11 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="color-card color-card__dark bg-black ">
-                    <div class="color-card__title">
+                <div class="color-card_nom color-card__dark bg-black ">
+                    <div class="color-card__title_nom">
                         Креаполис <br>года
                     </div>
-                    <div class="color-card__desc">
+                    <div class="color-card__desc_nom">
                         Креативный кластер/пространство на&nbsp;территории России, которое внесло наибольший вклад в&nbsp;развитие места: района, города, региона
                     </div>
                     <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
@@ -106,11 +106,11 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="color-card color-card__light bg-pink" data-white>
-                    <div class="color-card__title">
+                <div class="color-card_nom color-card__light bg-pink" >
+                    <div class="color-card__title_nom">
                         Новый <br>культурный код
                     </div>
-                    <div class="color-card__desc">
+                    <div class="color-card__desc_nom">
                         Самый масштабный и&nbsp;фундаментальный проект года, направленный на&nbsp;формирование самоидентичности российской креативной отрасли
                     </div>
                     <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
@@ -119,11 +119,11 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="color-card color-card__dark bg-black ">
-                    <div class="color-card__title">
+                <div class="color-card_nom color-card__dark bg-purpule ">
+                    <div class="color-card__title_nom">
                         Креативный <br>регион года
                     </div>
-                    <div class="color-card__desc">
+                    <div class="color-card__desc_nom">
                         Субъект Российской Федерации, инициативы которого оказались наиболее эффективными и&nbsp;знаковыми для развития креативной экономики
                     </div>
                     <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
@@ -132,11 +132,11 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="color-card color-card__light bg-pink" data-white>
-                    <div class="color-card__title">
+                <div class="color-card_nom color-card__dark bg-black" >
+                    <div class="color-card__title_nom">
                         Лучший креативный проект <br>индустриального сектора
                     </div>
-                    <div class="color-card__desc">
+                    <div class="color-card__desc_nom">
                         Проект на стыке двух сфер:
                         <br>индустриальной, сырьевой
                         <br>и креативной
@@ -147,11 +147,11 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="color-card color-card__dark bg-black ">
-                    <div class="color-card__title">
+                <div class="color-card_nom color-card__light bg-pink ">
+                    <div class="color-card__title_nom">
                         Коллаборация <br>года в сфере КИ
                     </div>
-                    <div class="color-card__desc">
+                    <div class="color-card__desc_nom">
                         Наиболее успешный пример эффективного взаимодействия двух самостоятельных компаний/коллективов в&nbsp;рамках развития креативной отрасли
                     </div>
                     <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>

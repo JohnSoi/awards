@@ -167,6 +167,76 @@
   background: #222;
 }
 
+.bg-purpule {
+  background-color: #483D8B;
+}
+
+.color-card_nom {
+ border-radius: 110%;
+ transition: 0,3s ease;
+}
+
+.color-card_nom:hover {
+  box-shadow: 0; /* Удалили тень */
+  border-radius: 0; /* Удалили границы округления */
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  cursor:pointer;
+  .color-card__title_nom {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .color-card__desc_nom {
+    max-width: 260px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    opacity: 0.8;
+    opacity: 1;
+    white-space: wrap;
+    white-space: normal;
+    transition-delay: 0,5;
+
+    margin-top: 20px;
+  }
+}
+
+.color-card:active  {
+  box-shadow: 0; /* Удалили тень */
+  border-radius: 0; /* Удалили границы округления */
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  cursor:pointer;
+}
+
+.color-card_nom {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 20px;
+  margin: 0;
+  width: 100%;
+  min-width: 300px;
+  min-height: 300px;
+  text-align: center;
+  margin: auto;
+}
+
+.color-card__desc_nom {
+  max-width: 260px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 0.8;
+  white-space: nowrap;
+  opacity: 0;
+}
+
+.color-card__title_nom {
+  text-align: center;
+  padding-top: 100px;
+}
 .fixed-button {
   position: fixed;
   right: 10px;
