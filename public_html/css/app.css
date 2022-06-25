@@ -29371,3 +29371,7 @@ body {
 .section-auth ~ .arrow-up-container {
   display: none;
 }
+
+.bg-purpule {
+  background-color: #483D8B;
+}
