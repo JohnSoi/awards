@@ -77,10 +77,9 @@
 </section>
 
 
-{{--@include('block.award')--}}
 @include('block.for')
-@include('block.photos')
 
+@include('block.nominations')
 <!-- section fewspeakers -->
 
 <!-- section new-year -->
