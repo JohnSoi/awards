@@ -25,7 +25,7 @@
   transition: 0.2s ease;
 }
 
-.color-circle:hover {
+.color-circle.hover-slide-item {
   box-shadow: 0;
   border-radius: 0;
   border: 1px;
@@ -35,48 +35,48 @@
   -o-transition: all 1s;
   cursor: pointer;
 }
-.color-circle:hover .color-circle__title {
+.color-circle.hover-slide-item .color-circle__title {
   padding-top: 0%;
 }
-.color-circle:hover .figure__music {
+.color-circle.hover-slide-item .figure__music {
   transition-delay: 0.3ms;
   opacity: 1;
   transition: 0.3ms;
 }
-.color-circle:hover .figure__compgraph {
+.color-circle.hover-slide-item .figure__compgraph {
   opacity: 1;
 }
-.color-circle:hover .figure__film {
+.color-circle.hover-slide-item .figure__film {
   opacity: 1;
 }
-.color-circle:hover .figure__publish {
+.color-circle.hover-slide-item .figure__publish {
   opacity: 1;
 }
-.color-circle:hover .figure__architech {
+.color-circle.hover-slide-item .figure__architech {
   opacity: 1;
 }
-.color-circle:hover .figure__design {
+.color-circle.hover-slide-item .figure__design {
   opacity: 1;
 }
-.color-circle:hover .figure__film {
+.color-circle.hover-slide-item .figure__film {
   opacity: 1;
 }
-.color-circle:hover .figure__tv {
+.color-circle.hover-slide-item .figure__tv {
   opacity: 1;
 }
-.color-circle:hover .figure__it {
+.color-circle.hover-slide-item .figure__it {
   opacity: 1;
 }
-.color-circle:hover .figure__gamedev {
+.color-circle.hover-slide-item .figure__gamedev {
   opacity: 1;
 }
-.color-circle:hover .figure__fashion {
+.color-circle.hover-slide-item .figure__fashion {
   opacity: 1;
 }
-.color-circle:hover .figure__art {
+.color-circle.hover-slide-item .figure__art {
   opacity: 1;
 }
-.color-circle:hover .figure__newmedia {
+.color-circle.hover-slide-item .figure__newmedia {
   opacity: 1;
 }
 
