@@ -16,7 +16,7 @@
     <div cursor-status class="swiper-container swiper-step wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="30">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <div class="color-card color-card__light bg-pink" data-white>
+                <div class="color-card add-hover-parents color-card__light bg-pink" data-white>
                     <div class="color-card__title">
                         Продюсер года в сфере <br>креативных индустрий
                     </div>

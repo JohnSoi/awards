@@ -12,8 +12,22 @@ $(() => {
                     wrap: '[cursor-status]'
                 });
 
+                let lastElement = null;
+
                 SliderCursor.onMousemove = (obj) => {
                     $('.direction-item.hover').removeClass('hover');
+
+                    if (obj.hoverElem) {
+                        obj.hoverElem.addClass('hover-slide-item');
+                        obj.hoverElem.parents().addClass('hover-slide-item');
+
+                        if (lastElement && obj.hoverElem[0].__ym_indexer !== lastElement[0].__ym_indexer) {
+                                lastElement.removeClass('hover-slide-item');
+                                obj.hoverElem.parents().removeClass('hover-slide-item');
+                        }
+
+                        lastElement = obj.hoverElem;
+                    }
 
                     if (obj.inWrap) {
                         if (obj.isLeft) {

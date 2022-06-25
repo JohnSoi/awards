@@ -5,11 +5,11 @@
             <h2 class="section-title mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">Право номинировать имеют</h2>
         </div>
     </div>
-    <div cursor-status class="section-themes__content swiper-container swiper-history wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.1s" data-wow-offset="0">
-        <div class="swiper-container swiper-2">
+    <div cursor-status class="section-themes__content wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.1s" data-wow-offset="0">
+        <div class="swiper-container swiper-step wow fadeIn swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="card card-themes white">
+                    <div class="card card-themes white" data-white>
                         <div class="card-themes__title">
                             <div class="bg_point bg-black"></div>
                             <span class="text">Члены гильдий<br>
@@ -57,7 +57,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="card card-themes white">
+                    <div class="card card-themes white" data-white>
                         <div class="card-themes__title">
                             <div class="bg_point bg-black"></div>
                             <span class="text">Лауреаты премии RC AWARD 2021</span>
@@ -103,7 +103,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="card card-themes white">
+                    <div class="card card-themes white" data-white>
                         <div class="card-themes__title">
                             <div class="bg_point bg-black"></div>
                             <span class="text">Физические лица</span>
@@ -147,6 +147,7 @@
                     <span data-all-count></span>
                 </div>
             </div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
         </div>
     </div>
 </section>

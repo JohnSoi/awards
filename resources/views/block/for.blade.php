@@ -8,11 +8,11 @@
             </h2>
         </div>
         <div class="section-for__inner">
-            <div class="section-for__left">
+            <div class="section-for__left section-for__left-new">
                 <div class="section-for__bigtitle text-white wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="30">Для чего?</div>
                 <div class="section-for__text">
                     @if(Request::url() === Route('index'))
-                        <p class="text text-white wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"
+                        <p class="text text-all_width text-white wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"
                            data-wow-offset="30">
                             Премия Russian Creative Awards ежегодно вручается за вклад в развитие креативных индустрий
                             страны.
@@ -48,8 +48,8 @@
                     @endif
                 </div>
             </div>
-            <div class="section-for__right">
-                <div class="section-for__figure wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="30">
+            <div class="section-for__right section-for__right-new">
+                <div class="section-for__figure-new section-for__figure wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="30">
                     <div id="mainspring"></div>
                 </div>
             </div>
@@ -68,11 +68,13 @@
                 </div>
             </div>
             <div class="section-for__quote-new">
-                <div class="section-for__avatar wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="30">
-                    <picture>
-                        <source srcset="{{ mix('page_image/sergei_kirienko.jpg') }}" media="(min-width: 768px)">
-                        <img data-src="{{ mix('page_image/sergei_kirienko.jpg') }}" class="lazyload">
-                    </picture>
+                <div class="avatar__wrapper">
+                    <div class="section-for__avatar wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="30">
+                        <picture>
+                            <source srcset="{{ mix('page_image/sergei_kirienko.jpg') }}" media="(min-width: 768px)">
+                            <img data-src="{{ mix('page_image/sergei_kirienko.jpg') }}" class="lazyload">
+                        </picture>
+                    </div>
                 </div>
                 <div class="section-for__quote">
                     <div class="section-for__quote-text text text-white wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="30">

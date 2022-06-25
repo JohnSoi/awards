@@ -164,6 +164,14 @@
     </div>
 </div>
 
+<div class="arrow-up fixed-button" scroll-top>
+    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.6">
+            <circle cx="32" cy="32" r="31.5" transform="rotate(-90 32 32)" stroke="#FBFBFB" />
+            <path d="M32.3536 11.6464C32.1583 11.4512 31.8417 11.4512 31.6464 11.6464L28.4645 14.8284C28.2692 15.0237 28.2692 15.3403 28.4645 15.5355C28.6597 15.7308 28.9763 15.7308 29.1716 15.5355L32 12.7071L34.8284 15.5355C35.0237 15.7308 35.3403 15.7308 35.5355 15.5355C35.7308 15.3403 35.7308 15.0237 35.5355 14.8284L32.3536 11.6464ZM32.5 52L32.5 12L31.5 12L31.5 52L32.5 52Z" fill="#FBFBFB" />
+        </g>
+    </svg>
+</div>
 
 @include('photos.modal')
 @endsection

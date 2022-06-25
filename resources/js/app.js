@@ -34,3 +34,17 @@ require('./block/bodyIsSafari');
 
 // helpers
 require('./helpers.js');
+
+let hideButtonUp = true;
+const scrollPositionVisible = 2000;
+$('.fixed-button').hide();
+
+$(window).on('scroll', () => {
+    if ($(window).scrollTop() > scrollPositionVisible && hideButtonUp) {
+        $('.fixed-button').show();
+        hideButtonUp = false;
+    } else if ($(window).scrollTop() < scrollPositionVisible && !hideButtonUp) {
+        $('.fixed-button').hide();
+        hideButtonUp = true;
+    }
+});

@@ -99,7 +99,7 @@
                 <input name="video_nominate" type="text" class="form-type-text" required>
             </div>
             <div class="form-types" file-group>
-                <label class="form-type-label" for="file-upload">Фото руковожителя организации (300кб, 600x600
+                <label class="form-type-label" for="file-upload">Фото руководителя организации (300кб, 600x600
                     пикселей, jpg, jpeg, png)</label>
                 <input name="photo_director" id="file-upload" type="file">
                 <div class="form-type-text form-type-file" file-change-name="presentation"></div>
