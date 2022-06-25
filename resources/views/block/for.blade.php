@@ -70,8 +70,8 @@
             <div class="section-for__quote-new">
                 <div class="section-for__avatar wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="30">
                     <picture>
-                        <source srcset="/img/V2/page/main/card/gradient/avatar.png" media="(min-width: 768px)">
-                        <img data-src="/img/V2/page/main/card/gradient/avatar-sm.png" class="lazyload">
+                        <source srcset="{{ mix('page_image/sergei_kirienko.jpg') }}" media="(min-width: 768px)">
+                        <img data-src="{{ mix('page_image/sergei_kirienko.jpg') }}" class="lazyload">
                     </picture>
                 </div>
                 <div class="section-for__quote">

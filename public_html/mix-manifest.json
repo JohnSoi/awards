@@ -12,9 +12,10 @@
     "/js/page/auth/register.js": "/js/page/auth/register.js",
     "/js/page/photos/index.js": "/js/page/photos/index.js",
     "/css/app.css": "/css/app.css",
-    "/css/page/photos/index.css": "/css/page/photos/index.css",
+    "/css/page/lk/index.css": "/css/page/lk/index.css",
     "/css/page/form/index.css": "/css/page/form/index.css",
     "/css/page/main/index.css": "/css/page/main/index.css",
+    "/css/new-design.css": "/css/new-design.css",
     "/css/page/competition/index.css": "/css/page/competition/index.css",
     "/css/page/news/index.css": "/css/page/news/index.css",
     "/css/page/errors/500.css": "/css/page/errors/500.css",
@@ -23,5 +24,6 @@
     "/css/page/agreement/index.css": "/css/page/agreement/index.css",
     "/css/page/userArea/index.css": "/css/page/userArea/index.css",
     "/css/page/dark.css": "/css/page/dark.css",
-    "/css/page/lk/index.css": "/css/page/lk/index.css"
+    "/css/page/photos/index.css": "/css/page/photos/index.css",
+    "/page_image/sergei_kirienko.jpg": "/page_image/sergei_kirienko.jpg"
 }
