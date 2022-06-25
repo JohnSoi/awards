@@ -1,4 +1,48 @@
 <div items-not-scroll-window></div>
+<div class="container" id="contacts">
+        <div class="border-top-black"></div>
+        <div class="section-contacts__inner">
+            <h2 class="section-title section-title-footer mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Контакты</h2>
+            <div class="section-contacts__content">
+                <div class="contacts-grid">
+                    <div class="contacts-grid__item wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                        <div class="contacts-grid__item-title">
+                            Организаторы
+                        </div>
+                        <div class="contacts-grid__item-desc">
+                            По вопросам сотрудничества свяжитесь с дирекцией Russian Creative Awards
+                        </div>
+                        <div class="contacts-grid__item-link">
+                            <a href="mailto:direct@rc-awards.ru">direct@rc-awards.ru</a>
+                        </div>
+                    </div>
+                    <div class="contacts-grid__item wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                        <div class="contacts-grid__item-title">
+                            PR-служба
+                        </div>
+                        <div class="contacts-grid__item-desc">
+                            По вопросам взаимодействия обращайтесь
+                        </div>
+                        <div class="contacts-grid__item-link">
+                            <a href="mailto:pr@rc-awards.ru">pr@rc-awards.ru</a>
+                        </div>
+                    </div>
+                    <div class="contacts-grid__item wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                        <div class="contacts-grid__item-title">
+                            Поддержка
+                        </div>
+                        <div class="contacts-grid__item-desc">
+                            Если у вас возникли сложности с&nbsp;подачей заявки, обратитесь в&nbsp;техническую поддержку:
+                        </div>
+                        <div class="contacts-grid__item-link">
+                            <a href="mailto:psupport@creativityweek.ru">support@creativityweek.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="border-bottom-white-footer"></div>
 <div class="footer old-footer">
     <div class="container">
         <div class="footer-content">
@@ -35,16 +79,15 @@
                 </a>
             </div>
             <div class="footer-content__right">
-                <div class="footer-menu d-flex justify-content-start justify-content-md-end text-md-right mb-5 mb-md-auto w-xs-100 w-sm-100">
-                    <div class="footer-menu__block">
-                        <a href="{{ Route('agreement.privacy') }}" class="footer-menu__link" target="_blank"><u>Политика конфидециальности</u></a>
-                        <a href="{{ Route('agreement.accord') }}" class="footer-menu__link" target="_blank"><u>Обработка персональных данных</u></a>
-                    </div>
-                </div>
                 <div class="social-panel mw-100 justifyc-content-start justify-content-md-end">
                     <a href="https://www.facebook.com/RussianCreativeAwards" target="_blank" class="social-panel__link" style="display:none!important;" elem-hide>
                         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M0 18C0 8.05887 8.05887 0 18 0C27.9411 0 36 8.05887 36 18C36 27.9411 27.9411 36 18 36C8.05887 36 0 27.9411 0 18ZM19.8762 28.5836V18.7907H22.5794L22.9377 15.416H19.8762L19.8808 13.7269C19.8808 12.8467 19.9644 12.3751 21.2286 12.3751H22.9186V9H20.2149C16.9674 9 15.8243 10.6371 15.8243 13.3902V15.4163H13.8V18.791H15.8243V28.5836H19.8762Z" fill="#868686" />
+                        </svg>
+                    </a>
+                    <a href="https://t.me/Russian_Creative_Week" target="_blank" class="social-panel__link">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M48.328 24.171A24.171 24.171 0 1 1 0 24.171a24.171 24.171 0 0 1 48.328 0zM25.027 17.835c-2.349 0.986 -7.047 3.002 -14.094 6.075 -1.145 0.45 -1.74 0.899 -1.798 1.334 -0.087 0.74 0.827 1.029 2.088 1.421l0.522 0.16c1.232 0.406 2.9 0.87 3.755 0.885 0.783 0.014 1.653 -0.304 2.624 -0.971 6.583 -4.437 9.976 -6.684 10.194 -6.742 0.145 -0.043 0.362 -0.072 0.508 0.043 0.145 0.131 0.131 0.362 0.116 0.42 -0.087 0.392 -3.712 3.755 -5.583 5.495 -0.58 0.537 -1 0.928 -1.087 1.015a24.636 24.636 0 0 1 -0.566 0.566c-1.145 1.102 -2.001 1.929 0.043 3.291 0.986 0.653 1.784 1.189 2.567 1.726 0.856 0.58 1.711 1.175 2.827 1.9 0.275 0.189 0.551 0.377 0.812 0.566 1 0.711 1.9 1.349 3.016 1.247 0.653 -0.058 1.319 -0.667 1.653 -2.479 0.797 -4.277 2.378 -13.558 2.74 -17.371a4.306 4.306 0 0 0 -0.043 -0.957 1.015 1.015 0 0 0 -0.348 -0.653 1.595 1.595 0 0 0 -0.943 -0.275c-0.913 0.014 -2.305 0.508 -9.019 3.291z" fill="#868686"/>
                         </svg>
                     </a>
                     <a href="https://vk.com/creativeawards" target="_blank" class="social-panel__link">
@@ -59,6 +102,13 @@
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M18.0009 14.8001C19.7681 14.8001 21.2009 16.2327 21.2009 18.0001C21.2009 19.7673 19.7681 21.2001 18.0009 21.2001C16.2335 21.2001 14.8009 19.7673 14.8009 18.0001C14.8009 16.2327 16.2335 14.8001 18.0009 14.8001Z" fill="#868686" />
                         </svg>
                     </a>
+                </div>
+                <div class="footer-menu d-flex justify-content-start justify-content-md-end text-md-right mb-5 mb-md-auto w-xs-100 w-sm-100">
+                    <div class="footer-menu__block">
+                    <a href="{{ Route('agreement.privacy') }}" class="footer-menu__link" target="_blank"><u>Политика конфидециальности</u></a>
+
+                        <a href="{{ Route('agreement.accord') }}" class="footer-menu__link" target="_blank"><u>Обработка персональных данных</u></a>
+                    </div>
                 </div>
             </div>
             <div class="footer-content__copyrite">
