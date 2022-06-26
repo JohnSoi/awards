@@ -18,14 +18,10 @@
             <div class="swiper-slide">
                 <div class="color-card_nom color-card__light bg-pink" >
                     <div class="color-card__title_nom">
-                        Продюсер года в сфере <br>креативных индустрий
+                        Человек года <br> в креативных индустриях
                     </div>
                     <div class="color-card__desc_nom">
-                        Предприимчивый лидер, <br>
-                        добившийся за год лучших <br>
-                        результатов в инициации, <br>
-                        поддержке и развитии <br>
-                        проектов из сферы КИ
+                        Представитель индустрий: продюсер, руководитель проектных групп, организаций или креатор, чья деятельность направлена на создание уникальных творческих решений и продуктов в различных отраслях.
                     </div>
                     <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
                         <a @if(isset($href) && $href) href="{{ Route('nomination.show', 1) }}" @else href="javascript://" @endif class="btn btn-primary w-100">Подробнее</a>
@@ -35,14 +31,10 @@
             <div class="swiper-slide">
                 <div class="color-card_nom color-card__dark bg-purpule">
                     <div class="color-card__title_nom">
-                        Управленец года в сфере <br>креативных индустрий
+                        Меценат года / <br> поддержка креативных <br> индустрий
                     </div>
                     <div class="color-card__desc_nom">
-                        Менеджер, показавший<br>
-                        наиболее впечатляющие<br>
-                        результаты в управлении <br>
-                        творческой/креативной<br>
-                        командой, по итогам года
+                        Физические лица, индивидуальные предприниматели, проекты коммерческих и некоммерческих организаций, не относящиеся по основному роду деятельности к креативным индустриям, но осуществляющие их поддержку.
                     </div>
                     <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
                         <a @if(isset($href) && $href) href="{{ Route('nomination.show', 2) }}" @else href="javascript://" @endif class="btn btn-white-primary w-100">Подробнее</a>
@@ -52,13 +44,10 @@
             <div class="swiper-slide">
                 <div class="color-card_nom color-card__dark bg-black" >
                     <div class="color-card__title_nom">
-                        Меценат <br>года
+                        Прорыв года
                     </div>
                     <div class="color-card__desc_nom">
-                        Человек или организация, <br>
-                        внесшая наиболее весомый <br>
-                        вклад в развитие креативных <br>
-                        индустрий России
+                        Проект, продукт или организация, достигшие высоких показателей развития или уникального роста.
                     </div>
                     <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
                         <a @if(isset($href) && $href) href="{{ Route('nomination.show', 3) }}" @else href="javascript://" @endif class="btn btn-primary w-100">Подробнее</a>
@@ -68,11 +57,10 @@
             <div class="swiper-slide">
                 <div class="color-card_nom color-card__light bg-pink ">
                     <div class="color-card__title_nom">
-                        Стартап года<br>
-                        / Прорыв года
+                        Цифровой проект
                     </div>
                     <div class="color-card__desc_nom">
-                        Наиболее заметный креативный бизнес-проект, находящийся в&nbsp;начале пути. Номинация является одной из наиболее значимых, в&nbsp;силу ориентира на&nbsp;выявление молодых перспективных творческих предпринимателей
+                        Проект в цифровом пространстве или с применением цифровых технологий, способствующий развитию IT-отрасли в России.
                     </div>
                     <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
                         <a @if(isset($href) && $href) href="{{ Route('nomination.show', 4) }}" @else href="javascript://" @endif class="btn btn-white-primary w-100">Подробнее</a>
@@ -82,10 +70,10 @@
             <div class="swiper-slide">
                 <div class="color-card_nom color-card__dark bg-purpule" >
                     <div class="color-card__title_nom">
-                        Образовательный <br>проект в сфере КИ
+                        Образовательный проект
                     </div>
                     <div class="color-card__desc_nom">
-                        Эффективная и яркая образовательная программа, направленная на максимальную реализацию молодых людей, обладающих творческим потенциалом
+                        Проект, способствующий повышению уровня знаний в области креативных индустрий, развитию творческих компетенций и навыков.
                     </div>
                     <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
                         <a @if(isset($href) && $href) href="{{ Route('nomination.show', 5) }}" @else href="javascript://" @endif class="btn btn-primary w-100">Подробнее</a>
@@ -95,10 +83,10 @@
             <div class="swiper-slide">
                 <div class="color-card_nom color-card__dark bg-black ">
                     <div class="color-card__title_nom">
-                        Креаполис <br>года
+                        Лучший креативный кластер
                     </div>
                     <div class="color-card__desc_nom">
-                        Креативный кластер/пространство на&nbsp;территории России, которое внесло наибольший вклад в&nbsp;развитие места: района, города, региона
+                        Креативный кластер или пространство на территории России, которое внесло наибольший вклад в развитие территории района, города, региона.
                     </div>
                     <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
                         <a @if(isset($href) && $href) href="{{ Route('nomination.show', 6) }}" @else href="javascript://" @endif class="btn btn-white-primary w-100">Подробнее</a>
@@ -108,10 +96,10 @@
             <div class="swiper-slide">
                 <div class="color-card_nom color-card__light bg-pink" >
                     <div class="color-card__title_nom">
-                        Новый <br>культурный код
+                        Культурный код
                     </div>
                     <div class="color-card__desc_nom">
-                        Самый масштабный и&nbsp;фундаментальный проект года, направленный на&nbsp;формирование самоидентичности российской креативной отрасли
+                        Проект в сфере креативных индустрий, направленный на сохранение, развитие и идентификацию региональных, национальных или общероссийских ценностей, продуктов, производств и брендов.
                     </div>
                     <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
                         <a @if(isset($href) && $href) href="{{ Route('nomination.show', 7) }}" @else href="javascript://" @endif class="btn btn-primary w-100">Подробнее</a>
@@ -134,12 +122,10 @@
             <div class="swiper-slide">
                 <div class="color-card_nom color-card__dark bg-black" >
                     <div class="color-card__title_nom">
-                        Лучший креативный проект <br>индустриального сектора
+                        Креативный социальный <br> проект
                     </div>
                     <div class="color-card__desc_nom">
-                        Проект на стыке двух сфер:
-                        <br>индустриальной, сырьевой
-                        <br>и креативной
+                        Проект, направленный на решение актуальных социальных проблем, через уникальный творческий подход.
                     </div>
                     <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
                         <a @if(isset($href) && $href) href="{{ Route('nomination.show', 9) }}" @else href="javascript://" @endif class="btn btn-primary w-100">Подробнее</a>
@@ -149,10 +135,10 @@
             <div class="swiper-slide">
                 <div class="color-card_nom color-card__light bg-pink ">
                     <div class="color-card__title_nom">
-                        Коллаборация <br>года в сфере КИ
+                        Специальная номинация
                     </div>
                     <div class="color-card__desc_nom">
-                        Наиболее успешный пример эффективного взаимодействия двух самостоятельных компаний/коллективов в&nbsp;рамках развития креативной отрасли
+
                     </div>
                     <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
                         <a @if(isset($href) && $href) href="{{ Route('nomination.show', 10) }}" @else href="javascript://" @endif class="btn btn-white-primary w-100">Подробнее</a>

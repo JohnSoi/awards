@@ -33,7 +33,7 @@
             </div>
 
             <div class="form-types mt-md-auto">
-                <label class="form-type-label">Достижения в 2021-2022 году* <span data-output-count="progress"
+                <label class="form-type-label">Достижения в 2021-2022 году* <span data-output-count="achievements"
                                                                                   data-min-count="500"></span>(от
                     500)</label>
                 <textarea required name="achievements" type="text" class="form-type-text" rows="1"
@@ -75,7 +75,7 @@
                     <label class="form-type-label" for="file-upload">Фото номинанта (600x600 пикселей, jpg,
                         jpeg, png)</label>
                     <input name="image" id="file-upload" type="file">
-                    <div class="form-type-text form-type-file" file-change-name="photo"></div>
+                    <div class="form-type-text form-type-file" file-change-name="image"></div>
                 </div>
             </div>
             <div class="form-types mt-md-auto">

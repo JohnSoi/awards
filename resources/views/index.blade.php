@@ -71,7 +71,7 @@
         <div class="section-cta__inner">
             <h2 class="section-center-title text-semipink mb-0 wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">Независимая <br>кросс-отраслевая премия <br>в области креативных индустрий России
             </h2>
-            <a href="#submit" class="btn btn-white-primary" style="display: none !important;" elem-hide>Участвовать</a>
+            <a href="#submit" class="btn btn-white-primary mt-5">Участвовать</a>
         </div>
     </div>
 </section>
@@ -92,11 +92,7 @@
     <div class="container section-themes__new wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0" id="award">
         <div class="border-top-white"></div>
         <h2 class="section-title mb-0 wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">
-            @if(Request::url() === Route('index'))
-                R.C.AWARDS 2022
-            @else
                 R.C.AWARDS 2021
-            @endif
         </h2>
         <div class="section-themes__content">
             <div class="objects-wrapper">
@@ -133,7 +129,6 @@
 
 @include('block.expert')
 
-@include('block.service')
 
 @include('block.partners')
 

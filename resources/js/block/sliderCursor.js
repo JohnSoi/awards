@@ -17,14 +17,9 @@ $(() => {
                 SliderCursor.onMousemove = (obj) => {
                     $('.direction-item.hover').removeClass('hover');
 
-                    if (obj.hoverElem) {
+                    if (obj.hoverElem && !obj.hoverElem.hasClass('hover-slide-item')) {
                         obj.hoverElem.addClass('hover-slide-item');
                         obj.hoverElem.parents().addClass('hover-slide-item');
-
-                        if (lastElement && obj.hoverElem[0].__ym_indexer !== lastElement[0].__ym_indexer) {
-                                lastElement.removeClass('hover-slide-item');
-                                obj.hoverElem.parents().removeClass('hover-slide-item');
-                        }
 
                         lastElement = obj.hoverElem;
                     }

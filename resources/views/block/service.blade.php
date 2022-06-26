@@ -5,7 +5,7 @@
         <div class="section-service__inner">
             <div class="border-top-white"></div>
             <h2 class="section-title mb-0 wow fadeInUp mw-100" data-wow-duration="0.8s" data-wow-delay="0.2s">
-                @if(Request::url() === Route('index') or ('competition'))
+                @if( Request::url() === Route('index') || Request::url() === Route('competition') )
                     Лауреаты Russian Creative Awards 2022 получат:
                 @else
                     Лауреаты Russian Creative Awards 2021 получат:

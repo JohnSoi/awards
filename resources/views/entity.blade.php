@@ -39,11 +39,11 @@
                           data-input-count="description"></textarea>
             </div>
             <div class="form-types mt-md-auto">
-                <label class="form-type-label">Достижения в 2021-2022 году* <span data-output-count="progress"
+                <label class="form-type-label">Достижения в 2021-2022 году* <span data-output-count="achievements"
                                                                                   data-min-count="500"></span>(от
                     500)</label>
                 <textarea name="achievements" type="text" class="form-type-text" rows="1"
-                          data-input-count="progress"></textarea>
+                          data-input-count="achievements"></textarea>
             </div>
             <div class="form-types mt-md-auto">
                 <label class="form-type-label">Показатели медиа охвата номинанта <span
@@ -55,7 +55,7 @@
                 <label class="form-type-label" for="file-upload">Информация о медиаохвате номинанта (30мб, pdf,
                     mp4, doc, docx)</label>
                 <input name="media_doc" id="file-upload" type="file">
-                <div class="form-type-text form-type-file" file-change-name="presentation"></div>
+                <div class="form-type-text form-type-file" file-change-name="media_doc"></div>
             </div>
             <div class="form-types mt-md-auto">
                 <label class="form-type-label">Почему достоин награды, вклад в развитие КИ, где реализован <span
@@ -92,7 +92,7 @@
             <div class="form-types" file-group>
                 <label class="form-type-label" for="file-upload">Презентация <br>(30мб, pdf, mp4, doc, docx)</label>
                 <input name="presentation_file" id="file-upload" type="file">
-                <div class="form-type-text form-type-file" file-change-name="presentation"></div>
+                <div class="form-type-text form-type-file" file-change-name="presentation_file"></div>
             </div>
             <div class="form-types">
                 <label class="form-type-label">Видеоролик (ссылка)*</label>
@@ -102,7 +102,7 @@
                 <label class="form-type-label" for="file-upload">Фото руководителя организации (300кб, 600x600
                     пикселей, jpg, jpeg, png)</label>
                 <input name="photo_director" id="file-upload" type="file">
-                <div class="form-type-text form-type-file" file-change-name="presentation"></div>
+                <div class="form-type-text form-type-file" file-change-name="photo_director"></div>
             </div>
             @include('forms.pd_accept')
             <div class="w-100 mt-auto">

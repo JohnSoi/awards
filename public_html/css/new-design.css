@@ -156,7 +156,7 @@
   transition: 0.3s;
 }
 
-.color-card_nom:hover {
+.color-card_nom.hover-slide-item {
   box-shadow: 0;
   /* Удалили тень */
   border-radius: 0;
@@ -166,11 +166,11 @@
   -o-transition: all 1s;
   cursor: pointer;
 }
-.color-card_nom:hover .color-card__title_nom {
+.color-card_nom.hover-slide-item .color-card__title_nom {
   text-align: center;
   padding-top: 20px;
 }
-.color-card_nom:hover .color-card__desc_nom {
+.color-card_nom.hover-slide-item .color-card__desc_nom {
   max-width: 260px;
   font-weight: normal;
   font-size: 14px;
@@ -201,6 +201,7 @@
   min-height: 300px;
   text-align: center;
   margin: auto;
+  align-items: center;
 }
 
 .color-card__desc_nom {
@@ -434,4 +435,55 @@
   justify-content: space-between;
   padding-left: 105px;
   padding-right: 105px;
+}
+
+@media (max-width: 1200px) {
+  .section-for__quote {
+    max-width: 500px;
+  }
+}
+@media (max-width: 991px) {
+  .section-for__quote {
+    max-width: 380px;
+    text-align: justify;
+  }
+
+  .section-for__right-new {
+    max-width: 100%;
+  }
+
+  .section-for__left-new {
+    min-width: 100%;
+  }
+
+  .black-gradient::before {
+    min-height: 1662px !important;
+  }
+}
+@media (max-width: 768px) {
+  .avatar__wrapper {
+    display: none;
+  }
+
+  .section-for__quote {
+    max-width: 100%;
+  }
+}
+.section-mechanics__stage-new:nth-child(1) {
+  margin-top: 450px !important;
+}
+.section-mechanics__stage-new:nth-child(2) {
+  margin-top: 370px !important;
+}
+.section-mechanics__stage-new:nth-child(3) {
+  margin-top: 290px !important;
+}
+.section-mechanics__stage-new:nth-child(4) {
+  margin-top: 210px;
+}
+.section-mechanics__stage:nth-child(2) {
+  margin-top: 314px !important;
+}
+.section-mechanics__stage:nth-child(3) {
+  margin-top: 217px !important;
 }
