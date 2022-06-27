@@ -180,7 +180,7 @@
             </div>
         </div>
         <div class="section-mechanics__stages">
-            <div class="section-mechanics__stage section-mechanics__stage-new wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s"
+            <div class="section-mechanics__stage-new wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s"
                  data-wow-offset="30">
                 <div class="section-mechanics__stage-point"></div>
                 <div class="section-mechanics__stage-title">1.</div>
@@ -189,21 +189,21 @@
                     России&nbsp;
                 </div>
             </div>
-            <div class="section-mechanics__stage section-mechanics__stage-new wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s"
+            <div class="section-mechanics__stage-new wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s"
                  data-wow-offset="30">
                 <div class="section-mechanics__stage-point"></div>
                 <div class="section-mechanics__stage-title">2.</div>
                 <div class="section-mechanics__stage-date">Медиаохват, <br>информационная открытость<br>
                 </div>
             </div>
-            <div class="section-mechanics__stage section-mechanics__stage-new wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s"
+            <div class="section-mechanics__stage-new wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s"
                  data-wow-offset="30">
                 <div class="section-mechanics__stage-point"></div>
                 <div class="section-mechanics__stage-title">3.</div>
                 <div class="section-mechanics__stage-date">Достижения за 2021–2022 годы
                 </div>
             </div>
-            <div class="section-mechanics__stage section-mechanics__stage-new wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s"
+            <div class="section-mechanics__stage-new wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s"
                  data-wow-offset="30">
                 <div class="section-mechanics__stage-point"></div>
                 <div class="section-mechanics__stage-title">4.</div>

@@ -79,14 +79,16 @@
 
 @include('block.for')
 
-@include('block.nominations')
 <!-- section fewspeakers -->
 
 <!-- section new-year -->
 
 @include('block.step')
-
 @include('block.incards')
+
+@include('block.nominations')
+
+
 
 <section class="section section-content section-themes black-block new-main">
     <div class="container section-themes__new wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0" id="award">
