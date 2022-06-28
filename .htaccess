@@ -1,8 +1,8 @@
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^(www.)?rc.rs-dev.ru$
+RewriteCond %{HTTP_HOST} ^(www.)?new-rc.rs-dev.ru$
 RewriteCond %{REQUEST_URI} !^/public_html/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ /public_html/$1
-RewriteCond %{HTTP_HOST} ^(www.)?rc.rs-dev.ru$
+RewriteCond %{HTTP_HOST} ^(www.)?new-rc.rs-dev.ru$
 RewriteRule ^(/)?$ public_html/index.php [L]
