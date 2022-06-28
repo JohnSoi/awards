@@ -50,4 +50,5 @@ mix
     .css('resources/css/page/news/index.css', 'css/page/news')
     .css('resources/css/page/competition/index.css', 'css/page/competition')
     .copy('resources/page_image/sergei_kirienko.jpg', 'public_html/page_image')
+    .copy('resources/page_image/roscult.png', 'public_html/page_image')
 ;

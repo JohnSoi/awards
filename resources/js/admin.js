@@ -155,6 +155,74 @@ Admined.page('project', 'Проекты', {
     ]
 });
 
+Admined.page('is_lk', 'Личный кабинет', {
+    parent: 'project',
+    form: [
+        {
+            name: 'id',
+            placeholder: 'ID',
+            center: true,
+            readonly: true
+        },
+        {
+            name: 'name_nominate',
+            placeholder: 'ФИО/Название проекта',
+        },
+        {
+            name: 'deposit',
+            placeholder: 'Вклад',
+            type: 'texteditor'
+        },
+        {
+            name: 'geography',
+            placeholder: 'География'
+        },
+        {
+            name: 'nomination_id',
+            placeholder: 'Номинация',
+            type: 'select'
+        },
+        {
+            name: 'presentation',
+            placeholder: 'Презентация',
+            type: 'file'
+        },
+        {
+            name: 'phone_nominee',
+            placeholder: 'Телефон номинируемого'
+        },
+        {
+            name: 'email_nominee',
+            placeholder: 'Email номинируемого'
+        },
+        {
+            name: 'unique',
+            placeholder: 'Уникальность',
+            type: 'text'
+        },
+        {
+            name: 'social_url',
+            placeholder: 'Соц. сеть',
+        },
+        {
+            name: 'why_worthy',
+            placeholder: 'Почему достоин',
+            type: 'text'
+        },
+        {
+            name: 'created_at',
+            placeholder: 'Дата',
+            type: 'datetime',
+            readonly: true
+        },
+        {
+            name: 'status',
+            placeholder: 'Статус заявки',
+            type: 'select',
+        },
+    ]
+});
+
 Admined.page('form2', 'Форма 2', {
     parent: 'project',
     form: [

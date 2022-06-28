@@ -14,6 +14,7 @@ Route::group([
     Route::post('delete', 'DeleteController@delete');
     Route::resource('project', 'ProjectController');
     Route::resource('form2', 'Form2Controller');
+    Route::resource('is_lk', 'LKController');
     Route::resource('gildia', 'GildiaController');
     Route::resource('organization', 'OrganizationController');
     Route::resource('post', 'PostController');

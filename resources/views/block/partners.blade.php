@@ -7,13 +7,13 @@
                 <div class="row partners-stripe">
                     <!--<div class="col-xl-4 col-lg-12 col-md-12 col-12 partner-title partner__null"></div>-->
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 partner-img wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">
+                        <a href="https://роскультцентр.рф/" target="_blank"><img class="lazyload" data-src="{{ mix('page_image/roscult.png') }}"></a>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 partner-img wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">
                         <a href="https://creativityweek.ru/" target="_blank"><img class="lazyload" data-src="./../../../img/V2/page/main/partners/rcw.svg"></a>
                     </div>
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 partner-img wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">
                         <a href="https://creative-economy.ru/" target="_blank"><img class="lazyload" data-src="./../../../img/V2/page/main/partners/creative-economy.svg"></a>
-                    </div>
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 partner-img wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">
-                        <a href="https://xn--80aeeqaabljrdbg6a3ahhcl4ay9hsa.xn--p1ai/" target="_blank"><object type="image/svg+xml" data="./../../../img/V2/page/main/partners/pfki2.svg"></object></a>
                     </div>
                 </div>
             </div>

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class RenameFieldInPosts extends Migration
+class AddStatusTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,9 @@ class RenameFieldInPosts extends Migration
      */
     public function up()
     {
-        Schema::table('posts', function (Blueprint $table) {
-            $table->renameColumn('publish', 'published');
+        Schema::create('status', function (Blueprint $table) {
+            $table->string('id')->primary();
+            $table->string('name')->nullable();
         });
     }
 
@@ -25,8 +26,6 @@ class RenameFieldInPosts extends Migration
      */
     public function down()
     {
-        Schema::table('posts', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('status');
     }
 }

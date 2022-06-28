@@ -343,7 +343,11 @@
   font-weight: 400;
   line-height: 140%;
   margin-bottom: 16px;
-  padding-right: 88px;
+  padding-right: 0 !important;
+}
+
+.contacts-grid__item-title {
+  color: white !important;
 }
 
 @media (max-width: 1199px) {
@@ -469,21 +473,148 @@
     max-width: 100%;
   }
 }
-.section-mechanics__stage-new:nth-child(1) {
-  margin-top: 450px !important;
-}
-.section-mechanics__stage-new:nth-child(2) {
-  margin-top: 370px !important;
-}
-.section-mechanics__stage-new:nth-child(3) {
-  margin-top: 290px !important;
-}
-.section-mechanics__stage-new:nth-child(4) {
-  margin-top: 210px;
-}
-.section-mechanics__stage:nth-child(2) {
+.section-mechanics__stage.section-mechanics__stage:nth-child(2) {
   margin-top: 314px !important;
 }
-.section-mechanics__stage:nth-child(3) {
+.section-mechanics__stage.section-mechanics__stage:nth-child(3) {
   margin-top: 217px !important;
+}
+@media (max-width: 1199px) {
+  .section-mechanics__stage.section-mechanics__stage:nth-child(2) {
+    margin-top: 394px !important;
+  }
+  .section-mechanics__stage.section-mechanics__stage:nth-child(3) {
+    margin-top: 300px !important;
+  }
+}
+@media (max-width: 991px) {
+  .section-mechanics__stage.section-mechanics__stage:nth-child(2) {
+    margin-top: 400px !important;
+  }
+  .section-mechanics__stage.section-mechanics__stage:nth-child(3) {
+    margin-top: 306px !important;
+  }
+}
+@media (max-width: 767px) {
+  .section-mechanics__stage.section-mechanics__stage:nth-child(2) {
+    margin-top: 0 !important;
+    right: 57px;
+  }
+  .section-mechanics__stage.section-mechanics__stage:nth-child(3) {
+    margin-top: 0 !important;
+    right: -64px;
+  }
+}
+@media (max-width: 374px) {
+  .section-mechanics__stage.section-mechanics__stage:nth-child(2) {
+    right: 34px;
+    top: 324px;
+  }
+  .section-mechanics__stage.section-mechanics__stage:nth-child(3) {
+    top: 218px;
+    right: -65px;
+  }
+}
+.section-mechanics__stage.section-mechanics__stage-new:nth-child(1) {
+  margin-top: 437px !important;
+}
+.section-mechanics__stage.section-mechanics__stage-new:nth-child(2) {
+  margin-top: 360px !important;
+}
+.section-mechanics__stage.section-mechanics__stage-new:nth-child(3) {
+  margin-top: 285px !important;
+}
+.section-mechanics__stage.section-mechanics__stage-new:nth-child(4) {
+  margin-top: 206px;
+}
+@media (max-width: 1199px) {
+  .section-mechanics__stage.section-mechanics__stage-new:nth-child(1) {
+    margin-top: 523px !important;
+  }
+  .section-mechanics__stage.section-mechanics__stage-new:nth-child(2) {
+    margin-top: 445px !important;
+  }
+  .section-mechanics__stage.section-mechanics__stage-new:nth-child(3) {
+    margin-top: 371px !important;
+  }
+  .section-mechanics__stage.section-mechanics__stage-new:nth-child(4) {
+    margin-top: 293px;
+  }
+}
+@media (max-width: 991px) {
+  .section-mechanics__stage.section-mechanics__stage-new:nth-child(1) {
+    margin-top: 525px !important;
+  }
+  .section-mechanics__stage.section-mechanics__stage-new:nth-child(2) {
+    margin-top: 446px !important;
+  }
+  .section-mechanics__stage.section-mechanics__stage-new:nth-child(3) {
+    margin-top: 373px !important;
+  }
+  .section-mechanics__stage.section-mechanics__stage-new:nth-child(4) {
+    margin-top: 296px;
+  }
+}
+@media (max-width: 767px) {
+  .section-mechanics__stage.section-mechanics__stage-new:nth-child(1) {
+    margin-top: 0 !important;
+  }
+  .section-mechanics__stage.section-mechanics__stage-new:nth-child(2) {
+    margin-top: 0 !important;
+    right: 93px;
+    top: 364px;
+  }
+  .section-mechanics__stage.section-mechanics__stage-new:nth-child(3) {
+    margin-top: 0 !important;
+    right: 0;
+    top: 265px;
+  }
+  .section-mechanics__stage.section-mechanics__stage-new:nth-child(4) {
+    margin-top: 0;
+    right: 7px;
+    top: -200px;
+  }
+}
+@media (max-width: 374px) {
+  .section-mechanics__stage.section-mechanics__stage-new:nth-child(2) {
+    margin-top: 0 !important;
+    right: 93px;
+    top: 349px;
+  }
+  .section-mechanics__stage.section-mechanics__stage-new:nth-child(3) {
+    margin-top: 0 !important;
+    right: -19px;
+    top: 278px;
+  }
+  .section-mechanics__stage.section-mechanics__stage-new:nth-child(4) {
+    margin-top: 0;
+    right: 7px;
+    top: -162px;
+  }
+}
+
+.section-history__line {
+  background: #4c3f6d !important;
+}
+
+.section-faq {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: white;
+}
+
+.small-collapse-btn__head a {
+  color: white !important;
+}
+
+.small-collapse-btn:hover {
+  color: #c2c2c2 !important;
+}
+
+.small-collapse-btn__plus {
+  color: #6b5c99 !important;
+}
+
+.collapse {
+  text-align: justify;
 }
