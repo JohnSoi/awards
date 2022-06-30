@@ -672,3 +672,16 @@
 .collapse {
   text-align: justify;
 }
+
+.section-mechanics__stages-stage__wrapper {
+  display: flex;
+  font-size: 26px;
+  margin-bottom: 14px;
+
+  .section-mechanics__stages-stage__number {
+    margin-right: 8px;
+    font-size: 20px;
+    color: #c3a5f2;
+    font-weight: bold;
+  }
+}
