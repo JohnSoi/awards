@@ -11,37 +11,37 @@
 @section('content')
     <div class="lk-wrapper">
         <div class="lk-menu">
-            Подать заявку как:
+            {{__('main.lk_how')}}
             <div class="w-100 mt-auto">
                 <a href="{{route('form.show')}}?organization=0">
                     <button class="btn lk-menu-btn btn-white-primary w-100">
-                        Физическое лицо
+                        {{__('main.lk_ind')}}
                     </button>
                 </a>
             </div>
             <div class="w-100 mt-auto">
                 <a href="/form-new?organization=1">
                     <button class="btn lk-menu-btn btn-white-primary w-100">
-                        Юридическое лицо
+                        {{__('main.lk_ent')}}
                     </button>
                 </a>
             </div>
         </div>
         <div class="lk-registry">
             @if(!count($request))
-                <h2>Нет заявок. Добавьте заявку через правое меню.</h2>
+                <h2>{{__('main.lk_no')}}</h2>
             @else
                 <div class="lk-registry__grid lk-registry__header">
                     <a class="lk-registry__header-date {{ array_key_exists('column', $_GET) && $_GET['column'] === 'date' ? 'lk-registry__header-active' : '' }}"
                        href="/lk?column=date&direction={{ array_key_exists('direction', $_GET) && $_GET['direction'] === 'up' ? 'down' : 'up' }}">
-                        Дата создания
+                        {{__('main.lk_createDate')}}
                         @if( array_key_exists('column', $_GET) && array_key_exists('direction', $_GET) && $_GET['column'] === 'date')
                             <i class="fa fa-chevron-{{ $_GET['direction'] }}" aria-hidden="true"></i>
                         @endif
                     </a>
                     <a class="lk-registry__header-status {{ array_key_exists('column', $_GET) && $_GET['column'] === 'status' ? 'lk-registry__header-active' : '' }}"
                        href="/lk?column=status&direction={{ array_key_exists('direction', $_GET) && $_GET['direction'] === 'up' ? 'down' : 'up' }}">
-                        Статус
+                        {{__('main.lk_status')}}
                         @if( array_key_exists('column', $_GET) && array_key_exists('direction', $_GET) && $_GET['column'] === 'status')
                             <i class="fa fa-chevron-{{ $_GET['direction'] }}" aria-hidden="true"></i>
                         @endif

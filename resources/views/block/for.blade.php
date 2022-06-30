@@ -9,40 +9,29 @@
         </div>
         <div class="section-for__inner">
             <div class="section-for__left section-for__left-new">
-                <div class="section-for__bigtitle text-white wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="30">Для чего?</div>
+                <div class="section-for__bigtitle text-white wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="30">{{__('main.for_what')}}</div>
                 <div class="section-for__text">
                     @if(Request::url() === Route('index'))
                         <p class="text text-all_width text-white wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"
                            data-wow-offset="30">
-                            Премия Russian Creative Awards ежегодно вручается за вклад в развитие креативных индустрий
-                            страны.
-                            Премия призвана отметить наиболее успешных деятелей, проекты, разработанные в креативном
-                            секторе,
-                            обеспечить им поддержку и национальное признание.
+                           {{__('main.for_desc1')}}
                             <br><br>
-                            Премия способствует популяризации деятельности представителей креативных индустрий,
-                            укреплению межотраслевых связей креативного сообщества по всей стране, а также формированию
-                            и
-                            развитию современной российской культуры и идентичности.
+                            {{__('main.for_desc2')}}
                             <br><br>
-                            Лауреатами становятся физические лица и организации, внесшие значимый вклад в развитие
-                            креативных индустрий.
+                            {{__('main.for_desc3')}}
                         </p>
                     @else
                         <p class="text text-white wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"
                            data-wow-offset="30">
-                            Премия призвана выявить наиболее успешные практики, разработанные в креативном секторе нашей страны,
-                            обеспечить им поддержку и&nbsp;национальное признание.
+                            {{__('main.for_ElseDesc1')}}&nbsp;{{__('main.for_ElseDesc1.2')}}
                             <br><br>
-                            Премия позволит отметить и&nbsp;выделить
-                            лучшие креативные достижения страны.
+                            {{__('main.for_ElseDesc2')}}&nbsp{{__('main.for_ElseDesc2.2')}}
                             <br><br>
-                            Наградить авторов и&nbsp;с их помощью вывести Россию
-                            в&nbsp;число передовых креативных держав мира.
+                            {{__('main.for_ElseDesc3.1')}}&nbsp{{__('main.for_ElseDesc3.2')}}&nbsp{{__('main.for_ElseDesc3.3')}}
                             @if(Request::url() === Route('index'))
-                                Премия&nbsp;подводит итоги 2021-2022гг.
+                                {{__('main.for_yearAward')}}&nbsp{{__('main.for_year1')}}
                             @else
-                                Премия&nbsp;подводит итоги 2020-2021гг.
+                                {{__('main.for_yearAward')}}&nbsp{{__('main.for_year2')}}
                             @endif
                         </p>
                     @endif
@@ -78,15 +67,15 @@
                 </div>
                 <div class="section-for__quote">
                     <div class="section-for__quote-text text text-white wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="30">
-                        «Мне очень нравится идея, которая родилась на&nbsp;Российской креативной неделе, о&nbsp;том, чтобы сделать в&nbsp;следующем году первую российскую национальную премию за&nbsp;успехи и&nbsp;достижения в&nbsp;креативных индустриях».
+                        {{__('main.for_Quote')}}&nbsp{{__('main.for_Quote2')}}&nbsp{{__('main.for_Quote3')}}&nbsp{{__('main.for_Quote4')}}&nbsp{{__('main.for_Quote5')}}&nbsp{{__('main.for_Quote6')}}&nbsp{{__('main.for_Quote7')}}
                     </div>
                     <div class="section-for__quote-name text-white wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s" data-wow-offset="30">
-                        Сергей Кириенко
+                        {{__('main.for_name')}}
                     </div>
                     <div class="section-for__quote-devider devider devider-white wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s" data-wow-offset="30"></div>
                     <div class="section-for__quote-footer text-white wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s" data-wow-offset="30">
-                        Первый заместитель руководителя <span class="d-md-inline d-sm-inline d-none"><br></span>
-                        Администрации Президента РФ
+                        {{__('main.for_nameDesc1')}}<span class="d-md-inline d-sm-inline d-none"><br></span>
+                        {{__('main.for_nameDesc2')}}
                     </div>
                 </div>
             </div>

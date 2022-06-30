@@ -9,30 +9,33 @@
                 @endif
             </a>
             <nav class="header-menu">
-                <a href="{{ Route('index') }}#about-award" class="header-menu__link">О премии</a>
-                <a href="{{ Route('index') }}#nomination" class="header-menu__link">Номинации</a>
-                <a href="{{ Route('post.index') }}" class="header-menu__link">Новости</a>
+                <a href="{{ Route('index') }}#about-award" class="header-menu__link">{{__('main.Menu_about')}}</a>
+                <a href="{{ Route('index') }}#nomination" class="header-menu__link">{{__('main.Menu_nominations')}}</a>
+                <a href="{{ Route('post.index') }}" class="header-menu__link">{{__('main.Menu_news')}}</a>
                 <a href="/files/Polozhenie_RCA.pdf" target="_blank" class="header-menu__link"
                    style="display: none !important;" elem-hide>Положение</a>
                 <a href="{{ Route('index') }}#graphic" class="header-menu__link" style="display: none !important;"
                    elem-hide>График проведения</a>
-                <a href="{{ Route('competition') }}" class="header-menu__link">Конкурс</a>
+                <a href="{{ Route('competition') }}" class="header-menu__link">{{__('main.Menu_competition')}}</a>
                 <a href="{{ Route('index') }}#ceremony" class="header-menu__link" style="display: none !important;"
                    elem-hide>Церемония</a>
-                <a href="{{ Route('index') }}#contacts" class="header-menu__link">Контакты</a>
+                <a href="{{ Route('index') }}#contacts" class="header-menu__link">{{__('main.Menu_contacts')}}</a>
                 <a href="{{ Route('Awards2021') }}" class="header-menu__link">Awards2021</a>
+                <a href="{{route('locale', __('main.set_lang'))}}" class="header-menu__link">{{__('main.set_lang')}}</a>
+
                 @if (Auth::check())
                     <a href="{{ in_array(Auth::user()->group_id, [4, 2], true) ? Route('admin.main') : Route('lk') }}"
-                       class="header-menu__link dropdown__acc">Личный кабинет</a>
+                       class="header-menu__link dropdown__acc">{{__('main.Menu_userArea')}}</a>
                     <a href="{{ Route('logout') }}" title="Выйти" class="header-menu__link">
                         <i class="fa fa-sign-out" aria-hidden="true"></i>
                     </a>
                 @else
-                    <a href="{{Route('register')}}" class="header-menu__link dropdown__acc">Войти</a>
+                    <a href="{{Route('register')}}" class="header-menu__link dropdown__acc">{{__('main.Menu_login')}}</a>
                 @endif
+
             </nav>
             <div class="header__user d-none">
-                <a class="btn btn-primary btn-login font-weight-100" href="#submit">Подать заявку</a>
+                <a class="btn btn-primary btn-login font-weight-100" href="#submit">{{__('main.sendReq')}}</a>
             </div>
             <div class="menu-mob-toggle">
                 <div class="menu-mob__icon" onclick="" burger-open>
@@ -64,25 +67,25 @@
         <div class="menu-mob__inner container">
             <div class="menu-mob__nav">
                 <nav class="menu-navigation">
-                    <a href="{{ Route('index') }}#about-award" class="menu-navigation__link" burger-close>О премии</a>
-                    <a href="{{ Route('index') }}#nomination" class="menu-navigation__link" burger-close>Номинации</a>
-                    <a href="{{ Route('post.index') }}" class="menu-navigation__link" burger-close>Новости</a>
+                    <a href="{{ Route('index') }}#about-award" class="menu-navigation__link" burger-close>{{__('main.Menu_about')}}</a>
+                    <a href="{{ Route('index') }}#nomination" class="menu-navigation__link" burger-close>{{__('main.Menu_nominations')}}</a>
+                    <a href="{{ Route('post.index') }}" class="menu-navigation__link" burger-close>{{__('main.Menu_news')}}</a>
                     <a href="/files/Polozhenie_RCA.pdf" target="_blank" class="menu-navigation__link"
                        style="display: none !important;" elem-hide burger-close>Положение</a>
                     <a href="{{ Route('index') }}#graphic" class="menu-navigation__link"
                        style="display: none !important;" elem-hide burger-close>График проведения</a>
-                    <a href="{{ Route('competition') }}" class="menu-navigation__link" burger-close>Конкурс</a>
+                    <a href="{{ Route('competition') }}" class="menu-navigation__link" burger-close>{{__('main.Menu_competition')}}</a>
                     <a href="{{ Route('index') }}#ceremony" class="menu-navigation__link"
                        style="display: none !important;" elem-hide burger-close>Церемония</a>
-                    <a href="{{ Route('index') }}#contacts" class="menu-navigation__link" burger-close>Контакты</a>
+                    <a href="{{ Route('index') }}#contacts" class="menu-navigation__link" burger-close>{{__('main.Menu_contacts')}}</a>
                     <a href="{{ Route('Awards2021') }}" class="menu-navigation__link">Awards2021</a>
                     @if (Auth::check())
                         <a href="{{ in_array(Auth::user()->group_id, [4, 2], true) ? Route('admin.main') : Route('lk') }}"
-                           class="menu-navigation__link dropdown__acc">Личный кабинет</a>
+                           class="menu-navigation__link dropdown__acc">{{__('main.Menu_userArea')}}</a>
                         <a href="{{ Route('logout') }}"
-                           class="menu-navigation__link dropdown__acc">Выйти</a>
+                           class="menu-navigation__link dropdown__acc">{{__('main.Menu_logou')}}</a>
                     @else
-                        <a href="{{Route('register')}}" class="menu-navigation__link dropdown__acc">Войти</a>
+                        <a href="{{Route('register')}}" class="menu-navigation__link dropdown__acc">{{__('main.Menu_login')}}</a>
                     @endif
                 </nav>
             </div>

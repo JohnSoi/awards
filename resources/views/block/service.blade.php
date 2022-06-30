@@ -6,9 +6,9 @@
             <div class="border-top-white"></div>
             <h2 class="section-title mb-0 wow fadeInUp mw-100" data-wow-duration="0.8s" data-wow-delay="0.2s">
                 @if( Request::url() === Route('index') || Request::url() === Route('competition') )
-                    Лауреаты Russian Creative Awards 2022 получат:
+                    {{__('main.comp_2022')}}
                 @else
-                    Лауреаты Russian Creative Awards 2021 получат:
+                    {{__('main.comp_2021')}}
                 @endif
             </h2>
         </div>
@@ -17,19 +17,19 @@
                 <!-- card -->
                 <div class="service-card__item wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
                     <div class="service-card__point"></div>
-                    <div class="service-card__desc">Медиасопровождение от
-                        <br>организаторов и партнеров Премии
+                    <div class="service-card__desc">{{__('main.comp_mediaHelp')}}
+                        <br>{{__('main.comp_mediaHelp2')}}
                     </div>
                 </div>
                 <!-- card -->
                 <!-- card -->
                 <div class="service-card__item wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
                     <div class="service-card__point"></div>
-                    <div class="service-card__desc">Возможность представить свои
+                    <div class="service-card__desc">{{__('main.comp_dubai')}}
                         @if(Request::url() === Route('index'))
-                            <br>проекты в рамках Экспо2022 в Дубае
+                            <br>{{__('main.comp_dubai2')}}
                         @else
-                            <br>проекты в рамках Экспо2021 в Дубае
+                            <br>{{__('main.comp_dubai3')}}
                         @endif
                     </div>
                 </div>
@@ -37,16 +37,16 @@
                 <!-- card -->
                 <div class="service-card__item wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
                     <div class="service-card__point"></div>
-                    <div class="service-card__desc">Национальное
-                        <br>признание
+                    <div class="service-card__desc">{{__('main.comp_nac')}}
+                        <br>{{__('main.comp_nac2')}}
                     </div>
                 </div>
                 <!-- card -->
                 <!-- card -->
                 <div class="service-card__item wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
                     <div class="service-card__point"></div>
-                    <div class="service-card__desc">Благодарности от
-                        <br>руководства страны
+                    <div class="service-card__desc">{{__('main.comp_thx')}}
+                        <br>{{__('main.comp_thx2')}}
                     </div>
                 </div>
                 <!-- card -->
@@ -54,16 +54,16 @@
                 <div class="service-card__item wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
                     <div class="service-card__point"></div>
                     <div class="service-card__desc">
-                        Публикация в специальном<br>
-                        сборнике «Russian Creative
-                        <br>Awards: лучшие среди равных»
+                        {{__('main.comp_pub')}}<br>
+                        {{__('main.comp_pub2')}}
+                        <br>{{__('main.comp_pub3')}}
                     </div>
                 </div>
                 <!-- card -->
                 <!-- card -->
                 <div class="service-card__item wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
                     <div class="service-card__point"></div>
-                    <div class="service-card__desc">Сопровождение со стороны <br>организаторов Премии</div>
+                    <div class="service-card__desc">{{__('main.comp_sopr')}} <br>{{__('main.comp_sopr2')}}</div>
                 </div>
                 <!-- card -->
             </div>
@@ -74,8 +74,8 @@
                         <div class="swiper-slide">
                             <div class="service-card__item">
                                 <div class="service-card__point"></div>
-                                <div class="service-card__desc">Медиасопровождение от
-                                    <br>организаторов и партнеров Премии
+                                <div class="service-card__desc">{{__('main.comp_media')}}
+                                    <br>{{__('main.comp_media2')}}
                                 </div>
                             </div>
                         </div>
@@ -84,15 +84,12 @@
                         <div class="swiper-slide">
                             <div class="service-card__item">
                                 <div class="service-card__point"></div>
-                                <div class="service-card__desc">
+                                <div class="service-card__desc">{{__('main.comp_dubai')}}
                                     @if(Request::url() === Route('index'))
-                                        Возможность представить свои
-                                        проекты в рамках Экспо2022 в Дубае
+                                        <br>{{__('main.comp_dubai2')}}
                                     @else
-                                        Возможность представить свои
-                                        проекты в рамках Экспо2021 в Дубае
+                                        <br>{{__('main.comp_dubai3')}}
                                     @endif
-
                                 </div>
                             </div>
                         </div>
@@ -101,8 +98,8 @@
                         <div class="swiper-slide">
                             <div class="service-card__item">
                                 <div class="service-card__point"></div>
-                                <div class="service-card__desc">Национальное<br>
-                                    признание
+                                <div class="service-card__desc">{{__('main.comp_nac')}}<br>
+                                    {{__('main.comp_nac2')}}
                                 </div>
                             </div>
                         </div>
@@ -111,8 +108,8 @@
                         <div class="swiper-slide">
                             <div class="service-card__item">
                                 <div class="service-card__point"></div>
-                                <div class="service-card__desc">Благодарности от<br>
-                                    руководства страны</div>
+                                <div class="service-card__desc">{{__('main.comp_thx')}}<br>
+                                    {{__('main.comp_thx2')}}</div>
                             </div>
                         </div>
                         <!-- slides -->
@@ -121,9 +118,9 @@
                             <div class="service-card__item">
                                 <div class="service-card__point"></div>
                                 <div class="service-card__desc">
-                                    Публикация в специальном
-                                    сборнике «Russian Creative<br>
-                                    Awards: лучшие среди равных»
+                                    {{__('main.comp_pub')}}<br>
+                                    {{__('main.comp_pub2')}}
+                                    <br>{{__('main.comp_pub3')}}
                                 </div>
                             </div>
                         </div>
@@ -132,8 +129,8 @@
                         <div class="swiper-slide">
                             <div class="service-card__item">
                                 <div class="service-card__point"></div>
-                                <div class="service-card__desc">Сопровождение со стороны <br>
-                                    организаторов Премии</div>
+                                <div class="service-card__desc">  {{__('main.comp_sopr')}} <br>
+                                    {{__('main.comp_sopr2')}}</div>
                             </div>
                         </div>
                         <!-- slides -->

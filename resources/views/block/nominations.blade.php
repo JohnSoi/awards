@@ -3,7 +3,7 @@
         <div class="section-themes__inner">
             <div class="border-top-white"></div>
             <h2 class="section-title mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"
-                data-wow-offset="0">Право номинировать имеют</h2>
+                data-wow-offset="0">{{__('main.whoCanNom_mane')}}</h2>
         </div>
     </div>
     <div cursor-status class="section-themes__content wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.1s"
@@ -14,9 +14,9 @@
                     <div class="card card-themes white" data-white>
                         <div class="card-themes__title">
                             <div class="bg_point bg-black"></div>
-                            <span class="text">Члены гильдий<br>
+                            <span class="text">{{__('main.whoCanNom_gildia1')}}<br>
                                 Russian Creative Week<br>
-                                (10 человек в каждой <br>из 14 креативных индустрий)</span>
+                                {{__('main.whoCanNom_gildia2')}}<br>{{__('main.whoCanNom_gildia3')}}</span>
                         </div>
                         <div class="card-themes__content">
                             <div class="list-type">
@@ -28,9 +28,9 @@
                                                   fill="#222222"/>
                                         </svg>
                                     </div>
-                                    <div class="text">Член гильдии имеет право<br>
-                                        подать не более 1 заявки<br>
-                                        на каждую из номинаций
+                                    <div class="text">{{__('main.whoCanNom_gildia4')}}<br>
+                                        {{__('main.whoCanNom_gildia5')}}<br>
+                                        {{__('main.whoCanNom_gildia6')}}
                                     </div>
                                 </div>
                             </div>
@@ -41,7 +41,7 @@
                     <div class="card card-themes black">
                         <div class="card-themes__title">
                             <div class="bg_point bg-pink"></div>
-                            <span class="text">Профессиональные <br>организации в каждой <br>из 14 креативных индустрий, <br>включая межотраслевые структуры</span>
+                            <span class="text">{{__('main.whoCanNom_ProfOrg1')}} <br>{{__('main.whoCanNom_ProfOrg2')}} <br>{{__('main.whoCanNom_ProfOrg3')}} <br>{{__('main.whoCanNom_ProfOrg4')}}</span>
                         </div>
                         <div class="card-themes__content">
                             <div class="list-type">
@@ -53,9 +53,9 @@
                                                   fill="#222222"/>
                                         </svg>
                                     </div>
-                                    <div class="text">Организация имеет право<br>
-                                        подать не более 5 заявок<br>
-                                        на каждую из номинаций
+                                    <div class="text">{{__('main.whoCanNom_ProfOrg5')}}<br>
+                                        {{__('main.whoCanNom_ProfOrg6')}}<br>
+                                        {{__('main.whoCanNom_ProfOrg7')}}
                                     </div>
                                 </div>
                             </div>
@@ -66,7 +66,7 @@
                     <div class="card card-themes white" data-white>
                         <div class="card-themes__title">
                             <div class="bg_point bg-black"></div>
-                            <span class="text">Лауреаты премии RC AWARD 2021</span>
+                            <span class="text">{{__('main.whoCanNom_Lau1')}}</span>
                         </div>
                         <div class="card-themes__content">
                             <div class="list-type">
@@ -78,9 +78,9 @@
                                                   fill="#222222"/>
                                         </svg>
                                     </div>
-                                    <div class="text">Организация имеет право<br>
-                                        подать не более 5 заявок<br>
-                                        на каждую из номинаций
+                                    <div class="text">{{__('main.whoCanNom_Lau2')}}<br>
+                                        {{__('main.whoCanNom_Lau3')}}<br>
+                                        {{__('main.whoCanNom_Lau4')}}
                                     </div>
                                 </div>
                             </div>
@@ -91,7 +91,7 @@
                     <div class="card card-themes black">
                         <div class="card-themes__title">
                             <div class="bg_point bg-pink"></div>
-                            <span class="text">Представители региональных органов власти</span>
+                            <span class="text">{{__('main.whoCanNom_RegOr1')}}</span>
                         </div>
                         <div class="card-themes__content">
                             <div class="list-type">
@@ -103,9 +103,9 @@
                                                   fill="#222222"/>
                                         </svg>
                                     </div>
-                                    <div class="text">Организация имеет право<br>
-                                        подать не более 5 заявок<br>
-                                        на каждую из номинаций
+                                    <div class="text">{{__('main.whoCanNom_RegOr2')}}<br>
+                                        {{__('main.whoCanNom_RegOr3')}}<br>
+                                        {{__('main.whoCanNom_RegOr4')}}
                                     </div>
                                 </div>
                             </div>
@@ -116,7 +116,7 @@
                     <div class="card card-themes white" data-white>
                         <div class="card-themes__title">
                             <div class="bg_point bg-black"></div>
-                            <span class="text">Физические лица</span>
+                            <span class="text">{{__('main.whoCanNom_Ind1')}}</span>
                         </div>
                         <div class="card-themes__content">
                             <div class="list-type">
@@ -128,9 +128,9 @@
                                                   fill="#222222"/>
                                         </svg>
                                     </div>
-                                    <div class="text">Организация имеет право<br>
-                                        подать не более 5 заявок<br>
-                                        на каждую из номинаций
+                                    <div class="text">{{__('main.whoCanNom_Ind2')}}<br>
+                                        {{__('main.whoCanNom_Ind3')}}<br>
+                                        {{__('main.whoCanNom_Ind4')}}
                                     </div>
                                 </div>
                             </div>
@@ -171,7 +171,7 @@
         <div class="section-mechanics__main">
             <div class="section-mechanics__main-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"
                  data-wow-offset="30">
-                Оценка заявок номинантов Премии осуществляется по следующим критериям:
+                {{__('main.grade_mane')}}
             </div>
             <div class="section-mechanics__main-btns w-100" style="display: none !important;" elem-hide>
                 <a href="{{ Route('index') }}#submit" class="btn btn-red-primary w-xs-100 wow fadeIn"
@@ -184,31 +184,31 @@
                  data-wow-offset="30">
                 <div class="section-mechanics__stage-point"></div>
                 <div class="section-mechanics__stage-title">1.</div>
-                <div class="section-mechanics__stage-date">Вклад в развитие<br>
-                    креативных индустрий<br>
-                    России&nbsp;
+                <div class="section-mechanics__stage-date">{{__('main.grade_creInc1')}}<br>
+                    {{__('main.grade_creInc2')}}<br>
+                    {{__('main.grade_creInc3')}}&nbsp{{__('main.grade_creInc4')}}
                 </div>
             </div>
             <div class="section-mechanics__stage section-mechanics__stage-new wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s"
                  data-wow-offset="30">
                 <div class="section-mechanics__stage-point"></div>
                 <div class="section-mechanics__stage-title">2.</div>
-                <div class="section-mechanics__stage-date">Медиаохват, <br>информационная открытость<br>
+                <div class="section-mechanics__stage-date">{{__('main.grade_media1')}} <br>{{__('main.grade_media2')}}<br>
                 </div>
             </div>
             <div class="section-mechanics__stage section-mechanics__stage-new wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s"
                  data-wow-offset="30">
                 <div class="section-mechanics__stage-point"></div>
                 <div class="section-mechanics__stage-title">3.</div>
-                <div class="section-mechanics__stage-date">Достижения за 2021–2022 годы
+                <div class="section-mechanics__stage-date">{{__('main.grade_award2021')}}
                 </div>
             </div>
             <div class="section-mechanics__stage section-mechanics__stage-new wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s"
                  data-wow-offset="30">
                 <div class="section-mechanics__stage-point"></div>
                 <div class="section-mechanics__stage-title">4.</div>
-                <div class="section-mechanics__stage-date">Уникальность,
-                    <br>инновационность
+                <div class="section-mechanics__stage-date">{{__('main.grade_unique1')}}
+                    <br>{{__('main.grade_unique2')}}
                 </div>
             </div>
         </div>
@@ -220,12 +220,11 @@
         <div class="section-mechanics__main">
             <div class="section-mechanics__main-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"
                  data-wow-offset="30">
-                Оценка заявок в номинации «Человек года» <br> осуществляется по <br> следующим критериям:
+                {{__('main.gradePeople_mane1')}}<br> {{__('main.gradePeople_mane2')}} <br> {{__('main.gradePeople_mane3')}}
             </div>
             <div class="section-mechanics__main-btns w-100" style="display: none !important;" elem-hide>
                 <a href="{{ Route('index') }}#submit" class="btn btn-red-primary w-xs-100 wow fadeIn"
-                   data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="30" data-form-contest>подать
-                    заявку</a>
+                   data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="30" data-form-contest>{{__('main.gradePeople_Pod')}}</a>
             </div>
         </div>
         <div class="section-mechanics__stages">
@@ -233,23 +232,23 @@
                  data-wow-offset="30">
                 <div class="section-mechanics__stage-point"></div>
                 <div class="section-mechanics__stage-title">1.</div>
-                <div class="section-mechanics__stage-date">Вклад в развитие<br>
-                    креативных индустрий<br>
-                    России&nbsp;
+                <div class="section-mechanics__stage-date">{{__('main.gradePeople_Inc1')}}<br>
+                    {{__('main.gradePeople_Inc2')}}<br>
+                    {{__('main.gradePeople_Inc3')}}&nbsp;
                 </div>
             </div>
             <div class="section-mechanics__stage wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s"
                  data-wow-offset="30">
                 <div class="section-mechanics__stage-point"></div>
                 <div class="section-mechanics__stage-title">2.</div>
-                <div class="section-mechanics__stage-date">Медиаохват, <br>информационная открытость<br>
+                <div class="section-mechanics__stage-date">{{__('main.gradePeople_media1')}} <br>{{__('main.gradePeople_media2')}}<br>
                 </div>
             </div>
             <div class="section-mechanics__stage wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s"
                  data-wow-offset="30">
                 <div class="section-mechanics__stage-point"></div>
                 <div class="section-mechanics__stage-title">3.</div>
-                <div class="section-mechanics__stage-date">Достижения за 2021–2022 годы
+                <div class="section-mechanics__stage-date">{{__('main.gradePeople_award')}}
                 </div>
             </div>
         </div>

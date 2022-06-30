@@ -5,15 +5,15 @@
         <div class="section-contacts__inner">
             <h2 class="section-title section-title-footer mb-0 wow fadeInUp" data-wow-duration="0.8s"
                 data-wow-delay="0.2s">
-                Контакты</h2>
+                {{__('main.footer_con')}}</h2>
             <div class="section-contacts__content">
                 <div class="contacts-grid">
                     <div class="contacts-grid__item wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
                         <div class="contacts-grid__item-title">
-                            Организаторы
+                            {{__('main.footer_org')}}
                         </div>
                         <div class="contacts-grid__item-desc">
-                            По вопросам сотрудничества свяжитесь с дирекцией Russian Creative Awards
+                            {{__('main.footer_faq')}}
                         </div>
                         <div class="contacts-grid__item-link">
                             <a href="mailto:direct@rc-awards.ru">direct@rc-awards.ru</a>
@@ -21,10 +21,10 @@
                     </div>
                     <div class="contacts-grid__item wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
                         <div class="contacts-grid__item-title">
-                            PR-служба
+                            {{__('main.footer_pr')}}
                         </div>
                         <div class="contacts-grid__item-desc">
-                            По вопросам взаимодействия обращайтесь
+                            {{__('main.footer_faq2')}}
                         </div>
                         <div class="contacts-grid__item-link">
                             <a href="mailto:pr@rc-awards.ru">pr@rc-awards.ru</a>
@@ -32,11 +32,10 @@
                     </div>
                     <div class="contacts-grid__item wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s">
                         <div class="contacts-grid__item-title">
-                            Поддержка
+                            {{__('main.footer_help')}}
                         </div>
                         <div class="contacts-grid__item-desc">
-                            Если у вас возникли сложности с&nbsp;подачей заявки, обратитесь в&nbsp;техническую
-                            поддержку:
+                            {{__('main.footer_if')}}&nbsp;{{__('main.footer_if2')}}&nbsp;{{__('main.footer_if3')}}
                         </div>
                         <div class="contacts-grid__item-link">
                             <a href="mailto:psupport@creativityweek.ru">support@creativityweek.ru</a>
@@ -115,11 +114,9 @@
             © Russian Creative Awards <?php echo date('Y') ?>
         </div>
         <div class="footer-menu__block">
-            <a href="{{ Route('agreement.privacy') }}" class="footer-menu__link" target="_blank"><u>Политика
-                    конфидециальности</u></a>
+            <a href="{{ Route('agreement.privacy') }}" class="footer-menu__link" target="_blank"><u>{{__('main.footer_pol1')}}</u></a>
 
-            <a href="{{ Route('agreement.accord') }}" class="footer-menu__link" target="_blank"><u>Обработка
-                    персональных данных</u></a>
+            <a href="{{ Route('agreement.accord') }}" class="footer-menu__link" target="_blank"><u>{{__('main.footer_pol2')}}</u></a>
         </div>
     </div>
 </div>

@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::middleware(['set_locale'])->group(function() {
 
 Route::get('/', 'IndexController@index')->name('index');
 Route::post('/register', 'RegisterController@showRegistrationForm')->name('register');
@@ -30,6 +31,7 @@ Route::get('post', 'PostController@index')->name('post.index');
 Route::get('post/{id}', 'PostController@show')->name('post.show');
 Route::post('debug', 'DebugController@telegram')->middleware('throttle:60,1');
 Route::post('notify', 'NotifyController@telegram')->middleware('throttle:60,1');
+Route::get('locale/{locale}', 'ChangeLocaleController@index') -> name('locale');
 
 Route::resource('Project', 'Form\ProjectController');
 
@@ -130,3 +132,4 @@ Route::get('/email/verification-notification', function (Request $request) {
 
     return back()->with('message', 'Письмо с подтверждением отправлено!');
 })->middleware(['auth', 'throttle:6,1'])->name('verification.send');
+});

@@ -2,8 +2,7 @@
     <div class="container" id="graphic">
         <div class="section-history__inner">
             <div class="border-top-black"></div>
-            <h2 class="section-title mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">График проведения
-                Премии
+            <h2 class="section-title mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"> {{__('main.history1')}}
             </h2>
         </div>
     </div>
@@ -16,7 +15,7 @@
                         <div class="section-history__line"></div>
                         <div class="card-timeline__date">07.07</div>
                         <div class="card-timeline__point"></div>
-                        <div class="card-timeline__desc">Старт Russian Creative Week</div>
+                        <div class="card-timeline__desc">{{__('main.history2')}}</div>
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -24,7 +23,7 @@
                         <div class="section-history__line"></div>
                         <div class="card-timeline__date">07.07 – 25.09</div>
                         <div class="card-timeline__point"></div>
-                        <div class="card-timeline__desc">Прием заявок</div>
+                        <div class="card-timeline__desc">{{__('main.history3')}}</div>
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -32,7 +31,7 @@
                         <div class="section-history__line"></div>
                         <div class="card-timeline__date">03.10 – 30.10</div>
                         <div class="card-timeline__point"></div>
-                        <div class="card-timeline__desc">Работа экспертов</div>
+                        <div class="card-timeline__desc">{{__('main.history4')}}</div>
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -40,7 +39,7 @@
                         <div class="section-history__line"></div>
                         <div class="card-timeline__date">07.11 – 27.11</div>
                         <div class="card-timeline__point"></div>
-                        <div class="card-timeline__desc">Работа жюри</div>
+                        <div class="card-timeline__desc">{{__('main.history5')}}</div>
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -48,7 +47,7 @@
                         <div class="section-history__line"></div>
                         <div class="card-timeline__date">09.12</div>
                         <div class="card-timeline__point"></div>
-                        <div class="card-timeline__desc">Торжественная церемония вручения премии
+                        <div class="card-timeline__desc">{{__('main.history6')}}
                         </div>
                     </div>
                 </div>
