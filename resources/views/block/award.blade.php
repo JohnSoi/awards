@@ -29,15 +29,15 @@
             </div>
             <div class="section-award__right">
                 <div class="section-award__right-title">
-                    <span class="text-white font-weight-100">Церемония вручения</span><br>
-                    <span class="text-semipink font-weight-600">премии R.C.AWARDS</span>
+                    <span class="text-white font-weight-100">{{__('main.cer_main')}}</span><br>
+                    <span class="text-semipink font-weight-600">{{__('main.cer_rc')}}</span>
                 </div>
                 <div class="section-award__text">
                     <p class="text text-white">
-                        18 декабря в&nbsp;концертном зале "Зарядье" состоялась&nbsp;торжественная церемония <br class="d-inline d-sm-none">вручения Russian Creative Awards. Специальная&nbsp;постановка под&nbsp;руководством режиссера Максима Диденко, с&nbsp;участием драматурга Льва Рубинштейна и&nbsp;одного из&nbsp;ведущих мировых дирижеров Теодора <br class="d-lg-inline d-none">Курентзиса с&nbsp;оркестром musicAeterna.
+                        {{__('main.cer_text1')}}&nbsp;{{__('main.cer_text2')}}&nbsp;{{__('main.cer_text3')}} <br class="d-inline d-sm-none">{{__('main.cer_text4')}}&nbsp;{{__('main.cer_text5')}}&nbsp;{{__('main.cer_text6')}}&nbsp;{{__('main.cer_text7')}}&nbsp;{{__('main.cer_text8')}}&nbsp;{{__('main.cer_text9')}} <br class="d-lg-inline d-none">{{__('main.cer_text10')}}&nbsp;{{__('main.cer_text12')}}
                     </p>
                     <br>
-                    <a href="{{ Route('index') }}/rc-award.pdf" target="_blank" class="links links__arrow-right text-white">Каталог «лучшие среди равных»</a>
+                    <a href="{{ Route('index') }}/rc-award.pdf" target="_blank" class="links links__arrow-right text-white">{{__('main.cer_text11')}}</a>
                 </div>
             </div>
         </div>

@@ -333,5 +333,22 @@ return  [
     'Menu_login' => 'To come in',
     'Menu_logout' => 'Go out',
     'sendReq' => 'Apply',
+    //Шорт лист
+    'short-list_title1' => 'SHORT LIST',
+    'short-list_title2' => 'AND PRIZE WINNERS',
 
+    'cer_main' => 'award ceremony',
+    'cer_rc' => 'R.C.AWARDS',
+    'cer_text1' => 'December 18 at',
+    'cer_text2' => 'concert hall "Zaryadye"',
+    'cer_text3' => 'solemn ceremony',
+    'cer_text4' => 'presentation of the Russian Creative Awards. Special',
+    'cer_text5' => 'setting under',
+    'cer_text6' => 'directed by director Maxim Didenko, with',
+    'cer_text7' => 'the participation of the playwright Lev Rubinstein and',
+    'cer_text8' => 'one of',
+    'cer_text9' => 'the world\'\s leading conductors Theodora',
+    'cer_text10' => 'Currentzis with',
+    'cer_text12' => 'the musicAeterna orchestra.',
+    'cer_text11' => 'Catalog "best among equals"',
 ];
