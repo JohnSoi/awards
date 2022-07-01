@@ -116,18 +116,21 @@
 .avatar__wrapper {
   border-radius: 50%;
   overflow: hidden;
-  width: 220px;
-  height: 220px;
+  width: 350px;
+  height: 350px;
 }
 
 .section-for__avatar {
-  width: 300px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  width: 500px;
   height: auto;
   position: relative;
+
 }
 
 .section-for__quote {
-  max-width: 750px;
+  max-width: 500px;
   flex: 0 0 750px;
   margin-top: 0;
   margin-left: 0;
