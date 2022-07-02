@@ -685,3 +685,27 @@
     font-weight: bold;
   }
 }
+
+.section-history__wrapper {
+  border-left: 1px solid grey;
+
+  .card-timeline__point {
+    margin-left: -20px;
+
+    &-wait {
+      background: grey;
+    }
+    
+    &-complete {
+      background: green;
+    }
+    
+    &-current {
+      background: #6e519d;
+    }
+  }
+}
+
+.card-timeline__date {
+  margin-bottom: -28px;
+}

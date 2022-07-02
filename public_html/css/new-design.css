@@ -630,3 +630,23 @@
   color: #c3a5f2;
   font-weight: bold;
 }
+
+.section-history__wrapper {
+  border-left: 1px solid grey;
+}
+.section-history__wrapper .card-timeline__point {
+  margin-left: -20px;
+}
+.section-history__wrapper .card-timeline__point-wait {
+  background: grey;
+}
+.section-history__wrapper .card-timeline__point-complete {
+  background: green;
+}
+.section-history__wrapper .card-timeline__point-current {
+  background: #6e519d;
+}
+
+.card-timeline__date {
+  margin-bottom: -28px;
+}
