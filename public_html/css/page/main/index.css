@@ -1257,7 +1257,7 @@
   z-index: 2;
 }
 .section-mechanics__main-title {
-  font-family: Normalidad;
+  font-family: "Play", sans-serif !important;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -1752,7 +1752,7 @@
   justify-content: center;
 }
 .section-submit__blur-title {
-  font-family: Normalidad;
+  font-family: "Play", sans-serif !important;
   font-style: normal;
   font-weight: bold;
   font-size: 35px;

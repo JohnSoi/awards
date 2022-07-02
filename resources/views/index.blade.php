@@ -58,6 +58,7 @@
             </div>
         </div>
     </div>
+
     <svg fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0; visibility: hidden; position:absolute; bottom: 0; left: 0; z-index: -1;">
         <defs>
             <linearGradient id="gray-gradient" x1="184.619" y1="53.0393" x2="12.1039" y2="70.0247" gradientUnits="userSpaceOnUse">
@@ -70,13 +71,12 @@
 <section class="section section-content section-cta new-main">
     <div class="container">
         <div class="section-cta__inner">
-            <h2 class="section-center-title text-semipink mb-0 wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">Независимая <br>кросс-отраслевая премия <br>в области креативных индустрий России
+            <h2 style="margin-top: 30px;" class="section-center-title text-semipink mb-0 wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">{{__('main.main_tagline1')}} <br>{{__('main.main_tagline2')}} <br>{{__('main.main_tagline3')}}
             </h2>
             <a href="#submit" class="btn btn-white-primary mt-5">Участвовать</a>
         </div>
     </div>
 </section>
-
 
 @include('block.for')
 
