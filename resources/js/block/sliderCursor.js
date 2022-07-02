@@ -18,6 +18,7 @@ $(() => {
                     $('.direction-item.hover').removeClass('hover');
 
                     if (obj.hoverElem && !obj.hoverElem.hasClass('hover-slide-item')) {
+                        $('.hover-slide-item').removeClass('hover-slide-item');
                         obj.hoverElem.addClass('hover-slide-item');
                         obj.hoverElem.parents().addClass('hover-slide-item');
 
