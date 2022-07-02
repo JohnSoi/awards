@@ -5096,7 +5096,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Play', sans-serif !important;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
@@ -5108,7 +5108,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Play', sans-serif !important;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -5220,7 +5220,7 @@ a:not([href]):not([class]):hover {
 }
 
 code, kbd, pre, samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: 'Play', sans-serif !important;
   font-size: 1em;
 }
 
@@ -5277,7 +5277,8 @@ button:focus:not(:focus-visible) {
 
 button, input, optgroup, select, textarea {
   margin: 0;
-  font-family: inherit;
+  font-family: 'Play', sans-serif !important;
+
   font-size: inherit;
   line-height: inherit;
 }
@@ -10832,7 +10833,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Play', sans-serif !important;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -10945,7 +10946,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Play', sans-serif !important;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -14559,7 +14560,8 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 }
 
 .text-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+  font-family: 'Play', sans-serif !important;
+
 }
 
 .text-justify {
@@ -18785,7 +18787,7 @@ a.text-dark:focus, a.text-dark:hover {
 }
 
 .btn-primary {
-  font-family: Object Sans;
+  font-family: 'Play', sans-serif !important;
   font-style: normal;
   font-weight: bold;
   font-size: 13px;
@@ -18822,7 +18824,8 @@ a.text-dark:focus, a.text-dark:hover {
 }
 
 .btn-black-primary {
-  font-family: Object Sans;
+  font-family: 'Play', sans-serif !important;
+
   font-style: normal;
   font-weight: bold;
   font-size: 13px;
@@ -18859,7 +18862,8 @@ a.text-dark:focus, a.text-dark:hover {
 }
 
 .btn-white-primary {
-  font-family: Object Sans;
+  font-family: 'Play', sans-serif !important;
+
   font-style: normal;
   font-weight: bold;
   font-size: 13px;
@@ -18896,7 +18900,7 @@ a.text-dark:focus, a.text-dark:hover {
 }
 
 .btn-red-primary {
-  font-family: Object Sans;
+  font-family: 'Play', sans-serif !important;
   font-style: normal;
   font-weight: bold;
   font-size: 13px;
@@ -19320,7 +19324,7 @@ a.text-dark:focus, a.text-dark:hover {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  font-family: Object Sans;
+  font-family: 'Play', sans-serif !important;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -19849,7 +19853,7 @@ a.text-dark:focus, a.text-dark:hover {
   margin: 6px 12px 4px 0;
 }
 .card-themes__title .text {
-  font-family: "Object Sans";
+  font-family: "Play", sans-serif !important;
   font-weight: 800;
   font-size: 18px;
   line-height: 155%;
@@ -19883,7 +19887,7 @@ a.text-dark:focus, a.text-dark:hover {
   margin-right: 15px;
 }
 .card-themes__content .list-type__item .text {
-  font-family: "Object Sans";
+  font-family: "Play", sans-serif !important;
   font-size: 15px;
   line-height: 142.5%;
   letter-spacing: -0.01em;
@@ -20010,7 +20014,7 @@ a.text-dark:focus, a.text-dark:hover {
   position: absolute;
   right: 16px;
   bottom: 16px;
-  font-family: "Object Sans";
+  font-family: "Play", sans-serif !important;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -20635,7 +20639,7 @@ a.text-dark:focus, a.text-dark:hover {
   padding: 10px;
   background-color: #222222;
   color: #fbfbfb;
-  font-family: "Object Sans";
+  font-family: "Play", sans-serif !important;
   font-style: normal;
   font-weight: bold;
   font-size: 13px;
@@ -21011,7 +21015,7 @@ a.text-dark:focus, a.text-dark:hover {
 }
 .card-timeline__date {
   white-space: nowrap;
-  font-family: Normalidad;
+  font-family: "Play", sans-serif !important;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -21310,7 +21314,7 @@ a.text-dark:focus, a.text-dark:hover {
   }
 }
 .color-card__rcw .color-card__title {
-  font-family: "RCW2021";
+  font-family: "Play", sans-serif !important;
   font-weight: normal;
   font-size: 18px;
   line-height: 130%;
@@ -21336,7 +21340,8 @@ a.text-dark:focus, a.text-dark:hover {
   color: #222222;
 }
 .color-card__title {
-  font-family: inherit;
+  font-family: 'Play', sans-serif !important;
+
   font-weight: bold;
   font-size: 13px;
   line-height: 155%;
@@ -21344,7 +21349,8 @@ a.text-dark:focus, a.text-dark:hover {
   margin-bottom: 16px;
 }
 .color-card__it {
-  font-family: Object Sans !important;
+  font-family: 'Play', sans-serif !important;
+
   font-weight: 500 !important;
   font-stretch: ultra-expanded !important;
 }
@@ -22414,7 +22420,7 @@ section {
   font-display: swap;
 }
 @font-face {
-  font-family: "RCW2021";
+  font-family: "Play", sans-serif !important;
   src: url("/fonts/RCW2021.eot");
   src: local("RCW2021"), local("RCW2021"), url("/fonts/RCW2021?#iefix") format("embedded-opentype"), url("/fonts/RCW2021.woff") format("woff"), url("/fonts/RCW2021.ttf") format("truetype");
   font-weight: normal;
@@ -22458,7 +22464,7 @@ section {
 }
 
 .section-center-title {
-  font-family: Normalidad;
+  font-family: "Play", sans-serif !important;
   font-weight: 700;
   font-size: 40px;
   line-height: 117%;
@@ -22509,7 +22515,7 @@ section {
 
 .form__title {
   width: 100%;
-  font-family: Normalidad, sans-serif;
+  font-family: "Play", sans-serif !important;
   font-weight: bold;
   font-size: 22px;
   line-height: 1.4;
@@ -23036,7 +23042,7 @@ section {
 }
 
 .form-type-score {
-  font-family: Normalidad;
+  font-family: "Play", sans-serif !important;
   font-weight: bold;
   font-size: 40px;
   line-height: 117%;
@@ -23078,7 +23084,7 @@ section {
 }
 
 .form-val-score {
-  font-family: Normalidad;
+  font-family: "Play", sans-serif !important;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -23202,7 +23208,8 @@ section {
   position: absolute;
   right: 0;
   bottom: -25px;
-  font-family: Object Sans;
+  font-family: 'Play', sans-serif !important;
+
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -24448,7 +24455,7 @@ section {
   }
 }
 .modal-body__title {
-  font-family: Normalidad;
+  font-family: "Play", sans-serif !important;
   font-style: normal;
   font-weight: bold;
   line-height: 140%;
@@ -24523,7 +24530,8 @@ section {
 }
 
 .modal-title {
-  font-family: "Normalidad";
+  font-family: 'Play', sans-serif !important;
+
   font-style: normal;
   font-weight: bold;
   font-size: 35px;
@@ -25342,7 +25350,7 @@ section {
 }
 .project-modal .modal-title {
   max-width: 860px;
-  font-family: Normalidad;
+  font-family: "Play", sans-serif !important;
   font-style: normal;
   font-weight: bold;
   font-size: 35px;
@@ -25624,7 +25632,8 @@ section {
 .suggestions-wrapper .suggestions-suggestions .suggestions-value, .suggestions-wrapper .suggestions-suggestions .suggestions-hint {
   width: 100%;
   display: block;
-  font-family: Object Sans;
+  font-family: 'Play', sans-serif !important;
+
   min-height: 50px;
   font-size: 14px;
   line-height: 21px;
@@ -25647,7 +25656,8 @@ section {
   padding-left: 20px;
   padding-right: 20px;
   margin-top: -10px;
-  font-family: Object Sans;
+  font-family: 'Play', sans-serif !important;
+
   line-height: 21px;
   border-radius: 0;
   color: #222222;
@@ -25786,8 +25796,9 @@ section {
 }
 
 p {
-  font-family: Object Sans;
   font-style: normal;
+  font-family: 'Play', sans-serif !important;
+
   font-weight: normal;
   font-size: 17px;
   line-height: 152%;
@@ -25811,7 +25822,7 @@ p {
 }
 
 .h1 {
-  font-family: Normalidad;
+  font-family: "Play", sans-serif !important;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -25833,7 +25844,7 @@ p {
 }
 
 .h2 {
-  font-family: Normalidad;
+  font-family: "Play", sans-serif !important;
   font-style: normal;
   font-weight: bold;
   font-size: 35px;
@@ -25854,7 +25865,7 @@ p {
 }
 
 .h3 {
-  font-family: Normalidad;
+  font-family: "Play", sans-serif !important;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -25870,7 +25881,7 @@ p {
 }
 
 h4 {
-  font-family: "Object Sans";
+  font-family: "Play", sans-serif !important;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -25981,7 +25992,8 @@ h4 {
 }
 
 .more-text {
-  font-family: Object Sans;
+  font-family: 'Play', sans-serif !important;
+
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -27333,8 +27345,9 @@ img {
 .section-award__right-title {
   padding-top: 16px;
   padding-bottom: 48px;
-  font-family: "Normalidad";
   font-size: 26px;
+  font-family: 'Play', sans-serif !important;
+
   line-height: 140%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -27456,7 +27469,7 @@ img {
 .section-for__bigtitle {
   padding-top: 19px;
   padding-bottom: 48px;
-  font-family: "RCW2021";
+  font-family: "Play", sans-serif !important;
   font-style: normal;
   font-weight: normal;
   font-size: 35px;
@@ -28449,7 +28462,7 @@ img {
 .menu-mob__inner .navigation__link {
   position: relative;
   width: 100%;
-  font-family: Normalidad;
+  font-family: "Play", sans-serif !important;
   font-weight: 700;
   font-size: 30px;
   line-height: 140%;
@@ -28635,7 +28648,7 @@ img {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: Normalidad;
+  font-family: "Play", sans-serif !important;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -29296,9 +29309,10 @@ img {
 body {
   margin: 0;
   padding: 0;
-  font-family: Object Sans, sans-serif;
   font-style: normal;
   font-weight: normal;
+  font-family: 'Play', sans-serif !important;
+
   font-size: 17px;
   line-height: 26px;
   color: #222222;

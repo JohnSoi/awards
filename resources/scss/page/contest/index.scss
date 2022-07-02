@@ -162,7 +162,8 @@
         flex-direction: column;
         justify-content: flex-start;
         &-number {
-            font-family: Normalidad;
+            font-family: 'Play', sans-serif !important;
+
             font-style: normal;
             font-weight: bold;
             font-size: 80px;
@@ -271,7 +272,8 @@
         flex-direction: column;
         align-items: center;
         &-title {
-            font-family: Normalidad;
+            font-family: 'Play', sans-serif !important;
+
             font-style: normal;
             font-weight: bold;
             font-size: 40px;

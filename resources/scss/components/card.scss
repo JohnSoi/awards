@@ -275,7 +275,7 @@
             margin: 6px 12px 4px 0;
         }
         & .text {
-            font-family: "Object Sans";
+            font-family: 'Play', sans-serif !important;
             font-weight: 800;
             font-size: 18px;
             line-height: 155%;
@@ -307,7 +307,7 @@
                     margin-right: 15px;
                 }
                 & .text {
-                    font-family: "Object Sans";
+                    font-family: 'Play', sans-serif !important;
                     font-size: 15px;
                     line-height: 142.5%;
                     letter-spacing: -0.01em;
@@ -427,7 +427,7 @@
         position: absolute;
         right: 16px;
         bottom: 16px;
-        font-family: "Object Sans";
+        font-family: 'Play', sans-serif !important;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -1171,7 +1171,8 @@
     padding: 10px;
     background-color: $c-222222;
     color: $c-fbfbfb;
-    font-family: "Object Sans";
+    font-family: 'Play', sans-serif !important;
+
     font-style: normal;
     font-weight: bold;
     font-size: 13px;
@@ -1534,7 +1535,8 @@
     flex-direction: column;
     &__date {
         white-space: nowrap;
-        font-family: Normalidad;
+        font-family: 'Play', sans-serif !important;
+
         font-style: normal;
         font-weight: bold;
         font-size: 30px;
@@ -1793,7 +1795,7 @@
             width: 100%;
         }
         & .color-card__title {
-            font-family: "RCW2021";
+            font-family: 'Play', sans-serif !important;
             font-weight: normal;
             font-size: 18px;
             line-height: 130%;
