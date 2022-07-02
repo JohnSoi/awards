@@ -644,9 +644,18 @@
   background: green;
 }
 .section-history__wrapper .card-timeline__point-current {
-  background: #6e519d;
+  background: #6917f0;
 }
 
 .card-timeline__date {
   margin-bottom: -28px;
+}
+
+.section-history__content-new {
+  display: flex;
+  justify-content: space-around;
+}
+
+#television svg:last-child {
+  margin-top: 220px;
 }

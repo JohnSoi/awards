@@ -31,21 +31,16 @@ class TimelineHelpers
     private static function _getStateStage($pointDateStart, $pointDateEnd = null): string
     {
         $pointDateStart = Carbon::createFromFormat(self::$_format, $pointDateStart);
-        if (!$pointDateEnd) {
-            return match (true) {
-                $pointDateStart->gt(self::_getCurrentDate()) => 'wait',
-                $pointDateStart->lt(self::_getCurrentDate()) => 'complete',
-                default => 'current',
-            };
-        }
-
         $pointDateEnd = Carbon::createFromFormat(self::$_format, $pointDateEnd);
 
-        return match (true) {
-            $pointDateEnd->gt(self::_getCurrentDate()) => 'wait',
-            $pointDateEnd->lt(self::_getCurrentDate() && $pointDateStart > self::_getCurrentDate()) => 'complete',
-            default => 'current',
-        };
+        switch (true) {
+            case self::_getCurrentDate()->lt($pointDateStart):
+                return 'wait';
+            case self::_getCurrentDate()->between($pointDateStart, $pointDateEnd):
+                return 'current';
+            default:
+                return 'complete';
+        }
     }
 
 }
