@@ -670,7 +670,3 @@
   display: flex;
   justify-content: space-around;
 }
-
-#television svg:last-child {
-  margin-top: 220px;
-}
