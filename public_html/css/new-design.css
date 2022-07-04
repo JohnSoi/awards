@@ -662,6 +662,10 @@
   margin-bottom: -28px;
 }
 
+#postmarks svg {
+  opacity: 0.5;
+}
+
 .section-history__content-new {
   display: flex;
   justify-content: space-around;
