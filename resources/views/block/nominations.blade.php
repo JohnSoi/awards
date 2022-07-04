@@ -171,7 +171,7 @@
         <div class="section-mechanics__main">
             <div class="section-mechanics__main-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"
                  data-wow-offset="30">
-                Оценка заявок номинантов Премии осуществляется по следующим критериям:
+                Критерии оценки заявок номинантов:
             </div>
         </div>
         <div class="section-mechanics__stages-wrapper">
@@ -180,7 +180,7 @@
                  data-wow-offset="30">
                 <div class="section-mechanics__stages-stage__number">1.</div>
                 <div class="section-mechanics__stages-stage__title">
-                    Вклад в развитие креативных индустрий России&nbsp;
+                    Критерии оценки заявок в номинации «Человек года»&nbsp;
                 </div>
             </div>
             <div class="section-mechanics__stages-stage__wrapper wow fadeIn" data-wow-duration="1.1s"

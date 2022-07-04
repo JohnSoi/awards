@@ -138,9 +138,9 @@
 
     @include('block.indamini')
 
-    @include('block.jury')
+{{--    @include('block.jury')--}}
 
-    @include('block.expert')
+{{--    @include('block.expert')--}}
 
 
     @include('block.partners')
