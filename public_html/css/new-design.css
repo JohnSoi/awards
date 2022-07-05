@@ -676,4 +676,21 @@
   position: absolute;
   top: 270px;
   right: 180px;
+  /* Подключаем свойство transform-style для 3D */
+  transform-style: preserve-3d;
+  /* Подключаем анимацию для вращения и обзора */
+  -webkit-animation: main-rotate 10s linear;
+          animation: main-rotate 10s linear;
+}
+
+@-webkit-keyframes main-rotate {
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes main-rotate {
+  100% {
+    transform: rotateY(360deg);
+  }
 }
