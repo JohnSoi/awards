@@ -39,6 +39,9 @@
                 </div>
             </div>
         </div>
+        <div class="award-symbol wow rotateIn" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
+            <img data-src="/img/V2/page/main/card/gradient/figure_award-sm.png" class=" ls-is-cached lazyloaded" src="/img/V2/page/main/card/gradient/figure_award-sm.png">
+        </div>
     </div>
 
     <svg fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0; visibility: hidden; position:absolute; bottom: 0; left: 0; z-index: -1;">
