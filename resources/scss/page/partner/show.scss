@@ -75,7 +75,8 @@
     }
     &__direction {
         max-width: 400px;
-        font-family: Normalidad;
+        font-family: 'Play', sans-serif !important;
+
         font-weight: bold;
         font-size: 40px;
         line-height: 130.5%;
@@ -372,7 +373,8 @@
         }
     }
     &__title {
-        font-family: Normalidad;
+        font-family: 'Play', sans-serif !important;
+
         font-weight: bold;
         font-size: 30px;
         line-height: 140%;
@@ -712,7 +714,8 @@
         justify-content: center;
     }
     &__link {
-        font-family: Normalidad;
+        font-family: 'Play', sans-serif !important;
+
         font-weight: bold;
         font-size: 40px;
         line-height: 130.5%;

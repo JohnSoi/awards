@@ -93,18 +93,20 @@
 .avatar__wrapper {
   border-radius: 50%;
   overflow: hidden;
-  width: 220px;
-  height: 220px;
+  width: 350px;
+  height: 350px;
 }
 
 .section-for__avatar {
-  width: 300px;
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  width: 500px;
   height: auto;
   position: relative;
 }
 
 .section-for__quote {
-  max-width: 750px;
+  max-width: 500px;
   flex: 0 0 750px;
   margin-top: 0;
   margin-left: 0;
@@ -304,6 +306,15 @@
 @media (max-width: 991px) {
   .section-title {
     max-width: 100%;
+  }
+
+  .avatar__wrapper {
+    width: 250px;
+    height: 250px;
+  }
+
+  .section-for__avatar {
+    width: 370px;
   }
 }
 @media (min-width: 991px) {
@@ -601,6 +612,7 @@
   padding-top: 40px;
   padding-bottom: 40px;
   color: white;
+  background: #222;
 }
 
 .small-collapse-btn__head a {
@@ -617,4 +629,45 @@
 
 .collapse {
   text-align: justify;
+}
+
+.section-mechanics__stages-stage__wrapper {
+  display: flex;
+  font-size: 26px;
+  margin-bottom: 14px;
+}
+.section-mechanics__stages-stage__wrapper .section-mechanics__stages-stage__number {
+  margin-right: 8px;
+  font-size: 20px;
+  color: #c3a5f2;
+  font-weight: bold;
+}
+
+.section-history__wrapper {
+  border-left: 1px solid grey;
+}
+.section-history__wrapper .card-timeline__point {
+  margin-left: -20px;
+}
+.section-history__wrapper .card-timeline__point-wait {
+  background: grey;
+}
+.section-history__wrapper .card-timeline__point-complete {
+  background: green;
+}
+.section-history__wrapper .card-timeline__point-current {
+  background: #6917f0;
+}
+
+.card-timeline__date {
+  margin-bottom: -28px;
+}
+
+#postmarks svg {
+  opacity: 0.5;
+}
+
+.section-history__content-new {
+  display: flex;
+  justify-content: space-around;
 }

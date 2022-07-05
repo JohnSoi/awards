@@ -19849,7 +19849,7 @@ a.text-dark:focus, a.text-dark:hover {
   margin: 6px 12px 4px 0;
 }
 .card-themes__title .text {
-  font-family: "Object Sans";
+  font-family: "Play", sans-serif !important;
   font-weight: 800;
   font-size: 18px;
   line-height: 155%;
@@ -19883,7 +19883,7 @@ a.text-dark:focus, a.text-dark:hover {
   margin-right: 15px;
 }
 .card-themes__content .list-type__item .text {
-  font-family: "Object Sans";
+  font-family: "Play", sans-serif !important;
   font-size: 15px;
   line-height: 142.5%;
   letter-spacing: -0.01em;
@@ -20010,7 +20010,7 @@ a.text-dark:focus, a.text-dark:hover {
   position: absolute;
   right: 16px;
   bottom: 16px;
-  font-family: "Object Sans";
+  font-family: "Play", sans-serif !important;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -20635,7 +20635,7 @@ a.text-dark:focus, a.text-dark:hover {
   padding: 10px;
   background-color: #222222;
   color: #fbfbfb;
-  font-family: "Object Sans";
+  font-family: "Play", sans-serif !important;
   font-style: normal;
   font-weight: bold;
   font-size: 13px;
@@ -21011,7 +21011,7 @@ a.text-dark:focus, a.text-dark:hover {
 }
 .card-timeline__date {
   white-space: nowrap;
-  font-family: Normalidad;
+  font-family: "Play", sans-serif !important;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -21310,7 +21310,7 @@ a.text-dark:focus, a.text-dark:hover {
   }
 }
 .color-card__rcw .color-card__title {
-  font-family: "RCW2021";
+  font-family: "Play", sans-serif !important;
   font-weight: normal;
   font-size: 18px;
   line-height: 130%;
@@ -22414,7 +22414,7 @@ section {
   font-display: swap;
 }
 @font-face {
-  font-family: "RCW2021";
+  font-family: "Play", sans-serif !important;
   src: url("/fonts/RCW2021.eot");
   src: local("RCW2021"), local("RCW2021"), url("/fonts/RCW2021?#iefix") format("embedded-opentype"), url("/fonts/RCW2021.woff") format("woff"), url("/fonts/RCW2021.ttf") format("truetype");
   font-weight: normal;
@@ -22458,7 +22458,7 @@ section {
 }
 
 .section-center-title {
-  font-family: Normalidad;
+  font-family: "Play", sans-serif !important;
   font-weight: 700;
   font-size: 40px;
   line-height: 117%;
@@ -22509,7 +22509,7 @@ section {
 
 .form__title {
   width: 100%;
-  font-family: Normalidad, sans-serif;
+  font-family: "Play", sans-serif !important;
   font-weight: bold;
   font-size: 22px;
   line-height: 1.4;
@@ -23036,7 +23036,7 @@ section {
 }
 
 .form-type-score {
-  font-family: Normalidad;
+  font-family: "Play", sans-serif !important;
   font-weight: bold;
   font-size: 40px;
   line-height: 117%;
@@ -23078,7 +23078,7 @@ section {
 }
 
 .form-val-score {
-  font-family: Normalidad;
+  font-family: "Play", sans-serif !important;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -24448,7 +24448,7 @@ section {
   }
 }
 .modal-body__title {
-  font-family: Normalidad;
+  font-family: "Play", sans-serif !important;
   font-style: normal;
   font-weight: bold;
   line-height: 140%;
@@ -25342,7 +25342,7 @@ section {
 }
 .project-modal .modal-title {
   max-width: 860px;
-  font-family: Normalidad;
+  font-family: "Play", sans-serif !important;
   font-style: normal;
   font-weight: bold;
   font-size: 35px;
@@ -25811,7 +25811,7 @@ p {
 }
 
 .h1 {
-  font-family: Normalidad;
+  font-family: "Play", sans-serif !important;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -25833,7 +25833,7 @@ p {
 }
 
 .h2 {
-  font-family: Normalidad;
+  font-family: "Play", sans-serif !important;
   font-style: normal;
   font-weight: bold;
   font-size: 35px;
@@ -25854,7 +25854,7 @@ p {
 }
 
 .h3 {
-  font-family: Normalidad;
+  font-family: "Play", sans-serif !important;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -25870,7 +25870,7 @@ p {
 }
 
 h4 {
-  font-family: "Object Sans";
+  font-family: "Play", sans-serif !important;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -27456,7 +27456,7 @@ img {
 .section-for__bigtitle {
   padding-top: 19px;
   padding-bottom: 48px;
-  font-family: "RCW2021";
+  font-family: "Play", sans-serif !important;
   font-style: normal;
   font-weight: normal;
   font-size: 35px;
@@ -28449,7 +28449,7 @@ img {
 .menu-mob__inner .navigation__link {
   position: relative;
   width: 100%;
-  font-family: Normalidad;
+  font-family: "Play", sans-serif !important;
   font-weight: 700;
   font-size: 30px;
   line-height: 140%;
@@ -28635,7 +28635,7 @@ img {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: Normalidad;
+  font-family: "Play", sans-serif !important;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;

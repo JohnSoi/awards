@@ -75,7 +75,7 @@
 
 .section-cta {
     & .section-center-title {
-        font-family: "RCW2021";
+        font-family: 'Play', sans-serif !important;
         font-weight: normal;
         font-size: 36px;
         transition: 0.4s ease;
@@ -131,7 +131,7 @@
         @media (max-width: 576px) {
             display: block;
             margin-bottom: 48px;
-            font-family: Normalidad;
+            font-family: 'Play', sans-serif !important;
             font-weight: 800;
             font-size: 19px;
             line-height: 136%;

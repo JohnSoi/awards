@@ -171,45 +171,35 @@
         <div class="section-mechanics__main">
             <div class="section-mechanics__main-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"
                  data-wow-offset="30">
-                Оценка заявок номинантов Премии осуществляется по следующим критериям:
-            </div>
-            <div class="section-mechanics__main-btns w-100" style="display: none !important;" elem-hide>
-                <a href="{{ Route('index') }}#submit" class="btn btn-red-primary w-xs-100 wow fadeIn"
-                   data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="30" data-form-contest>подать
-                    заявку</a>
+                Критерии оценки заявок номинантов:
             </div>
         </div>
-        <div class="section-mechanics__stages">
-            <div class="section-mechanics__stage section-mechanics__stage-new wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s"
+        <div class="section-mechanics__stages-wrapper">
+            <div class="section-mechanics__stages-stage__wrapper wow fadeIn" data-wow-duration="1s"
+                 data-wow-delay="0.2s"
                  data-wow-offset="30">
-                <div class="section-mechanics__stage-point"></div>
-                <div class="section-mechanics__stage-title">1.</div>
-                <div class="section-mechanics__stage-date">Вклад в развитие<br>
-                    креативных индустрий<br>
-                    России&nbsp;
+                <div class="section-mechanics__stages-stage__number">1.</div>
+                <div class="section-mechanics__stages-stage__title">
+                    Критерии оценки заявок в номинации «Человек года»&nbsp;
                 </div>
             </div>
-            <div class="section-mechanics__stage section-mechanics__stage-new wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s"
+            <div class="section-mechanics__stages-stage__wrapper wow fadeIn" data-wow-duration="1.1s"
+                 data-wow-delay="0.2s"
                  data-wow-offset="30">
-                <div class="section-mechanics__stage-point"></div>
-                <div class="section-mechanics__stage-title">2.</div>
-                <div class="section-mechanics__stage-date">Медиаохват, <br>информационная открытость<br>
-                </div>
+                <div class="section-mechanics__stages-stage__number">2.</div>
+                <div class="section-mechanics__stages-stage__title">Медиаохват, информационная открытость</div>
             </div>
-            <div class="section-mechanics__stage section-mechanics__stage-new wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s"
+            <div class="section-mechanics__stages-stage__wrapper wow fadeIn" data-wow-duration="1.2s"
+                 data-wow-delay="0.2s"
                  data-wow-offset="30">
-                <div class="section-mechanics__stage-point"></div>
-                <div class="section-mechanics__stage-title">3.</div>
-                <div class="section-mechanics__stage-date">Достижения за 2021–2022 годы
-                </div>
+                <div class="section-mechanics__stages-stage__number">3.</div>
+                <div class="section-mechanics__stages-stage__title">Достижения за 2021–2022 годы</div>
             </div>
-            <div class="section-mechanics__stage section-mechanics__stage-new wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s"
+            <div class="section-mechanics__stages-stage__wrapper wow fadeIn" data-wow-duration="1.3s"
+                 data-wow-delay="0.2s"
                  data-wow-offset="30">
-                <div class="section-mechanics__stage-point"></div>
-                <div class="section-mechanics__stage-title">4.</div>
-                <div class="section-mechanics__stage-date">Уникальность,
-                    <br>инновационность
-                </div>
+                <div class="section-mechanics__stages-stage__number">4.</div>
+                <div class="section-mechanics__stages-stage__title">Уникальность, инновационность</div>
             </div>
         </div>
     </div>
@@ -218,40 +208,41 @@
 <section class="section section-content section-mechanics">
     <div class="container" id="criteria">
         <div class="section-mechanics__main">
-            <div class="section-mechanics__main-title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"
+            <div class="section-mechanics__main-title wow fadeInUp" data-wow-duration="0.8s"
+                 data-wow-delay="0.2s"
                  data-wow-offset="30">
                 Оценка заявок в номинации «Человек года» <br> осуществляется по <br> следующим критериям:
             </div>
-            <div class="section-mechanics__main-btns w-100" style="display: none !important;" elem-hide>
-                <a href="{{ Route('index') }}#submit" class="btn btn-red-primary w-xs-100 wow fadeIn"
-                   data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="30" data-form-contest>подать
-                    заявку</a>
-            </div>
         </div>
-        <div class="section-mechanics__stages">
-            <div class="section-mechanics__stage wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s"
+        <div class="section-mechanics__stages-wrapper">
+            <div class="section-mechanics__stages-stage__wrapper wow fadeIn" data-wow-duration="1s"
+                 data-wow-delay="0.2s"
                  data-wow-offset="30">
-                <div class="section-mechanics__stage-point"></div>
-                <div class="section-mechanics__stage-title">1.</div>
-                <div class="section-mechanics__stage-date">Вклад в развитие<br>
-                    креативных индустрий<br>
-                    России&nbsp;
+                <div class="section-mechanics__stages-stage__number">1.</div>
+                <div class="section-mechanics__stages-stage__title">
+                    Вклад в развитие креативных индустрий России&nbsp;
                 </div>
             </div>
-            <div class="section-mechanics__stage wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s"
+            <div class="section-mechanics__stages-stage__wrapper wow fadeIn" data-wow-duration="1.1s"
+                 data-wow-delay="0.2s"
                  data-wow-offset="30">
-                <div class="section-mechanics__stage-point"></div>
-                <div class="section-mechanics__stage-title">2.</div>
-                <div class="section-mechanics__stage-date">Медиаохват, <br>информационная открытость<br>
-                </div>
+                <div class="section-mechanics__stages-stage__number">2.</div>
+                <div class="section-mechanics__stages-stage__title">Медиаохват, информационная открытость</div>
             </div>
-            <div class="section-mechanics__stage wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s"
+            <div class="section-mechanics__stages-stage__wrapper wow fadeIn" data-wow-duration="1.2s"
+                 data-wow-delay="0.2s"
                  data-wow-offset="30">
-                <div class="section-mechanics__stage-point"></div>
-                <div class="section-mechanics__stage-title">3.</div>
-                <div class="section-mechanics__stage-date">Достижения за 2021–2022 годы
-                </div>
+                <div class="section-mechanics__stages-stage__number">3.</div>
+                <div class="section-mechanics__stages-stage__title">Достижения за 2021–2022 годы</div>
             </div>
         </div>
     </div>
 </section>
+
+@if( Request::url() === Route('index') )
+    <div class="section-mechanics__main-btns w-100" elem-hide>
+        <a href="{{ Route('index') }}#submit" class="btn btn-white-primary w-xs-100 wow fadeIn"
+           data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="30" data-form-contest>подать
+            заявку</a>
+    </div>
+@endif

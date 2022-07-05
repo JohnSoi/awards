@@ -65,7 +65,8 @@
         }
     }
     &__title {
-        font-family: Normalidad;
+        font-family: 'Play', sans-serif !important;
+
         font-style: normal;
         font-weight: bold;
         line-height: 140%;
@@ -907,7 +908,8 @@
     }
     & .modal-title {
         max-width: 860px;
-        font-family: Normalidad;
+        font-family: 'Play', sans-serif !important;
+
         font-style: normal;
         font-weight: bold;
         font-size: 35px;

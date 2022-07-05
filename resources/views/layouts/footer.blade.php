@@ -55,17 +55,11 @@
                     <a href="{{Route('index')}}" class="footer--logo">
                         @include('layouts.logo.white')
                     </a>
-                    <a href="https://unctad.org/" target="_blank" class="footer--logo norect">
-                        <img data-src="../../../../img/V2/elements/logo/unesco.svg" class="lazyload other-svg-logo">
-                    </a>
                 </div>
             </div>
             <div class="footer-content__logo mt-5 mt-md-4 mt-lg-auto">
                 <a href="{{Route('index')}}" class="footer--logo">
                     @include('layouts.logo.white')
-                </a>
-                <a href="https://unctad.org/" target="_blank" class="footer--logo norect">
-                    <img data-src="../../../../img/V2/elements/logo/unesco.svg" class="lazyload other-svg-logo">
                 </a>
             </div>
             <div class="footer-content__right">
