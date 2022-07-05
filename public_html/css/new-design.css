@@ -722,3 +722,6 @@
     transform: rotateY(360deg);
   }
 }
+.verify-container {
+  margin-bottom: 200px;
+}

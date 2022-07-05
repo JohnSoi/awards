@@ -4,6 +4,6 @@ package-lock.*
 composer.lock
 vendor/
 public_html/storage
-.env
+*.env
 storage/debugbar/
 storage/framework/cache

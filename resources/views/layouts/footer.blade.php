@@ -1,4 +1,5 @@
 <div items-not-scroll-window></div>
+<div>
 <div class="wrapper__custom" style="background: #222; width: 100vw; text-align: justify">
     <div class="container" id="contacts">
         <div class="border-top-black"></div>
@@ -116,4 +117,5 @@
                     персональных данных</u></a>
         </div>
     </div>
+</div>
 </div>

@@ -50,6 +50,7 @@ class RegisterController extends Controller
         ]);
         if ($user){
             auth("web")->login($user);
+            $user->sendEmailVerificationNotification();
         }
         return $request->ajax()
             ? ['success' => true]
