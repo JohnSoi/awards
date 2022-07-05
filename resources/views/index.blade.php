@@ -18,28 +18,10 @@
 <section class="section section-content section-main">
     <div class="conic-gradient"></div>
     <div class="postmark-position animated-marks container">
-        <div id="postmarks"></div>
+
     </div>
     <div class="postmark-position notanimated-marks container">
-        <div class="postmark-area mt-md-n4 mt-sm-n4 mt-n3" style="z-index:0;">
-            <div class="post-mark post-mark__green">
-                <object type="image/svg+xml" data="/img/V2/elements/postmarks/green.svg"></object>
-            </div>
-            <div class="post-mark post-mark__emerland">
-                <object type="image/svg+xml" data="/img/V2/elements/postmarks/emerland.svg"></object>
-            </div>
-        </div>
-        <div class="postmark-area mt-md-n4 mt-sm-n4 mt-n3" style="z-index:5;">
-            <div class="post-mark post-mark__violet">
-                <object type="image/svg+xml" data="/img/V2/elements/postmarks/violet.svg"></object>
-            </div>
-            <div class="post-mark post-mark__pink">
-                <object type="image/svg+xml" data="/img/V2/elements/postmarks/pink.svg"></object>
-            </div>
-            <div class="post-mark post-mark__darkred">
-                <object type="image/svg+xml" data="/img/V2/elements/postmarks/darkred.svg"></object>
-            </div>
-        </div>
+
     </div>
     <div class="container first-container">
         <div class="slide-wrapper">
