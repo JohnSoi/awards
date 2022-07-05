@@ -735,11 +735,46 @@
 .award-symbol {
   position: absolute;
   top: 270px;
-  right: 180px;
+  right: 340px;
   /* Подключаем свойство transform-style для 3D */
   transform-style: preserve-3d;
   /* Подключаем анимацию для вращения и обзора */
   animation: main-rotate 10s linear;
+
+  img {
+    height: 430px;
+  }
+}
+
+@media (max-width: 1429px) {
+  .award-symbol {
+    right: 260px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .award-symbol {
+    top: 250px;
+    right: 140px;
+  }
+}
+
+@media (max-width: 991px) {
+  .award-symbol {
+    right: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .award-symbol {
+    right: -70px;
+  }
+}
+
+@media (max-width: 570px) {
+  .award-symbol {
+    display: none;
+  }
 }
 
 @keyframes main-rotate {

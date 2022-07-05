@@ -40,7 +40,7 @@
             </div>
         </div>
         <div class="award-symbol wow " data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
-            <img data-src="/img/V2/page/main/card/gradient/figure_award-sm.png" class=" ls-is-cached lazyloaded" src="/img/V2/page/main/card/gradient/figure_award-sm.png">
+            <img data-src="{{ mix('/page_image/award-symbol.png') }}" class=" ls-is-cached lazyloaded" src="{{ mix('/page_image/award-symbol.png') }}">
         </div>
     </div>
 
