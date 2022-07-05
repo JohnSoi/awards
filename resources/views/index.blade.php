@@ -53,9 +53,9 @@
 <section class="section section-content section-cta new-main">
     <div class="container">
         <div class="section-cta__inner">
-            <h2 style="margin-top: 30px;" class="section-center-title text-semipink mb-0 wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">{{__('main.main_tagline1')}} <br>{{__('main.main_tagline2')}} <br>{{__('main.main_tagline3')}}
+            <h2 style="margin-top: 30px;" class="section-center-title text-semipink mb-0 wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">Независимая<br>кросс-отраслевая премия  <br>в области креативных индустрий России
             </h2>
-            <a href="#submit" class="btn btn-white-primary mt-5">{{__('main.main_Participate')}}</a>
+            <a href="#submit" class="btn btn-white-primary mt-5">Участвовать</a>
         </div>
     </div>
 </section>
