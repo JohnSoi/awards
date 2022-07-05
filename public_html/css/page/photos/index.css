@@ -265,7 +265,7 @@
   .section-photos .mobile-section-title {
     display: block;
     margin-bottom: 48px;
-    font-family: Normalidad;
+    font-family: "Play", sans-serif !important;
     font-weight: 800;
     font-size: 19px;
     line-height: 136%;

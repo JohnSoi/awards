@@ -600,7 +600,7 @@
 }
 .event-item__date-num {
   position: relative;
-  font-family: Normalidad;
+  font-family: 'Play', sans-serif !important;
   font-style: normal;
   font-weight: bold;
   font-size: 35px;
@@ -3699,7 +3699,7 @@
   .section-event .mobile-section-title {
     display: block;
     margin-bottom: 48px;
-    font-family: Normalidad;
+    font-family: 'Play', sans-serif !important;
     font-weight: 800;
     font-size: 19px;
     line-height: 136%;
@@ -4006,7 +4006,8 @@
   z-index: 2;
 }
 .section-mechanics__main-title {
-  font-family: Normalidad;
+  font-family: 'Play', sans-serif !important;
+
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -4501,7 +4502,8 @@
   justify-content: center;
 }
 .section-submit__blur-title {
-  font-family: Normalidad;
+  font-family: 'Play', sans-serif !important;
+
   font-style: normal;
   font-weight: bold;
   font-size: 35px;

@@ -65,7 +65,7 @@
 
 // import RCW2021
 @font-face {
-    font-family: "RCW2021";
+    font-family: 'Play', sans-serif !important;
     src: url("/fonts/RCW2021.eot");
     src: local("RCW2021"), local("RCW2021"), url("/fonts/RCW2021?#iefix") format("embedded-opentype"), url("/fonts/RCW2021.woff") format("woff"), url("/fonts/RCW2021.ttf") format("truetype");
     font-weight: normal;
@@ -111,7 +111,7 @@
 }
 
 .section-center-title {
-    font-family: Normalidad;
+    font-family: 'Play', sans-serif !important;
     font-weight: 700;
     font-size: 40px;
     line-height: 117%;
