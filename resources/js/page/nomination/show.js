@@ -1,7 +1,7 @@
 import Image from "../../class/Image";
 import Swiper from 'swiper/bundle';
 import options from '../../block/swiperOptions';
-import '.././js-modules/cursorStatus';
+import '../../js-modules/cursorStatus';
 import '../../block/sliderCursor';
 
 class NominationShow {
