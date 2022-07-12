@@ -6,7 +6,7 @@
                 <div class="__select__content" data-select-options>
                     @foreach($nominations as $nomination)
                         <label class="__select__label">
-                            {{ $nomination->name }}
+                            {{ $nomination->__('name') }}
                             <input name="nomination_id" class="__select__input" type="radio" value="{{ $nomination->id }}" />
                         </label>
                     @endforeach
