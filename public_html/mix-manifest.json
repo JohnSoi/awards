@@ -11,6 +11,7 @@
     "/js/page/auth/login.js": "/js/page/auth/login.js",
     "/js/page/auth/register.js": "/js/page/auth/register.js",
     "/js/page/photos/index.js": "/js/page/photos/index.js",
+    "/js/page/auth/passwords/email.js": "/js/page/auth/passwords/email.js",
     "/css/app.css": "/css/app.css",
     "/css/page/lk/index.css": "/css/page/lk/index.css",
     "/css/page/form/index.css": "/css/page/form/index.css",
