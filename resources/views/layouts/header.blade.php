@@ -21,7 +21,6 @@
                    elem-hide>Церемония</a>
                 <a href="{{ Route('index') }}#contacts" class="header-menu__link">{{__('main.Menu_contacts')}}</a>
                 <a href="{{ Route('Awards2021') }}" class="header-menu__link">Awards2021</a>
-                <a href="{{route('locale', __('main.set_lang'))}}" class="header-menu__link">{{__('main.set_lang')}}</a>
 
                 @if (Auth::check())
                     <a href="{{ in_array(Auth::user()->group_id, [4, 2], true) ? Route('admin.main') : Route('lk') }}"
@@ -32,6 +31,10 @@
                 @else
                     <a href="{{Route('register')}}" class="header-menu__link dropdown__acc">{{__('main.Menu_login')}}</a>
                 @endif
+                <a href="{{route('locale', __('main.set_lang'))}}" class="header-menu__link" style="border: solid 1px; border-radius: 10px; filter: brightness(86%);   padding:5px;" title="{{__('main.Сменить язык')}}">
+                    {{__('main.set_lang')}}
+                </a>
+
 
             </nav>
             <div class="header__user d-none">
