@@ -36,6 +36,7 @@ mix
     .js('resources/js/page/auth/register.js', 'js/page/auth')
     .js('resources/js/page/photos/index.js', 'js/page/photos')
     .js('resources//js/page/auth/passwords/email.js', '/js/page/auth/passwords')
+    .js('resources//js/page/auth/passwords/reset.js', '/js/page/auth/passwords')
     .sass('resources/scss/app.scss', 'css')
     .sass('resources/scss/new-design.scss', 'css')
     .sass('resources/scss/page/main/index.scss', 'css/page/main')
