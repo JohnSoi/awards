@@ -87,20 +87,20 @@
                 <div class="object-inner wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.4s">
                     <div class="object-item object-item__bg-transparent object-item__bordered object-item__circle">
                         <div class="object-item__suptitle">3000+</div>
-                        <div class="object-item__subtitle">{{__('main.rcInfo1')}}</div>
+                        <div class="object-item__subtitle">заявок из 72 регионов</div>
                     </div>
                 </div>
                 <div class="object-inner wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.4s">
                     <div class="object-item object-item__bg-white object-item__bordered">
                         <div class="object-item__suptitle">100+</div>
-                        <div class="object-item__subtitle">{{__('main.rcInfo2')}}</div>
+                        <div class="object-item__subtitle">экспертов в составе жюри</div>
                     </div>
                 </div>
                 <div class="object-inner wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.6s">
                     <div class="object-item object-item__bg-gray object-item__circle">
                         <div class="object-item__suptitle">10</div>
                         <div class="object-item__subtitle">
-                            {{__('main.rcInfo3')}}
+                            лауреатов
                         </div>
                     </div>
                 </div>
