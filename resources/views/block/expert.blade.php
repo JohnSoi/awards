@@ -3,7 +3,7 @@
     <div class="container">
         <div class="border-top-black"></div>
         <div class="section-direction__inner">
-            <h2 class="section-title mw-100 mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">{{__('main.expert_sov2')}} &nbsp;{{__('main.expert_sov2')}}</h2>
+            <h2 class="section-title mw-100 mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">{{__('main.expert_sov1')}} &nbsp;{{__('main.expert_sov2')}}</h2>
         </div>
     </div>
     <div class="section-direction__wrapper wow fadeIn" data-white data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">
@@ -46,7 +46,7 @@
             </div>
         </div>
     </div>
-    <div class="section-direction__btn container">
+    <div style="display: none" class="section-direction__btn container">
         <a href="{{ Route('expert.index') }}" class="btn btn-primary w-sm-100">{{__('main.expert_all')}}</a>
     </div>
 </section>

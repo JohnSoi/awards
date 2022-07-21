@@ -18,8 +18,8 @@
                 </div>
             </div>
             <div class="border-top-black"></div>
-            <h2 style="display: none" class="section-title mt-4 mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">Партнеры</h2>
-            <div style="display: none" class="section-partners__content">
+            <h2  class="section-title mt-4 mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">{{ __('main.partners') }}</h2>
+            <div  class="section-partners__content">
                 <div class="row partners-stripe">
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 partner-img wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">
                         <a href="https://xn--e1ajdjblfdlcg2b2e.xn--p1ai/" target="_blank"><img data-src="./../../../img/V2/page/main/partners/roskult.svg" class="lazyload"></a>
@@ -49,8 +49,8 @@
                 </div>
             </div>
             <div class="border-top-black"></div>
-            <h2 style="display: none" class="section-title mb-0 mt-4 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">Информационные партнеры</h2>
-            <div style="display: none" class="section-partners__content">
+            <h2 class="section-title mb-0 mt-4 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">{{ __('main.partner_inf2') }}</h2>
+            <div class="section-partners__content">
                 <div class="row partners-stripe">
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 partner-img wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">
                         <a href="https://tass.ru/" target="_blank"><img data-src="./../../../img/V2/page/main/partners/tasslogo.svg" class="lazyload"></a>
