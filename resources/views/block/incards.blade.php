@@ -3,7 +3,7 @@
         <div class="section-incards__inner">
             <div class="border-top-black"></div>
             <h2 class="section-title mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="30">
-                по 14 креативным индустриям
+                {{__('main.industries_main')}}
             </h2>
         </div>
     </div>
@@ -13,7 +13,7 @@
                 <div class="color-circle color-card__dark color-card__rcw bg-light-gradient" data-white>
                 <div class="object-inner wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.4s">
                     <div class="color-circle__title text-dark-gradient">
-                        Музыка <br>и саунд-дизайн
+                        {{__('main.industries_music1')}} <br>{{__('main.industries_music2')}}
                         <div class="figure__music">
                             <object align="middle" height="auto" width="75%" vspace="20px" type="image/svg+xml" data="../../../img/V2/page/main/card/music.svg"></object>
                         </div>
@@ -29,7 +29,7 @@
             <div class="swiper-slide">
                 <div class="color-circle color-card__dark color-card__rcw bg-dark-gradient">
                     <div class="color-circle__title text-light-gradient">
-                        Компьютерная <br>графика
+                        {{__('main.industries_pc1')}} <br>{{__('main.industries_pc2')}}
                         <div class="figure__compgraph">
                             <object align="middle" height="auto" width="80%" vspace="20px" type="image/svg+xml" data="../../../img/V2/page/main/card/compgraph.svg"></object>
                         </div>
@@ -44,7 +44,7 @@
             <div class="swiper-slide">
                 <div class="color-circle color-card__light color-card__rcw bg-light-gradient" data-white>
                     <div class="color-circle__title text-dark-gradient">
-                        Кино
+                        {{__('main.industries_cinema')}}
                         <div class="figure__film">
                             <object align="middle" height="auto" width="75%" vspace="20px" type="image/svg+xml" data="../../../img/V2/page/main/card/kino.svg"></object>
                         </div>
@@ -59,7 +59,7 @@
             <div class="swiper-slide">
                 <div class="color-circle color-card__dark color-card__rcw bg-dark-gradient">
                     <div class="color-circle__title text-light-gradient">
-                        Издательское дело<br>и журналистика
+                        {{__('main.industries_izd1')}}<br>{{__('main.industries_izd2')}}
                         <div class="figure__publish">
                             <object align="middle" height="auto" width="100%" vspace="20px" type="image/svg+xml" data="../../../img/V2/page/main/card/publish.svg"></object>
                         </div>
@@ -74,7 +74,7 @@
             <div class="swiper-slide">
                 <div class="color-circle color-card__light color-card__rcw bg-light-gradient" data-white>
                     <div class="color-circle__title text-dark-gradient">
-                        Архитектура <br>и урбанистика
+                        {{__('main.industries_arc1')}} <br>{{__('main.industries_arc2')}}
                         <div class="figure__architech">
                             <object align="middle" height="auto" width="80%" vspace="20px" type="image/svg+xml" data="../../../img/V2/page/main/card/architech.svg"></object>
                         </div>
@@ -89,7 +89,7 @@
             <div class="swiper-slide">
                 <div class="color-circle color-card__light color-card__rcw bg-dark-gradient">
                     <div class="color-circle__title text-light-gradient">
-                        Дизайн
+                        {{__('main.industries_dis1')}}
                         <div class="figure__design">
                             <object align="middle" height="auto" width="80%" vspace="20px" type="image/svg+xml" data="../../../img/V2/page/main/card/design.svg"></object>
                         </div>
@@ -104,7 +104,7 @@
             <div class="swiper-slide">
                 <div class="color-circle color-card__dark color-card__rcw bg-light-gradient" data-white>
                     <div class="color-circle__title text-dark-gradient">
-                        Телевидение
+                        {{__('main.industries_tv')}}
                         <div class="figure__tv">
                             <object align="middle" height="auto" width="80%" vspace="20px" type="image/svg+xml" data="../../../img/V2/page/main/card/tv.svg"></object>
                         </div>
@@ -134,7 +134,7 @@
             <div class="swiper-slide">
                 <div class="color-circle color-card__dark color-card__rcw bg-light-gradient" data-white>
                     <div class="color-circle__title text-dark-gradient">
-                        Разработка игр
+                        {{__('main.industries_game')}}
                         <div class="figure__gamedev">
                             <object align="middle" height="auto" width="80%" vspace="20px" type="image/svg+xml" data="../../../img/V2/page/main/card/gamedev.svg"></object>
                         </div>
@@ -149,7 +149,7 @@
             <div class="swiper-slide">
                 <div class="color-circle color-card__dark color-card__rcw bg-dark-gradient">
                     <div class="color-circle__title text-light-gradient">
-                        Мода
+                        {{__('main.industries_moda')}}
                         <div class="figure__fashion">
                             <object align="middle" height="auto" width="80%" vspace="20px" type="image/svg+xml" data="../../../img/V2/page/main/card/fashion.svg"></object>
                         </div>
@@ -164,7 +164,7 @@
             <div class="swiper-slide">
                 <div class="color-circle color-card__light color-card__rcw bg-light-gradient" data-white>
                     <div class="color-circle__title text-dark-gradient">
-                        Искусство
+                        {{__('main.industries_pic')}}
                         <div class="figure__art">
                             <object align="middle" height="auto" width="75%" vspace="20px" type="image/svg+xml" data="../../../img/V2/page/main/card/art.svg"></object>
                         </div>
@@ -179,7 +179,7 @@
             <div class="swiper-slide">
                 <div class="color-circle color-card__light color-card__rcw bg-dark-gradient">
                     <div class="color-circle__title text-light-gradient">
-                        Новые медиа
+                        {{__('main.industries_newMedia')}}
                         <div class="figure__newmedia">
                             <object align="middle" height="auto" width="80%" vspace="20px" type="image/svg+xml" data="../../../img/V2/page/main/card/newmedia.svg"></object>
                         </div>
@@ -216,7 +216,7 @@
     </div>
     <div class="container">
         <div class="section-incards__btn">
-            <a href="https://creativityweek.ru/industry" target="_blank" class="btn btn-primary w-xs-100 wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="30">Подробнее об индустриях</a>
+            <a href="https://creativityweek.ru/industry" target="_blank" class="btn btn-primary w-xs-100 wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="30">{{__('main.industries_DetailAboutInd')}}</a>
         </div>
     </div>
 </section>

@@ -16,8 +16,7 @@
                 <div class="slide slide-new-year">
                     <div class="slide-content">
                         <h4 class="slide__title wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">
-                            <span class="font-weight-700">Проекты принимаются
-                                по&nbsp;направлениям</span>
+                            <span class="font-weight-700">{{__('main.com_span1')}}&nbsp;{{__('main.com_span2')}}</span>
                         </h4>
                     </div>
                 </div>

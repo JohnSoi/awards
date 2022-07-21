@@ -3,7 +3,7 @@
     <div class="container" id="jury">
         <div class="border-top-black"></div>
         <div class="section-direction__inner">
-            <h2 class="section-title mw-100 mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">Большое жюри&nbsp;премии</h2>
+            <h2 class="section-title mw-100 mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">{{__('main.jury_more')}}&nbsp;{{__('main.jury_more2')}}</h2>
         </div>
     </div>
     <div class="section-direction__wrapper wow fadeIn" data-white data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">

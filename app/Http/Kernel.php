@@ -70,5 +70,6 @@ class Kernel extends HttpKernel
         'manager' => \App\Http\Middleware\Manager::class,
         'expert.checker' => \App\Http\Middleware\ExpertChecker::class,
         'role' => \App\Http\Middleware\Role::class,
+        'set_locale' => \App\Http\Middleware\SetLocale::class,
     ];
 }

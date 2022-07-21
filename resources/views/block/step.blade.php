@@ -3,7 +3,7 @@
         <div class="section-step__inner">
             <div class="border-top-black"></div>
             <h2 class="section-title mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="30">
-                Номинации Russian<br>
+                {{__('main.nominations_nom')}}<br>
                 @if(Request::url() === Route('index') or ('competition'))
                     Creative Awards 2022
                 @else
@@ -18,130 +18,129 @@
             <div class="swiper-slide">
                 <div class="color-card_nom color-card__light bg-pink" >
                     <div class="color-card__title_nom">
-                        Человек года <br> в креативных индустриях
+                        {{__('main.nominations_person')}} <br> {{__('main.nominations_person2')}}
                     </div>
                     <div class="color-card__desc_nom">
-                        Представитель индустрий: продюсер, руководитель проектных групп, организаций или креатор, чья деятельность направлена на создание уникальных творческих решений и продуктов в различных отраслях.
+                        {{__('main.nominations_person3')}}
                     </div>
                     <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
-                        <a @if(isset($href) && $href) href="{{ Route('nomination.show', 1) }}" @else href="javascript://" @endif class="btn btn-primary w-100">Подробнее</a>
+                        <a @if(isset($href) && $href) href="{{ Route('nomination.show', 1) }}" @else href="javascript://" @endif class="btn btn-primary w-100">{{__('main.nominations_detail')}}</a>
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="color-card_nom color-card__dark bg-purpule">
                     <div class="color-card__title_nom">
-                        Меценат года / <br> поддержка креативных <br> индустрий
-                    </div>
+                        {{__('main.nominations_mec1')}} <br> {{__('main.nominations_mec2')}} <br>{{__('main.nominations_mec3')}}                    </div>
                     <div class="color-card__desc_nom">
-                        Физические лица, индивидуальные предприниматели, проекты коммерческих и некоммерческих организаций, не относящиеся по основному роду деятельности к креативным индустриям, но осуществляющие их поддержку.
+                        {{__('main.nominations_mec4')}}
                     </div>
                     <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
-                        <a @if(isset($href) && $href) href="{{ Route('nomination.show', 2) }}" @else href="javascript://" @endif class="btn btn-white-primary w-100">Подробнее</a>
+                        <a @if(isset($href) && $href) href="{{ Route('nomination.show', 2) }}" @else href="javascript://" @endif class="btn btn-white-primary w-100">{{__('main.nominations_detail')}}</a>
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="color-card_nom color-card__dark bg-black" >
                     <div class="color-card__title_nom">
-                        Прорыв года
+                        {{__('main.nominations_prov1')}}
                     </div>
                     <div class="color-card__desc_nom">
-                        Проект, продукт или организация, достигшие высоких показателей развития или уникального роста.
+                        {{__('main.nominations_prov2')}}
                     </div>
                     <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
-                        <a @if(isset($href) && $href) href="{{ Route('nomination.show', 3) }}" @else href="javascript://" @endif class="btn btn-primary w-100">Подробнее</a>
+                        <a @if(isset($href) && $href) href="{{ Route('nomination.show', 3) }}" @else href="javascript://" @endif class="btn btn-primary w-100">{{__('main.nominations_detail')}}</a>
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="color-card_nom color-card__light bg-pink ">
                     <div class="color-card__title_nom">
-                        Цифровой проект
+                        {{__('main.nominations_num1')}}
                     </div>
                     <div class="color-card__desc_nom">
-                        Проект в цифровом пространстве или с применением цифровых технологий, способствующий развитию IT-отрасли в России.
+                        {{__('main.nominations_num2')}}
                     </div>
                     <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
-                        <a @if(isset($href) && $href) href="{{ Route('nomination.show', 4) }}" @else href="javascript://" @endif class="btn btn-white-primary w-100">Подробнее</a>
+                        <a @if(isset($href) && $href) href="{{ Route('nomination.show', 4) }}" @else href="javascript://" @endif class="btn btn-white-primary w-100">{{__('main.nominations_detail')}}</a>
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="color-card_nom color-card__dark bg-purpule" >
                     <div class="color-card__title_nom">
-                        Образовательный проект
+                        {{__('main.nominations_ed1')}}
                     </div>
                     <div class="color-card__desc_nom">
-                        Проект, способствующий повышению уровня знаний в области креативных индустрий, развитию творческих компетенций и навыков.
+                        {{__('main.nominations_ed2')}}
                     </div>
                     <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
-                        <a @if(isset($href) && $href) href="{{ Route('nomination.show', 5) }}" @else href="javascript://" @endif class="btn btn-primary w-100">Подробнее</a>
+                        <a @if(isset($href) && $href) href="{{ Route('nomination.show', 5) }}" @else href="javascript://" @endif class="btn btn-primary w-100">{{__('main.nominations_detail')}}</a>
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="color-card_nom color-card__dark bg-black ">
                     <div class="color-card__title_nom">
-                        Лучший креативный кластер
+                        {{__('main.nominations_best1')}}
                     </div>
                     <div class="color-card__desc_nom">
-                        Креативный кластер или пространство на территории России, которое внесло наибольший вклад в развитие территории района, города, региона.
+                        {{__('main.nominations_best2')}}
                     </div>
                     <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
-                        <a @if(isset($href) && $href) href="{{ Route('nomination.show', 6) }}" @else href="javascript://" @endif class="btn btn-white-primary w-100">Подробнее</a>
+                        <a @if(isset($href) && $href) href="{{ Route('nomination.show', 6) }}" @else href="javascript://" @endif class="btn btn-white-primary w-100">{{__('main.nominations_detail')}}</a>
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="color-card_nom color-card__light bg-pink" >
                     <div class="color-card__title_nom">
-                        Культурный код
+                        {{__('main.nominations_cod1')}}
                     </div>
                     <div class="color-card__desc_nom">
-                        Проект в сфере креативных индустрий, направленный на сохранение, развитие и идентификацию региональных, национальных или общероссийских ценностей, продуктов, производств и брендов.
+                        {{__('main.nominations_cod2')}}
                     </div>
                     <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
-                        <a @if(isset($href) && $href) href="{{ Route('nomination.show', 7) }}" @else href="javascript://" @endif class="btn btn-primary w-100">Подробнее</a>
+                        <a @if(isset($href) && $href) href="{{ Route('nomination.show', 7) }}" @else href="javascript://" @endif class="btn btn-primary w-100">{{__('main.nominations_detail')}}</a>
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="color-card_nom color-card__dark bg-purpule ">
                     <div class="color-card__title_nom">
-                        Креативный <br>регион года
+                        {{__('main.nominations_creReg1')}} <br>{{__('main.nominations_creReg2')}}
                     </div>
                     <div class="color-card__desc_nom">
-                        Субъект Российской Федерации, инициативы которого оказались наиболее эффективными и&nbsp;знаковыми для развития креативной экономики
+                        {{__('main.nominations_creReg3')}}&nbsp{{__('main.nominations_creReg4')}}
                     </div>
                     <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
-                        <a @if(isset($href) && $href) href="{{ Route('nomination.show', 8) }}" @else href="javascript://" @endif class="btn btn-white-primary w-100">Подробнее</a>
+                        <a @if(isset($href) && $href) href="{{ Route('nomination.show', 8) }}" @else href="javascript://" @endif class="btn btn-white-primary w-100">{{__('main.nominations_detail')}}</a>
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="color-card_nom color-card__dark bg-black" >
                     <div class="color-card__title_nom">
-                        Креативный социальный <br> проект
+                        {{__('main.nominations_creSoc1')}} <br> {{__('main.nominations_creSoc2')}}
                     </div>
                     <div class="color-card__desc_nom">
-                        Проект, направленный на решение актуальных социальных проблем, через уникальный творческий подход.
+                        {{__('main.nominations_creSoc3')}}
                     </div>
                     <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
-                        <a @if(isset($href) && $href) href="{{ Route('nomination.show', 9) }}" @else href="javascript://" @endif class="btn btn-primary w-100">Подробнее</a>
+                        <a @if(isset($href) && $href) href="{{ Route('nomination.show', 9) }}" @else href="javascript://" @endif class="btn btn-primary w-100">{{__('main.nominations_detail')}}</a>
                     </div>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="color-card_nom color-card__light bg-pink ">
                     <div class="color-card__title_nom">
-                        Специальная номинация
+                        {{__('main.nominations_SpecNom1')}}
                     </div>
                     <div class="color-card__desc_nom">
 
                     </div>
                     <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
-                        <a @if(isset($href) && $href) href="{{ Route('nomination.show', 10) }}" @else href="javascript://" @endif class="btn btn-white-primary w-100">Подробнее</a>
+                        <a @if(isset($href) && $href) href="{{ Route('nomination.show', 10) }}" @else href="javascript://" @endif class="btn btn-white-primary w-100">{{__('main.nominations_detail')}}</a>
                     </div>
                 </div>
             </div>

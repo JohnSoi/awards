@@ -2,7 +2,7 @@
     <div class="container container-partners" id="partners">
         <div class="border-top-black"></div>
         <div class="section-partners__inner">
-            <h2 class="section-title mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">Организаторы</h2>
+            <h2 class="section-title mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">{{__('main.partner_org')}}</h2>
             <div class="section-partners__content">
                 <div class="row partners-stripe">
                     <!--<div class="col-xl-4 col-lg-12 col-md-12 col-12 partner-title partner__null"></div>-->
@@ -33,8 +33,8 @@
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 partner-img wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">
                         <a href="https://vk.com/" target="_blank"><img data-src="./../../../img/V2/page/main/partners/vk-new1.svg" class="lazyload"></a>
                         <div class="partner-img__subtitle px-3">
-                            Официальная <br>
-                            социальная сеть премии
+                            {{__('main.partner_soc1')}} <br>
+                            {{__('main.partner_soc2')}}
                         </div>
                     </div>
 
@@ -55,29 +55,29 @@
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 partner-img wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">
                         <a href="https://tass.ru/" target="_blank"><img data-src="./../../../img/V2/page/main/partners/tasslogo.svg" class="lazyload"></a>
                         <div class="partner-img__subtitle px-3">
-                            Генеральный<br>
-                            информационный партнер
+                            {{__('main.partner_gen')}}<br>
+                            {{__('main.partner_inf2')}}
                         </div>
                     </div>
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 partner-img wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">
                         <a href="https://rg.ru/" target="_blank"><img data-src="./../../../img/V2/page/main/partners/russian_paper.svg" class="lazyload"></a>
                         <div class="partner-img__subtitle px-3">
-                            Стратегический <br>
-                            информационный партнер
+                            {{__('main.partner_strateg')}} <br>
+                            {{__('main.partner_inf2')}}
                         </div>
                     </div>
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 partner-img wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">
                         <a href="https://iz.ru/" target="_blank"><img data-src="./../../../img/V2/page/main/partners/iz.svg" class="lazyload"></a>
                         <div class="partner-img__subtitle px-3">
-                            Мультимедийный<br>
-                            информационный партнер
+                            {{__('main.partner_multi')}}<br>
+                            {{__('main.partner_inf2')}}
                         </div>
                     </div>
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 partner-img wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">
                         <a href="https://www.mlg.ru/" target="_blank"><img data-src="./../../../img/V2/page/main/partners/medialogia.svg" class="lazyload"></a>
                         <div class="partner-img__subtitle px-3">
-                            Официальный<br>
-                            аналитический партнер
+                            {{__('main.partner_ofic')}} <br>
+                            {{__('main.partner_anal')}}
                         </div>
                     </div>
 

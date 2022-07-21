@@ -2,8 +2,7 @@
     <div class="container" id="graphic">
         <div class="section-history__inner">
             <div class="border-top-black"></div>
-            <h2 class="section-title mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">График проведения
-                Премии
+            <h2 class="section-title mb-0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"> {{__('main.history1')}}
             </h2>
         </div>
     </div>
@@ -19,7 +18,7 @@
                             title="{{ \App\Helpers\TimelineHelpers::getTitleHistoryPoint('06.07.2022', '08.07.2022') }}"
                     >
                     </div>
-                    <div class="card-timeline__desc">Старт Russian Creative Week</div>
+                    <div class="card-timeline__desc">{{__('main.history2')}}</div>
                 </div>
             </div>
             <div class="section-history__item">
@@ -28,7 +27,7 @@
                     <div class="card-timeline__point
                                    card-timeline__point-{{ \App\Helpers\TimelineHelpers::getClassPrefixHistoryPoint('06.07.2022', '26.09.2022') }}"
                             title="{{ \App\Helpers\TimelineHelpers::getTitleHistoryPoint('06.07.2022', '26.09.2022') }}"></div>
-                    <div class="card-timeline__desc">Прием заявок</div>
+                    <div class="card-timeline__desc">{{__('main.history3')}}</div>
                 </div>
             </div>
             <div class="section-history__item">
@@ -37,7 +36,7 @@
                     <div class="card-timeline__point
                                    card-timeline__point-{{ \App\Helpers\TimelineHelpers::getClassPrefixHistoryPoint('02.10.2022', '31.10.2022') }}"
                             title="{{ \App\Helpers\TimelineHelpers::getTitleHistoryPoint('02.10.2022', '31.10.2022') }}"></div>
-                    <div class="card-timeline__desc">Работа экспертов</div>
+                    <div class="card-timeline__desc">{{__('main.history4')}}</div>
                 </div>
             </div>
             <div class="section-history__item">
@@ -46,7 +45,7 @@
                     <div class="card-timeline__point
                                    card-timeline__point-{{ \App\Helpers\TimelineHelpers::getClassPrefixHistoryPoint('06.11.2022', '28.11.2022') }}"
                             title="{{ \App\Helpers\TimelineHelpers::getTitleHistoryPoint('06.11.2022', '28.11.2022') }}"></div>
-                    <div class="card-timeline__desc">Работа жюри</div>
+                    <div class="card-timeline__desc">{{__('main.history5')}}</div>
                 </div>
             </div>
             <div class="section-history__item">
@@ -55,7 +54,7 @@
                     <div class="card-timeline__point
                                    card-timeline__point-{{ \App\Helpers\TimelineHelpers::getClassPrefixHistoryPoint('08.12.2022', '10.12.2022') }}"
                             title="{{ \App\Helpers\TimelineHelpers::getTitleHistoryPoint('08.12.2022', '10.12.2022') }}"></div>
-                    <div class="card-timeline__desc">Торжественная церемония вручения премии
+                    <div class="card-timeline__desc">{{__('main.history6')}}
                     </div>
                 </div>
             </div>
