@@ -49,7 +49,7 @@
                 </div>
             </div>
             <div class="border-top-black"></div>
-            <h2 class="section-title mb-0 mt-4 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">{{ __('main.partner_inf2') }}</h2>
+            <h2 style="display: none" class="section-title mb-0 mt-4 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">{{ __('main.partner_inf2') }}</h2>
             <div style="display: none" class="section-partners__content">
                 <div class="row partners-stripe">
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 partner-img wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s" data-wow-offset="0">
