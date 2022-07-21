@@ -26,7 +26,6 @@ class UpdateProjectsTable extends Migration
             $table->text('presentation_file')->nullable();
         });
     }
-
     /**
      * Reverse the migrations.
      *
