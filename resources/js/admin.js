@@ -713,3 +713,21 @@ Admined.page('nomination', 'Номинации', {
     deleteAction: false,
     addAction: false
 });
+
+Admined.page('criteria', 'Критерии оценки', {
+    form: [
+        {
+            name: 'name',
+            placeholder: 'Название'
+        }
+    ]
+});
+
+Admined.page('region', 'Регионы', {
+    form: [
+        {
+            name: 'name',
+            placeholder: 'Название'
+        }
+    ]
+});

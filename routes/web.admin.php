@@ -18,6 +18,9 @@ Route::group([
     Route::resource('gildia', 'GildiaController');
     Route::resource('organization', 'OrganizationController');
     Route::resource('post', 'PostController');
+    Route::resource('criteria', 'CriteriaController');
+    Route::resource('region', 'RegionController');
+    Route::resource('post', 'PostController');
     Route::resource('user', 'UserController');
     Route::resource('mailing', 'MailingController');
     Route::resource('block_user', 'Block_userController');
