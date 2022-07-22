@@ -32,6 +32,15 @@
                 <h2>{{__('main.lk_no')}}</h2>
             @else
                 <div class="lk-registry__grid lk-registry__header">
+                    <a class="lk-registry__header-status">
+                    {{__('main.lk_photo')}}
+                    </a>
+                    <a class="lk-registry__header-status">
+                    {{__('main.lk_name')}}
+                    </a>
+                    <a class="lk-registry__header-status">
+                    {{__('main.lk_nom')}}
+                    </a>
                     <a class="lk-registry__header-date {{ array_key_exists('column', $_GET) && $_GET['column'] === 'date' ? 'lk-registry__header-active' : '' }}"
                        href="/lk?column=date&direction={{ array_key_exists('direction', $_GET) && $_GET['direction'] === 'up' ? 'down' : 'up' }}">
                         {{__('main.lk_createDate')}}

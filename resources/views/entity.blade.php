@@ -33,7 +33,7 @@
         <div class="add-form__center">
             <div class="form-types mt-md-auto">
                 <label class="form-type-label">{{__('main.form_ent_Desc')}}<span data-output-count="description"
-                                                                     data-max-count="500"></span>{{__('main.form_ent_ot')}}</label>
+                                                                     data-max-count="500"></span>{{__('main.form_ent_ot')}}*</label>
                 <textarea required name="project_description" type="text" class="form-type-text" rows="1"
                           data-input-count="description"></textarea>
             </div>
@@ -61,11 +61,11 @@
                           data-input-count="why_worthy"></textarea>
             </div>
             <div class="form-types mt-md-auto">
-                <label class="form-type-label">{{__('main.form_ent_soc')}}</label>
+                <label class="form-type-label">{{__('main.form_ent_soc')}}*</label>
                 <input name="social_url" required type="text" class="form-type-text" required>
             </div>
             <div class="form-types">
-                <label class="form-type-label">{{__('main.form_ent_nom')}}</label>
+                <label class="form-type-label">{{__('main.form_ent_nom')}}*</label>
                 <input name="name_organizer" required type="text" class="form-type-text" required>
             </div>
         </div>
@@ -76,7 +76,7 @@
             </div>
             <div class="add-form__double">
                 <div class="form-types">
-                    <label class="form-type-label">{{__('main.form_ent_number')}}</label>
+                    <label class="form-type-label">{{__('main.form_ent_number')}}*</label>
                     <input data-mask-phone="" type="text" class="form-type-text" name="phone_nominee">
                 </div>
                 <div class="form-types mt-md-auto">

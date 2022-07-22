@@ -25,8 +25,8 @@
         <div class="add-form__center">
             @include('forms.regions')
             <div class="form-types mt-md-auto">
-                <label class="form-type-label">{{__('main.form_ind_bio')}} (<span data-output-count="bio"
-                                                                data-max-count="2500">0</span>/2500)</label>
+                <label class="form-type-label">{{__('main.form_ind_bio')}}(<span data-output-count="bio"
+                                                                data-max-count="2500">0</span>/2500)*</label>
                 <textarea required name="bio" type="text" class="form-type-text" rows="1"
                           data-input-count="biography"></textarea>
             </div>
@@ -67,7 +67,7 @@
             </div>
             <div class="add-form__double">
                 <div class="form-types mt-md-auto">
-                    <label class="form-type-label">{{__('main.form_ind_soc')}}</label>
+                    <label class="form-type-label">{{__('main.form_ind_soc')}}*</label>
                     <input name="social_url" required type="text" class="form-type-text" required>
                 </div>
                 <div class="form-types" file-group>
@@ -78,7 +78,7 @@
             </div>
             <div class="form-types mt-md-auto">
                 <label class="form-type-label"> {{__('main.form_ind_resent')}}<span
-                            data-output-count="presentation">0</span>*</label>
+                            data-output-count="presentation">0</span></label>
                 <textarea name="presentation" type="text" required class="form-type-text" rows="1"
                           data-input-count="presentation"></textarea>
             </div>
