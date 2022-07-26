@@ -11,7 +11,9 @@
             <nav class="header-menu">
                 <a href="{{ Route('index') }}#about-award" class="header-menu__link">{{__('main.Menu_about')}}</a>
                 <a href="{{ Route('index') }}#nomination" class="header-menu__link">{{__('main.Menu_nominations')}}</a>
+                @if(!App::isLocale('en'))
                 <a href="{{ Route('post.index') }}" class="header-menu__link">{{__('main.Menu_news')}}</a>
+                @endif
                 <a href="/files/Polozhenie_RCA.pdf" target="_blank" class="header-menu__link"
                    style="display: none !important;" elem-hide>Положение</a>
                 <a href="{{ Route('index') }}#graphic" class="header-menu__link" style="display: none !important;"
@@ -73,7 +75,9 @@
                 <nav class="menu-navigation">
                     <a href="{{ Route('index') }}#about-award" class="menu-navigation__link" burger-close>{{__('main.Menu_about')}}</a>
                     <a href="{{ Route('index') }}#nomination" class="menu-navigation__link" burger-close>{{__('main.Menu_nominations')}}</a>
+                    @if(!App::isLocale('en'))
                     <a href="{{ Route('post.index') }}" class="menu-navigation__link" burger-close>{{__('main.Menu_news')}}</a>
+                    @endif
                     <a href="/files/Polozhenie_RCA.pdf" target="_blank" class="menu-navigation__link"
                        style="display: none !important;" elem-hide burger-close>Положение</a>
                     <a href="{{ Route('index') }}#graphic" class="menu-navigation__link"
