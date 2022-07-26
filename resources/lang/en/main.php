@@ -181,6 +181,7 @@ return  [
     'faq_Q3Q3' => 'and',
     'faq_Q3Q4' => 'project and',
     'faq_Q3Q5' => 'his',
+    'form_ind_who' => 'Nominee data (full name)*',
     'faq_Q3Q6' => 'author?',
     'faq3Answer1' => 'Yes, in the respective categories.',
     'faq_Q5Q1' => '5. Can we attach a link',

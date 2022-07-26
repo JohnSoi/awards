@@ -32,7 +32,4 @@
         </div>
     </div>
 @endif
-<div class="form-types">
-    <label class="form-type-label">{{__('main.form_ent_who')}}</label>
-    <input name="name_nominate" type="text" class="form-type-text" required>
-</div>
+

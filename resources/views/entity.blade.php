@@ -17,6 +17,10 @@
         <div class="add-form__left">
             @include('forms.first_block')
             <div class="form-types">
+                <label class="form-type-label">{{__('main.form_ent_who')}}</label>
+                <input name="name_nominate" type="text" class="form-type-text" required>
+            </div>
+            <div class="form-types">
                 <label class="form-type-label">{{__('main.form_ent_jobTitle')}}</label>
                 <input name="job_title" type="text" class="form-type-text" required>
             </div>
@@ -39,8 +43,8 @@
             </div>
             <div class="form-types mt-md-auto">
                 <label class="form-type-label">{{__('main.form_ent_arc')}} <span data-output-count="achievements"
-                                                                                  data-min-count="500">{{__('main.form_ent_ot')}}</span></label>
-                <textarea name="achievements" type="text" class="form-type-text" rows="1"
+                                                                                  data-min-count="500">{{__('main.form_ent_ot')}}</span>*</label>
+                <textarea name="achievements" required type="text" class="form-type-text" rows="1"
                           data-input-count="achievements"></textarea>
             </div>
             <div class="form-types mt-md-auto">
@@ -55,7 +59,7 @@
                 <div class="form-type-text form-type-file" file-change-name="media_doc"></div>
             </div>
             <div class="form-types mt-md-auto">
-                <label class="form-type-label">{{__('main.form_ent_why')}} <span
+                <label class="form-type-label">{{__('main.form_ent_why')}} (от 500 символов)<span
                             data-output-count="why_worthy">{{__('main.form_ent_ot')}}</span>*</label>
                 <textarea required name="why_worthy" type="text" class="form-type-text" rows="1"
                           data-input-count="why_worthy"></textarea>
@@ -72,12 +76,12 @@
         <div class="add-form__right">
             <div class="form-types">
                 <label class="form-type-label">{{__('main.form_ent_site')}}</label>
-                <input name="organization_site" required type="text" class="form-type-text" required>
+                <input name="organization_site" type="text" class="form-type-text" >
             </div>
             <div class="add-form__double">
                 <div class="form-types">
                     <label class="form-type-label">{{__('main.form_ent_number')}}*</label>
-                    <input data-mask-phone="" type="text" class="form-type-text" name="phone_nominee">
+                    <input data-mask-phone="" required type="text" class="form-type-text" name="phone_nominee">
                 </div>
                 <div class="form-types mt-md-auto">
                     <label class="form-type-label">{{__('main.form_ent_email')}}<span
@@ -87,7 +91,7 @@
                 </div>
             </div>
             <div class="form-types" file-group>
-                <label class="form-type-label" for="file-upload">{{__('main.form_ent_present')}} <br>{{__('main.form_ent_present2')}}</label>
+                <label class="form-type-label" for="file-upload">{{__('main.form_ent_present')}}* <br>{{__('main.form_ent_present2')}}</label>
                 <input name="presentation_file" id="file-upload" type="file">
                 <div class="form-type-text form-type-file" file-change-name="presentation_file"></div>
             </div>

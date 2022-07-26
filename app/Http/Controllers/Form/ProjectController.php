@@ -54,6 +54,7 @@ class ProjectController extends Controller
                 'media' => 'required|max:5000',
                 'why_worthy' => 'required|max:5000',
                 'awards' => 'max:5000',
+                'phone_nominee' => 'required|max:20',
                 'email_nominee' => 'required|email|max:191',
                 'social_url' => 'required|max:5000',
                 'image' => 'mimes:jpg,jpeg,png|min:100 |dimensions:min_width=600,min_height=600',
