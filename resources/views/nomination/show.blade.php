@@ -21,7 +21,7 @@
         <div class="section-main__inner">
             @if($nomination->title)
             <div class="section-main__title text-center">
-                <div class="h1 text-gradient">{!! $nomination->title !!}</div>
+                <div class="h1 text-gradient">{!! App::isLocale('en') ? $nomination->title_en : $nomination->title !!}</div>
             </div>
             @endif
             <div class="section-main__arrow">
@@ -40,7 +40,7 @@
             <h2 class="section-description__title col-12  col-lg-6 col-xl-6">
                 О номинации
             </h2>
-            <div class="section-description__text col-12 col-lg-6 col-xl-6">{!! $nomination->about !!}</div>
+            <div class="section-description__text col-12 col-lg-6 col-xl-6">{!! App::isLocale('en') ? $nomination->about_en : $nomination->about !!}</div>
         </div>
     </div>
 </section>
