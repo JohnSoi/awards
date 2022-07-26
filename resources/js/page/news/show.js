@@ -1,5 +1,5 @@
 import '../../block/news';
-import '.././js-modules/share';
+import '../../js-modules/share';
 
 var newsShow = {
     init: function () {

@@ -514,6 +514,10 @@ Admined.page('user', 'Пользователи', {
             placeholder: 'ФИО'
         },
         {
+            name: 'name_en',
+            placeholder: 'ФИО англ.'
+        },
+        {
             name: 'email',
             placeholder: 'Email'
         },
@@ -528,6 +532,10 @@ Admined.page('user', 'Пользователи', {
         {
             name: 'position',
             placeholder: 'Должность'
+        },
+        {
+            name: 'position_en',
+            placeholder: 'Должность англ.'
         },
         {
             name: 'group_id',
@@ -708,6 +716,24 @@ Admined.page('nomination', 'Номинации', {
             name: 'about',
             placeholder: 'О номинации',
             type: 'text'
+        },
+        {
+            name: 'name_en',
+            placeholder: 'Название англ.'
+        },
+        {
+            name: 'description_en',
+            placeholder: 'Описание англ.',
+            type: 'text'
+        },
+        {
+            name: 'title_en',
+            placeholder: 'Заголовок англ.'
+        },
+        {
+            name: 'about_en',
+            placeholder: 'О номинации англ.',
+            type: 'text'
         }
     ],
     deleteAction: false,
@@ -729,5 +755,23 @@ Admined.page('region', 'Регионы', {
             name: 'name',
             placeholder: 'Название'
         }
+    ]
+});
+
+Admined.page('about', 'О премии', {
+    form: [
+        {
+            name: 'value',
+            placeholder: 'Значение'
+        },
+        {
+            name: 'value_en',
+            placeholder: 'Значение англ.'
+        },
+        {
+            name: 'isVideo',
+            placeholder: 'Видео',
+            type: 'switch'
+        },
     ]
 });

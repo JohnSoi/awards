@@ -1,5 +1,6 @@
 <?php
 return  [
+    'about' => 'О премии',
     'current_lang'=> 'ru',
     'set_lang'=> 'en',
     //Меню

@@ -15,7 +15,7 @@
                     </div>
                     @endif
                 </div>
-                <div class="mini-project__title">{{ $project->name_nominate }}</div>
+                <div class="mini-project__title">{{ App::isLocale('en') ? $project->name_nominate_en : $project->name_nominate }}</div>
             </div>
         </div>
         @endforeach

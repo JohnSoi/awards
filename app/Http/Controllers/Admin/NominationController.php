@@ -15,7 +15,7 @@ class NominationController extends Controller
         $items = Nomination::latest();
 
         $items = Filter::apply([
-            'name', 'description', 'title', 'about'
+            'name', 'description', 'title', 'about', 'name_en', 'description_en', 'title_en', 'about_en'
         ], $request, $items);
 
         return [

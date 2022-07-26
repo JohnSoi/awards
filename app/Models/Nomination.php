@@ -12,7 +12,7 @@ class Nomination extends Model
     use HasFactory, Translate;
 
     protected $fillable = [
-        'name', 'description', 'title', 'about'
+        'name', 'description', 'title', 'about', 'name_en', 'description_en', 'title_en', 'about_en'
     ];
 
     public function projects()

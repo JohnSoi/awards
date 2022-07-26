@@ -20,6 +20,7 @@ Route::group([
     Route::resource('post', 'PostController');
     Route::resource('criteria', 'CriteriaController');
     Route::resource('region', 'RegionController');
+    Route::resource('about', 'AboutController');
     Route::resource('post', 'PostController');
     Route::resource('user', 'UserController');
     Route::resource('mailing', 'MailingController');

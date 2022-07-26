@@ -19,7 +19,7 @@ class UserController extends Controller
         $items = User::latest();
 
         $items = Filter::apply([
-            'id', 'name', 'email', 'group_id', 'created_at', 'photo'
+            'id', 'name', 'email', 'group_id', 'created_at', 'photo', 'name_en', 'position', 'position_en'
         ], $request, $items);
 
         if ($request->search) {

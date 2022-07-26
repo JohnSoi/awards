@@ -1,5 +1,6 @@
 <?php
 return  [
+    'about' => 'About awards',
     'current_lang'=> 'en',
     'set_lang'=> 'ru',
     //Меню
@@ -32,7 +33,7 @@ return  [
                              provide them with support and',
     'for_ElseDesc1.2' =>'national recognition.',
     'for_Quote' =>'“I really like the idea that was born on',
-    'for_Quote2' =>'Российской креативной неделе, о',
+    'for_Quote2' =>'Russian creative awards, about',
     'for_Quote3' =>'to do in',
     'for_Quote4' =>' next year the first Russian national award for',
     'for_Quote5' =>'successes and',
@@ -208,7 +209,7 @@ return  [
     'faq6Answer5' => 'creative industries',
     //Жюри, эксперты, партнеры
     'partners' => 'Partners',
-    'jury_more' => 'More jury',
+    'jury_more' => 'Grand jury',
     'jury_more2' => 'prizes',
     'expert_all' => 'All experts',
     'expert_sov1' => 'Expert Council',

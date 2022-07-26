@@ -28,6 +28,7 @@ Route::get('/form-new', 'FormPageController@show')->name('form.show');
 Route::get('/awards2021', 'Awards2021Controller@index')->name('Awards2021');
 Route::get('/competition', 'CompetitionController@competition')->name('competition');
 Route::get('post', 'PostController@index')->name('post.index');
+Route::get('/about', 'AboutAwardsController@index')->name('about.index');
 Route::get('post/{id}', 'PostController@show')->name('post.show');
 Route::post('debug', 'DebugController@telegram')->middleware('throttle:60,1');
 Route::post('notify', 'NotifyController@telegram')->middleware('throttle:60,1');

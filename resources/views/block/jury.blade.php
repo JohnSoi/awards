@@ -15,9 +15,9 @@
                         <div class="direction-item__photo">
                             <img class="lazyload" data-src="{{ ImageUrl($item->user->photo, 500) }}">
                         </div>
-                        <div class="direction-item__name">{!! str_replace(' ', '<br>', $item->user->name) !!}</div>
+                        <div class="direction-item__name">{!! str_replace(' ', '<br>', (App::isLocale('en') ? $item->user->name_en : $item->user->name)) !!}</div>
                         @if($item->user->position)
-                        <div class="direction-item__position h-100">{!! $item->user->position !!}</div>
+                        <div class="direction-item__position h-100">{!! App::isLocale('en') ? $item->user->position_en : $item->user->position !!}</div>
                         @endif
                     </div>
                 </div>
