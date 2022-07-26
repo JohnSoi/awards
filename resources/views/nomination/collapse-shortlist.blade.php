@@ -1,5 +1,5 @@
 <div class="collapse-shortlist">
-    <div class="collapse-shortlist__header" data-toggle="collapse" data-target="#collapseShortlist{{ $project->id }}" aria-expanded="false" aria-controls="collapseShortlist{{ $project->id }}">
+    <div class="collapse-shortlist__header" data-toggle="collapse" data-target="#collapseShortlist{{ !App::isLocale('en') ? $project->id : '' }}" aria-expanded="false" aria-controls="collapseShortlist{{ $project->id }}">
         <div class="collapse-shortlist__image">
             <div class="collapse-shortlist__preview">
                 <picture>
