@@ -38,7 +38,7 @@
     <div class="container">
         <div class="row">
             <h2 class="section-description__title col-12  col-lg-6 col-xl-6">
-                О номинации
+                {{ App::isLocale('en') ? 'About nomination' : 'О номинации' }}
             </h2>
             <div class="section-description__text col-12 col-lg-6 col-xl-6">{!! App::isLocale('en') ? $nomination->about_en : $nomination->about !!}</div>
         </div>

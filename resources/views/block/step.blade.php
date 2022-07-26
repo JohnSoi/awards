@@ -23,7 +23,7 @@
                     <div class="color-card__desc_nom">
                         {{__('main.nominations_person3')}}
                     </div>
-                    <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
+                    <div class="color-card__btn_nom mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
                         <a @if(isset($href) && $href) href="{{ Route('nomination.show', 1) }}" @else href="javascript://" @endif class="btn btn-primary w-100">{{__('main.nominations_detail')}}</a>
                     </div>
                 </div>
@@ -35,7 +35,7 @@
                     <div class="color-card__desc_nom">
                         {{__('main.nominations_mec4')}}
                     </div>
-                    <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
+                    <div class="color-card__btn_nom mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
                         <a @if(isset($href) && $href) href="{{ Route('nomination.show', 2) }}" @else href="javascript://" @endif class="btn btn-white-primary w-100">{{__('main.nominations_detail')}}</a>
                     </div>
                 </div>
@@ -48,7 +48,7 @@
                     <div class="color-card__desc_nom">
                         {{__('main.nominations_prov2')}}
                     </div>
-                    <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
+                    <div class="color-card__btn_nom mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
                         <a @if(isset($href) && $href) href="{{ Route('nomination.show', 3) }}" @else href="javascript://" @endif class="btn btn-primary w-100">{{__('main.nominations_detail')}}</a>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                     <div class="color-card__desc_nom">
                         {{__('main.nominations_num2')}}
                     </div>
-                    <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
+                    <div class="color-card__btn_nom mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
                         <a @if(isset($href) && $href) href="{{ Route('nomination.show', 4) }}" @else href="javascript://" @endif class="btn btn-white-primary w-100">{{__('main.nominations_detail')}}</a>
                     </div>
                 </div>
@@ -74,7 +74,7 @@
                     <div class="color-card__desc_nom">
                         {{__('main.nominations_ed2')}}
                     </div>
-                    <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
+                    <div class="color-card__btn_nom mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
                         <a @if(isset($href) && $href) href="{{ Route('nomination.show', 5) }}" @else href="javascript://" @endif class="btn btn-primary w-100">{{__('main.nominations_detail')}}</a>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
                     <div class="color-card__desc_nom">
                         {{__('main.nominations_best2')}}
                     </div>
-                    <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
+                    <div class="color-card__btn_nom mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
                         <a @if(isset($href) && $href) href="{{ Route('nomination.show', 6) }}" @else href="javascript://" @endif class="btn btn-white-primary w-100">{{__('main.nominations_detail')}}</a>
                     </div>
                 </div>
@@ -100,7 +100,7 @@
                     <div class="color-card__desc_nom">
                         {{__('main.nominations_cod2')}}
                     </div>
-                    <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
+                    <div class="color-card__btn_nom mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
                         <a @if(isset($href) && $href) href="{{ Route('nomination.show', 7) }}" @else href="javascript://" @endif class="btn btn-primary w-100">{{__('main.nominations_detail')}}</a>
                     </div>
                 </div>
@@ -113,7 +113,7 @@
                     <div class="color-card__desc_nom">
                         {{__('main.nominations_creReg3')}}&nbsp{{__('main.nominations_creReg4')}}
                     </div>
-                    <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
+                    <div class="color-card__btn_nom mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
                         <a @if(isset($href) && $href) href="{{ Route('nomination.show', 8) }}" @else href="javascript://" @endif class="btn btn-white-primary w-100">{{__('main.nominations_detail')}}</a>
                     </div>
                 </div>
@@ -126,7 +126,7 @@
                     <div class="color-card__desc_nom">
                         {{__('main.nominations_creSoc3')}}
                     </div>
-                    <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
+                    <div class="color-card__btn_nom mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
                         <a @if(isset($href) && $href) href="{{ Route('nomination.show', 9) }}" @else href="javascript://" @endif class="btn btn-primary w-100">{{__('main.nominations_detail')}}</a>
                     </div>
                 </div>
@@ -139,7 +139,7 @@
                     <div class="color-card__desc_nom">
 
                     </div>
-                    <div class="mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
+                    <div class="color-card__btn_nom mt-auto w-100 pt-4" @if(!isset($href) || !$href) style="display: none !important;" elem-hide @endif>
                         <a @if(isset($href) && $href) href="{{ Route('nomination.show', 10) }}" @else href="javascript://" @endif class="btn btn-white-primary w-100">{{__('main.nominations_detail')}}</a>
                     </div>
                 </div>

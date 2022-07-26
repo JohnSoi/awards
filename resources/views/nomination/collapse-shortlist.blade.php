@@ -14,22 +14,24 @@
                 @endif
             </div>
         </div>
-        <div class="collapse-shortlist__cross">
-            <picture>
-                <img data-src="/img/V2/elements/collapse/cross.svg" class="lazyload">
-            </picture>
-        </div>
+        @if(!App::isLocale('en'))
+            <div class="collapse-shortlist__cross">
+                <picture>
+                    <img data-src="/img/V2/elements/collapse/cross.svg" class="lazyload">
+                </picture>
+            </div>
+        @endif
     </div>
     <div class="collapse-shortlist__desc">
         <div class="collapse-shortlist__location">
-            {{ $project->name_nominate }}
+            {{ App::isLocale('en') ? $project->name_nominate_en : $project->name_nominate }}
         </div>
         <div class="collapse-shortlist__naming">
             @if($project->is_winner)
-            Лауреат премии
+            {{ App::isLocale('en') ? 'Award winner' : 'Лауреат премии' }}
             Russian Creative Awards 2021
             @else
-            Номинант премии
+            {{ App::isLocale('en') ? 'Award Nominee' : 'Номинант премии' }}
             Russian Creative Awards 2021
             @endif
         </div>
