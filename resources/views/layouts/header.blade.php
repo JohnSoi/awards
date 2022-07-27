@@ -23,7 +23,9 @@
                    elem-hide>Церемония</a>
                 <a href="{{ Route('index') }}#contacts" class="header-menu__link">{{__('main.Menu_contacts')}}</a>
                 <a href="{{ Route('Awards2021') }}" class="header-menu__link">Awards2021</a>
-                <a href="{{ Route('about.index') }}" class="header-menu__link">{{ __('main.about') }}</a>
+                @if(App::isLocale('en'))
+                    <a href="{{ Route('about.index') }}" class="header-menu__link">{{ __('main.about') }}</a>
+                @endif
 
                 @if (Auth::check())
                     <a href="{{ in_array(Auth::user()->group_id, [4, 2], true) ? Route('admin.main') : Route('lk') }}"
@@ -87,7 +89,9 @@
                        style="display: none !important;" elem-hide burger-close>Церемония</a>
                     <a href="{{ Route('index') }}#contacts" class="menu-navigation__link" burger-close>{{__('main.Menu_contacts')}}</a>
                     <a href="{{ Route('Awards2021') }}" class="menu-navigation__link">Awards2021</a>
-                    <a href="{{ Route('about.index') }}" class="menu-navigation__link">{{ __('main.about') }}</a>
+                    @if(App::isLocale('en'))
+                        <a href="{{ Route('about.index') }}" class="menu-navigation__link">{{ __('main.about') }}</a>
+                    @endif
                     @if (Auth::check())
                         <a href="{{ in_array(Auth::user()->group_id, [4, 2], true) ? Route('admin.main') : Route('lk') }}"
                            class="menu-navigation__link dropdown__acc">{{__('main.Menu_userArea')}}</a>
